@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Home from './home'
+import Home from './home/home'
 
 
 const App = (props) => {
