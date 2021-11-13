@@ -31,6 +31,145 @@ import sport from '../no_js/img/mini_logo/sport.jpg';
 import terrorisme from '../no_js/img/mini_logo/terrorisme.jpeg';
 import gaming from '../no_js/img/mini_logo/gaming.jpg';
 
+function NavSection({src,href,text}){
+    return (
+        <div className="nav-section">
+            <a href={href} className="nav-text current-page">{text}</a>
+            <img src={src} className="nav-icon"/>
+        </div>
+    );
+}
+
+function InfoSection({srcFlag,srcArrow, classArrow}){
+    return (
+        <div className="infos-section">
+            <img src={srcFlag} className="infos-icon"/>
+            <img src={srcArrow} className={classArrow}/>
+        </div>
+    );
+}
+
+/*Progress card*/
+function Reward(props){
+    return (<img className={props.imgReward} src={props.classReward}/>);
+}
+
+function ChallengeCard({titleCard}){
+    return(
+        <div className="progress-card">
+            <div className="progress-title-card">{titleCard}</div>
+                <ChallengeContainer ExText="Les temps du passé. Ex 6"/>
+            <div className="daily-award">
+                <Reward imgReward='chest-reward' classReward={treasure}/>
+                <Reward imgReward="chest-reward" classReward={treasure}/>
+                <Reward imgReward="chest-reward" classReward={treasure}/>
+            </div>
+        </div>
+    );
+}
+
+function ChallengeContainer(props){
+    return (
+        <div className="objectif-container">
+            <div className="circular-progress">
+                <div className="inner-circle">
+                    <div className="circular-value-container">100%</div>
+                </div>
+            </div>
+            <div className="progress-text-card">{props.ExText}</div>
+                <img className="chest-reward" src={ready_icon}/>
+        </div>
+    );
+}
+
+function DailyCard(props){
+    return(
+        <div className="progress-card">
+            <div className="progress-title-card">{props.titleCard}</div>
+            <DailyContainer imgReward={treasure} dailyText='Réalise deux exercices'/>
+            <DailyContainer imgReward={feather_icon} dailyText='Consulte un magazine sportif'/>
+        </div>
+    );
+}
+
+function DailyContainer(props){
+    return (
+        <div className="objectif-container">
+            <img className="chest-reward" src={props.imgReward}/>
+            <div className="progress-text-card">{props.dailyText}</div>
+            <div className="container-bar-xp">
+                <div className="small-text-xp">5/10 xp</div>
+                <div className="small-xp-bar">
+                    <div className="progress-xp-bar" style={{backgroundColor:'#F9A014',height:'5px',width:'50%',borderRadius: '10px'}}></div>
+                    </div>   
+            </div>   
+        </div>
+    );
+}
+
+function NextAwardCard(props){
+    return (
+        <div className="progress-card">
+            <div className="progress-title-card">{props.titleCard}</div>
+            <div className="container-bar-xp">
+                <div className="large-text-xp">5/10 xp</div>
+                <div className="large-xp-bar">                          
+                    <div className="progress-xp-bar" style={{backgroundColor:'#F9A014',height:'5px',width:'70%',borderRadius: '10px' }}></div>
+                </div>
+            </div> 
+            <div className="daily-award">
+            <Reward imgReward='chest-reward' classReward={feather_icon}/>
+            <Reward imgReward='chest-reward' classReward={feather_icon}/>
+            <Reward imgReward='chest-reward' classReward={feather_icon}/>
+            <Reward imgReward='chest-reward' classReward={treasure}/>
+            </div>
+        </div>
+    )
+}
+
+/*dashboard*/
+
+function HeaderDashCard(props){
+    return (
+        <div className="header-dash-card">
+            <div className="header-dash-text">{props.headerText}</div>
+            <div className="help-container">
+                <div className="header-dash-text">Aide</div>
+                <div className="orange-triangle-down"></div>
+            </div>                   
+        </div>
+    );
+}
+
+function ActivityContainer(props){
+    return (
+        <div className="activity-container">
+            <div className="circular-progress">
+                <div className="inner-circle">
+                        <div className="circular-value-container">100%</div>
+                    </div>
+            </div>
+            <div className="main-text-card">Les temps du passé. Ex 4</div>
+            <div className="text-resume">Reprendre</div>
+            <img className="chest-reward" src="img/right-orange-arrow.png"/>
+        </div>
+    );
+}
+
+function DashCard(props){
+    return (
+        <div className="dash-card">
+            <HeaderDashCard headerText="Activités récentes"/>
+            <div className="main-card-dash">
+                <ActivityContainer mainText="Les temps du passé. Ex 4" />
+                <ActivityContainer mainText="Le subjonctif. Ex6" />
+                <ActivityContainer mainText="Le futur de l'indicatif. Ex 6" />
+            </div>
+        </div>
+    )
+}
+
+
 
 
 function Home(props) {
@@ -43,102 +182,34 @@ function Home(props) {
                     <div id="brand-logo">PARROT</div>
                 </div>
                 <nav>
-                        <div className="nav-section">
-                            <a href="#" className="nav-text current-page">Acceuil</a>
-                            <img src={orange_house} className="nav-icon"/>
-                        </div>
-                        <div className="nav-section">
-                            <a href="#" className="nav-text text-header">Exercices</a>
-                            <img src={pencil} className="nav-icon"/>
-                        </div>
-                        <div className="nav-section">
-                            <a href="#" className="nav-text text-header">Outils</a>
-                            <img src={tool_icon} className="nav-icon"/>
-                        </div>
-                        <div className="nav-section">
-                            <a href="#" className="nav-text text-header">Lire</a>
-                            <img src={book_icon} className="nav-icon"/>
-                        </div>
+                    <NavSection src={orange_house} href="#" text="Accueil"/>
+                    <NavSection src={pencil} href="#" text="Exercices"/>
+                    <NavSection src={tool_icon} href="#" text="Outils"/>
+                    <NavSection src={book_icon} href="#" text="Lire"/>
                 </nav>
                 <div className="user-infos">
-                        <div className="infos-section">
-                            <img src={flag_britain} className="infos-icon"/>
-                            <img src={down_arrow} className="arrow-icon"/>
-                        </div>
-                        <div className="infos-section">
-                            <img src={feather_icon} className="infos-icon"/>
-                            <p id="feather-number">4</p>
-                        </div>
-                        <div className="infos-section">
-                            <img src={flame_icon} id="flame-icon"/>
-                            <p>4</p>
-                        </div>
-                        <div className="infos-section">
-                            <img  src={profil_icon} className="infos-icon"/>
-                            <img src={down_arrow} className="arrow-icon"/>
-                        </div>
+                    <InfoSection srcFlag={flag_britain} srcArrow={down_arrow} classArrow="arrow-icon"/>
+                    <div className="infos-section">
+                        <img src={feather_icon} className="infos-icon"/>
+                        <p id="feather-number">4</p>
+                    </div>
+                    <div className="infos-section">
+                        <img src={flame_icon} id="flame-icon"/>
+                        <p>4</p>
+                    </div>
+                    <div className="infos-section">
+                        <img  src={profil_icon} className="infos-icon"/>
+                        <img src={down_arrow} className="arrow-icon"/>
+                    </div>
                 </div>
             </header>
             <main>
                 <div id="progress-container">
                     <div id="title-progress">Progression</div>
-                    <div className="progress-card">
-                        <div className="progress-title-card">Defis du jour</div>
-                        <div className="objectif-container">
-                            <div className="circular-progress">
-                                <div className="inner-circle">
-                                    <div className="circular-value-container">100%</div>
-                                </div>
-                            </div>
-                            <div className="progress-text-card">Les temps du passé. Ex 6 </div>
-                            <img className="chest-reward" src={ready_icon}/>
-                        </div>
-                        <div className="daily-award">
-                            <img className="chest-reward" src={treasure}/>
-                            <img className="chest-reward" src={treasure}/>
-                            <img className="chest-reward" src={treasure}/>
-                        </div>
-                    </div>
-                    <div className="progress-card">
-                        <div className="progress-title-card">Objectifs quotidiens</div>
-                        <div className="objectif-container">
-                            <img className="chest-reward" src={treasure}/>
-                            <div className="progress-text-card">Réalise deux exercices</div>
-                            <div className="container-bar-xp">
-                                <div className="small-text-xp">5/10 xp</div>
-                                <div className="small-xp-bar">
-                                    <div className="progress-xp-bar" style={{backgroundColor:'#F9A014',height:'5px',width:'50%',borderRadius: '10px'}}></div>
-                                </div>   
-                            </div>   
-                        </div>
-                        <div className="objectif-container">
-                            <img className="chest-reward" src={feather_icon}/>
-                            <div className="progress-text-card">Consulte un magazine sportif</div>
-                            <div className="container-bar-xp">
-                                <div className="small-text-xp">5/10 xp</div>
-                                <div className="small-xp-bar">
-                                    <div className="progress-xp-bar" style={{backgroundColor:'#F9A014',height:'5px',width:'50%',borderRadius: '10px' }}></div>
-                                </div>   
-                            </div>                            
-                        </div>
-                    </div>
-                    <div className="progress-card">
-                        <div className="progress-title-card">Prochaine récompense</div>
-                        <div className="container-bar-xp">
-                            <div className="large-text-xp">5/10 xp</div>
-                            <div className="large-xp-bar">                          
-                                <div className="progress-xp-bar" style={{backgroundColor:'#F9A014',height:'5px',width:'70%',borderRadius: '10px' }}></div>
-                            </div>
-                        </div> 
-                        <div className="daily-award">
-                            <img className="chest-reward" src={feather_icon}/>
-                            <img className="chest-reward" src={feather_icon}/>
-                            <img className="chest-reward" src={feather_icon}/>
-                            <img className="chest-reward" src={treasure}/>
-                        </div>
-                    </div>
+                    <ChallengeCard titleCard="Defi du jour"/>
+                    <DailyCard titleCard="Objectifs quotidiens"/>
+                    <NextAwardCard titleCard="Prochaine Récompense"/>
                 </div>
-
                 <div id="dashboard-container">
                     <div id="title-dash">Dashboard</div>
                     <div className="header-infos-container">
@@ -153,47 +224,7 @@ function Home(props) {
                             </div>
                         </div>
                     </div>
-                    <div className="dash-card">
-                        <div className="header-dash-card">
-                            <div className="header-dash-text">Activités récentes</div>
-                            <div className="help-container">
-                                <div className="header-dash-text">Aide</div>
-                                <div className="orange-triangle-down"></div>
-                            </div>                   
-                        </div>
-                        <div className="main-card-dash">
-                            <div className="activity-container">
-                                <div className="circular-progress">
-                                    <div className="inner-circle">
-                                        <div className="circular-value-container">100%</div>
-                                    </div>
-                                </div>
-                                <div className="main-text-card">Les temps du passé. Ex 4</div>
-                                <div className="text-resume">Reprendre</div>
-                                <img className="chest-reward" src="img/right-orange-arrow.png"/>
-                            </div>
-                            <div className="activity-container">
-                                <div className="circular-progress">
-                                    <div className="inner-circle">
-                                        <div className="circular-value-container">100%</div>
-                                    </div>
-                                </div>
-                                <div className="main-text-card">Le subjonctif. Ex6</div>
-                                <div className="text-resume">Reprendre</div>
-                                <img className="chest-reward" src="img/right-orange-arrow.png"/>
-                            </div>
-                            <div className="activity-container">
-                                <div className="circular-progress">
-                                    <div className="inner-circle">
-                                        <div className="circular-value-container">100%</div>
-                                    </div>
-                                </div>
-                                <div className="main-text-card">Le futur de l'indicatif. Ex 6</div>
-                                <div className="text-resume">Reprendre</div>
-                                <img className="chest-reward" src="img/right-orange-arrow.png"/>
-                            </div>
-                        </div>
-                    </div>
+                    <DashCard />
                     <div className="stat-container">
                         <div id="title-stat">Quelques stats</div>
                         <div className="header-infos-container">
