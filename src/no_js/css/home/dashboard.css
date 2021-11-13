@@ -1,0 +1,150 @@
+
+
+.orange-triangle-down{
+    width: 0; 
+    height: 0; 
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #EF9645;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+#dashboard-container{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    width: 30vw;
+}
+
+#title-dash{
+    font-family: Monserrat;
+    font-size: 50px;
+    color: white;
+
+}
+
+.header-infos-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2vh;
+}
+.selection-container{
+    display: flex;
+    justify-content: space-between;
+    width: 27.6vw;
+}
+
+.dash-card{
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    width: 28vw;
+    height: 30vh;
+    padding: 2vh 2vw;
+    margin-top: 2vh;
+    background-color: white;
+}
+
+.header-dash-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 23.5vw;
+}
+
+.selection-container-text{
+    font-family: Quicksand;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+.header-dash-text{
+    font-family: Quicksand;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}
+
+.large-line-dash{
+    display: flex;
+    align-items: center;
+    margin-top: 1vh;
+    border-radius: 10px;
+    background-color: #DBDBDB;
+    height: 2px;
+    
+}
+
+.small-line-dash{
+    margin-bottom: 1px;
+    background-color:white;
+    border-radius: 15px;
+}
+
+
+.help-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.main-card-dash{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main-text-card{
+    text-overflow:ellipsis;
+    overflow: hidden; 
+    white-space: nowrap;
+    width: 15vw;
+    font-family: Quicksand;
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+.activity-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2vh;
+}
+
+.text-resume{
+    font-family: Quicksand;
+    font-size: 20px;
+    color:orange
+}
+
+.stat-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 27.6vw;
+    margin-top: 4vh;
+}
+
+#title-stat{
+    font-family: Monserrat;
+    font-size: 35px;
+    color: white;
+}
+
+.center-align-infos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stat-score-text{
+    font-family: Monserrat;
+    font-size: 25px;
+    margin-top: 1vh;
+    color: white;
+}

@@ -1,0 +1,97 @@
+#container-header{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+}
+
+header .brand-section{
+    display: flex;
+    justify-content: flex-start;
+    background-image: url("../../img/brand-font.png");
+    background-size: cover;
+    padding: 2vh 2vw;
+    width: 22vw;
+}
+
+header #brand-logo{
+    display: flex;
+    justify-content: center;
+    font-family: ArchivoBlack;
+    font-size: 50px;
+    color: white;
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    width: 45vw;
+}
+
+header .nav-section{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    background-color: white;
+}
+
+header .text-header{
+    font-family: Quicksand;
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+}
+
+header .current-page{
+    font-family: Quicksand;
+    font-size: 25px;
+    text-decoration: none;
+    color: #F9A014;
+}
+
+header .nav-icon{
+    margin-left: 5px;
+    height: 3vh;
+    width: 2vw;
+    color: black;
+}
+
+
+header .user-infos{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 3vw;
+    width: 20vw;
+}
+
+header .infos-section{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+header #flame-icon{
+    height: 4vh;
+    width: 3vw;
+}
+
+header .infos-icon{
+    height: 3vh;
+    width: 2vw;
+}
+
+header .arrow-icon{
+    margin-left: 9px;
+    height: 1vh;
+    width: 1vw;
+}
+
+header #feather-number{
+    margin-left: 10px;
+}

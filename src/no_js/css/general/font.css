@@ -1,0 +1,20 @@
+@font-face {
+    font-family: ArchivoBlack;
+    src: url(font/ArchivoBlack-Regular.ttf);
+}
+
+@font-face {
+    font-family: Bukhari;
+    src: url(font/Bukhari\ Script.ttf);
+}
+
+@font-face {
+    font-family: Quicksand;
+    src: url(../../font/static/Quicksand-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Monserrat;
+    src: url(../../font/Montserrat/Montserrat-Light.ttf);
+}
+

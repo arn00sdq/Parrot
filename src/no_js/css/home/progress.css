@@ -1,0 +1,93 @@
+main #progress-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25vw;
+    height: 60vh;
+    border-radius: 25px;
+    background-color: #F7F3F2;
+    padding: 2vh;
+}
+
+#title-progress{
+    font-family: Monserrat;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.progress-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 23vw;
+    height: 15vh;
+    border-radius: 25px;
+    margin-top: 2vh;
+    padding: 1vh;
+    background-color: white;
+}
+
+
+.progress-title-card{
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.objectif-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 20vw;
+}
+
+.progress-text-card{
+    text-overflow:ellipsis;
+    overflow: hidden; 
+    white-space: nowrap;
+    font-family: Quicksand;
+    font-size: 17px;
+    width: 10vw;
+}
+
+.container-bar-xp{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.small-text-xp{
+    display: flex;
+    justify-content: center;
+    font-family: Quicksand;
+    font-size: 12px;
+}
+
+.large-text-xp{
+    display: flex;
+    justify-content: center;
+    font-family: Quicksand;
+    font-size: 15px;
+}
+
+.small-xp-bar{
+    border-radius: 10px;
+    background-color: #494F56;
+    height: 5px;
+    width: 5vw;
+}
+
+.large-xp-bar{
+    border-radius: 10px;
+    background-color: #494F56;
+    height: 5px;
+    width: 20vw;
+}
+
+
+.chest-reward{
+    width: 2vw;
+    height: 4vh;
+}
