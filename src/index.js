@@ -1,11 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Controller from './controller';
+import App from './components/app';
 import model from './model'
 
-
+console.log(Object.keys(model));
 ReactDOM.render(
-    console.log("ee");
-  //  <Controller configs = {model}/>,
+    <App configs = {model}/>,
     document.getElementById('root')
 );

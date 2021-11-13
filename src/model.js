@@ -1,5 +1,5 @@
-/*const model = {
+const model = {
     ui: {
         sectionId:'home',
     },
-};*/
+};
