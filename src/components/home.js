@@ -169,14 +169,47 @@ function DashCard(props){
     )
 }
 
+function DataStat(props){
+    return (
+        <div className="center-align-infos">
+            <div className="selection-container-text">{props.title}</div>
+            <div className="stat-score-text">{props.score}</div>
+        </div>
+    );
+}
 
+/*read*/
 
+function PaperCard(props){
+    return(
+        <div className="paper-card">
+            <div className="paper-infos-card">
+                <div className="paper-category-text">{props.category}</div>
+                <div className="paper-title-text">{props.title}</div>
+                <div className="paper-date-text">{props.date}</div>
+                <div className="paper-main-text">{props.text}</div>
+                <div className="paper-read-text"><u>Continue reading</u></div>
+            </div>
+            <img className="paper-img" src={props.img}/>
+        </div>
+    );
+}
+
+function ReadCategory(props){
+    return (
+        <div className="read-category">
+            <img src={props.img} className="category-icon"/>
+            <div className="text-read-category">{props.text}</div>
+        </div>
+    )
+}
 
 function Home(props) {
     return (
         <div id="root-css">
             <img className="bush2" src={bush}/>
             <img id="parrot-home" src={adult_parrot}/>
+
             <header id="container-header">
                 <div className="brand-section">
                     <div id="brand-logo">PARROT</div>
@@ -203,13 +236,16 @@ function Home(props) {
                     </div>
                 </div>
             </header>
+
             <main>
+
                 <div id="progress-container">
                     <div id="title-progress">Progression</div>
                     <ChallengeCard titleCard="Defi du jour"/>
                     <DailyCard titleCard="Objectifs quotidiens"/>
                     <NextAwardCard titleCard="Prochaine Récompense"/>
                 </div>
+
                 <div id="dashboard-container">
                     <div id="title-dash">Dashboard</div>
                     <div className="header-infos-container">
@@ -229,18 +265,9 @@ function Home(props) {
                         <div id="title-stat">Quelques stats</div>
                         <div className="header-infos-container">
                             <div className="selection-container">
-                                <div className="center-align-infos">
-                                    <div className="selection-container-text">Lecons lues</div>
-                                    <div className="stat-score-text">10/120</div>
-                                </div>
-                                <div className="center-align-infos">
-                                    <div className="selection-container-text">Exercices effectués</div>
-                                    <div className="stat-score-text">5/42</div>
-                                </div>
-                                <div className="center-align-infos">
-                                    <div className="selection-container-text">Articles lus</div>
-                                    <div className="stat-score-text">20</div>
-                                </div>
+                                <DataStat title="Lecons lues" score="10/120"/>
+                                <DataStat title="Exercices effectués" score="5/42"/>
+                                <DataStat title="Articles lus" score="20"/>
                             </div>                                                           
                         </div>
                          
@@ -249,59 +276,23 @@ function Home(props) {
                 
                 <div id="read-container">
                     <div id="title-progress">Lire Pour s'entrainer</div>
-                    <div className="paper-card">
-                        <div className="paper-infos-card">
-                            <div className="paper-category-text">Sport</div>
-                            <div className="paper-title-text">Saut de 50M</div>
-                            <div className="paper-date-text">DEC 13</div>
-                            <div className="paper-main-text">Balkan a travaillé pour polygone studio pour
-                                                         concevoir la structure de point aux style visuel
-                                                         de la ville.
-                            </div>
-                            <div className="paper-read-text"><u>Continue reading</u></div>
-                        </div>
-                        <img className="paper-img" src={basket_jump }/>
-                    </div>
-                    <div className="paper-card">
-                        <div className="paper-infos-card">
-                            <div className="paper-category-text">Voyage</div>
-                            <div className="paper-title-text">Mont Everest</div>
-                            <div className="paper-date-text">DEC 13</div>
-                            <div className="paper-main-text">Balkan a travaillé pour polygone studio pour
-                                                         concevoir la structure de point aux style visuel
-                                                         de la ville.
-                            </div>
-                            <div className="paper-read-text"><u>Continue reading</u></div>
-                        </div>
-                        <img className="paper-img" src={everest}/>
-                    </div>
+                    <PaperCard category="Sport" title="Saut de 50M" date="DEC 13" img={basket_jump} text="Balkan a travaillé pour polygone studio pour
+                                                                                        concevoir la structure de point aux style visuel
+                                                                                        de la ville."
+                    />
+                    <PaperCard category="Voyage" title="Mont Everest" date="DEC 13" img={everest} text="Balkan a travaillé pour polygone studio pour
+                                                                                        concevoir la structure de point aux style visuel
+                                                                                        de la ville."
+                    />
                     <div id="category-container">
                         <div id="title-category">Categories</div>
                         <div className="class-category">
-                            <div className="read-category">
-                                <img src={science} className="category-icon"/>
-                                <div className="text-read-category">Science</div>
-                            </div>
-                            <div className="read-category">
-                                <img src={history} className="category-icon"/>
-                                <div className="text-read-category">Histoire</div>
-                            </div>
-                            <div className="read-category">
-                                <img src={politics} className="category-icon"/>
-                                <div className="text-read-category">Politique</div>
-                            </div>
-                            <div className="read-category">
-                                <img src={sport}className="category-icon"/>
-                                <div className="text-read-category">Sport</div>
-                            </div>
-                            <div className="read-category">
-                                <img src={terrorisme} className="category-icon"/>
-                                <div className="text-read-category">Terrorisme</div>
-                            </div>
-                            <div className="read-category">
-                                <img src={gaming} className="category-icon"/>
-                                <div className="text-read-category">Gaming</div>
-                            </div>
+                            <ReadCategory text="Science" img={science} />
+                            <ReadCategory text="Histoire" img={history} />
+                            <ReadCategory text="Politique" img={politics} />
+                            <ReadCategory text="Sport" img={sport} />
+                            <ReadCategory text="Terrorisme" img={terrorisme} />
+                            <ReadCategory text="Gaming" img={gaming} />
                         </div>
                         <div id="text-infos-category">Plus de catégorie...</div>
                         <div className="black-triangle-down"></div>
