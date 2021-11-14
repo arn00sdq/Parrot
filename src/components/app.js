@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Home from './home/home'
 import SkillPage from './skillPage/skillPage'
+import ExercicePicker from './exercicePicker/exercicePicker'
 
 
 const App = (props) => {

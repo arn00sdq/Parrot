@@ -1,11 +1,11 @@
 import {
-    clock_icon,right_arrow
+    clock_icon,right_arrow,treasure
 
 } from '../../../assets/img/index'
 
 function ExerciceContainer (props){
     return(
-        <div className="exercice-container">
+        <div className={props.className}>
             <img className="img-exercice" src={props.imgExercice}/>
             <div className="time-container">
                 <img className="clock" src={clock_icon}/>
@@ -17,7 +17,11 @@ function ExerciceContainer (props){
                     <div className="validation">{props.state}</div>
                 </div>
                 <div className="text-exercice">{props.content}</div>
-                <img className="link-exercice" src={right_arrow}/>
+                <div className="footer-exercice">
+                    <img className="treasure" src={treasure}/>
+                    <img className="link-exercice" src={right_arrow}/>
+                </div>
+                
             </div>
         </div>
         
