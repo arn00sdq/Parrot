@@ -1,4 +1,4 @@
-import ready_icon from '../../../assets/img/ready-icon.png';
+import {ready_icon} from '../../../assets/img/index';
 
 function ChallengeContainer(props){
     return (

@@ -1,6 +1,5 @@
 import DailyContainer from './DailyContainer';
-import treasure from '../../../assets/img/treasure.png';
-import feather_icon from '../../../assets/img/feather-icon.jpg';
+import {feather_icon, treasure}from '../../../assets/img/index';
 
 function DailyCard(props){
     return(

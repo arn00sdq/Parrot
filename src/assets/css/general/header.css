@@ -9,7 +9,7 @@
 header .brand-section{
     display: flex;
     justify-content: flex-start;
-    background-image: url("../../img/brand-font.png");
+    background-image: url("../../img/other/brand-font.png");
     background-size: cover;
     padding: 2vh 2vw;
     width: 22vw;

@@ -17,34 +17,18 @@ import '../../assets/css/home/global/progress-bar.css'
 import '../../assets/css/general/global.css'
 import '../../assets/css/general/header.css'
 
-import bush from '../../assets/img/bush.png';
-import adult_parrot from '../../assets/img/logo_parrot_adulte.png';
-import orange_house from '../../assets/img/orange-house.png';
-import pencil from '../../assets/img/pencil.png';
-import tool_icon from '../../assets/img/tool-icon.png';
-import book_icon from '../../assets/img/book-icon.png';
-import flag_britain from '../../assets/img/flag_britain.png';
-import down_arrow from '../../assets/img/down-arrow.png';
-import feather_icon from '../../assets/img/feather-icon.jpg';
-import flame_icon from '../../assets/img/flame-icon.jpg';
-import profil_icon from '../../assets/img/profil-icon.png';
-import treasure from '../../assets/img/treasure.png';
+import {
+    bush,logo_parrot_adulte,orange_house,pencil,tool_icon,book_icon,
+    flag_britain,flame_icon,down_arrow,feather_icon,profil_icon,
+    basket_jump,everest,science,history,politics,sport,terrorisme,gaming
 
-import basket_jump from '../../assets/img/basket-jump.jpg';
-import everest from '../../assets/img/everest.jpg';
-
-import science from '../../assets/img/mini_logo/science.jpeg';
-import history from '../../assets/img/mini_logo/history.jpg';
-import politics from '../../assets/img/mini_logo/politics.jpg';
-import sport from '../../assets/img/mini_logo/sport.jpg';
-import terrorisme from '../../assets/img/mini_logo/terrorisme.jpeg';
-import gaming from '../../assets/img/mini_logo/gaming.jpg';
+} from '../../assets/img/index'
 
 function Home(props) {
     return (
         <div id="root-css">
             <img className="bush2" src={bush}/>
-            <img id="parrot-home" src={adult_parrot}/>
+            <img id="parrot-home" src={logo_parrot_adulte}/>
 
             <header id="container-header">
                 <div className="brand-section">

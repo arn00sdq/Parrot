@@ -1,6 +1,7 @@
 import ChallengeContainer from './ChallengeContainer';
 import Reward from '../../reward/Reward';
-import treasure from '../../../assets/img/treasure.png';
+
+import {treasure} from '../../../assets/img/index';
 
 function ChallengeCard({titleCard}){
     return(

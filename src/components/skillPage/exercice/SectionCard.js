@@ -1,9 +1,7 @@
 import ExerciceContainer from './ExerciceContainer';
 import HeaderLevel from './HeaderLevel';
 
-import pres_perfect from '../../../assets/img/skillPage/pres-perfect.jpg';
-import home_ex from '../../../assets/img/skillPage/home-ex.jpg';
-import sign_where from '../../../assets/img/skillPage/sign-where.jpg';
+import { sign_where, home_ex,pres_perfect} from '../../../assets/img/index';
 
 function SectionCard(props){
     return (

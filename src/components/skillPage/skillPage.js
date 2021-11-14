@@ -6,29 +6,18 @@ import '../../assets/css/main/main.css';
 import '../../assets/css/general/header.css';
 import '../../assets/css/skillPage/card.css';
 
+import {
+    bush,logo_parrot_adulte,orange_house,pencil,tool_icon,book_icon,
+    flag_britain,flame_icon,down_arrow,feather_icon,profil_icon,
+    pres_perfect,medium_parrot,small_parrot
 
-import bush from '../../assets/img/bush.png';
-import adult_parrot from '../../assets/img/logo_parrot_adulte.png';
-import orange_house from '../../assets/img/orange-house.png';
-import pencil from '../../assets/img/pencil.png';
-import tool_icon from '../../assets/img/tool-icon.png';
-import book_icon from '../../assets/img/book-icon.png';
-import flag_britain from '../../assets/img/flag_britain.png';
-import down_arrow from '../../assets/img/down-arrow.png';
-import feather_icon from '../../assets/img/feather-icon.jpg';
-import flame_icon from '../../assets/img/flame-icon.jpg';
-import profil_icon from '../../assets/img/profil-icon.png';
-
-import pres_perfect from '../../assets/img/skillPage/pres-perfect.jpg';
-import medium_parrot from '../../assets/img/medium_parrot.png';
-import small_parrot from '../../assets/img/small_parrot.png';
-
+} from '../../assets/img/index'
 
 function SkillPage(props) {
     return (
         <div id="root-css">
             <img className="bush2" src={bush}/>
-            <img id="large-parrot" src={adult_parrot}/>
+            <img id="large-parrot" src={logo_parrot_adulte}/>
             <img id="medium-parrot" src={medium_parrot}/>
             <img id="baby-parrot" src={small_parrot}/>
             <header id="container-header">

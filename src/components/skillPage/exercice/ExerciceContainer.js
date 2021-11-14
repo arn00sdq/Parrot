@@ -1,5 +1,7 @@
-import clock_icon from '../../../assets/img/skillPage/clock-icon.jpg'
-import right_arrow from '../../../assets/img/right-orange-arrow.png'
+import {
+    clock_icon,right_arrow
+
+} from '../../../assets/img/index'
 
 function ExerciceContainer (props){
     return(

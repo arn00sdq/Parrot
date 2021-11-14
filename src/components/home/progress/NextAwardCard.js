@@ -1,6 +1,5 @@
 import Reward from '../../reward/Reward';
-import treasure from '../../../assets/img/treasure.png';
-import feather_icon from '../../../assets/img/feather-icon.jpg';
+import {feather_icon,treasure } from '../../../assets/img/index';
 
 function NextAwardCard(props){
     return (
