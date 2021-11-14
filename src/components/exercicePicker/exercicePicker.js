@@ -2,7 +2,8 @@ import React from 'react';
 
 import NavSection from '../header/NavSection';
 import InfoSection from '../header/InfoSection';
-
+import Checkbox from '../tool/Checkbox'
+import Slider from '../tool/Slider'
 import ExerciceContainer from '../skillPage/exercice/ExerciceContainer'
 
 import '../../assets/css/main/main.css';
@@ -17,17 +18,6 @@ import {
 
 } from '../../assets/img/index'
 
-
-
-const Checkbox = ({ label, value, onChange }) => {
-    return (
-      <label className="filter-text-label">
-        <input type="checkbox" checked={value} onChange={onChange} />
-        {label}
-      </label>
-    );
-  };
-
 function ExercicePicker(props) {
     const [checkedOne, setCheckedOne] = React.useState(false);
     const [checkedTwo, setCheckedTwo] = React.useState(false);
@@ -40,11 +30,7 @@ function ExercicePicker(props) {
         setCheckedTwo(!checkedTwo);
     };
 
-    function Slider(props){
-        return(
-            <input className={props.class} type="range" orient="vertical" />
-        );
-    }
+
     
     function ThemeContainer(props){
         return(
