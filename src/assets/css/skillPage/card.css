@@ -1,0 +1,147 @@
+#baby-parrot{
+    position: absolute;
+    top: 0vh;
+    left: 1vw;
+    height: 40vh;
+    width: 40vw;
+}
+
+#medium-parrot{
+    position: absolute;
+    top: 0vh;
+    left: 32vw;
+    height: 40vh;
+    width: 40vw;
+}
+
+#large-parrot{
+    position: absolute;
+    top: 11vh;
+    right: 15vw;
+    height: 18vh;
+    width: 8vw;
+}
+
+.section-level-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 75vh;
+    padding: 1vh 1vw;
+}
+
+.header-level{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 24vw;
+    padding: 0vh 1vw;
+}
+
+.title-level{
+    font-family: Monserrat;
+    font-size: 27px;
+    font-weight: bold;
+    color: white;
+}
+
+.intero-icon{
+    width: 1vw;
+    height: 2vh;
+}
+
+.exercice-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F7F3F2;
+    height: 80vh;
+    width: 28vw;
+    padding: 2vh 1vw;
+    border-radius: 25px;
+}
+
+.exercice-container{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    height: 12vh;
+    width: 25vw;
+    border-radius: 15px;
+}
+
+.img-exercice{
+    width: 9vw;
+}
+
+.time-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+}
+
+.clock{
+    margin-top: 1vh;
+    width: 1vw;
+    height: 2vh;
+}
+
+.time-shift{
+    font-family: Monserrat;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.content-exercice-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.5vh 0.5vw;
+}
+
+.header-exercice-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-exercice{
+    font-family: Monserrat;
+    font-size: 20px;
+}
+
+.validation{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 15px;
+    color: green;
+}
+
+.text-exercice{
+    font-family: Monserrat;
+    font-size: 16px;
+}
+
+.link-exercice{
+    height: 2vh;
+    width: 2vw;
+    align-self: flex-end;
+}
+
+.button-train-skill{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-family: ArchivoBlack;
+    font-size: 25px;
+    background-color: #FF914D;
+    color: #FFFFF7;
+    font-weight: bold;
+    text-decoration: none;
+}
