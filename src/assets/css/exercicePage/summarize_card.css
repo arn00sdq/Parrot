@@ -1,0 +1,64 @@
+.page-summarize-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 75vh;
+    width: 20vw;
+    padding: 1vh 1vw;
+    background-color: #F7F3F2;
+    border-radius: 25px;
+}
+.page-summarize-container{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    padding: 2vh 1vw;
+    border-radius: 15px;
+}
+.title-summarize-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.title-summarize{
+    font-family: Monserrat;
+    font-size: 30px;
+}
+.hr-horizontale{
+    border: solid;
+    border-width: 1px;
+    width: 100%;
+    margin-top: 2vh;
+}
+.section-summarize-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.title-section-summarize{
+    font-family: Monserrat;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 1vh;
+}
+.infos-section-summarize{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.row-section-summarize{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2vh;
+}
+.title-row-summarize{
+    font-family: Monserrat;
+    font-size: 18px;
+}
+
+.reward-section-summarize{
+
+}

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Home from './home/home'
 import SkillPage from './skillPage/skillPage'
 import ExercicePicker from './exercicePicker/exercicePicker'
+import ExercicePage from './exercicePage/exercicePage'
 
 
 const App = (props) => {
@@ -13,7 +14,7 @@ const App = (props) => {
     console.log(Object.values(props.configs));
     const representation = model.ui.sectionId;
     if( representation == 'home'){ // switch a venir
-        return <SkillPage/>;
+        return <ExercicePage/>;
     }
 }
 

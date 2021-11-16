@@ -36,10 +36,11 @@ import pres_perfect from './photos/pres-perfect.jpg';
 import sign_where from './photos/sign-where.jpg';
 import feather from './reward/feather.png';
 import treasure from './reward/treasure.png';
+import cross from './icon/cross.png';
 
 export {
     down_arrow, orange_down_arrow,right_arrow,book_icon,feather_icon,flame_icon,house_icon,intero_sign,orange_house,
     pencil,profil_icon,ready_icon,tool_icon,gaming,history,politics,science,sport,terrorisme,bush,liane,logo,large_parrot,
     medium_parrot,small_parrot,logo_parrot_adulte,basket_jump,everest,flag_britain,health,home_ex,interview,plus_perfect,pres_perfect,
-    sign_where,feather,treasure,clock_icon
+    sign_where,feather,treasure,clock_icon,cross
   };
