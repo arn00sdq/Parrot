@@ -23,15 +23,6 @@
 }
 
 .section-level-card{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #F7F3F2;
-    padding: 3vh 2vw;
-    border-radius: 25px;
-    justify-content: space-between;
-    height: 75vh;
-    padding: 1vh 1vw;
 }
 
 .header-level{
@@ -55,95 +46,10 @@
     height: 2vh;
 }
 
-.exercice-card{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #F7F3F2;
-    height: 80vh;
-    width: 28vw;
-    padding: 2vh 1vw;
-    border-radius: 25px;
-}
-
-.exercice-container{
-    display: flex;
-    flex-direction: row;
-    background-color: white;
-    height: 12vh;
-    width: 25vw;
-    border-radius: 15px;
-}
-
-.img-exercice{
-    width: 25%;
-    height: 100%;
-}
-
-.time-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 5px;
-}
-
-.clock{
-    margin-top: 1vh;
-    width: 70%;
-    height: 15%;
-}
-
-.time-shift{
-    font-family: Monserrat;
-    font-size: 15px;
-    margin-top: 5px;
-}
-
-.content-exercice-container{
-    display: flex;
-    width: 70%;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 0.5vh 0.5vw;
-}
-
-.header-exercice-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    height: 20%;
-}
-
-.title-exercice-skill{
-    font-family: Monserrat;
-    font-size:20px;
-    font-weight: bold;
-}
-
 .validation{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size:1vw;
     color: green;
-}
-
-
-.text-exercice{
-    height: 50%;
-    width: 100%;
-    text-overflow: ellipsis;
-    overflow: hidden; 
-    font-family: Monserrat;
-    font-size: 1vw;
-}
-
-.footer-exercice{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    height: 20%;
-    width: 100%;
 }
 
 .link-exercice{

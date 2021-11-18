@@ -1,7 +1,11 @@
+import '../../assets/css/exerciceItem/exerciceItem.css'
+
+import Reward from '../reward/Reward';
+
 import {
     clock_icon,right_arrow,treasure
 
-} from '../../../assets/img/index'
+} from '../../assets/img/index'
 
 function ExerciceContainer (props){
     return(
@@ -18,8 +22,8 @@ function ExerciceContainer (props){
                 </div>
                 <div className="text-exercice">{props.content}</div>
                 <div className="footer-exercice">
-                    <img className="treasure" src={treasure}/>
-                    <img className="link-exercice" src={right_arrow}/>
+                    <Reward imgReward="reward" classReward={treasure}/>
+                    <img className="orange-arrow" src={right_arrow}/>
                 </div>
                 
             </div>

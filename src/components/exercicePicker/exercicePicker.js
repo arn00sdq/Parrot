@@ -2,7 +2,7 @@ import React from 'react';
 
 import Checkbox from '../tool/Checkbox'
 import Slider from '../tool/Slider'
-import ExerciceContainer from '../skillPage/exercice/ExerciceContainer'
+import ExerciceContainer from '../exerciceItem/ExerciceContainer'
 import HeaderComponent from '../header/Header';
 
 import '../../assets/css/main/main.css';

@@ -1,7 +1,10 @@
+import Reward from '../../reward/Reward';
+import {feather_icon,treasure } from '../../../assets/img/index';
+
 function DailyContainer(props){
     return (
         <div className="objectif-container">
-            <img className="chest-reward" src={props.imgReward}/>
+            <Reward imgReward="reward" classReward={treasure}/>
             <div className="progress-text-card">{props.dailyText}</div>
             <div className="container-bar-xp">
                 <div className="small-text-xp">5/10 xp</div>

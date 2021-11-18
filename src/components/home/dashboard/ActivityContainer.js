@@ -10,7 +10,7 @@ function ActivityContainer(props){
             </div>
             <div className="main-text-card">Les temps du passé. Ex 4</div>
             <div className="text-resume">Reprendre</div>
-            <img className="chest-reward" src={right_arrow}/>
+            <img className="orange-arrow" src={right_arrow}/>
         </div>
     );
 }

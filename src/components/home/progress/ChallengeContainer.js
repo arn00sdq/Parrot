@@ -9,7 +9,7 @@ function ChallengeContainer(props){
                 </div>
             </div>
             <div className="progress-text-card">{props.ExText}</div>
-                <img className="chest-reward" src={ready_icon}/>
+                <img className="yellow-button" src={ready_icon}/>
         </div>
     );
 }

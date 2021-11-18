@@ -9,9 +9,9 @@ function ChallengeCard({titleCard}){
             <div className="progress-title-card">{titleCard}</div>
                 <ChallengeContainer ExText="Les temps du passé. Ex 6"/>
             <div className="daily-award">
-                <Reward imgReward='chest-reward' classReward={treasure}/>
-                <Reward imgReward="chest-reward" classReward={treasure}/>
-                <Reward imgReward="chest-reward" classReward={treasure}/>
+                <Reward imgReward="reward" classReward={treasure}/>
+                <Reward imgReward="reward" classReward={treasure}/>
+                <Reward imgReward="reward" classReward={treasure}/>
             </div>
         </div>
     );

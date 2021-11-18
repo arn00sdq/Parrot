@@ -12,10 +12,10 @@ function NextAwardCard(props){
                 </div>
             </div> 
             <div className="daily-award">
-            <Reward imgReward='chest-reward' classReward={feather_icon}/>
-            <Reward imgReward='chest-reward' classReward={feather_icon}/>
-            <Reward imgReward='chest-reward' classReward={feather_icon}/>
-            <Reward imgReward='chest-reward' classReward={treasure}/>
+            <Reward imgReward='reward' classReward={feather_icon}/>
+            <Reward imgReward='reward' classReward={feather_icon}/>
+            <Reward imgReward='reward' classReward={feather_icon}/>
+            <Reward imgReward='reward' classReward={treasure}/>
             </div>
         </div>
     );
