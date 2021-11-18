@@ -2,10 +2,11 @@ import ExerciceContainer from '../../exerciceItem/ExerciceContainer';
 import HeaderLevel from './HeaderLevel';
 
 import { sign_where, home_ex,pres_perfect} from '../../../assets/img/index';
+import '../../../assets/css/skillPage/card.css';
 
 function SectionCard(props){
     return (
-        <div className ="section-level-card card">
+        <div className ="card section-level-card ">
             <HeaderLevel titleCard={props.titleCard} />    
             <div className="exercice-card">
                 <ExerciceContainer className="exercice-container" imgExercice={pres_perfect} time="10min" titleEx={props.titleEx}

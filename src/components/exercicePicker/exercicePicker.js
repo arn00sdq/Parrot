@@ -8,6 +8,7 @@ import HeaderComponent from '../header/Header';
 import '../../assets/css/main/main.css';
 import '../../assets/css/exercicePicker/filterCard.css';
 import '../../assets/css/exercicePicker/exerciceCard.css';
+import '../../assets/css/flag/flag.css'
 
 import {bush,pres_perfect} from '../../assets/img/index'
 
@@ -66,7 +67,7 @@ function ExercicePicker(props) {
                 
                 <div class="exercice-picker-card card">
                     <div class="header-picker">
-                        <div class="key-word">Present perfect</div>
+                        <div class="flag-point-medium">Present perfect</div>
                         <div class="n-exercices">8 exercices</div>
                     </div>
                     <ExerciceContainer className="exercice-filter-container" imgExercice={pres_perfect} time="10min" titleEx="Present Perfect"

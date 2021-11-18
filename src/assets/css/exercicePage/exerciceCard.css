@@ -6,7 +6,8 @@
     display: flex;
     flex-direction: column;
     background-color: white;
-    height: 100%;
+    justify-content: space-between;
+    height: 70vh;
     width: 100%;
     padding: 3vh 2vw;
     border-radius: 15px;
@@ -122,4 +123,12 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+
+.hr-horizontale-exercice{
+    border: solid;
+    border-width: thin;
+    border-color: #B2B2B2;
+    margin-left: -2vw;
+    width : 56vw
 }

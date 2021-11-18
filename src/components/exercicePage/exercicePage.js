@@ -1,12 +1,15 @@
 import React from 'react';
 
 import HeaderComponent from '../header/Header';
+import Reward from '../reward/Reward'
 
 import '../../assets/css/main/main.css';
 import '../../assets/css/exercicePage/summarize_card.css';
 import '../../assets/css/exercicePage/exerciceCard.css';
+import '../../assets/css/general/tool/button.css';
+import '../../assets/css/flag/flag.css'
 
-import {bush,everest,basket_jump,cross} from '../../assets/img/index'
+import {bush,everest,basket_jump,cross,treasure, feather_icon} from '../../assets/img/index'
 
 function PictExSection(props){
 return (
@@ -49,19 +52,25 @@ function ExercicePage(props){
                                 <div className="infos-section-summarize">
                                     <div className="row-section-summarize">
                                         <div className="title-row-summarize">Niveau :</div>
+                                        <div class="row-content-summarize">
+                                            <div className="level-flag">Débutant (A1 - A2)</div>
+                                        </div>
                                     </div>
                                     <div className="row-section-summarize">
                                         <div className="title-row-summarize">Balise :</div>
+                                        <div class="row-content-summarize">
+                                            <div className="flag-point-small">Present-perfect</div>
+                                            <div className="flag-point-small">Instruments</div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div className="hr-horizontale"></div>
                             </div>
                             <div className="section-summarize-container">
-                                <div className="title-section-summarize">Récompense</div>
+                                <div className="title-section-summarize">Récompense :</div>
                                 <div className="reward-section-summarize">
-                                    <div className="row-section-summarize">
-                                        
-                                    </div>
+                                    <Reward imgReward="reward" classReward={treasure}/>
+                                    <Reward imgReward="reward" classReward={feather_icon}/>
                                 </div>
                                 <div className="hr-horizontale"></div>
                             </div>
@@ -104,12 +113,12 @@ function ExercicePage(props){
                                     <ButtonSyno value="chien"/>
                                     <ButtonSyno value="chien"/>
                                 </div>
-                                <div className="hr-horizontale"></div>
                             </div>
+                            <div className="hr-horizontale-exercice"></div>
                             <div class="footer-exercice-container">
-                            <a href="#" className="button">Previous</a>
-                            <a href="#" className="button">Continuer</a>
-                        </div>
+                                <a href="#" className="button button-previous">Previous</a>
+                                <a href="#" className="button button-continue">Continuer</a>
+                            </div>
                         </div>
                         
                     </div>
