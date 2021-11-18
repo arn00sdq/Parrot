@@ -1,0 +1,10 @@
+.button{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-family: Quicksand;
+    font-size: 25px;
+    text-decoration: none;
+}

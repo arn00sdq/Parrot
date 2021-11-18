@@ -2,9 +2,6 @@ import React from 'react';
 
 import HeaderComponent from '../header/Header';
 
-import '../../assets/css/general/global.css'
-
-import '../../assets/css/general/font.css';
 import '../../assets/css/main/main.css';
 import '../../assets/css/exercicePage/summarize_card.css';
 import '../../assets/css/exercicePage/exerciceCard.css';
@@ -40,7 +37,7 @@ function ExercicePage(props){
             <HeaderComponent />
 
             <main>
-                    <div className="page-summarize-card">
+                    <div className="page-summarize-card card">
                         
                         <div className="page-summarize-container">
                             <div className="title-summarize-container">
@@ -70,7 +67,7 @@ function ExercicePage(props){
                             </div>
                         </div>
                     </div>
-                    <div className="page-exercice-card">
+                    <div className="page-exercice-card card">
                         <div className="page-exercice-container">
                             <div className="header-exercice">
                                 <div className="title-exercice">Musical Instrument</div>
@@ -109,7 +106,12 @@ function ExercicePage(props){
                                 </div>
                                 <div className="hr-horizontale"></div>
                             </div>
+                            <div class="footer-exercice-container">
+                            <a href="#" className="button">Previous</a>
+                            <a href="#" className="button">Continuer</a>
                         </div>
+                        </div>
+                        
                     </div>
             </main>
         </div>

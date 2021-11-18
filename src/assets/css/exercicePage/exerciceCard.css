@@ -1,15 +1,7 @@
 .page-exercice-card{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    height: 75vh;
     width: 60vw;
-    padding: 3vh 2vw;
-    background-color: #F7F3F2;
-    border-radius: 25px;
-    
 }
+
 .page-exercice-container{
     display: flex;
     flex-direction: column;
@@ -124,4 +116,10 @@
     font-size: 15px;
     font-weight: bold;
     margin-left: 2vw;
+}
+
+.footer-exercice-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }

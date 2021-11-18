@@ -13,7 +13,6 @@ import '../../assets/css/home/paper.css'
 import '../../assets/css/home/progress.css'
 import '../../assets/css/home/global/layout.css'
 import '../../assets/css/home/global/progress-bar.css'
-import '../../assets/css/general/global.css'
 
 import {
     bush,logo_parrot_adulte,basket_jump,everest,
@@ -30,7 +29,7 @@ function Home(props) {
 
             <main>
 
-                <div id="progress-container">
+                <div id="progress-card" className="card">
                     <div id="title-progress">Progression</div>
                     <ChallengeCard titleCard="Defi du jour"/>
                     <DailyCard titleCard="Objectifs quotidiens"/>
@@ -65,7 +64,7 @@ function Home(props) {
                     </div>
                 </div>
                 
-                <div id="read-container">
+                <div id="read-card" className="card">
                     <div id="title-progress">Lire Pour s'entrainer</div>
                     <PaperCard category="Sport" title="Saut de 50M" date="DEC 13" img={basket_jump} text="Balkan a travaillé pour polygone studio pour
                                                                                         concevoir la structure de point aux style visuel

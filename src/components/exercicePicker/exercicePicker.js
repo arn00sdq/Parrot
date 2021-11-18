@@ -5,7 +5,6 @@ import Slider from '../tool/Slider'
 import ExerciceContainer from '../skillPage/exercice/ExerciceContainer'
 import HeaderComponent from '../header/Header';
 
-import '../../assets/css/general/global.css'
 import '../../assets/css/main/main.css';
 import '../../assets/css/exercicePicker/filterCard.css';
 import '../../assets/css/exercicePicker/exerciceCard.css';
@@ -49,7 +48,7 @@ function ExercicePicker(props) {
 
             <main>
 
-                <div className="filter-card">
+                <div className="card">
                     <div className="filter-container">
                         <div className="title-filter">Recherche</div>
                         <ThemeContainer title="Conjugaisons"/>
@@ -65,7 +64,7 @@ function ExercicePicker(props) {
                     </div>
                 </div>
                 
-                <div class="exercice-picker-card">
+                <div class="exercice-picker-card card">
                     <div class="header-picker">
                         <div class="key-word">Present perfect</div>
                         <div class="n-exercices">8 exercices</div>

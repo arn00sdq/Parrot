@@ -1,13 +1,5 @@
 .page-summarize-card{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    height: 75vh;
     width: 20vw;
-    padding: 1vh 1vw;
-    background-color: #F7F3F2;
-    border-radius: 25px;
 }
 .page-summarize-container{
     display: flex;

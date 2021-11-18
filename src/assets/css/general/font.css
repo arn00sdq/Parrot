@@ -1,20 +1,20 @@
 @font-face {
     font-family: 'ArchivoBlack';
-    src: url(./fonts/ArchivoBlack-Regular.ttf);
+    src: url(../../fonts/ArchivoBlack-Regular.ttf);
 }
 
 @font-face {
     font-family: 'Bukhari';
-    src: url(./fonts/Bukhari\ Script.ttf);
+    src: url(../../fonts/Bukhari\ Script.ttf);
 }
 
 @font-face {
     font-family: 'Quicksand';
-    src: url(./fonts/static/Quicksand-SemiBold.ttf);
+    src: url(../../fonts/static/Quicksand-SemiBold.ttf);
 }
 
 @font-face {
     font-family: 'Monserrat';
-    src: url(./fonts/Montserrat/Montserrat-Light.ttf);
+    src: url(../../fonts/Montserrat/Montserrat-Light.ttf);
 }
 

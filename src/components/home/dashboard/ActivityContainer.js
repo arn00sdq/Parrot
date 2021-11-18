@@ -1,3 +1,5 @@
+import {right_arrow} from '../../../assets/img/index';
+
 function ActivityContainer(props){
     return (
         <div className="activity-container">
@@ -8,7 +10,7 @@ function ActivityContainer(props){
             </div>
             <div className="main-text-card">Les temps du passé. Ex 4</div>
             <div className="text-resume">Reprendre</div>
-            <img className="chest-reward" src="../../../assets/right-orange-arrow.png"/>
+            <img className="chest-reward" src={right_arrow}/>
         </div>
     );
 }

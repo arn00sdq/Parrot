@@ -13,7 +13,7 @@ function ExerciceContainer (props){
             </div>
             <div className="content-exercice-container">
                 <div className="header-exercice-container">
-                    <div className="title-exercice">{props.titleEx}</div>
+                    <div className="title-exercice-skill">{props.titleEx}</div>
                     <div className="validation">{props.state}</div>
                 </div>
                 <div className="text-exercice">{props.content}</div>
