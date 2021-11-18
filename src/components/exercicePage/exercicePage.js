@@ -2,6 +2,9 @@ import React from 'react';
 
 import HeaderComponent from '../header/Header';
 import Reward from '../reward/Reward'
+import RowContentSummarize from './sumariseSection/rowContent'
+import ButtonSyno from './exerciceSection/btnSyno'
+import PictExSection from './exerciceSection/picture'
 
 import '../../assets/css/main/main.css';
 import '../../assets/css/exercicePage/summarize_card.css';
@@ -11,25 +14,8 @@ import '../../assets/css/flag/flag.css'
 
 import {bush,everest,basket_jump,cross,treasure, feather_icon} from '../../assets/img/index'
 
-function PictExSection(props){
-return (
-    <div className="picture-exercice-section">
-        <img src={props.img} class="picture-exercice"/>
-        <select class="word-picker">
-            <option className="opt-word">{props.opt}</option>
-            <option className="opt-word">{props.opt}</option>
-        </select>
-    </div>
-);
-}
 
-function ButtonSyno(props){
-    return (
-        <div class="syno-button-container">
-            <div class="text-syno">{props.value}</div>
-        </div>
-    );
-}
+const flagProps = {flag1: 'Present-perfect',flag2: 'Instruments'};
 
 function ExercicePage(props){
 
@@ -48,22 +34,11 @@ function ExercicePage(props){
                             </div>
                             <div className="hr-horizontale"></div>
                             <div className="section-summarize-container">
-                                <div className="title-section-summarize">Repère</div>
+                                <div className="title-section-summarize">Repère :</div>
                                 <div className="infos-section-summarize">
-                                    <div className="row-section-summarize">
-                                        <div className="title-row-summarize">Niveau :</div>
-                                        <div class="row-content-summarize">
-                                            <div className="level-flag">Débutant (A1 - A2)</div>
-                                        </div>
-                                    </div>
-                                    <div className="row-section-summarize">
-                                        <div className="title-row-summarize">Balise :</div>
-                                        <div class="row-content-summarize">
-                                            <div className="flag-point-small">Present-perfect</div>
-                                            <div className="flag-point-small">Instruments</div>
-                                        </div>
-                                    </div>
-                                </div>
+                                    <RowContentSummarize title="Niveau" level="Débutant (A1 - A2)"/>
+                                    <RowContentSummarize title="Balise" flag={flagProps}/>
+                                </div>   
                                 <div className="hr-horizontale"></div>
                             </div>
                             <div className="section-summarize-container">

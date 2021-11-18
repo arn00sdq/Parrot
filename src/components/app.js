@@ -17,7 +17,7 @@ const App = (props) => {
     console.log(Object.values(props.configs));
     const representation = model.ui.sectionId;
     if( representation == 'home'){ // switch a venir
-        return <ExercicePage/>;
+        return <Home/>;
     }
 }
 
