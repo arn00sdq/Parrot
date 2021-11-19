@@ -3,8 +3,7 @@ import React from 'react';
 import HeaderComponent from '../header/Header';
 import Reward from '../reward/Reward'
 import RowContentSummarize from './sumariseSection/rowContent'
-import ButtonSyno from './exerciceSection/btnSyno'
-import PictExSection from './exerciceSection/picture'
+import Content_exercice from './exerciceSection/content_exercice'
 
 import '../../assets/css/main/main.css';
 import '../../assets/css/exercicePage/summarize_card.css';
@@ -16,6 +15,15 @@ import {bush,everest,basket_jump,cross,treasure, feather_icon} from '../../asset
 
 
 const flagProps = {flag1: 'Present-perfect',flag2: 'Instruments'};
+const pictProps = {            
+    img: [basket_jump,everest,everest],                                  
+    opt: ["chien","voile","chat"],
+    type: "picture",                          
+};
+const btnSyno = {
+    value: ["chien","fg","voile","chat","chien","voile","chat","chat"],
+    type: "btn",
+}
 
 function ExercicePage(props){
 
@@ -62,33 +70,10 @@ function ExercicePage(props){
                                     </div>
                                 </div>
                             </div>
-                            <div class="content-exercice-section">
-                                <div className="instruction-exercice">Selectionne le meilleur mot correspondant
-                                                                      pour chaque image
-                                </div>
-                                <div class="picture-exercice-container">
-                                    <PictExSection img={basket_jump} opt="chien"/>
-                                    <PictExSection img={everest} opt="chien"/>
-                                    <PictExSection img={basket_jump} opt="chien"/>
-                                    <PictExSection img={everest} opt="chien"/>
-                                    <PictExSection img={basket_jump} opt="chien"/>
-                                </div>                             
-                            </div>
-                            <div class="content-exercice-section">
-                                <div className="instruction-exercice">Selectionne le meilleur mot correspondant
-                                                                      pour chaque image
-                                </div>
-                                <div class="syno-exercice-container">
-                                    <ButtonSyno value="chien"/>
-                                    <ButtonSyno value="chien"/>
-                                    <ButtonSyno value="chien"/>
-                                    <ButtonSyno value="chien"/>
-                                    <ButtonSyno value="chien"/>
-                                    <ButtonSyno value="chien"/>
-                                    <ButtonSyno value="chien"/>
-                                    <ButtonSyno value="chien"/>
-                                </div>
-                            </div>
+                            <Content_exercice exProps={pictProps} instruction="Selectionne le meilleur mot correspondant
+                                                                               pour chaque image"/>
+                            <Content_exercice exProps={btnSyno} instruction="Selectionne les meilleur synonymes correspondant
+                                                                               pour le mot"/>
                             <div className="hr-horizontale-exercice"></div>
                             <div class="footer-exercice-container">
                                 <a href="#" className="button button-previous">Previous</a>
