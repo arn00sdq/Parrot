@@ -1,4 +1,4 @@
-import Reward from '../../reward/Reward';
+import Reward from '../../common/reward/Reward';
 import {feather_icon,treasure } from '../../../assets/img/index';
 
 function DailyContainer(props){

@@ -1,16 +1,16 @@
 import React from 'react';
 
-import Checkbox from '../tool/Checkbox'
-import Slider from '../tool/Slider'
-import ExerciceContainer from '../exerciceItem/ExerciceContainer'
-import HeaderComponent from '../header/Header';
+import Checkbox from '../../common/tool/Checkbox'
+import Slider from '../../common/tool/Slider'
+import ExerciceContainer from '../../common/exerciceItem/ExerciceContainer'
+import HeaderComponent from '../../common/header/Header';
 
-import '../../assets/css/main/main.css';
-import '../../assets/css/exercicePicker/filterCard.css';
-import '../../assets/css/exercicePicker/exerciceCard.css';
-import '../../assets/css/flag/flag.css'
+import '../../../assets/css/main/main.css';
+import '../../../assets/css/exercicePicker/filterCard.css';
+import '../../../assets/css/exercicePicker/exerciceCard.css';
+import '../../../assets/css/flag/flag.css'
 
-import {bush,pres_perfect} from '../../assets/img/index'
+import {bush,pres_perfect} from '../../../assets/img/index'
 
 function ExercicePicker(props) {
     const [checkedOne, setCheckedOne] = React.useState(false);

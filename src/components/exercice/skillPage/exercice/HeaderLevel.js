@@ -1,4 +1,4 @@
-import {intero_sign } from '../../../assets/img/index';
+import {intero_sign } from '../../../../assets/img/index';
 
 function HeaderLevel(props){
     return(
