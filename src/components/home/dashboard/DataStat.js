@@ -1,3 +1,4 @@
+import React from 'react';
 function DataStat(props){
     return (
         <div className="center-align-infos">

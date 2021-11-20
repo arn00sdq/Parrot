@@ -1,3 +1,4 @@
+import React from 'react';
 import ActivityContainer from './ActivityContainer';
 import HeaderDashCard from './HeaderDashCard';
 

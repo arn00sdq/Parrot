@@ -1,3 +1,4 @@
+import React from 'react';
 import SectionCard from './exercice/SectionCard';
 import HeaderComponent from '../header/Header';
 

@@ -1,7 +1,7 @@
 import NavSection from './headerElement/NavSection';
 import InfoSection from './headerElement/InfoSection';
 import '../../assets/css/general/header.css';
-
+import React from 'react';
 import {
     orange_house,pencil,tool_icon,book_icon,
     flag_britain,flame_icon,down_arrow,feather_icon,profil_icon,

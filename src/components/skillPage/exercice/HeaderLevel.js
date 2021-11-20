@@ -1,3 +1,4 @@
+import React from 'react';
 import {intero_sign } from '../../../assets/img/index';
 
 function HeaderLevel(props){

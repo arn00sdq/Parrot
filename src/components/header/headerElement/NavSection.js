@@ -1,3 +1,4 @@
+import React from 'react';
 function NavSection({src,href,text}){
     return (
         <div className="nav-section">

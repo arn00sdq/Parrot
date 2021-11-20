@@ -1,3 +1,4 @@
+import React from 'react';
 import {right_arrow} from '../../../assets/img/index';
 
 function ActivityContainer(props){

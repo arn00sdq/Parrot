@@ -1,3 +1,4 @@
+import React from 'react';
 import DailyContainer from './DailyContainer';
 import {feather_icon, treasure}from '../../../assets/img/index';
 

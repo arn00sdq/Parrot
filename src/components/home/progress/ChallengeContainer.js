@@ -1,3 +1,4 @@
+import React from 'react';
 import {ready_icon} from '../../../assets/img/index';
 
 function ChallengeContainer(props){

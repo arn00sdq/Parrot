@@ -1,3 +1,4 @@
+import React from 'react';
 import ChallengeContainer from './ChallengeContainer';
 import Reward from '../../reward/Reward';
 

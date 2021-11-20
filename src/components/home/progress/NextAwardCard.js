@@ -1,3 +1,4 @@
+import React from 'react';
 import Reward from '../../reward/Reward';
 import {feather_icon,treasure } from '../../../assets/img/index';
 
