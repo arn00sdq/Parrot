@@ -4,7 +4,7 @@ import SkillPage from './exercice/skillPage/skillPage'
 import ExercicePicker from './exercice/exercicePicker/exercicePicker'
 import ExercicePage from './exercice/exercicePage/exercicePage'
 
-import {g1,g2,g3,g4,g5} from '../assets/css/general/index'
+import {g1,g2,g3,g4,g5} from '../assets/css/global/index'
 import { home_ex } from '../assets/img';
 
 
@@ -17,7 +17,7 @@ const App = (props) => {
     console.log(Object.values(props.configs));
     const representation = model.ui.sectionId;
     if( representation == 'home'){ // switch a venir
-        return <Home/>;
+        return <SkillPage/>;
     }
 }
 

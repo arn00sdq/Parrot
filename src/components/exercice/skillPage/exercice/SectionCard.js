@@ -2,7 +2,7 @@ import ExerciceContainer from '../../../common/exerciceItem/ExerciceContainer';
 import HeaderLevel from './HeaderLevel';
 
 import { sign_where, home_ex,pres_perfect} from '../../../../assets/img/index';
-import '../../../../assets/css/skillPage/card.css';
+import '../../../../assets/css/exercice/skillPage/card.css';
 
 function SectionCard(props){
     return (

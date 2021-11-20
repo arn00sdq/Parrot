@@ -6,10 +6,10 @@ import RowContentSummarize from './sumariseSection/rowContent'
 import Content_exercice from './exerciceSection/content_exercice'
 
 import '../../../assets/css/main/main.css';
-import '../../../assets/css/exercicePage/summarize_card.css';
-import '../../../assets/css/exercicePage/exerciceCard.css';
-import '../../../assets/css/general/tool/button.css';
-import '../../../assets/css/flag/flag.css'
+import '../../../assets/css/exercice/exercicePage/summarize_card.css';
+import '../../../assets/css/exercice/exercicePage/exerciceCard.css';
+import '../../../assets/css/global/tool/button.css';
+import '../../../assets/css/common/flag/flag.css'
 
 import {bush,everest,basket_jump,cross,treasure, feather_icon} from '../../../assets/img/index'
 

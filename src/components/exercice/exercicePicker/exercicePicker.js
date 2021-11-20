@@ -6,9 +6,9 @@ import ExerciceContainer from '../../common/exerciceItem/ExerciceContainer'
 import HeaderComponent from '../../common/header/Header';
 
 import '../../../assets/css/main/main.css';
-import '../../../assets/css/exercicePicker/filterCard.css';
-import '../../../assets/css/exercicePicker/exerciceCard.css';
-import '../../../assets/css/flag/flag.css'
+import '../../../assets/css/exercice/exercicePicker/filterCard.css';
+import '../../../assets/css/exercice/exercicePicker/exerciceCard.css';
+import '../../../assets/css/common/flag/flag.css'
 
 import {bush,pres_perfect} from '../../../assets/img/index'
 
