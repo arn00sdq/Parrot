@@ -1,12 +1,3 @@
-.exercice-filter-container{
-    display: flex;
-    flex-direction: row;
-    background-color: white;
-    height: 17vh;
-    width: 55vw;
-    border-radius: 15px;
-}
-
 .header-picker{
     display: flex;
     flex-direction: row;

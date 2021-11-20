@@ -6,26 +6,26 @@ import '../../../assets/css/skillPage/card.css';
 
 function SectionCard(props){
     return (
-        <div className ="card section-level-card ">
+        <div className ="section-skill-card">
             <HeaderLevel titleCard={props.titleCard} />    
-            <div className="exercice-card">
-                <ExerciceContainer className="exercice-container" imgExercice={pres_perfect} time="10min" titleEx={props.titleEx}
+            <div className="card exercice-card">
+                <ExerciceContainer className="exercice-skill-container" imgExercice={pres_perfect} time="10min" titleEx={props.titleEx}
                 state="Terminer" content="Dans cette exercice nous verrons 
                                           l'utilisation du present perfect aux travers
                                           de text à trous..."
                 />
                 
-                <ExerciceContainer className="exercice-container" imgExercice={home_ex} time="5min" titleEx={props.titleEx}
+                <ExerciceContainer className="exercice-skill-container" imgExercice={home_ex} time="5min" titleEx={props.titleEx}
                 state="Terminer" content="Dans cette exercice nous verrons 
                                           l'utilisation du present perfect aux travers
                                           de text à trous..."
                 />
-                <ExerciceContainer className="exercice-container" imgExercice={sign_where} time="10min" titleEx={props.titleEx}
+                <ExerciceContainer className="exercice-skill-container" imgExercice={sign_where} time="10min" titleEx={props.titleEx}
                 state="Terminer" content="Dans cette exercice nous verrons 
                                           l'utilisation du present perfect aux travers
                                           de text à trous..."
                 />
-                <ExerciceContainer className="exercice-container" imgExercice={props.imgExercice} time="15min"titleEx={props.titleEx}
+                <ExerciceContainer className="exercice-skill-container" imgExercice={props.imgExercice} time="15min"titleEx={props.titleEx}
                 state="Terminer" content="Dans cette exercice nous verrons 
                                           l'utilisation du present perfect aux travers
                                           de text à trous..."

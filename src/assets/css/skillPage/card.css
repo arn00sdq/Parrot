@@ -22,8 +22,8 @@
     width: 8vw;
 }
 
-.section-level-card{
-    width: 28vw;
+.section-skill-card{
+    margin:10px;
 }
 
 .header-level{
@@ -31,13 +31,12 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 24vw;
     padding: 0vh 1vw;
 }
 
 .title-level{
     font-family: Monserrat;
-    font-size: 27px;
+    font-size: 26px;
     font-weight: bold;
     color: white;
 }
