@@ -1,18 +1,18 @@
 import React from 'react';
 
-import Checkbox from '../tool/Checkbox'
-import Slider from '../tool/Slider'
-import ExerciceContainer from '../exerciceItem/ExerciceContainer'
-import HeaderComponent from '../header/Header';
+import Checkbox from '../../common/tool/Checkbox'
+import Slider from '../../common/tool/Slider'
+import ExerciceContainer from '../../common/exerciceItem/ExerciceContainer'
+import HeaderComponent from '../../common/header/Header';
 
-import '../../assets/css/main/main.css';
-import '../../assets/css/exercicePicker/filterCard.css';
-import '../../assets/css/exercicePicker/exerciceCard.css';
-import '../../assets/css/flag/flag.css'
+import '../../../assets/css/main/main.css';
+import '../../../assets/css/exercice/exercicePicker/filterCard.css';
+import '../../../assets/css/exercice/exercicePicker/exerciceCard.css';
+import '../../../assets/css/common/flag/flag.css'
 
-import {bush,pres_perfect} from '../../assets/img/index'
+import {bush,pres_perfect} from '../../../assets/img/index'
 
-function ExercicePicker(props) {
+function LessonPicker(props) {
     const [checkedOne, setCheckedOne] = React.useState(false);
     const [checkedTwo, setCheckedTwo] = React.useState(false);
     
@@ -52,8 +52,8 @@ function ExercicePicker(props) {
                 <div className="card">
                     <div className="filter-container">
                         <div className="title-filter">Recherche</div>
-                        <ThemeContainer title="Conjugaisons"/>
-                        <ThemeContainer title="Thème"/>
+                        <ThemeContainer title="Grammar"/>
+                        <ThemeContainer title="Lexique"/>
                         <div class="timer-container">
                             <div class="title-theme-container">Durée</div>
                             <div class="checkbox-section-timer">
@@ -96,5 +96,5 @@ function ExercicePicker(props) {
         )
 }
 
-export default ExercicePicker;
+export default LessonPicker;
   

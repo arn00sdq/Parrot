@@ -1,6 +1,6 @@
 import React from 'react';
 import ChallengeContainer from './ChallengeContainer';
-import Reward from '../../reward/Reward';
+import Reward from '../../common/reward/Reward';
 
 import {treasure} from '../../../assets/img/index';
 

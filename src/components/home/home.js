@@ -6,7 +6,7 @@ import DashCard from './dashboard/DashCard'
 import DataStat from './dashboard/DataStat'
 import PaperCard from './read/PaperCard'
 import ReadCategory from './read/ReadCategory'
-import HeaderComponent from '../header/Header';
+import HeaderComponent from '../common/header/Header';
 
 import '../../assets/css/main/main.css'
 import '../../assets/css/home/dashboard.css'

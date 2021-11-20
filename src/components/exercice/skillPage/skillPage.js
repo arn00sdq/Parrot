@@ -1,14 +1,14 @@
 import React from 'react';
 import SectionCard from './exercice/SectionCard';
-import HeaderComponent from '../header/Header';
+import HeaderComponent from '../../common/header/Header';
 
-import '../../assets/css/main/main.css';
+import '../../../assets/css/main/main.css';
 
 
 
 import {
     bush,logo_parrot_adulte,pres_perfect,medium_parrot,small_parrot
-} from '../../assets/img/index'
+} from '../../../assets/img/index'
 
 
 function SkillPage(props) {

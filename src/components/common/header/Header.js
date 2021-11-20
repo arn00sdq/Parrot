@@ -6,7 +6,7 @@ import {
     orange_house,pencil,tool_icon,book_icon,
     flag_britain,flame_icon,down_arrow,feather_icon,profil_icon,
 
-} from '../../assets/img/index'
+} from '../../../assets/img/index'
 
 function HeaderComponent(){
     return (

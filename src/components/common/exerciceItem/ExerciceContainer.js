@@ -5,7 +5,7 @@ import Reward from '../reward/Reward';
 import {
     clock_icon,right_arrow,treasure
 
-} from '../../assets/img/index'
+} from '../../../assets/img/index'
 
 function ExerciceContainer (props){
     return(
