@@ -1,3 +1,4 @@
+import React from 'react';
 import ButtonSyno from './btnSyno'
 import PictExSection from './picture'
 

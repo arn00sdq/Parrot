@@ -1,3 +1,4 @@
+import React from 'react';
 function HeaderDashCard(props){
     return (
         <div className="header-dash-card">

@@ -1,4 +1,5 @@
-import '../../../assets/css/common/reward/reward.css'
+import React from 'react';
+import '../../assets/css/reward/reward.css'
 
 function Reward(props){
     return (<img className={props.imgReward} src={props.classReward}/>);

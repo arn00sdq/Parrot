@@ -1,4 +1,9 @@
+<<<<<<< HEAD
+import React from 'react';
+import Reward from '../../reward/Reward';
+=======
 import Reward from '../../common/reward/Reward';
+>>>>>>> af62d620bb5f80ac779cdf441ec37bdff12cdb58
 import {feather_icon,treasure } from '../../../assets/img/index';
 
 function DailyContainer(props){

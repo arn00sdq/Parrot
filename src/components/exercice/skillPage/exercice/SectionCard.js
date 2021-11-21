@@ -1,4 +1,9 @@
+<<<<<<< HEAD:src/components/skillPage/exercice/SectionCard.js
+import React from 'react';
+import ExerciceContainer from '../../exerciceItem/ExerciceContainer';
+=======
 import ExerciceContainer from '../../../common/exerciceItem/ExerciceContainer';
+>>>>>>> af62d620bb5f80ac779cdf441ec37bdff12cdb58:src/components/exercice/skillPage/exercice/SectionCard.js
 import HeaderLevel from './HeaderLevel';
 
 import { sign_where, home_ex,pres_perfect} from '../../../../assets/img/index';

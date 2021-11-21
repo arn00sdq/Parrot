@@ -1,3 +1,4 @@
+import React from 'react';
 import ChallengeCard from './progress/ChallengeCard';
 import DailyCard from './progress/DailyCard';
 import NextAwardCard from './progress/NextAwardCard';

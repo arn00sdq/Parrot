@@ -1,6 +1,6 @@
-import '../../../assets/css/exerciceItem/exerciceItem.css'
-
-import Reward from '../reward/Reward'
+import React from 'react';
+import '../../assets/css/exerciceItem/exerciceItem.css'
+import Reward from '../reward/Reward';
 
 import {
     clock_icon,right_arrow,treasure

@@ -1,3 +1,4 @@
+import React from 'react';
 const Checkbox = ({ label, value, onChange }) => {
     return (
       <label className="filter-text-label">

@@ -1,3 +1,4 @@
+import React from 'react';
 function PictExSection(props){
     return (
         <div className="picture-exercice-section">

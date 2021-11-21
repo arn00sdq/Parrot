@@ -1,3 +1,4 @@
+import React from 'react';
 function InfoSection({srcFlag,srcArrow, classArrow}){
     return (
         <div className="infos-section">

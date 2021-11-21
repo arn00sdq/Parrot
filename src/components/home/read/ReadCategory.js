@@ -1,3 +1,4 @@
+import React from 'react';
 function ReadCategory(props){
     return (
         <div className="read-category">

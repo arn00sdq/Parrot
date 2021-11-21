@@ -1,3 +1,4 @@
+import React from 'react';
 const Row = (flag,level) => {
     const row=[];
     if (flag){
