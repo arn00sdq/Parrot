@@ -2,8 +2,8 @@ import React from 'react';
 
 import HeaderComponent from '../../common/header/Header';
 import Reward from '../../common/reward/Reward'
-import RowContentSummarize from './sumariseSection/rowContent'
-import Content_exercice from './exerciceSection/content_exercice'
+import RowContentSummarize from '../../exercice/exercicePage/sumariseSection/rowContent'
+import Content_exercice from '../../exercice/exercicePage/exerciceSection/content_exercice'
 
 import '../../../assets/css/main/main.css';
 import '../../../assets/css/exercice/exercicePage/summarize_card.css';
@@ -25,9 +25,7 @@ const btnSyno = {
     type: "btn",
 }
 
-const 
-
-function ExercicePage(props){
+function LessonPage(props){
 
     return (
         <div id="root-css">
@@ -89,5 +87,5 @@ function ExercicePage(props){
         )
 }
 
-export default ExercicePage;
+export default LessonPage;
   
