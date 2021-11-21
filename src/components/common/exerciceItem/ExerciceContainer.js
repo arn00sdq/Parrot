@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../assets/css/exerciceItem/exerciceItem.css'
+import '../../../assets/css/exerciceItem/exerciceItem.css'
 import Reward from '../reward/Reward';
 
 import {

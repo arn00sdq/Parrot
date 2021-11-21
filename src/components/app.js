@@ -19,7 +19,7 @@ const App = (props) => {
     console.log(Object.values(props.configs));
     const representation = model.sectionId;
     if( representation == 'home'){ // switch a venir
-        return <LessonPage/>;
+        return <SkillPage/>;
     }
 }
 

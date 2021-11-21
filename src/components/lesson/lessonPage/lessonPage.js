@@ -3,7 +3,7 @@ import React from 'react';
 import HeaderComponent from '../../common/header/Header';
 import Reward from '../../common/reward/Reward'
 import RowContentSummarize from '../../exercice/exercicePage/sumariseSection/rowContent'
-import Content_exercice from '../../exercice/exercicePage/exerciceSection/content_exercice'
+import PictBtn from '../../common/DisplayContent/exercice/type/pictBtn'
 
 import '../../../assets/css/main/main.css';
 import '../../../assets/css/exercice/exercicePage/summarize_card.css';
@@ -70,9 +70,9 @@ function LessonPage(props){
                                     </div>
                                 </div>
                             </div>
-                            <Content_exercice exProps={pictProps} instruction="Selectionne le meilleur mot correspondant
+                            <PictBtn exProps={pictProps} instruction="Selectionne le meilleur mot correspondant
                                                                                pour chaque image"/>
-                            <Content_exercice exProps={btnSyno} instruction="Selectionne les meilleur synonymes correspondant
+                            <PictBtn exProps={btnSyno} instruction="Selectionne les meilleur synonymes correspondant
                                                                                pour le mot"/>
                             <div className="hr-horizontale-exercice"></div>
                             <div class="footer-exercice-container">

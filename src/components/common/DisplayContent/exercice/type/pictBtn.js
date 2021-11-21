@@ -1,6 +1,6 @@
 import React from 'react';
-import ButtonSyno from './btnSyno'
-import PictExSection from './picture'
+import ButtonSyno from '../../../../exercice/exercicePage/exerciceSection/btnSyno'
+import PictExSection from '../../../../exercice/exercicePage/exerciceSection/picture'
 
 function RowExercice(exercice){
     const row=[];
@@ -22,7 +22,7 @@ function RowExercice(exercice){
     return row;
 }
 
-function Content_exercice(props){
+function PictBtn(props){
     return(
         <div class="content-exercice-section">
             <div className="instruction-exercice">{props.instruction}</div>
@@ -33,4 +33,4 @@ function Content_exercice(props){
     );
 }
 
-export default Content_exercice;
+export default PictBtn;

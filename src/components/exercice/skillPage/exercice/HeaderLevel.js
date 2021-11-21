@@ -1,9 +1,5 @@
-<<<<<<< HEAD:src/components/skillPage/exercice/HeaderLevel.js
 import React from 'react';
-import {intero_sign } from '../../../assets/img/index';
-=======
 import {intero_sign } from '../../../../assets/img/index';
->>>>>>> af62d620bb5f80ac779cdf441ec37bdff12cdb58:src/components/exercice/skillPage/exercice/HeaderLevel.js
 
 function HeaderLevel(props){
     return(

@@ -1,6 +1,6 @@
 import NavSection from './headerElement/NavSection';
 import InfoSection from './headerElement/InfoSection';
-import '../../assets/css/general/header.css';
+import '../../../assets/css/global/header.css';
 import React from 'react';
 import {
     orange_house,pencil,tool_icon,book_icon,

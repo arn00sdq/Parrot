@@ -3,7 +3,7 @@ import React from 'react';
 import HeaderComponent from '../../common/header/Header';
 import Reward from '../../common/reward/Reward'
 import RowContentSummarize from './sumariseSection/rowContent'
-import Content_exercice from './exerciceSection/content_exercice'
+import DisplayContent from '../../common/DisplayContent/displayContent'
 
 import '../../../assets/css/main/main.css';
 import '../../../assets/css/exercice/exercicePage/summarize_card.css';
@@ -11,21 +11,29 @@ import '../../../assets/css/exercice/exercicePage/exerciceCard.css';
 import '../../../assets/css/global/tool/button.css';
 import '../../../assets/css/common/flag/flag.css'
 
-import {bush,everest,basket_jump,cross,treasure, feather_icon} from '../../../assets/img/index'
+import {bush,everest,basket_jump,treasure, feather_icon} from '../../../assets/img/index'
 
 
 const flagProps = {flag1: 'Present-perfect',flag2: 'Instruments'};
-const pictProps = {            
-    img: [basket_jump,everest,everest],                                  
-    opt: ["chien","voile","chat"],
-    type: "picture",                          
-};
-const btnSyno = {
-    value: ["chien","fg","voile","chat","chien","voile","chat","chat"],
-    type: "btn",
-}
 
-const 
+const pict_but_excercice = {
+    instruction: ["Selectionne le meilleur mot correspondant pour chaque image",
+                  "Selectionne les meilleur synonymes correspondant pour le mot"],
+    Instrument : {
+        btnSyno : {
+            value: ["guitare","flute","voile","acordeon","chien","bass","chat","prise"],
+            type: "btn",
+        },
+    
+        pictProps : {            
+            img: [basket_jump,everest,everest],                                  
+            opt: ["guitare","flute","acordeon"],
+            type: "picture",                          
+        },
+    // other pict_ex_ex
+    },
+    id:"0001", //0001 - 0999 : ex ; 1001 - 1999 : lecon; 2001 - 2999 : paper
+}
 
 function ExercicePage(props){
 
@@ -61,29 +69,7 @@ function ExercicePage(props){
                             </div>
                         </div>
                     </div>
-                    <div className="page-exercice-card card">
-                        <div className="page-exercice-container">
-                            <div className="header-exercice">
-                                <div className="title-exercice">Musical Instrument</div>
-                                <div className="progress-exercice-bar">
-                                    <img src={cross} class="cross"></img>
-                                    <div class="large-bar">
-                                        <div className="orange-bar"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <Content_exercice exProps={pictProps} instruction="Selectionne le meilleur mot correspondant
-                                                                               pour chaque image"/>
-                            <Content_exercice exProps={btnSyno} instruction="Selectionne les meilleur synonymes correspondant
-                                                                               pour le mot"/>
-                            <div className="hr-horizontale-exercice"></div>
-                            <div class="footer-exercice-container">
-                                <a href="#" className="button button-previous">Previous</a>
-                                <a href="#" className="button button-continue">Continuer</a>
-                            </div>
-                        </div>
-                        
-                    </div>
+                    <DisplayContent type={pict_but_excercice}/>
             </main>
         </div>
         )
