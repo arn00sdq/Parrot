@@ -2,10 +2,8 @@ import DisplayExercice from './exercice/displayExercice'
 
 import {cross} from '../../../assets/img/index'
 
-function typeContent(type){
-    const codeType = type.id.substr(0, 1);
-    console.log(codeType);
-    console.log("------------------");
+function typeContent(type,id){
+    const codeType = id.substr(0, 1);
     switch (codeType){ // compare l'id 
         case "0": 
             return (<DisplayExercice exercice={type}/>)
@@ -19,7 +17,7 @@ function typeContent(type){
     }
 }
 
-function DisplayContent(props){ // affiche journaux, lecon , exercice
+function DisplayContent(props,id){ // affiche journaux, lecon , exercice
     return(
         <div className="page-exercice-card card">
             <div className="page-exercice-container">
@@ -32,7 +30,7 @@ function DisplayContent(props){ // affiche journaux, lecon , exercice
                         </div>
                     </div>
                 </div>
-                {typeContent(props.type)}
+                {typeContent(props.type,props.id)}
                 <div className="hr-horizontale-exercice"></div>
                 <div class="footer-exercice-container">
                     <a href="#" className="button button-previous">Previous</a>

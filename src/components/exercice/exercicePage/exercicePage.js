@@ -69,7 +69,7 @@ function ExercicePage(props){
                             </div>
                         </div>
                     </div>
-                    <DisplayContent type={pict_but_excercice}/>
+                    <DisplayContent type={pict_but_excercice} id={pict_but_excercice.id}/>
             </main>
         </div>
         )

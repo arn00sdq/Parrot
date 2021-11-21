@@ -1,10 +1,7 @@
 import PictBtn from './type/pictBtn'
 
 function displayExercice(props){
-    const row=[];
-    /*var keyBtn = Object.keys(exercice.Instrument).at(0);
-    var keyPict = Object.keys(exercice.Instrument).at(1);*/
-    
+    const row=[];  
     switch (props.exercice.id){ 
         case "0001": 
             row.push(<PictBtn exProps={props.exercice.Instrument.pictProps} instruction={props.exercice.instruction[0]}/>); // <PictBtn />
