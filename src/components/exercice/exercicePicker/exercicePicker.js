@@ -3,7 +3,6 @@ import React from 'react';
 import Checkbox from '../../common/tool/Checkbox'
 import Slider from '../../common/tool/Slider'
 import ExerciceContainer from '../../common/exerciceItem/ExerciceContainer'
-import HeaderComponent from '../../common/header/Header';
 
 import '../../../assets/css/main/main.css';
 import '../../../assets/css/exercice/exercicePicker/filterCard.css';
@@ -44,9 +43,6 @@ function ExercicePicker(props) {
     return (
         <div id="root-css">
             <img className="bush2" src={bush}/>
-
-            <HeaderComponent />
-
             <main>
 
                 <div className="card">

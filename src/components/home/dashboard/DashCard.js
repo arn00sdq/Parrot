@@ -9,7 +9,7 @@ function DashCard(props){
             <div className="main-card-dash">
                 <ActivityContainer mainText="Les temps du passé. Ex 4" />
                 <ActivityContainer mainText="Le subjonctif. Ex6" />
-                <ActivityContainer mainText="Le futur de l'indicatif. Ex 6" />
+                <ActivityContainer mainText="Le futur de l'indicatif. Ex 6" />              
             </div>
         </div>
     )

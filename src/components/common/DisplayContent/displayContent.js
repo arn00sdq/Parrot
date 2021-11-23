@@ -1,12 +1,13 @@
 import DisplayExercice from './exercice/displayExercice'
-
-import {cross} from '../../../assets/img/index'
+import DisplaySummarize from './summarize/displaySummarize'
+import React from 'react';
 
 function typeContent(type,id){
     const codeType = id.substr(0, 1);
+    console.log(id)
     switch (codeType){ // compare l'id 
         case "0": 
-            return (<DisplayExercice exercice={type}/>)
+            return (<DisplayExercice exercice={type} id={id}/>)
             break;
         case "1":
             //display lecon
@@ -17,27 +18,14 @@ function typeContent(type,id){
     }
 }
 
-function DisplayContent(props,id){ // affiche journaux, lecon , exercice
+function DisplayContent(props){ // affiche journaux, lecon , exercice
+    console.log(props.exercice)
     return(
-        <div className="page-exercice-card card">
-            <div className="page-exercice-container">
-                <div className="header-exercice">
-                    <div className="title-exercice">Musical Instrument</div>
-                    <div className="progress-exercice-bar">
-                        <img src={cross} class="cross"></img>
-                        <div class="large-bar">
-                            <div className="orange-bar"></div>
-                        </div>
-                    </div>
-                </div>
-                {typeContent(props.type,props.id)}
-                <div className="hr-horizontale-exercice"></div>
-                <div class="footer-exercice-container">
-                    <a href="#" className="button button-previous">Previous</a>
-                    <a href="#" className="button button-continue">Continuer</a>
-                </div>
-            </div>
-        </div>
+        <>
+            <DisplaySummarize summarize={props.summarize} title={props.title}/>
+            {typeContent(props.exercice,props.id)}     
+        </>
+        
     );
 }
 

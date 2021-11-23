@@ -27,6 +27,7 @@ main{
     padding: 3vh 2vw;
     border-radius: 25px;
     justify-content: space-between;
+    height: fit-content;
 }
 
 img {

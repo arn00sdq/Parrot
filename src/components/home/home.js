@@ -6,13 +6,12 @@ import DashCard from './dashboard/DashCard'
 import DataStat from './dashboard/DataStat'
 import PaperCard from './read/PaperCard'
 import ReadCategory from './read/ReadCategory'
-import HeaderComponent from '../common/header/Header';
+
 
 import '../../assets/css/main/main.css'
 import '../../assets/css/home/dashboard.css'
 import '../../assets/css/home/paper.css'
 import '../../assets/css/home/progress.css'
-import '../../assets/css/home/global/layout.css'
 import '../../assets/css/home/global/progress-bar.css'
 
 import {
@@ -22,12 +21,6 @@ import {
 
 function Home(props) {
     return (
-        <div id="root-css">
-            <img className="bush2" src={bush}/>
-            <img id="parrot-home" src={logo_parrot_adulte}/>
-
-            <HeaderComponent />
-
             <main>
 
                 <div id="progress-card" className="card">
@@ -92,9 +85,7 @@ function Home(props) {
                     
                 </div>
             </main>
-        </div>
         )
 }
 
 export default Home;
-  

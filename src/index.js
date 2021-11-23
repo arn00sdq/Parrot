@@ -1,10 +1,18 @@
 import React from 'react';
+import { render } from "react-dom";
+
 import ReactDOM from 'react-dom';
-import App from './components/app';
+import { BrowserRouter} from 'react-router-dom';
+
+import App from "./app";
+
 import model from './model'
 
-console.log(Object.keys(model));
+
 ReactDOM.render(
-    <App configs = {model}/>,
+  
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>,
     document.getElementById('root')
-);
+    );
