@@ -18,6 +18,5 @@ export default function App(props) {
                     <Route path="exercicePage" element={<ExercicePicker />} />
                 </Route>
             </Routes>  
-
         );
 }

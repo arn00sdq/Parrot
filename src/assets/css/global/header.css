@@ -15,7 +15,7 @@ header .brand-section{
     width: 22vw;
 }
 
-header #brand-logo{
+#brand-logo{
     display: flex;
     justify-content: center;
     font-family: ArchivoBlack;
@@ -23,7 +23,7 @@ header #brand-logo{
     color: white;
 }
 
-header nav{
+nav{
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -32,28 +32,28 @@ header nav{
     width: 45vw;
 }
 
-header .nav-section{
+.nav-section{
     display: flex;
     align-items: center;
     flex-direction: row;
     background-color: white;
 }
 
-header .text-header{
+.text-header{
     font-family: Quicksand;
     font-size: 25px;
     text-decoration: none;
     color: black;
 }
 
-header .current-page{
+.current-page{
     font-family: Quicksand;
     font-size: 25px;
     text-decoration: none;
     color: #F9A014;
 }
 
-header .nav-icon{
+.nav-icon{
     margin-left: 5px;
     height: 3vh;
     width: 2vw;
@@ -61,7 +61,7 @@ header .nav-icon{
 }
 
 
-header .user-infos{
+.user-infos{
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -70,28 +70,27 @@ header .user-infos{
     width: 20vw;
 }
 
-header .infos-section{
+.infos-section{
     display: flex;
     align-items: center;
     flex-direction: row;
 }
 
-header #flame-icon{
+.flame-icon{
     height: 4vh;
     width: 3vw;
 }
 
-header .infos-icon{
+.infos-icon{
     height: 3vh;
     width: 2vw;
 }
 
-header .arrow-icon{
+.arrow-icon{
     margin-left: 9px;
     height: 1vh;
     width: 1vw;
 }
-
-header #feather-number{
+.feather-number{
     margin-left: 10px;
 }

@@ -7,7 +7,6 @@ import DataStat from './dashboard/DataStat'
 import PaperCard from './read/PaperCard'
 import ReadCategory from './read/ReadCategory'
 
-
 import '../../assets/css/main/main.css'
 import '../../assets/css/home/dashboard.css'
 import '../../assets/css/home/paper.css'
@@ -15,14 +14,13 @@ import '../../assets/css/home/progress.css'
 import '../../assets/css/home/global/progress-bar.css'
 
 import {
-    bush,logo_parrot_adulte,basket_jump,everest,
+    basket_jump,everest,
     science,history,politics,sport,terrorisme,gaming
 } from '../../assets/img/index'
 
 function Home(props) {
     return (
             <main>
-
                 <div id="progress-card" className="card">
                     <div id="title-progress">Progression</div>
                     <ChallengeCard titleCard="Defi du jour"/>

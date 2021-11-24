@@ -4,7 +4,6 @@ import React from 'react';
 
 function typeContent(type,id){
     const codeType = id.substr(0, 1);
-    console.log(id)
     switch (codeType){ // compare l'id 
         case "0": 
             return (<DisplayExercice exercice={type} id={id}/>)
@@ -19,7 +18,6 @@ function typeContent(type,id){
 }
 
 function DisplayContent(props){ // affiche journaux, lecon , exercice
-    console.log(props.exercice)
     return(
         <>
             <DisplaySummarize summarize={props.summarize} title={props.title}/>
