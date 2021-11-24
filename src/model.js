@@ -6,7 +6,6 @@ const model = {
 			changeLanguageBtnToggle: false,
 			featherCount: "4",
 			flameCount: "4",
-			icon: "",
 			iconBtnToggle: false,
 		},
 		stats: {
@@ -155,7 +154,7 @@ const model = {
 			min15: false
 		},
 		/*OU
-		coselectedConjugation: 'Present perfect',
+		selectedConjugation: 'Present perfect',
 		selectedTheme: 'School',
 		selectedDuration: '5',*/
 		resultCount: 8,

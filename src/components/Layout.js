@@ -13,16 +13,16 @@ const headerProps = {
         home: {
             icon: home_icon,
             route: "home",
-            text: "Acceuil",
+            text: "Accueil",
         },
         lecon: {
             icon: lecon_icon,
-            route: "ExercicePicker",
+            route: "ExercicePage",
             text: "Exercices",
         },
         tool: {
             icon: tool_icon,
-            route: "ExercicePage",
+            route: "ExercicePicker",
             text: "Outils",
         },
         paper: {
