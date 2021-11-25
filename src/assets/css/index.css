@@ -1,0 +1,22 @@
+@import "./common/flag/flag.css";
+@import "./common/reward//reward.css";
+@import "./exercice/exercicePage/dropdownWord.css";
+@import "./exercice/exercicePage/exerciceCard.css";
+@import "./exercice/exercicePage/summarize_card.css";
+@import "./exercice/exercicePicker/exerciceCard.css";
+@import "./exercice/exercicePicker/filterCard.css";
+@import "./exerciceItem/exerciceItem.css";
+@import "./global/flag.css";
+@import "./global/font.css";
+@import "./global/header.css";
+@import "./global/layout.css";
+@import "./global/tool/button.css";
+@import "./home/dashboard.css";
+@import "./home/global/progress-bar.css";
+@import "./home/paper.css";
+@import "./home/progress.css";
+@import "./introduction/introduction.css";
+
+ *{
+
+ }

@@ -14,12 +14,12 @@ const headerProps = {
             id:1000,
             icon: home_icon,
             route: "home",
-            text: "Acceuil",
+            text: "Accueil",
         },
         lecon: {
             id:1001,
             icon: lecon_icon,
-            route: "ExercicePicker",
+            route: "ExercicePage",
             text: "Exercices",
         },
         exercice: {
