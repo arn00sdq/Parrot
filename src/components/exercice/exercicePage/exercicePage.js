@@ -1,13 +1,6 @@
 import React from 'react';
-import '../../../assets/css/common/flag/flag.css';
-import '../../../assets/css/exercice/exercicePage/exerciceCard.css';
-import '../../../assets/css/exercice/exercicePage/summarize_card.css';
-import '../../../assets/css/global/tool/button.css';
-import '../../../assets/css/main/main.css';
-import { basket_jump, everest, feather_icon, treasure } from '../../../assets/img/index';
+import { basket_jump, everest} from '../../../assets/img/index';
 import DisplayContent from '../../common/DisplayContent/displayContent';
-import Reward from '../../common/reward/Reward';
-import RowContentSummarize from '../../common/DisplayContent/summarize/rowContent';
 
 const pict_but_excercice = {
 
@@ -30,22 +23,17 @@ const pict_but_excercice = {
     },
 
     summarize: {
+        id: 3100,
         level : "Débutant (A1 - A2)",
         repere :{
             title: "Repère :",
-            flagProps : {
-                flag1: 'Present-perfect', 
-                flag2: 'Instruments',
-            },
+            elt : ["Present-perfect","Instruments"]},
         },
         reward :{
+            id: 3102,
             title: "Récompense : ",
-            rewardProps : {
-                reward1: "treasure",
-                reward2: "feather_icon",
-            }
+            elt : ["treasure","feather_icon"],
         },
-    },
     id: "0001", //0001 - 0999 : ex ; 1001 - 1999 : lecon; 2001 - 2999 : paper
 }
 

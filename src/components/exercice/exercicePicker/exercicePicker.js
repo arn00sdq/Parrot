@@ -4,11 +4,6 @@ import Checkbox from '../../common/tool/Checkbox'
 import Slider from '../../common/tool/Slider'
 import ExerciceContainer from '../../common/exerciceItem/ExerciceContainer'
 
-import '../../../assets/css/main/main.css';
-import '../../../assets/css/exercice/exercicePicker/filterCard.css';
-import '../../../assets/css/exercice/exercicePicker/exerciceCard.css';
-import '../../../assets/css/common/flag/flag.css'
-
 import {bush,pres_perfect} from '../../../assets/img/index'
 
 function ExercicePicker(props) {

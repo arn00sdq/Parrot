@@ -7,15 +7,8 @@ import DataStat from './dashboard/DataStat'
 import PaperCard from './read/PaperCard'
 import ReadCategory from './read/ReadCategory'
 
-import '../../assets/css/main/main.css'
-import '../../assets/css/home/dashboard.css'
-import '../../assets/css/home/paper.css'
-import '../../assets/css/home/progress.css'
-import '../../assets/css/home/global/progress-bar.css'
-
 import {
-    basket_jump,everest,
-    science,history,politics,sport,terrorisme,gaming
+    basket_jump,everest,science,history,politics,sport,terrorisme,gaming
 } from '../../assets/img/index'
 
 function Home(props) {
@@ -26,6 +19,7 @@ function Home(props) {
                     <ChallengeCard titleCard="Defi du jour"/>
                     <DailyCard titleCard="Objectifs quotidiens"/>
                     <NextAwardCard titleCard="Prochaine Récompense"/>
+                    
                 </div>
 
                 <div id="dashboard-container">
@@ -52,7 +46,6 @@ function Home(props) {
                                 <DataStat title="Articles lus" score="20"/>
                             </div>                                                           
                         </div>
-                         
                     </div>
                 </div>
                 
