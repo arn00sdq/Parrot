@@ -1,5 +1,5 @@
 const actionTypes = Object.freeze ({
-    EXERCICE_START = 18,
+    EXERCISE_START = 18,
     ARTICLE_START = 19,
     LESSON_START = 20,
     HEADER = {
@@ -18,10 +18,10 @@ const actionTypes = Object.freeze ({
     },
     SKILLPAGE = {
     },
-    EXERCICE_PAGE = {
+    EXERCISE_PAGE = {
         //A SPECIFIER ULTERIEUREMENT
     },
-    EXERCICE_PICKER = {
+    EXERCISE_PICKER = {
         CONJUG_CLK = 13,
         THEME_CLK = 14,
         DURATION_CLK = 15,
