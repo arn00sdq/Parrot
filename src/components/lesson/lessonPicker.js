@@ -1,16 +1,10 @@
 import React from 'react';
 
-import Checkbox from '../../common/tool/Checkbox'
-import Slider from '../../common/tool/Slider'
-import ExerciceContainer from '../../common/exerciceItem/ExerciceContainer'
-import HeaderComponent from '../../common/header/Header';
+import Checkbox from '../common/tool/Checkbox'
+import Slider from '../common/tool/Slider'
+import ExerciceContainer from '../common/exerciceItem/ExerciceContainer'
 
-import '../../../assets/css/main/main.css';
-import '../../../assets/css/exercice/exercicePicker/filterCard.css';
-import '../../../assets/css/exercice/exercicePicker/exerciceCard.css';
-import '../../../assets/css/common/flag/flag.css'
-
-import {bush,pres_perfect} from '../../../assets/img/index'
+import {bush,pres_perfect} from '../../assets/img/index'
 
 function LessonPicker(props) {
     const [checkedOne, setCheckedOne] = React.useState(false);
@@ -44,8 +38,6 @@ function LessonPicker(props) {
     return (
         <div id="root-css">
             <img className="bush2" src={bush}/>
-
-            <HeaderComponent />
 
             <main>
 

@@ -3,15 +3,14 @@ import orange_down_arrow from './arrow/orange-down-triangle.png';
 import right_arrow from './arrow/right-orange-arrow.png';
 import feather_icon from './icon/feather-icon.jpg';
 import flame_icon from './icon/flame-icon.jpg';
-import home_icon from './icon/home-icon.png';
-import lecon_icon from './icon/lecon-icon.png';
-import paper_icon from './icon/paper-icon.png';
+import home_icon from './icon/home-icon.svg';
+import lecon_icon from './icon/lecon-icon.svg';
+import paper_icon from './icon/paper-icon.svg';
 import intero_sign from './icon/intero-sign.png';
 import orange_house from './icon/orange-house.png';
-import pencil from './icon/pencil.png';
+import exercice_icon from './icon/exercice-icon.svg';
 import profil_icon from './icon/profil-icon.png';
 import ready_icon from './icon/ready-icon.png';
-import tool_icon from './icon/tool-icon.png';
 import clock_icon from './icon/clock-icon.jpg';
 import gaming from './mini_logo/gaming.jpg';
 import history from './mini_logo/history.jpg';
@@ -41,7 +40,7 @@ import cross from './icon/cross.png';
 
 export {
     down_arrow, orange_down_arrow,right_arrow,feather_icon,flame_icon,home_icon,paper_icon,lecon_icon,intero_sign,orange_house,
-    pencil,profil_icon,ready_icon,tool_icon,gaming,history,politics,science,sport,terrorisme,bush,liane,logo,large_parrot,
+    exercice_icon,profil_icon,ready_icon,gaming,history,politics,science,sport,terrorisme,bush,liane,logo,large_parrot,
     medium_parrot,small_parrot,logo_parrot_adulte,basket_jump,everest,flag_britain,health,home_ex,interview,plus_perfect,pres_perfect,
     sign_where,feather,treasure,clock_icon,cross
   };

@@ -54,13 +54,21 @@ nav{
 }
 
 .nav-icon{
-    margin-left: 5px;
-    height: 3vh;
-    width: 2vw;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    height: 4vh;
+    width: 5vw;
     color: black;
+    font-family: Quicksand;
+    font-size: 22px;
+    text-decoration: none;
+    color: #F9A014;
 }
 
-
+.nav-icon img{
+   height: 3vh;
+}
 .user-infos{
     display: flex;
     align-items: center;

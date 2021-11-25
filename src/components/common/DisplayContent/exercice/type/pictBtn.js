@@ -1,6 +1,6 @@
 import React from 'react';
-import ButtonSyno from '../../../../exercice/exercicePage/exerciceSection/btnSyno'
-import PictExSection from '../../../../exercice/exercicePage/exerciceSection/picture'
+import ButtonSyno from './pictBtnComponent/exerciceSection/btnSyno'
+import PictExSection from './pictBtnComponent/exerciceSection/picture'
 
 function RowExercice(exercice){
     const row=[];
