@@ -11,17 +11,30 @@ const classic_lecon = {
         id: 4000,
         section1 : {
             id: 4001,
-            title:"1) Principaux emplois",
-            subTitle: ["1) Actions passées qui ont des conséquences sur le présent.",
-                       "2) Actions qui ont commencé dans le passé et qui sont encore en progression au moment où l'on parle."],
-            exemple: [
-                {id: 4002,text:" > Paul all"},
-                {id: 4003,wordPrimary:"has eaten"},
-                {id: 4004,text:"the cookies."}
-            ],
-            explication:["Quand l'action s'est-elle passée ? Dans le passé : il y a quelques minutes/hier Quelle conséquence a-t-elle sur le présent ?"+
-                        "Paul a mangé tous les gâteaux ; il n'en reste plus pour moi.",
-                        "Quand l'action a-t-elle commencé ? Il y a dix ans. Est-elle terminée ? Non, Paul habite toujours à Londres. Cela fait 10 ans qu'il y habit"],
+            text :[<>
+                <div className="title"> 1) Principaux emplois </div>
+                <div className="subTitle">1) Actions passées qui ont des conséquences sur le présent.</div>
+                <div className="text"> 
+                    Paul all
+                    <div className="wordPrimary">has eaten</div>
+                    the cookies
+                </div>
+                <div className="explication">
+                    Quand l'action s'est-elle passée ? Dans le passé : il y a quelques minutes/hier Quelle conséquence a-t-elle sur le présent ?
+                    Paul a mangé tous les gâteaux ; il n'en reste plus pour moi.,
+                </div>
+                <div className="subTitle">2) Actions qui ont commencé dans le passé et qui sont encore en progression au moment où l'on parle.</div>
+                <div className="text"> 
+                    Paul all
+                    <div className="wordPrimary"> has eaten </div>
+                    the cookies
+                </div>
+                <div className="explication">
+                    Quand l'action a-t-elle commencé ? 
+                    Il y a dix ans. Est-elle terminée ? Non, Paul habite toujours à Londres. Cela fait 10 ans qu'il y habit
+                </div>
+                </>
+                ],
         },
     },
 

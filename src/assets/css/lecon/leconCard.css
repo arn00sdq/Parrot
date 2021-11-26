@@ -14,3 +14,12 @@
     font-family: Monserrat;
     font-size: 19px;
 }
+
+.wordPrimary{
+    color:orange;
+}
+
+.text{
+    display: flex;
+    flex-direction: row;
+}
