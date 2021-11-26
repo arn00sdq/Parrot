@@ -5,6 +5,8 @@ import React from 'react';
 import {treasure,feather_icon} from '../../../../assets/img/index'
 
 function DisplaySummarize(props) {
+    console.log("DisplayContent - displaySummarize: summarize",props);
+    
     return (
         <div className="page-summarize-card card">
             <div className="page-summarize-container">

@@ -6,6 +6,7 @@ import UserContent from './UserContent/UserContent'
 function HeaderConstruction(props){
     const nav = props.header.navProps;
     const user = props.header.userProps;
+    console.log("Layout - HeaderConstruction : headerprops",props.header)
     return (
 
         <header id="container-header">

@@ -12,14 +12,16 @@ const classic_lecon = {
         section1 : {
             id: 4001,
             title:"1) Principaux emplois",
-            subTitle: "1) Actions passées qui ont des conséquences sur le présent.",
+            subTitle: ["1) Actions passées qui ont des conséquences sur le présent.",
+                       "2) Actions qui ont commencé dans le passé et qui sont encore en progression au moment où l'on parle."],
             exemple: [
                 {id: 4002,text:" > Paul all"},
                 {id: 4003,wordPrimary:"has eaten"},
                 {id: 4004,text:"the cookies."}
             ],
-            explication:"Quand l'action s'est-elle passée ? Dans le passé : il y a quelques minutes/hier Quelle conséquence a-t-elle sur le présent ?"+
-                        "Paul a mangé tous les gâteaux ; il n'en reste plus pour moi."
+            explication:["Quand l'action s'est-elle passée ? Dans le passé : il y a quelques minutes/hier Quelle conséquence a-t-elle sur le présent ?"+
+                        "Paul a mangé tous les gâteaux ; il n'en reste plus pour moi.",
+                        "Quand l'action a-t-elle commencé ? Il y a dix ans. Est-elle terminée ? Non, Paul habite toujours à Londres. Cela fait 10 ans qu'il y habit"],
         },
     },
 

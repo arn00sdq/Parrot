@@ -16,6 +16,7 @@
 @import "./home/paper.css";
 @import "./home/progress.css";
 @import "./introduction/introduction.css";
+@import "./lecon/leconCard.css";
 
  *{
 

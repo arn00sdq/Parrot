@@ -60,6 +60,7 @@ const headerProps = {
 }
 
 function Layout() {
+    console.log("-- Debug actif --")
     return (
         <div id="root-css">
             <img className="bush2" src={bush} />

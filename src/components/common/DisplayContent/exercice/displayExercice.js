@@ -23,6 +23,7 @@ function typeExercice(exercice,id) {
 }
 
 function displayExercice(props) {
+    console.log("DisplayContent - displayExercice : pict_but_excercice",props)
     return (
         <div className="page-exercice-card card">
             <div className="page-exercice-container">

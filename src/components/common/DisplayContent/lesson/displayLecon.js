@@ -20,7 +20,7 @@ function typeLecon(lecon,id) {
 }
 
 function displayLecon(props) {
-    console.log("debug - displayLecon : objet",props)
+    console.log("DisplayContent - displayLecon: classic_lecon",props)
     return (
         <div className="page-exercice-card card">
             <div className="page-exercice-container">
