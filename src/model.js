@@ -1,5 +1,8 @@
 const model = {
-	sectionId: "home",
+	config : {
+		debug : false,
+		authors : "Made by DUDES Arnaud et ALONSO Ivan"
+	},
 	home: {
 		header: {
 			selectedLanguage: "english",
@@ -13,7 +16,7 @@ const model = {
 				read: "10",
 				total: "120",
 			},
-			exercices: {
+			exercises: {
 				done: "5",
 				total: "42",
 			},
@@ -92,7 +95,7 @@ const model = {
 	skillPage: {
 		elementary: {
 			locked: false,
-			exercices: [
+			exercises: [
 				{
 					id: "1",
 				},
@@ -100,7 +103,7 @@ const model = {
 		},
 		independant: {
 			locked: false,
-			exercices: [
+			exercises: [
 				{
 					id: "1",
 				},
@@ -108,18 +111,18 @@ const model = {
 		},
 		advanced: {
 			locked: false,
-			exercices: [
+			exercises: [
 				{
 					id: "1",
 				},
 			]
 		},
 	},
-	exercicePage: {
-		exerciceId: "1",
+	exercisePage: {
+		exerciseId: "1",
 		step: "1",
 	},
-	exercicePicker: {
+	exercisePicker: {
 		conjugations: [
 			{
 				id: "1",
@@ -158,7 +161,7 @@ const model = {
 		selectedTheme: 'School',
 		selectedDuration: '5',*/
 		resultCount: 8,
-		exercices: [
+		exercises: [
 			{
 				id: "1",
 			}

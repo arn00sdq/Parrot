@@ -1,4 +1,5 @@
 const types = require('./actiontypes')
+
 const reducer = (state, { type, payload }) => {
   switch (type) {
     case types.HEADER.CHANGE_LANG:
@@ -21,6 +22,26 @@ const reducer = (state, { type, payload }) => {
                     ...state.home.dashboard,
                     section : payload.selectedSection,
                 }
+            }
+        };
+    case types.exercise_PICKER.CONJUG_CLK:
+    conjugationsIndex = state.exercisePicker.conjugations.findIndex(
+        (c) => {
+            c.id === payload.conjugationId
+        }
+    )
+        return {
+            ...state,
+            exercisePicker : {
+                ...state.exercisePicker,
+                conjugations : {
+                    ...state.exercisePicker.conjugations,
+                    [conjugationsIndex] : {
+                        ...state.exercisePicker.conjugations[conjugationsIndex],
+                        checked : state.exercisePicker.conjugations[conjugationsIndex].checked ? false : true,
+                    },
+                }
+            
             }
         }
     default:
