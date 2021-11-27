@@ -5,7 +5,7 @@
 .page-summarize-container{
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color: var(--summarize-bg-color);
     height: 50%;
     width: 100%;
     padding: 2vh 1vw;
@@ -67,7 +67,7 @@
     font-family: Monserrat;
     font-size: 17px;
     text-decoration-line: underline;
-    text-decoration-color:slategrey;
+    text-decoration-color:var(--summarize-text-decoration);
     text-underline-offset: 0.5vh;
 }
 

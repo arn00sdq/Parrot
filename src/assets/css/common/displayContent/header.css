@@ -25,14 +25,14 @@
 }
 .large-bar{
     border-radius: 10px;
-    background-color: #494F56;
+    background-color: var(--header-content-large-bar);
     height: 1vh;
     width: 15vw;
 }
 
 .orange-bar{
     border-radius: 10px;
-    background-color: #F9A014;
+    background-color: var(--header-content-orange-bar);
     height: 1vh;
     width: 10vw;
 }

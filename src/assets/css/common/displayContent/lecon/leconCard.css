@@ -7,7 +7,7 @@
 .subTitle{
     font-family: Monserrat;
     font-size: 20px;
-    color:#00247D;
+    color:var(--lecon-subtitle-color);
 }
 
 .text{
@@ -21,6 +21,6 @@
 }
 
 .wordPrimary{
-    color:orange;
+    color:var(--lecon-wordPrimary-color);
 }
 

@@ -20,5 +20,45 @@
 @import "./common/displayContent/footer.css";
 
  *{
+    --body-bg-color:#FFEEE2;
+
+    --header-bg-color:white;
+    --header-text-color:black;
+    --header-text-hover-color:#F9A014;
+    --header-text-current-corlor:#F9A014;
+    --header-icon-color:black;
+
+    --card-bg-color:#F7F3F2;
+    --container-bg-color:white;
+
+    --button-bg-color:#F9A014;
+    --button-continue-color:#F9A014;
+    --button-previous-color:#B2B2B2;
+    --button-color-text:white;
+    --button-border-color:#494F56;
+    --button-hover-color:orange;
+
+    --skill-bg-color:white;
+    --skill-title-color:white;
+    --skill-text-valisation:green;
     
+    --picker-n-color:#7E7E7E;
+    --filter-bg-color:white;
+    --filter-label-color:#494F56;
+
+    --tag-border-color:#7E7E7E;
+    --tag-bg-color:white;
+
+    --summarize-bg-color:white;
+    --summarize-text-decoration:slategrey;
+
+    --header-content-large-bar:#494F56;
+    --header-content-orange-bar:#F9A014;
+
+    --footer-content-hr-border-color: #B2B2B2;
+
+    --lecon-subtitle-color:#00247D;
+    --lecon-wordPrimary-color:orange;
+
+    --btnSyno-hover-color:red;
  }

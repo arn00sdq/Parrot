@@ -18,7 +18,8 @@ export default function App(props) {
                 <Route path="/" element={<Layout />}>
                     <Route exact path="home" element={<Home />} />
                     <Route path="lessonPage" element={<LessonPage />} />
-                    <Route path="lessonPage" element={<LessonPage />} />
+                    <Route path="skillPage" element={<SkillPage />} />
+                    <Route path="skillPage" element={<SkillPage />} />
                 </Route>
             </Routes>  
         );

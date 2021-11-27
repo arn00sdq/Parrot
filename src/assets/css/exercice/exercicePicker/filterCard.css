@@ -1,7 +1,7 @@
 .filter-container{
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color: var(--filter-bg-color);
     align-items: flex-start;
     justify-content: space-between;
     height: 65vh;
@@ -50,7 +50,7 @@
 .filter-text-label{
     font-family: Monserrat;
     font-size: 18px;
-    color: #494F56;
+    color: var(--filter-label-color);
 }
 
 .slider[type=range][orient=vertical]

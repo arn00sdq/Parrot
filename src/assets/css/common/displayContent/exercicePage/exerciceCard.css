@@ -5,7 +5,7 @@
 .page-exercice-container{
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color: var(--container-bg-color);
     justify-content: space-between;
     height: 70vh;
     width: 100%;
@@ -67,7 +67,7 @@
     border: solid;
     border-width: 1px;
     border-radius: 10px;
-    border-color: #494F56;
+    border-color: var(--button-border-color);
     margin-top: 2vh;
     margin-left: 2vw;
     width: 9vw;
@@ -75,7 +75,7 @@
 }
 
 .syno-button-container:hover{
-    background-color: aquamarine;
+    background-color: var(--btnSyno-hover-color);
 }
 
 .text-syno{

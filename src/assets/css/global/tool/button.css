@@ -2,9 +2,9 @@
     display: flex;
     align-self: center;
     justify-content: center;
-    background-color: #EF9645;
+    background-color: var(--button-bg-color);
     text-decoration: none;
-    color: white;
+    color: var(--button-color-text);
     font-family: Quicksand;
     font-size: 25px;
     padding: 5px 10px;
@@ -22,9 +22,9 @@
 }
 
 .button-continue{
-    background-color: #EF9645;
+    background-color: var(--button-continue-color);
 }
 
 .button-previous{
-    background-color: #B2B2B2;
+    background-color: var(--button-previous-color);
 }
