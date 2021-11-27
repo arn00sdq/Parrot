@@ -1,0 +1,13 @@
+.footer-exercice-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.hr-horizontale-exercice{
+    border: solid;
+    border-width: thin;
+    border-color: #B2B2B2;
+    margin-left: -2vw;
+    width : 56vw
+}

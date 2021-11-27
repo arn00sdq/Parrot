@@ -17,6 +17,8 @@
 @import "./home/progress.css";
 @import "./introduction/introduction.css";
 @import "./lecon/leconCard.css";
+@import "./common/displayContent/header.css";
+@import "./common/displayContent/footer.css";
 
  *{
 

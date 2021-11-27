@@ -12,41 +12,6 @@
     padding: 3vh 2vw;
     border-radius: 15px;
 }
-.header-exercice{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.title-exercice{
-    font-family: Monserrat;
-    font-size: 30px;
-    font-weight: bold;
-
-}
-
-.progress-exercice-bar{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-.large-bar{
-    border-radius: 10px;
-    background-color: #494F56;
-    height: 1vh;
-    width: 15vw;
-}
-
-.orange-bar{
-    border-radius: 10px;
-    background-color: #F9A014;
-    height: 1vh;
-    width: 10vw;
-}
-.cross{
- width: 1vw;
- height: 3vh;
-}
 
 .content-exercice-section{
     display: flex;
@@ -120,16 +85,3 @@
     margin-left: 2vw;
 }
 
-.footer-exercice-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.hr-horizontale-exercice{
-    border: solid;
-    border-width: thin;
-    border-color: #B2B2B2;
-    margin-left: -2vw;
-    width : 56vw
-}
