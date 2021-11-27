@@ -1,8 +1,7 @@
 import React from 'react';
 
 function RowLecon(lecon) {
-    var row = [];
-    console.log(Array.isArray(lecon.subTitle))         
+    var row = [];    
     for (const [key, value] of Object.entries(lecon)) { 
         if (typeof(value) !== 'number')
             row.push(value)
@@ -11,7 +10,7 @@ function RowLecon(lecon) {
 }
 
 function Classic(props) {
-    console.log(props.leconProps)
+    //console.log(props.leconProps)
     return (
         <div className="content-lecon-section" key={props.leconProps.id}>
             {RowLecon(props.leconProps)}
