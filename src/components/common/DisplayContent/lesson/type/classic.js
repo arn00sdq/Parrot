@@ -11,6 +11,7 @@ function RowLecon(lecon) {
 }
 
 function Classic(props) {
+    console.log(props.leconProps)
     return (
         <div className="content-lecon-section" key={props.leconProps.id}>
             {RowLecon(props.leconProps)}

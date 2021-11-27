@@ -7,7 +7,7 @@ function HeaderDisplayContent(props) {
             <div className="title-content">{props.title}</div>
             <div className="progress-bar-section">
                 <div>1/2</div>
-                <div class="progress-content-bar">
+                <div className="progress-content-bar">
                     <img src={cross} className="cross"></img>
                     <div className="large-bar">
                         <div className="orange-bar"></div>
