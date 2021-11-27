@@ -1,7 +1,8 @@
 import React from 'react';
 
 function RowLecon(lecon) {
-    var row = [];    
+    var row = []; 
+    console.log("dd")   
     for (const [key, value] of Object.entries(lecon)) { 
         if (typeof(value) !== 'number')
             row.push(value)
