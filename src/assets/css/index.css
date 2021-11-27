@@ -1,8 +1,7 @@
-@import "./common/flag/flag.css";
+@import "./common/tag/tag.css";
 @import "./common/reward//reward.css";
-@import "./exercice/exercicePage/dropdownWord.css";
-@import "./exercice/exercicePage/exerciceCard.css";
-@import "./exercice/exercicePage/summarize_card.css";
+@import "./common/displayContent/exercicePage/exerciceCard.css";
+@import "./common/displayContent/summarize_card.css";
 @import "./exercice/exercicePicker/exerciceCard.css";
 @import "./exercice/exercicePicker/filterCard.css";
 @import "./exerciceItem/exerciceItem.css";
@@ -12,14 +11,14 @@
 @import "./global/layout.css";
 @import "./global/tool/button.css";
 @import "./home/dashboard.css";
-@import "./home/global/progress-bar.css";
+@import "./home/common/progress-bar.css";
 @import "./home/paper.css";
 @import "./home/progress.css";
 @import "./introduction/introduction.css";
-@import "./lecon/leconCard.css";
+@import "./common/displayContent/lecon/leconCard.css";
 @import "./common/displayContent/header.css";
 @import "./common/displayContent/footer.css";
 
  *{
-
+    
  }

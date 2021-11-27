@@ -1,4 +1,4 @@
-.flag-point-medium{
+.tag-point-medium{
     border: solid;
     border-width: 2px;
     border-radius: 5px;
@@ -9,7 +9,7 @@
     font-size: 18px;
 }
 
-.flag-point-small{
+.tag-point-small{
     border: solid;
     border-width: 2px;
     border-radius: 5px;
