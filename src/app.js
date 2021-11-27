@@ -13,7 +13,12 @@ import { home_ex } from './assets/img';
 import { Routes, Route} from 'react-router-dom';
 
 export default function App(props) {
-    return ( 
+    return (
+            /* 
+            -- Note -- 
+            comme les routes ne sont pas encore en dynamique
+            changez la variable route dans layout pour que le chemin se fasse
+            */ 
             <Routes>
                 <Route path="/" element={<Layout />}>
                     <Route exact path="home" element={<Home />} />
