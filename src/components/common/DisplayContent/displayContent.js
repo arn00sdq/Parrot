@@ -1,7 +1,10 @@
 import DisplayExercice from './exercice/displayExercice'
 import DisplayLecon from './lesson/displayLecon'
 import DisplaySummarize from './summarize/displaySummarize'
+
 import React from 'react';
+
+
 
 function typeContent(title,exercice,lecon,id){
     const codeType = id.substr(0, 1);

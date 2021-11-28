@@ -2,39 +2,6 @@ import React from 'react';
 import { basket_jump, everest} from '../../assets/img/index';
 import DisplayContent from '../common/DisplayContent/displayContent';
 
-const pict_but_excercice = {
-    title : "Instruments",
-    exercice: {
-        instruction: ["Selectionne le meilleur mot correspondant pour chaque image",
-        "Selectionne les meilleur synonymes correspondant pour le mot"],
-        Instrument: {
-            btnSyno: {
-                value: ["guitare", "flute", "voile", "acordeon", "chien", "bass", "chat", "prise"],
-                type: "btn",
-            },
-
-            pictProps: {
-                img: [basket_jump, everest, everest],
-                opt: ["guitare", "flute", "acordeon"],
-                type: "picture",
-            },
-        },
-    },
-
-    summarize: {
-        level : "Débutant (A1 - A2)",
-        repere :{
-            title: "Repère :",
-            elt : ["Present-perfect","Instruments"],
-        },
-        reward :{
-            title: "Récompense : ",
-            elt : ["treasure","feather_icon"],
-        },
-    },
-    id: "0001", //0001 - 0999 : ex ; 1001 - 1999 : lecon; 2001 - 2999 : paper
-}
-
 function ExercicePage(props) {
     console.log(pict_but_excercice.id)
     return (
