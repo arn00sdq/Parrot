@@ -24,18 +24,18 @@ const timeProps = {
     }
 }
 
-function LessonPicker(props) {
+function ExercicePicker(props) {
+
     return (
         <div id="root-css">
             <img className="bush2" src={bush}/>
-
             <main>
 
-                <div className="card">
+            <div className="card">
                     <div className="filter-container">
                         <div className="title-filter">Recherche</div>
-                        <ThemeContainer title="Recherche" content={themeProps} />
-                        <TimeContainer title="Durée" content={timeProps} />
+                        <ThemeContainer key="89" title="Recherche" content={themeProps} />
+                        <TimeContainer key="890" title="Durée" content={timeProps} />
                     </div>
                 </div>
                 
@@ -70,5 +70,5 @@ function LessonPicker(props) {
         )
 }
 
-export default LessonPicker;
+export default ExercicePicker;
   

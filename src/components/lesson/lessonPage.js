@@ -33,14 +33,12 @@ const classic_lecon = {
     },
 
     summarize: {
-        id: 3010,
         level : "Débutant (A1 - A2)",
         repere :{
             title: "Repère :",
             elt : ["Present-perfect","Instruments"]
         },
         reward :{
-            id: 3011,
             title: "Récompense : ",
             elt: ["treasure","feather_icon"],
             },

@@ -1,9 +1,8 @@
 import React from 'react';
-import { basket_jump, everest} from '../../../assets/img/index';
-import DisplayContent from '../../common/DisplayContent/displayContent';
+import { basket_jump, everest} from '../../assets/img/index';
+import DisplayContent from '../common/DisplayContent/displayContent';
 
 const pict_but_excercice = {
-
     title : "Instruments",
     exercice: {
         instruction: ["Selectionne le meilleur mot correspondant pour chaque image",
@@ -23,22 +22,21 @@ const pict_but_excercice = {
     },
 
     summarize: {
-        id: 3100,
         level : "Débutant (A1 - A2)",
         repere :{
             title: "Repère :",
-            elt : ["Present-perfect","Instruments"]},
+            elt : ["Present-perfect","Instruments"],
         },
         reward :{
-            id: 3102,
             title: "Récompense : ",
             elt : ["treasure","feather_icon"],
         },
+    },
     id: "0001", //0001 - 0999 : ex ; 1001 - 1999 : lecon; 2001 - 2999 : paper
 }
 
 function ExercicePage(props) {
-
+    console.log(pict_but_excercice.id)
     return (
         <main> {/*DisplayContent a appeler dans lecon et paper : mise en page*/}        
             <DisplayContent summarize={pict_but_excercice.summarize} 

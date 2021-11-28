@@ -3,11 +3,11 @@ import DisplayLecon from './lesson/displayLecon'
 import DisplaySummarize from './summarize/displaySummarize'
 import React from 'react';
 
-function typeContent(title,type,lecon,id){
+function typeContent(title,exercice,lecon,id){
     const codeType = id.substr(0, 1);
     switch (codeType){ // compare l'id 
         case "0": 
-            return (<DisplayExercice title={title} exercice={type} id={id}/>)
+            return (<DisplayExercice title={title} exercice={exercice} id={id}/>)
             break;
         case "1":
             return (<DisplayLecon title={title} lecon={lecon} id={id}/>)
@@ -27,10 +27,10 @@ function typeContent(title,type,lecon,id){
 
 */ 
 function DisplayContent(props){ // affiche journaux, lecon , exercice
-   
+    console.log(props.id)
     return(
         <>
-            <DisplaySummarize key={props.summarize.id} summarize={props.summarize} title={props.title}/>
+            <DisplaySummarize key={props.id} summarize={props.summarize} title={props.title}/>
             {typeContent(props.title,props.exercice,props.lecon,props.id)}     
         </>
         

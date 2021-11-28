@@ -5,7 +5,7 @@ import React from 'react';
 import {treasure,feather_icon} from '../../../../assets/img/index'
 
 function DisplaySummarize(props) {
-    console.log("DisplayContent - displaySummarize: summarize",props);
+    console.log("DisplayContent - displaySummarize: summarize",props.summarize);
     
     return (
         <div className="page-summarize-card card">
@@ -17,7 +17,7 @@ function DisplaySummarize(props) {
                 <div className="section-summarize-container">
                     <div className="title-section-summarize">{props.summarize.repere.title}</div>
                     <div className="infos-section-summarize" >
-                        <RowContentSummarize title="Niveau" keys={props.summarize.id} row={props.summarize.level}/>
+                        <RowContentSummarize  title="Niveau" keys={props.summarize.id} row={props.summarize.level}/>
                         <RowContentSummarize title="Balise" keys={props.summarize.repere.id}  row={props.summarize.repere} />
                     </div>
                     <div className="hr-horizontale"></div>

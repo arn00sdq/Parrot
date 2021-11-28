@@ -1,5 +1,4 @@
 import React from 'react';
-import '../../../assets/css/exerciceItem/exerciceItem.css'
 import Reward from '../reward/Reward';
 
 import {
@@ -7,21 +6,21 @@ import {
 
 } from '../../../assets/img/index'
 
-function ExerciceContainer (props){
+function PictTimeContent (props){
     return(
         <div className={props.className}>
-            <img className="img-exercice" src={props.imgExercice}/>
+            <img className="img-ptc" src={props.imgExercice}/>
             <div className="time-container">
                 <img className="clock" src={clock_icon}/>
                 <div className="time-shift">{props.time}</div>
             </div>
-            <div className="content-exercice-container">
-                <div className="header-exercice-container">
-                    <div className="title-exercice-skill">{props.titleEx}</div>
+            <div className="content-ptc-container">
+                <div className="header-ptc-container">
+                    <div className="title-ptc">{props.titleEx}</div>
                     <div className="validation">{props.state}</div>
                 </div>
-                <div className="text-exercice">{props.content}</div>
-                <div className="footer-exercice">
+                <div className="text-ptc">{props.content}</div>
+                <div className="footer-ptc">
                     <Reward imgReward="reward" classReward={treasure}/>
                     <img className="orange-arrow" src={right_arrow}/>
                 </div>
@@ -32,4 +31,4 @@ function ExerciceContainer (props){
     );
 }
 
-export default ExerciceContainer;
+export default PictTimeContent;

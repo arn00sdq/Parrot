@@ -3,8 +3,6 @@
 @import "./common/displayContent/exercicePage/exerciceCard.css";
 @import "./common/displayContent/summarize_card.css";
 @import "./exercice/exercicePicker/exerciceCard.css";
-@import "./exercice/exercicePicker/filterCard.css";
-@import "./exerciceItem/exerciceItem.css";
 @import "./global/flag.css";
 @import "./global/font.css";
 @import "./global/header.css";
@@ -18,6 +16,8 @@
 @import "./common/displayContent/lecon/leconCard.css";
 @import "./common/displayContent/header.css";
 @import "./common/displayContent/footer.css";
+@import "./common/bandItem/pictTimeContent.css";
+@import "./common/picker/filter.css";
 
  *{
     --body-bg-color:#FFEEE2;

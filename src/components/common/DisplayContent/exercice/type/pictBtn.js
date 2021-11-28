@@ -11,12 +11,12 @@ function RowExercice(exercice){
             var arr_img=exercice[firstKey];
             var arr_opt=exercice[secondKey];
             for (let i = 0; i<arr_img.length; i++)
-                row.push(<PictExSection img={arr_img[i]} opt={arr_opt[i]}/>) // opt a finir
+                row.push(<PictExSection key={arr_opt[i]} img={arr_img[i]} opt={arr_opt[i]}/>) // opt a finir
             break;
         case 'btn':
             var arr_value=exercice[firstKey];
             for (let i = 0; i<arr_value.length; i++)
-                row.push(<ButtonSyno value={arr_value[i]}/>)
+                row.push(<ButtonSyno key={arr_value[i]} value={arr_value[i]}/>)
             break;  
     }
     return row;
@@ -24,9 +24,9 @@ function RowExercice(exercice){
 
 function PictBtn(props){
     return(
-        <div class="content-exercice-section">
+        <div className="content-exercice-section">
             <div className="instruction-exercice">{props.instruction}</div>
-            <div class="picture-exercice-container">
+            <div className="picture-exercice-container">
                 {RowExercice(props.exProps)}
             </div>                             
         </div>

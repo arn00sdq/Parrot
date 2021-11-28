@@ -19,19 +19,19 @@ const headerProps = {
         lecon: {
             id:1001,
             icon: lecon_icon,
-            route: "ExercicePage",
+            route: "exercicePicker",
             text: "Exercices",
         },
         exercice: {
             id:1002,
             icon: exercice_icon,
-            route: "lessonPage",
+            route: "paperPicker",
             text: "Outils",
         },
         paper: {
             id:1003,
             icon: paper_icon,
-            route: "ExercicePage",
+            route: "lessonPicker",
             text: "Lire",
         },
     },

@@ -1,30 +1,23 @@
 import React from 'react';
 
-import ThemeContainer from '../common/picker/filter/ThemeContainer'
-import TimeContainer from '../common/picker/filter/TimeContainer'
 import PictTimeContent from '../common/bandItem/PictTimeContent'
-
+import ThemeContainer from '../common/picker/filter/ThemeContainer'
 import {bush,pres_perfect} from '../../assets/img/index'
 
 const themeProps = {
     Categorie : {
-        title : "Conjugaisons",
-        props : ["Present perfect","Past","PastContinous"],
+        title : "Catégorie",
+        props : ["Histoire","Science","Politique"],
     },
     Journaux: {
-        title : "Themes",
-        props : ["Voyage","Montagne","Hopital"],
+        title : "Journaux",
+        props : ["Time","Forbes","Science"],
     }
 }
 
-const timeProps = {
-    Time : {
-        title : "Durée",
-        props:["5min","10min","15min"]
-    }
-}
-
-function LessonPicker(props) {
+function PaperPicker(props) {
+    
+    
     return (
         <div id="root-css">
             <img className="bush2" src={bush}/>
@@ -35,7 +28,6 @@ function LessonPicker(props) {
                     <div className="filter-container">
                         <div className="title-filter">Recherche</div>
                         <ThemeContainer title="Recherche" content={themeProps} />
-                        <TimeContainer title="Durée" content={timeProps} />
                     </div>
                 </div>
                 
@@ -70,5 +62,5 @@ function LessonPicker(props) {
         )
 }
 
-export default LessonPicker;
+export default PaperPicker;
   
