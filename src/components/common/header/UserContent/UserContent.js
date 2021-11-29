@@ -5,7 +5,7 @@ function UserContent(props){
     var row = [];
     const user = props.userContent;
     for (const [key, value] of Object.entries(user)){
-        row.push(<div key={value.id} className="infos-section"> 
+        row.push(<div key={key} className="infos-section"> 
                     <UserSection arr={value}/> 
                 </div>
         )

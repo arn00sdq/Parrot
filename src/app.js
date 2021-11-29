@@ -10,8 +10,6 @@ import LessonPicker from './components/lesson/lessonPicker'
 
 import "./assets/css/index.css"
 
-import { home_ex } from './assets/img';
-
 import { Routes, Route} from 'react-router-dom';
 
 export default function App(props) {
@@ -27,6 +25,7 @@ export default function App(props) {
                     <Route path="exercicePicker" element={<ExercicePicker />} />
                     <Route path="paperPicker" element={<PaperPicker />} />
                     <Route path="lessonPicker" element={<LessonPicker />} />
+                    <Route path="skillPage" element={<SkillPage />} />
                 </Route>
             </Routes>  
         );

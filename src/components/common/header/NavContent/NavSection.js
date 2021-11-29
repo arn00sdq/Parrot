@@ -1,11 +1,32 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-function NavSection(props){
-    console.log(props.value)
+
+function DropdownAssignment(props,route,classLink) {
+    let row = []
+    console.log(route == "lessonPicker")
+    if (route == "lessonPicker") { // || a venir peut etre
+        row.push(
+            <div class="item">
+                <Link to={props.value.route} className={classLink}> {props.value.text}</Link>
+                <div className="dropdown-menu" role="menu">
+                    <ul className="menu-item-link">
+                        <li className="dropdown-item">Grammar</li>
+                        <li className="dropdown-item">Lecon</li>
+                    </ul>
+                </div>
+            </div>)
+
+    }else{
+        row.push(<Link to={props.value.route} className={classLink}> {props.value.text}</Link>)
+    }
+    return row;
+}
+
+function NavSection(props) {
+    const classLink = props.value.route != "skillPage" ? "nav-icon text-header" : "nav-toiec-test text-header";
     return (
         <li className="nav-section">
-            {/*<Link to={props.value.route} className="nav-text current-page"></Link>*/}
-            <Link to={props.value.route}  className="nav-icon text-header">{props.value.text}</Link>
+            {DropdownAssignment(props,props.value.route,classLink)}
         </li>
     );
 }

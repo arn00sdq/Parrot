@@ -11,48 +11,45 @@ import {
 const headerProps = {
     navProps: {
         home: {
-            id:1000,
             icon: home_icon,
             route: "home",
             text: "ACCEUIL",
         },
-        lecon: {
-            id:1001,
+        exercice: {
             icon: lecon_icon,
             route: "exercicePicker",
             text: "EXERCICES",
         },
-        exercice: {
-            id:1002,
+        lecon: {
             icon: exercice_icon,
-            route: "paperPicker",
+            route: "lessonPicker",
             text: "OUTILS",
         },
         paper: {
-            id:1003,
             icon: paper_icon,
-            route: "lessonPicker",
+            route: "paperPicker",
             text: "LIRE",
+        },
+        test: {
+            icon: paper_icon,
+            route: "skillPage",
+            text: "TOIEC TEST",
         },
     },
     userProps: {
         flag: {
-            id:2000,
             flag1: ["img", flag_britain, "infos-icon"], //balise img [nom_balise,src,class]
             flag2: ["img", down_arrow, "arrow-icon"],
         },
         feather: {
-            id:2001,
             flag1: ["img", feather_icon, "infos-icon"],
             flag2: ["p", 4,"feather-number"],
         },
         flame: {
-            id:2002,
             flag1: ["img", flame_icon, "flame-icon"],
             flag2: ["p", 4,""],
         },
         profil: {
-            id:2003,
             flag1: ["img", profil_icon, "infos-icon"],
             flag2: ["img", down_arrow, "arrow-icon"],
         },

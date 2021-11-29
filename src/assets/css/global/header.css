@@ -6,7 +6,7 @@
     box-shadow: 0 0 40px rgb(0 0 0 / 15%);
 }
 
-header .brand-section{
+.brand-section{
     display: flex;
     justify-content: flex-start;
     background-color: #FB830F;
@@ -30,22 +30,7 @@ nav{
     display: flex;
     align-items: center;
     flex-direction: row;
-}
-
-.text-header{
-    font-family: Menlo;
-    font-size: 1em;
-    line-height: 18px;
-    letter-spacing: .03125rem;
-    text-decoration: none;
-    font-weight: 600;
-    color: var(--header-text-color);
-}
-
-.current-page{
-    font-family: Menlo;
-    text-decoration: none;
-    color: var(--header-text-current-color);
+    margin-left: 1vw;
 }
 
 .nav-icon{
@@ -53,6 +38,35 @@ nav{
     align-items: center;
     margin-left: 2vw;
     text-decoration: none;
+}
+
+.text-header{
+    display: block;
+    font-family: Menlo;
+    font-size: .975em;
+    font-weight: bold;
+    letter-spacing: .03125rem;
+    line-height: 18px;
+    margin: 6px 10px 7px ;
+    text-decoration: none;
+    color: var(--header-text-color);
+}
+
+.nav-toiec-test{
+    color: #FF8F00;
+    background: rgba(255,143,0,.1);
+    border: 1px solid #FF8F00;
+    border-radius: 4px;
+    transition: background-color .3s;
+    width: max-content;
+    margin-left: 2vw;
+    padding: 8px;
+}
+
+.current-page{
+    font-family: Menlo;
+    text-decoration: none;
+    color: var(--header-text-current-color);
 }
 
 .nav-icon img{
@@ -66,7 +80,7 @@ nav{
     align-items: center;
     flex-direction: row;
 
-    margin-left: 30vw;
+    margin-left: 24vw;
 }
 
 .infos-section{
@@ -93,4 +107,50 @@ nav{
 }
 .feather-number{
     margin-left: 10px;
+}
+
+/* Drop down a bougé*/
+.item {
+    position: relative;
+  }
+
+.item:hover:before {
+    content: "";
+    border-right: 16px solid transparent;
+    border-left: 16px solid transparent;
+    border-bottom: 16px solid #FAFAFA;
+    position: absolute;
+    bottom: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+.item:hover .dropdown-menu{
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+.dropdown-menu {
+    position: absolute;
+    top: 40px;
+    /*ajouter border voir le style de la page ect*/
+    left: -40%;
+    width: 10vw;
+    border-radius: 6px;
+    background-color: #FAFAFA;
+    opacity: 1;
+    transform-origin: top left;
+    transform: scale(0);
+    transition: top .3s ease-in-out,opacity .3s ease-in-out;
+  }
+
+  .dropdown-item {
+    align-items: center;
+    color: black;
+    opacity: 0.7;
+    display: flex;
+    font-size: .975rem;
+    font-weight: bold;
+    line-height: 38px;
+    letter-spacing: .0125rem;
+    transition: color .2s ease-in-out;
 }
