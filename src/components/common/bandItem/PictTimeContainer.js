@@ -4,7 +4,7 @@ import Reward from '../reward/Reward';
 import {
     clock_icon, right_arrow, treasure
 
-} from '../../../assets/img/index'
+} from '../../../database/images'
 
 function PictTimeContent(props, index) {
     console.log(props.length)

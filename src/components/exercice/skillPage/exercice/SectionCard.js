@@ -2,7 +2,7 @@ import React from 'react';
 import PictTimeContainer from '../../../common/bandItem/PictTimeContainer';
 import HeaderLevel from './HeaderLevel';
 
-import { sign_where, home_ex,pres_perfect} from '../../../../assets/img/index';
+import { sign_where, home_ex,pres_perfect} from '../../../../database/images';
 import '../../../../assets/css/exercice/skillPage/card.css';
 
 function SectionCard(props){

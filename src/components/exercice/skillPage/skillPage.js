@@ -3,7 +3,7 @@ import SectionCard from './exercice/SectionCard';
 
 import {
     bush,logo_parrot_adulte,pres_perfect,medium_parrot,small_parrot
-} from '../../../assets/img/index'
+} from '../../../database/images'
 
 function SkillPage(props) {
     return (

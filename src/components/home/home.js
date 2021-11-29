@@ -9,7 +9,7 @@ import ReadCategory from './read/ReadCategory'
 
 import {
     basket_jump,everest,science,history,politics,sport,terrorisme,gaming
-} from '../../assets/img/index'
+} from '../../database/images'
 
 function Home(props) {
     return (

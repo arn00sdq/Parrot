@@ -6,7 +6,7 @@ import {
     home_icon, lecon_icon, paper_icon, bush, logo_parrot_adulte,
     flag_britain, flame_icon, down_arrow, feather_icon, profil_icon,exercice_icon
 
-} from '../assets/img/index'
+} from '../database/images'
 
 const headerProps = {
     navProps: {

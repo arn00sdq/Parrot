@@ -1,6 +1,6 @@
 import React from 'react';
 import Reward from '../../common/reward/Reward';
-import {feather_icon,treasure } from '../../../assets/img/index';
+import {feather_icon,treasure } from '../../../database/images';
 
 function DailyContainer(props){
     return (

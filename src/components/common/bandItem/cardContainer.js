@@ -4,7 +4,7 @@ import Reward from '../reward/Reward';
 import {
     history
 
-} from '../../../assets/img/index'
+} from '../../../database/images'
 
 function CardContent(value,index) {
     let row = [];

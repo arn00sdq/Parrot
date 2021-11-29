@@ -1,7 +1,7 @@
 import PictBtn from './type/pictBtn';
 import React from 'react';
 
-import {cross} from '../../../../assets/img/index'
+import {cross} from '../../../../database/images'
 
 function typeExercice(exercice,id) {
     const row = [];

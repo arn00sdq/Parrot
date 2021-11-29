@@ -1,5 +1,5 @@
 import React from 'react';
-import {right_arrow} from '../../../assets/img/index';
+import {right_arrow} from '../../../database/images';
 
 function ActivityContainer(props){
     return (

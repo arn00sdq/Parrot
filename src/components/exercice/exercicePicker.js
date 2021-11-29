@@ -4,7 +4,7 @@ import ThemeContainer from '../common/picker/filter/ThemeContainer'
 import TimeContainer from '../common/picker/filter/TimeContainer'
 import PictTimeContainer from '../common/bandItem/PictTimeContainer'
 
-import { bush, pres_perfect } from '../../assets/img/index'
+import { bush, pres_perfect } from '../../database/images'
 
 const themeProps = {
     Categorie: {

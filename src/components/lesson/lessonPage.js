@@ -2,7 +2,7 @@ import React from 'react';
 
 import DisplayContent from '../common/DisplayContent/displayContent';
 
-import {bush} from '../../assets/img/index'
+import {bush} from '../../database/images'
 
 const classic_lecon = {
 

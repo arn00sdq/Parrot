@@ -2,7 +2,7 @@ import RowContentSummarize from './rowContent';
 import Reward from '../../reward/Reward'
 import React from 'react';
 
-import {treasure,feather_icon} from '../../../../assets/img/index'
+import {treasure,feather_icon} from '../../../../database/images'
 
 function DisplaySummarize(props) {
     console.log("DisplayContent - displaySummarize: summarize",props.summarize);

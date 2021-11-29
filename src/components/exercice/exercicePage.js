@@ -1,5 +1,5 @@
 import React from 'react';
-import { basket_jump, everest} from '../../assets/img/index';
+import { basket_jump, everest} from '../../database/images';
 import DisplayContent from '../common/DisplayContent/displayContent';
 
 

@@ -1,5 +1,5 @@
 import { _uniqueId } from "lodash/uniqueId";
-import * as assets from  "../assets/img/index"
+import {basket_jump, everest} from  "./images"
 
 const data = [
     {
@@ -7,7 +7,10 @@ const data = [
         type,
         level : "Débutant (A1 - A2)",
         categories :["Present-perfect","Instruments"],
-        rewards : ["treasure","feather_icon"],
+        rewards : {
+            treasures : 0,
+            feathers : 2,
+        },
         instructions: ["Selectionne le meilleur mot correspondant pour chaque image",
         "Selectionne les meilleur synonymes correspondant pour le mot"],
         instrument: {
@@ -24,22 +27,10 @@ const data = [
         },
     }
 ];
-
-
-
-
-const pict_but_excercice = {
-    title : "Instruments",
-    exercice: {
-        
-    },
-
     
-    id: "0001", //0001 - 0999 : ex ; 1001 - 1999 : lecon; 2001 - 2999 : paper
-}
 
 module.exports(
-    data.array.forEach((element) => {
+    data.forEach((element) => {
       element.id = _uniqueId("EX");
     })
   );

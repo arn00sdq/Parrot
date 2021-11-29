@@ -1,6 +1,6 @@
 import React from 'react';
 import DailyContainer from './DailyContainer';
-import {feather_icon, treasure}from '../../../assets/img/index';
+import {feather_icon, treasure}from '../../../database/images';
 
 function DailyCard(props){
     return(

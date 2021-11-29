@@ -1,5 +1,5 @@
 import React from 'react';
-import {ready_icon} from '../../../assets/img/index';
+import {ready_icon} from '../../../database/images';
 
 function ChallengeContainer(props){
     return (

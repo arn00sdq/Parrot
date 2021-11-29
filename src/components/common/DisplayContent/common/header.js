@@ -1,5 +1,5 @@
 import React from 'react';
-import {cross} from '../../../../assets/img/index'
+import {cross} from '../../../../database/images'
 
 function HeaderDisplayContent(props) {
     return (
