@@ -4,7 +4,6 @@
     margin-top: 1vh;
     border-radius: 25px;
     width: 55vw;
-    height: 33vh;
     padding: 2vh 3vw;
     background-color: var(--container-bg-color);
    
@@ -45,9 +44,11 @@
 
 }
 .content-paperCard{
+    display: flex;
+    flex-direction: column;
+   
     background-color: var(--card-bg-color);
-    padding: 15px 15px ;
-    height: 100%;
+    padding: 10px 10px ;
     
 }
 .date-paperCard{

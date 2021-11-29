@@ -84,7 +84,7 @@ function PaperPicker(props) {
                         <div className="n-exercices">8 exercices</div>
                     </div>
                     <CardContainer title="Santé" content={paperPickerProps} />
-                    <a href="#" className="button-ex-card">Charger plus</a>
+                    
                 </div>
            
             </main>

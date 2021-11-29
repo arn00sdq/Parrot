@@ -16,7 +16,7 @@ function CardContent(value,index) {
                     <div className="date-paperCard">{value[index].date}</div>
                     <div className="title-paperCard">{value[index].title}</div>
                     <div className="text-paperCard">{value[index].text}</div>
-                    <div className="btn-paperCard"></div>
+                    <div className="button-card">READ</div>
                 </div>
             </div>
         )
