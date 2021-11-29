@@ -63,8 +63,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding: 1.5vh ;
-    height: 25vh;
+    margin-top: 2vh;
 }
 #title-category{
     font-family: Monserrat;
@@ -77,6 +76,7 @@
     flex-direction: row;
     flex-wrap:wrap;
     justify-content: space-between;
+    margin-top: 1vh;
 }
 
 .read-category{
@@ -106,6 +106,7 @@
 #text-infos-category{
     font-family: Quicksand;
     font-size: 20px;
+    margin-top: 1.5vh;
 }
 
 #button-train-paper{
@@ -120,4 +121,5 @@
     color: #FFFFF7;
     font-weight: bold;
     text-decoration: none;
+    margin-top: 2vh;
 }
