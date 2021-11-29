@@ -1,0 +1,84 @@
+.cardContent-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1vh;
+    border-radius: 25px;
+    width: 55vw;
+    height: 33vh;
+    padding: 2vh 3vw;
+    background-color: var(--container-bg-color);
+   
+
+}
+.cardContent-header-container{
+
+}
+.title-header{
+    font-family: Monserrat;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+.hr-cardContent{
+    border: solid;
+    border-width: 1px;
+    margin-left: -3vw;
+    width: 55vw;
+    opacity: 0.55;
+}
+
+.paperCard-Container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.paperCard{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 13vw;
+    
+}
+.img-paperCard{
+    height: 10vh;
+
+}
+.content-paperCard{
+    background-color: var(--card-bg-color);
+    padding: 15px 15px ;
+    height: 100%;
+    
+}
+.date-paperCard{
+
+}
+.title-paperCard{
+    
+    font-family: Monserrat;
+    font-size: 15px;
+    font-weight: bold;
+
+    padding: 5px 0;
+    height: 3vh;
+    white-space: nowrap;
+    width: 100%;
+    overflow:hidden;
+    text-overflow:ellipsis;
+
+
+}
+.text-paperCard{
+    font-family: Monserrat;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 5px 0;
+    height: 7vh;
+    white-space: normal;
+    width: 100%;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+.btn-paperCard{
+    margin-top: 1vh;
+}

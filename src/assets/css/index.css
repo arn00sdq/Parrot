@@ -18,12 +18,13 @@
 @import "./common/displayContent/footer.css";
 @import "./common/bandItem/pictTimeContent.css";
 @import "./common/picker/filter.css";
+@import "./common/bandItem/cardContainer.css";
 
  *{
     --body-bg-color:#FFEEE2;
 
     --header-bg-color:white;
-    --header-text-color:black;
+    --header-text-color:#525151;
     --header-text-hover-color:#F9A014;
     --header-text-current-corlor:#F9A014;
     --header-icon-color:black;

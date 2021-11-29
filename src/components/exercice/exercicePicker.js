@@ -41,7 +41,7 @@ function ExercicePicker(props) {
                 
                 <div className="exercice-picker-card card">
                     <div className="header-picker">
-                        <div className="flag-point-medium">Present perfect</div>
+                        <div className="tag-point-medium">Present perfect</div>
                         <div className="n-exercices">8 exercices</div>
                     </div>
                     <PictTimeContent className="ptc-picker-container" imgExercice={pres_perfect} time="10min" titleEx="Present Perfect"

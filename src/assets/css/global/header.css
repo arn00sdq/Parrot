@@ -2,22 +2,18 @@
     display: flex;
     align-items: center;
     flex-direction: row;
-    justify-content: space-between;
     background-color: white;
+    box-shadow: 0 0 40px rgb(0 0 0 / 15%);
 }
 
 header .brand-section{
     display: flex;
     justify-content: flex-start;
-    background-image: url("../../img/other/brand-font.png");
-    background-size: cover;
-    padding: 2vh 2vw;
-    width: 22vw;
+    background-color: #FB830F;
+    padding: 1vh 3vw;
 }
 
 #brand-logo{
-    display: flex;
-    justify-content: center;
     font-family: ArchivoBlack;
     font-size: 50px;
     color: white;
@@ -27,8 +23,7 @@ nav{
     display: flex;
     align-items: center;
     flex-direction: row;
-    justify-content: space-between;
-    width: 45vw;
+    margin-left: 2vw;
 }
 
 .nav-section{
@@ -38,15 +33,17 @@ nav{
 }
 
 .text-header{
-    font-family: Quicksand;
-    font-size: 25px;
+    font-family: Menlo;
+    font-size: 1em;
+    line-height: 18px;
+    letter-spacing: .03125rem;
     text-decoration: none;
+    font-weight: 600;
     color: var(--header-text-color);
 }
 
 .current-page{
-    font-family: Quicksand;
-    font-size: 25px;
+    font-family: Menlo;
     text-decoration: none;
     color: var(--header-text-current-color);
 }
@@ -54,31 +51,29 @@ nav{
 .nav-icon{
     display: flex;
     align-items: center;
-    margin-left: 10px;
-    height: 4vh;
-    width: 5vw;
-    color: var(--header-icon-color);
-    font-family: Quicksand;
-    font-size: 22px;
+    margin-left: 2vw;
     text-decoration: none;
 }
 
 .nav-icon img{
-   height: 3vh;
+   height: 2.5vh;
+   opacity: .5;
+   
+
 }
 .user-infos{
     display: flex;
     align-items: center;
     flex-direction: row;
-    justify-content: space-between;
-    margin-right: 3vw;
-    width: 20vw;
+
+    margin-left: 30vw;
 }
 
 .infos-section{
     display: flex;
     align-items: center;
     flex-direction: row;
+    margin-left: 2vw;
 }
 
 .flame-icon{

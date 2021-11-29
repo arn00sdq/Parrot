@@ -18,3 +18,7 @@
     src: url(../../fonts/Montserrat/Montserrat-Light.ttf);
 }
 
+@font-face {
+    font-family: 'Menlo';
+    src: url(../../fonts/MENLO/Menlo-Regular.ttf);
+}

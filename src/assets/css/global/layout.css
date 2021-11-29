@@ -4,10 +4,10 @@ main{
     justify-content: space-around;
     background: linear-gradient(#F07C27, #e54142);;
     align-self: center;
-    margin-top: 3vh;
+    margin-top: 2vh;
     width: 95vw;
-    height: 85vh;
-    padding: 4vh 2vw;
+    height: 88vh;
+    padding: 2vh 2vw;
 }
 
 
@@ -31,5 +31,5 @@ main{
 }
 
 img {
-    object-fit: cover;
+    background-size: cover;
 }

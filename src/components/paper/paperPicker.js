@@ -1,6 +1,6 @@
 import React from 'react';
 
-import PictTimeContent from '../common/bandItem/PictTimeContent'
+import CardContainer from '../common/bandItem/cardContainer'
 import ThemeContainer from '../common/picker/filter/ThemeContainer'
 import {bush,pres_perfect} from '../../assets/img/index'
 
@@ -13,6 +13,53 @@ const themeProps = {
         title : "Journaux",
         props : ["Time","Forbes","Science"],
     }
+}
+
+const paperProps = {
+    Santé : [{
+        title: "Covid-19: les laboratoires s'inquitent",
+        date: "10/11/2020",
+        text : "Depuis quelques jours, le gouvernement français et l'Union européenne \
+        appellent la population à se faire administrer une dose de vaccin de rappel pour \
+        endiguer le rebond épidémique observé. Pourtant, une incertitude plane déjà sur la protection offerte par cette troisième dose."
+        },
+        {
+        title: "Covid-19: les laboratoires s'inquitent",
+        date: "10/11/2020",
+        text : "Depuis quelques jours, le gouvernement français et l'Union européenne \
+        appellent la population à se faire administrer une dose de vaccin de rappel pour \
+        endiguer le rebond épidémique observé. Pourtant, une incertitude plane déjà sur la protection offerte par cette troisième dose."
+        },
+        {
+            title: "Covid-19: les laboratoires s'inquitent",
+            date: "10/11/2020",
+            text : "Depuis quelques jours, le gouvernement français et l'Union européenne \
+            appellent la population à se faire administrer une dose de vaccin de rappel pour \
+            endiguer le rebond épidémique observé. Pourtant, une incertitude plane déjà sur la protection offerte par cette troisième dose."
+            }
+        ],
+    Science : [{
+        title: "Covid-19: les laboratoires s'inquitent",
+        date: "10/11/2020",
+        text : "Depuis quelques jours, le gouvernement français et l'Union européenne \
+        appellent la population à se faire administrer une dose de vaccin de rappel pour \
+        endiguer le rebond épidémique observé. Pourtant, une incertitude plane déjà sur la protection offerte par cette troisième dose."
+        },
+        {
+        title: "Covid-19: les laboratoires s'inquitent",
+        date: "10/11/2020",
+        text : "Depuis quelques jours, le gouvernement français et l'Union européenne \
+        appellent la population à se faire administrer une dose de vaccin de rappel pour \
+        endiguer le rebond épidémique observé. Pourtant, une incertitude plane déjà sur la protection offerte par cette troisième dose."
+        },
+        {
+            title: "Covid-19: les laboratoires s'inquitent",
+            date: "10/11/2020",
+            text : "Depuis quelques jours, le gouvernement français et l'Union européenne \
+            appellent la population à se faire administrer une dose de vaccin de rappel pour \
+            endiguer le rebond épidémique observé. Pourtant, une incertitude plane déjà sur la protection offerte par cette troisième dose."
+            }
+        ], 
 }
 
 function PaperPicker(props) {
@@ -33,27 +80,10 @@ function PaperPicker(props) {
                 
                 <div className="exercice-picker-card card">
                     <div className="header-picker">
-                        <div className="flag-point-medium">Present perfect</div>
+                        <div className="tag-point-medium">Present perfect</div>
                         <div className="n-exercices">8 exercices</div>
                     </div>
-                    <PictTimeContent className="ptc-picker-container" imgExercice={pres_perfect} time="10min" titleEx="Present Perfect"
-                    state="Terminer" content="Cette lecon est basé sur une description d'image.
-                    VOus devrez decrire l'image en alternant...
-                    Au travers de cet exercice nous verrons l'utilisation
-                    du present perfect avec des descriptions, texte a trous..."
-                    />
-                    <PictTimeContent className="ptc-picker-container" imgExercice={pres_perfect} time="10min" titleEx="Present Perfect"
-                    state="Terminer" content="Cette lecon est basé sur une description d'image.
-                                              Vous devrez decrire l'image en alternant...
-                                              Au travers de cet exercice nous verrons l'utilisation
-                                              du present perfect avec des descriptions, texte a trous..."
-                    />
-                    <PictTimeContent className="ptc-picker-container" imgExercice={pres_perfect} time="10min" titleEx="Present Perfect"
-                    state="Terminer" content="Cette lecon est basé sur une description d'image.
-                                              Vous devrez decrire l'image en alternant...
-                                              Au travers de cet exercice nous verrons l'utilisation
-                                              du present perfect avec des descriptions, texte a trous..."
-                    />
+                    <CardContainer title="Santé" content={paperProps} />
                     <a href="#" className="button-ex-card">Charger plus</a>
                 </div>
            
