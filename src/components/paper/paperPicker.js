@@ -15,7 +15,7 @@ const themeProps = {
     }
 }
 
-const paperProps = {
+const paperPickerProps = {
     Santé : [{
         title: "Covid-19: les laboratoires s'inquitent",
         date: "10/11/2020",
@@ -83,7 +83,7 @@ function PaperPicker(props) {
                         <div className="tag-point-medium">Present perfect</div>
                         <div className="n-exercices">8 exercices</div>
                     </div>
-                    <CardContainer title="Santé" content={paperProps} />
+                    <CardContainer title="Santé" content={paperPickerProps} />
                     <a href="#" className="button-ex-card">Charger plus</a>
                 </div>
            

@@ -2,7 +2,7 @@ import React from 'react';
 
 import ThemeContainer from '../common/picker/filter/ThemeContainer'
 import TimeContainer from '../common/picker/filter/TimeContainer'
-import PictTimeContent from '../common/bandItem/PictTimeContent'
+import PictTimeContainer from '../common/bandItem/PictTimeContainer'
 
 import {bush,pres_perfect} from '../../assets/img/index'
 
@@ -24,6 +24,44 @@ const timeProps = {
     }
 }
 
+const lessonPickerProps = {
+    exercice: [{
+        title: "Present Perfect",
+        className:"ptc-picker-container",
+        time: "10min",
+        imgExercice: pres_perfect,
+        state: "Terminer",
+        text: "Cette lecon est basé sur une description d'image.\
+        VOus devrez decrire l'image en alternant...\
+        Au travers de cet exercice nous verrons l'utilisation\
+        du present perfect avec des descriptions, texte a trous..."
+    },
+    {
+        title: "Present Perfect",
+        className:"ptc-picker-container",
+        time: "10min",
+        imgExercice: pres_perfect,
+        state: "Terminer",
+        text: "Cette lecon est basé sur une description d'image.\
+            VOus devrez decrire l'image en alternant...\
+            Au travers de cet exercice nous verrons l'utilisation\
+            du present perfect avec des descriptions, texte a trous..."
+    },
+    {
+        title: "Present Perfect",
+        className:"ptc-picker-container",
+        time: "10min",
+        imgExercice: pres_perfect,
+        state: "Terminer",
+        text: "Cette lecon est basé sur une description d'image.\
+            VOus devrez decrire l'image en alternant...\
+            Au travers de cet exercice nous verrons l'utilisation\
+            du present perfect avec des descriptions, texte a trous..."
+    }
+    ],
+}
+
+
 function LessonPicker(props) {
     return (
         <div id="root-css">
@@ -44,24 +82,7 @@ function LessonPicker(props) {
                         <div className="tag-point-medium">Present perfect</div>
                         <div className="n-exercices">8 exercices</div>
                     </div>
-                    <PictTimeContent className="ptc-picker-container" imgExercice={pres_perfect} time="10min" titleEx="Present Perfect"
-                    state="Terminer" content="Cette lecon est basé sur une description d'image.
-                    VOus devrez decrire l'image en alternant...
-                    Au travers de cet exercice nous verrons l'utilisation
-                    du present perfect avec des descriptions, texte a trous..."
-                    />
-                    <PictTimeContent className="ptc-picker-container" imgExercice={pres_perfect} time="10min" titleEx="Present Perfect"
-                    state="Terminer" content="Cette lecon est basé sur une description d'image.
-                                              Vous devrez decrire l'image en alternant...
-                                              Au travers de cet exercice nous verrons l'utilisation
-                                              du present perfect avec des descriptions, texte a trous..."
-                    />
-                    <PictTimeContent className="ptc-picker-container" imgExercice={pres_perfect} time="10min" titleEx="Present Perfect"
-                    state="Terminer" content="Cette lecon est basé sur une description d'image.
-                                              Vous devrez decrire l'image en alternant...
-                                              Au travers de cet exercice nous verrons l'utilisation
-                                              du present perfect avec des descriptions, texte a trous..."
-                    />
+                    <PictTimeContainer content={lessonPickerProps} />
                     <a href="#" className="button-ex-card">Charger plus</a>
                 </div>
            

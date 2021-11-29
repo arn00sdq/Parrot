@@ -1,5 +1,5 @@
 import React from 'react';
-import PictTimeContent from '../../../common/bandItem/PictTimeContent';
+import PictTimeContainer from '../../../common/bandItem/PictTimeContainer';
 import HeaderLevel from './HeaderLevel';
 
 import { sign_where, home_ex,pres_perfect} from '../../../../assets/img/index';
@@ -10,7 +10,7 @@ function SectionCard(props){
         <div className ="section-skill-card">
             <HeaderLevel titleCard={props.titleCard} />    
             <div className="card exercice-card">
-                <PictTimeContent className="ptc-skill-container" imgExercice={pres_perfect} time="10min" titleEx={props.titleEx}
+                {/*<PictTimeContent className="ptc-skill-container" imgExercice={pres_perfect} time="10min" titleEx={props.titleEx}
                 state="Terminer" content="Dans cette exercice nous verrons 
                                           l'utilisation du present perfect aux travers
                                           de text à trous..."
@@ -30,7 +30,7 @@ function SectionCard(props){
                 state="Terminer" content="Dans cette exercice nous verrons 
                                           l'utilisation du present perfect aux travers
                                           de text à trous..."
-                />
+                />*/}
                 <a href ="#" class="button-train-skill">S'entrainer</a>
             </div>  
             
