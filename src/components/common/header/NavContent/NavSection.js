@@ -3,18 +3,8 @@ import { Link } from "react-router-dom";
 
 function DropdownAssignment(props,route,classLink) {
     let row = []
-    console.log(route == "lessonPicker")
     if (route == "lessonPicker") { // || a venir peut etre
-        row.push(
-            <div class="item">
-                <Link to={props.value.route} className={classLink}> {props.value.text}</Link>
-                <div className="dropdown-menu" role="menu">
-                    <ul className="menu-item-link">
-                        <li className="dropdown-item">Grammar</li>
-                        <li className="dropdown-item">Lecon</li>
-                    </ul>
-                </div>
-            </div>)
+        row.push(<Link to={props.value.route} className={classLink}> {props.value.text}</Link>)
 
     }else{
         row.push(<Link to={props.value.route} className={classLink}> {props.value.text}</Link>)
@@ -32,3 +22,13 @@ function NavSection(props) {
 }
 
 export default NavSection;
+
+/*<div class="item">
+                
+                {<div className="dropdown-menu" role="menu">
+                    <ul className="menu-item-link">
+                        <li className="dropdown-item">Grammar</li>
+                        <li className="dropdown-item">Lecon</li>
+                    </ul>
+                </div>}
+            </div>*/

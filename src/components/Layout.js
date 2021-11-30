@@ -38,7 +38,7 @@ const headerProps = {
     },
     userProps: {
         flag: {
-            flag1: ["img", flag_britain, "infos-icon"], //balise img [nom_balise,src,class]
+            flag1: ["img", flag_britain, "infos-icon","dropdown"], //balise img [nom_balise,src,class]
             flag2: ["img", down_arrow, "arrow-icon"],
         },
         feather: {
