@@ -31,7 +31,7 @@ const headerProps = {
             text: "LIRE",
         },
         test: {
-            icon: paper_icon,
+            icon: feather_icon,
             route: "skillPage",
             text: "TOIEC TEST",
         },
@@ -61,7 +61,6 @@ function Layout() {
     return (
         <div id="root-css">
             <img className="bush2" src={bush} />
-            <img id="parrot-home" src={logo_parrot_adulte} />
             <HeaderConstruction header={headerProps}/>
             <Outlet />
         </div>

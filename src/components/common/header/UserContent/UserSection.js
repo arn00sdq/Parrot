@@ -7,7 +7,7 @@ function DropdownAssignment(value) {
     if (value[0] == "img") { // || a venir peut etre
         if (value[3] == "dropdown") {
             return (
-                <div class="item">
+                <div className="item">
                     <img src={value[1]} key={value[2]} className={value[2]} />
                     <div className="dropdown-menu" role="menu">
                         <ul className="menu-item-link">

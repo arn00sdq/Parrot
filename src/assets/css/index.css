@@ -19,6 +19,7 @@
 @import "./common/bandItem/pictTimeContent.css";
 @import "./common/picker/filter.css";
 @import "./common/bandItem/cardContainer.css";
+@import "./exercice/skillPage/card.css";
 
  *{
     --body-bg-color:#FFEEE2;

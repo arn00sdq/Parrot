@@ -6,23 +6,21 @@ import {
 
 } from '../../../database/images'
 
-function PictTimeContent(props, index) {
-    console.log(props.length)
-    console.log(props[index].className)
+function PictTimeContent(props) {
     let row = [];
     for (let i = 0; i < props.length; i++) {
-        row.push(<div className={props[index].className}>
-            <img className="img-ptc" src={props[index].imgExercice} />
+        row.push(<div className={props[i].className}>
+            <img className="img-ptc" src={props[i].imgExercice} />
             <div className="time-container">
                 <img className="clock" src={clock_icon} />
-                <div className="time-shift">{props[index].time}</div>
+                <div className="time-shift">{props[i].time}</div>
             </div>
             <div className="content-ptc-container">
                 <div className="header-ptc-container">
-                    <div className="title-ptc">{props[index].title}</div>
-                    <div className="validation">{props[index].state}</div>
+                    <div className="title-ptc">{props[i].title}</div>
+                    <div className="validation">{props[i].state}</div>
                 </div>
-                <div className="text-ptc">{props[index].text}</div>
+                <div className="text-ptc">{props[i].text}</div>
                 <div className="footer-ptc">
                     <Reward imgReward="reward" classReward={treasure} />
                     <img className="orange-arrow" src={right_arrow} />
@@ -37,11 +35,8 @@ function PictTimeContent(props, index) {
 
 function PictTimeContainer(props) {
     let row = [];
-    var values = Object.keys(props.content);
-
     for (let [key, value] of Object.entries(props.content)) {
-        const index = values.indexOf(key);
-        row.push(PictTimeContent(value, index));
+        row.push(PictTimeContent(value));
     }
 
     return row;
