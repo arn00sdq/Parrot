@@ -13,7 +13,7 @@ function DropdownAssignment(props,route,classLink) {
 }
 
 function NavSection(props) {
-    const classLink = props.value.route != "skillPage" ? "nav-icon text-header" : "nav-toiec-test text-header";
+    const classLink = props.value.route != "toiecPage" ? "nav-icon text-header" : "nav-toiec-test text-header";
     return (
         <li className="nav-section">
             {DropdownAssignment(props,props.value.route,classLink)}

@@ -1,7 +1,7 @@
 import React from 'react';
 
-import ThemeContainer from '../common/picker/filter/ThemeContainer'
-import TimeContainer from '../common/picker/filter/TimeContainer'
+import ThemeContainer from '../common/filter/ThemeContainer'
+import TimeContainer from '../common/filter/TimeContainer'
 import PictTimeContainer from '../common/bandItem/PictTimeContainer'
 
 import {bush,pres_perfect} from '../../database/images'

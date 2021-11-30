@@ -1,9 +1,9 @@
 import React from 'react';
 
-import Checkbox from '../../tool/Checkbox'
-import Slider from '../../tool/Checkbox'
+import Checkbox from '../tool/Checkbox'
+import Slider from '../tool/Checkbox'
 
-function RowThemeContainer(props){
+function RowTimeContainer(props){
     
     const [checkedOne, setCheckedOne] = React.useState(false);
     const [checkedTwo, setCheckedTwo] = React.useState(false);
@@ -22,23 +22,21 @@ function RowThemeContainer(props){
     return row;
 }
 
-function ThemeContainer(props){
+function TimeContainer(props){
     let row = [];
     console.log(props)
     for(let [key,value]of Object.entries(props.content)){
         row.push( 
-        <div className="theme-container">
-            <div className="title-theme-container">{key.toString()}</div>
-            <div className="content-theme">
-                <div key={value.id} className="checkbox-section">
-                    {RowThemeContainer(value)}
+            <div className="timer-container">
+                <div className="title-theme-container">Durée</div>
+                <div className="checkbox-section-timer">
+                    {RowTimeContainer(value)}
                 </div>
                 {/*<Slider className="slider"/>*/}
             </div>
-        </div>
         )
     }
     return row ;
 }
 
-export default ThemeContainer;
+export default TimeContainer;

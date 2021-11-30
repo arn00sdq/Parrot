@@ -1,7 +1,7 @@
 import React from 'react';
 
 import CardContainer from '../common/bandItem/cardContainer'
-import ThemeContainer from '../common/picker/filter/ThemeContainer'
+import ThemeContainer from '../common/filter/ThemeContainer'
 import {bush,pres_perfect} from '../../database/images'
 
 const themeProps = {

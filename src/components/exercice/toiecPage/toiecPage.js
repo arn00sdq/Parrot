@@ -138,7 +138,7 @@ const toiecAdvanced = {
 }
 
 
-function SkillPage(props) {
+function ToiecPage(props) {
     return (
         <div id="root-css">
             <img id="large-parrot" src={logo_parrot_adulte} />
@@ -153,4 +153,4 @@ function SkillPage(props) {
     )
 }
 
-export default SkillPage;
+export default ToiecPage;

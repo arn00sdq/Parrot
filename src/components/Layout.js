@@ -32,7 +32,7 @@ const headerProps = {
         },
         test: {
             icon: feather_icon,
-            route: "skillPage",
+            route: "toiecPage",
             text: "TOIEC TEST",
         },
     },
