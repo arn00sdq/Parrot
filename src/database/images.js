@@ -11,7 +11,7 @@ import orange_house from '../assets/img/icon/orange-house.png';
 import exercice_icon from '../assets/img/icon/exerice.svg';
 import profil_icon from '../assets/img/icon/profil-icon.png';
 import ready_icon from '../assets/img/icon/ready-icon.png';
-import clock_icon from '../assets/img/icon/clock-icon.jpg';
+import clock_icon from '../assets/img/icon/clock-icon.svg';
 import gaming from '../assets/img/mini_logo/gaming.jpg';
 import history from '../assets/img/mini_logo/history.jpg';
 import politics from '../assets/img/mini_logo/politics.jpg';

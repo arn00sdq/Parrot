@@ -31,10 +31,6 @@ main{
     
 }
 
-.card img{
-    object-fit: cover;
-}
-
 img {
     background-size: cover;
 }
