@@ -23,6 +23,7 @@
 .img-ptc{
     width: 25%;
     height: 100%;
+    object-fit: cover
 }
 
 .time-container{
@@ -43,9 +44,7 @@
 
 .time-shift{
     font-family: Monserrat;
-    font-size: 100%;
-    margin-top: 5px;
-    
+    font-size: 14px; 
 }
 
 .content-ptc-container{

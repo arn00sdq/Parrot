@@ -16,7 +16,8 @@ function NavSection(props) {
     const classLink = props.value.route != "toiecPage" ? "nav-icon text-header" : "nav-toiec-test text-header";
     return (
         <li className="nav-section">
-            {DropdownAssignment(props,props.value.route,classLink)}
+            <img src={props.url} />
+            <Link to={props.value.route} className={classLink}> {props.value.text}</Link>
         </li>
     );
 }
