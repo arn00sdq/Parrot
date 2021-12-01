@@ -25,7 +25,7 @@ function DropdownAssignment(value) {
         }
 
     } else {
-        return (<p id={value[2]} key={value[1]} >{value[1]}</p>)
+        return (<p class={value[2]} key={value[1]} >{value[1]}</p>)
     }
 }
 

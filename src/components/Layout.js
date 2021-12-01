@@ -31,23 +31,23 @@ const headerProps = {
             text: "LIRE",
         },
         test: {
-            icon: feather_icon,
+            icon: "",
             route: "toiecPage",
             text: "TOIEC TEST",
         },
     },
     userProps: {
         flag: {
-            flag1: ["img", flag_britain, "infos-icon","dropdown"], //balise img [nom_balise,src,class]
+            flag1: ["img", flag_britain, "flag-icon","dropdown"], //balise img [nom_balise,src,class]
             flag2: ["img", down_arrow, "arrow-icon"],
         },
         feather: {
             flag1: ["img", feather_icon, "infos-icon"],
-            flag2: ["p", 4,"feather-number"],
+            flag2: ["p", 4,"user-number"],
         },
         flame: {
-            flag1: ["img", flame_icon, "flame-icon"],
-            flag2: ["p", 4,""],
+            flag1: ["img", flame_icon, "infos-icon"],
+            flag2: ["p", 4,"user-number"],
         },
         profil: {
             flag1: ["img", profil_icon, "infos-icon"],

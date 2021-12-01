@@ -3,6 +3,7 @@ import { basket_jump, everest} from '../../database/images';
 import DisplayContent from '../common/DisplayContent/displayContent';
 
 
+
 function ExercicePage(props) {
     return (
         <main> {/*DisplayContent a appeler dans lecon et paper : mise en page*/}        

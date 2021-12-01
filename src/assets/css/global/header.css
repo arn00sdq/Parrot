@@ -30,24 +30,25 @@ nav{
     display: flex;
     align-items: center;
     flex-direction: row;
-    margin-left: 1vw;
+    margin-left: 1.4vw;
 }
 
 .nav-icon{
     display: flex;
     align-items: center;
-    margin-left: 2vw;
+    margin-left: 0.8vw;
     text-decoration: none;
 }
 
 .text-header{
     display: block;
+    margin-top: 5px;
     font-family: Menlo;
     font-size: .975em;
     font-weight: bold;
     letter-spacing: .03125rem;
     line-height: 18px;
-    margin: 6px 10px 7px ;
+    /*margin: 6px 10px 7px ;*/
     text-decoration: none;
     color: var(--header-text-color);
 }
@@ -59,7 +60,7 @@ nav{
     border-radius: 4px;
     transition: background-color .3s;
     width: max-content;
-    margin-left: 2vw;
+    /*margin-left: 2vw;*/
     padding: 8px;
 }
 
@@ -69,7 +70,7 @@ nav{
     color: var(--header-text-current-color);
 }
 
-.nav-icon img{
+.nav-section img{
    height: 2.5vh;
    opacity: .5;
    
@@ -80,33 +81,33 @@ nav{
     align-items: center;
     flex-direction: row;
 
-    margin-left: 24vw;
+    margin-left: 25.5vw;
 }
 
 .infos-section{
     display: flex;
     align-items: center;
     flex-direction: row;
-    margin-left: 2vw;
+    margin-left: 1.5vw;
 }
 
-.flame-icon{
-    height: 4vh;
-    width: 3vw;
+.flag-icon{
+    height: 2.5vh;
+    width: 1.8vw;
 }
 
 .infos-icon{
-    height: 3vh;
-    width: 2vw;
+    height: 2.5vh;
+    opacity: .8;
 }
 
 .arrow-icon{
     margin-left: 9px;
     height: 1vh;
-    width: 1vw;
+    width: 0.6vw;
 }
-.feather-number{
-    margin-left: 10px;
+.user-number{
+    margin-left: 8px;
 }
 
 /* Drop down a bougé*/
@@ -140,7 +141,7 @@ nav{
     opacity: 1;
     transform-origin: top left;
     transform: scale(0);
-    transition: top .3s ease-in-out,opacity .3s ease-in-out;
+    transition: top 1.3s ease-in-out,opacity .3s ease-in-out;
   }
 
   .dropdown-item {
@@ -172,5 +173,5 @@ nav{
     width: 1.5vw;
     height: 2.3vh;
     margin: 15px;
-    transition: color .2s ease-in-out;
+    transition: color 1.2s ease-in-out;
 }
