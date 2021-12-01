@@ -13,4 +13,4 @@ const data = Object.freeze({
   FUTURE_PERFECT_CONTINUOUS: "Future perfect continuous",
 });
 
-export default data;
+export {data};

@@ -1,6 +1,8 @@
 import React from 'react';
-import ButtonSyno from './pictBtnComponent/exerciceSection/btnSyno'
-import PictExSection from './pictBtnComponent/exerciceSection/picture'
+import Word2img from './types/word2img';
+import Img2word from './types/img2word';
+
+
 
 function RowExercice(exercice){
     const row=[];
@@ -11,12 +13,12 @@ function RowExercice(exercice){
             var arr_img=exercice[firstKey];
             var arr_opt=exercice[secondKey];
             for (let i = 0; i<arr_img.length; i++)
-                row.push(<PictExSection key={arr_opt[i]} img={arr_img[i]} opt={arr_opt[i]}/>) // opt a finir
+                row.push(<Word2img key={arr_opt[i]} img={arr_img[i]} opt={arr_opt[i]}/>) // opt a finir
             break;
         case 'btn':
             var arr_value=exercice[firstKey];
             for (let i = 0; i<arr_value.length; i++)
-                row.push(<ButtonSyno key={arr_value[i]} value={arr_value[i]}/>)
+                row.push(<Img2word key={arr_value[i]} value={arr_value[i]}/>)
             break;  
     }
     return row;

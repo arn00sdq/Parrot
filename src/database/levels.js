@@ -4,5 +4,5 @@ const data = Object.freeze({
     ADVANCED : "Advanced (C1-C2)"
   });
   
-export default {data}
+export {data}
   

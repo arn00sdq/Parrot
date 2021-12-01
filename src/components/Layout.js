@@ -17,7 +17,7 @@ const headerProps = {
         },
         exercice: {
             icon: lecon_icon,
-            route: "exercicePicker",
+            route: "exercicePage",
             text: "EXERCICES",
         },
         lecon: {

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import DisplayContent from '../common/DisplayContent/displayContent';
+import DisplayActivity from '../common/displayActivity/displayActivity';
 
 import {bush} from '../../database/images'
 
@@ -54,7 +54,7 @@ function LessonPage(props){
 
             <main>
                 
-            <DisplayContent summarize={classic_lecon.summarize} 
+            <DisplayActivity summarize={classic_lecon.summarize} 
                             lecon={classic_lecon.lecon} 
                             id={classic_lecon.id} 
                             title={classic_lecon.title}
