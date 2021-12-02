@@ -30,10 +30,10 @@ function DisplayActivity({ id }) {
     return e.id == id;
   });
   return (
-    <div className="activity-container">
+    <>
       <DisplaySummary name={`${id} ${": "} ${currentExercise.type}`} summary={currentExercise.summary} />
       {switchContent(prefixType, currentExercise)}
-    </div>
+    </>
   );
 }
 
