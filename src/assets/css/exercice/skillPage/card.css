@@ -1,17 +1,20 @@
 #baby-parrot{
     position: absolute;
-    top: -5vh;
-    left: 1vw;
-    height: 40vh;
-    width: 40vw;
+    margin-top: 1vh;
+    height: 10vh;
+    width: 6vw;
+    margin-left: 15vw;
+    margin-left: 15vw;
+    z-index: 3;
 }
 
 #medium-parrot{
     position: absolute;
-    top: -5vh;
-    left: 32vw;
-    height: 40vh;
-    width: 40vw;
+    margin-top: 0.5vh;
+    height: 13vh;
+    width: 4vw;
+    margin-left: 50vw;
+    z-index: 3;
 }
 
 #large-parrot{
@@ -20,6 +23,7 @@
     right: 15vw;
     height: 18vh;
     width: 8vw;
+    z-index: 3;
 }
 
 .section-skill-card{

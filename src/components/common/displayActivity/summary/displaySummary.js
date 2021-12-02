@@ -5,21 +5,20 @@ import React from "react";
 import { treasure, feather_icon } from "../../../../database/images";
 import DisplayTags from "./displayTags";
 
-function displayRewards({treasures, feathers})
-	{
-		let rewards = [];
-		for (let i = 0; i < treasures; i++) {
-		  rewards.push(
-			<Reward imgReward="reward" classReward={treasure} />
-		  );
-		}
-		for (let i = 0; i < feathers; i++) {
-		  rewards.push(
-			<Reward imgReward="reward" classReward={feather_icon} />
-		  );
-		}
-		return rewards
-	  }
+function displayRewards({ treasures, feathers }) {
+  let rewards = [];
+  for (let i = 0; i < treasures; i++) {
+    rewards.push(
+      <Reward imgReward="reward" classReward={treasure} />
+    );
+  }
+  for (let i = 0; i < feathers; i++) {
+    rewards.push(
+      <Reward imgReward="reward" classReward={feather_icon} />
+    );
+  }
+  return rewards
+}
 
 
 
@@ -35,39 +34,16 @@ function DisplaySummary({ summary }) {
         <div className="section-summary-container">
           <div className="title-section-summary">Details</div>
           <div className="infos-section-summary">
-<<<<<<< HEAD
             <div className="level-tag">{summary.level}</div>
-            <div className="tag-point-small">{summary.theme}</div>
-            {/*<RowContentSummary title="Category" theme={summary.theme} />*/}
-=======
-		  <div className="level-tag">{summary.level}</div>
-		  <div className="tag-point-small">{summary.themes}</div>
+            <div className="tag-point-small">{summary.themes}</div>
             {<DisplayTags title="Categories" themes={summary.themes} />}
->>>>>>> a384b7df30dbcaff86dfdade7bac113ff53fcad8
           </div>
           <div className="hr-horizontale"></div>
         </div>
         <div className="section-summary-container">
           <div className="title-section-summary">Rewards</div>
           <div className="reward-section-summary">
-<<<<<<< HEAD
-            {() => {
-              let rewards = [];
-              for (let i = 0; i < summary.rewards.treasures; i++) {
-                rewards.push(
-                  <Reward imgReward="reward" classReward={treasure} />
-                );
-              }
-              for (let i = 0; i < summary.rewards.feathers; i++) {
-                rewards.push(
-                  <Reward imgReward="reward" classReward={feather_icon} />
-                );
-              }
-              return rewards
-            }}
-=======
             {displayRewards(summary.rewards)}
->>>>>>> a384b7df30dbcaff86dfdade7bac113ff53fcad8
           </div>
           <div className="hr-horizontale"></div>
         </div>
