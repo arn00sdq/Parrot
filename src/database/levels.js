@@ -4,13 +4,9 @@ const data = Object.freeze({
     ADVANCED : "Advanced (C1-C2)"
   });
   
-<<<<<<< HEAD
 export {data}
-=======
-export default {data}
 
 /**PROFONDEUR BOX SHADOW
  check okame
 * */
->>>>>>> 6f31095c5a26c9c30d7263933071d184d727fc16
   

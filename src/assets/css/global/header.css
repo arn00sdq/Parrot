@@ -53,6 +53,10 @@ nav{
     color: var(--header-text-color);
 }
 
+.text-header:hover{
+    color: #FB830F;
+}
+
 .nav-toiec-test{
     color: #FF8F00;
     background: rgba(255,143,0,.1);
@@ -62,6 +66,13 @@ nav{
     width: max-content;
     /*margin-left: 2vw;*/
     padding: 8px;
+}
+
+.nav-toiec-test:hover{
+  /*  color: #FF8F00;*/
+    color: #FFA430;
+    border: 1px solid #FFA430;
+    opacity: 0.8;
 }
 
 .current-page{
@@ -117,27 +128,47 @@ nav{
 
 .item:hover:before {
     content: "";
-    border-right: 16px solid transparent;
-    border-left: 16px solid transparent;
-    border-bottom: 16px solid grey;
+    width: 0;
+    height: 0;
     position: absolute;
-    bottom: -16px;
+    border-width: 0 8px 8px 8px;
+    border-style: solid;
+    border-color: rgba(0,0,0,0.1) transparent;
+    transform: translateX(-50%);
+    bottom: -12px;
     right: -40%;
     transform: translateX(-50%);
+
+    /*
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-width: 0 8px 8px 8px;
+    border-style: solid;
+    border-color: rgba(0,0,0,0.1) transparent;
+    transform: translateX(-50%);*/
   }
 .item:hover .dropdown-menu{
     opacity: 1;
     transform: scale(1);
   }
   
-.dropdown-menu {
+  .dropdown-menu {
     position: absolute;
     top: 40px;
     /*ajouter border voir le style de la page ect*/
     left: -190%;
     width: 10vw;
-    border-radius: 6px;
-    background-color: #FAFAFA;
+    /* Styles */
+    background: white;
+    border-radius: inherit;
+    border: 1px solid rgba(0,0,0,0.17);
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    font-weight: normal;
+    transition: all 0.5s ease-in;
+    list-style: none;
+    
     opacity: 1;
     transform-origin: top left;
     transform: scale(0);
@@ -170,8 +201,8 @@ nav{
     display: flex;
     align-items: center;
     border-radius: 50%;
-    width: 1.5vw;
-    height: 2.3vh;
-    margin: 15px;
+    width: 2vw;
+    height: 3vh;
+    margin: 25px;
     transition: color 1.2s ease-in-out;
 }

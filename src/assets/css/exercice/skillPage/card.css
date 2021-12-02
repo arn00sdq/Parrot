@@ -1,6 +1,6 @@
 #baby-parrot{
     position: absolute;
-    top: 0vh;
+    top: -5vh;
     left: 1vw;
     height: 40vh;
     width: 40vw;
@@ -8,7 +8,7 @@
 
 #medium-parrot{
     position: absolute;
-    top: 0vh;
+    top: -5vh;
     left: 32vw;
     height: 40vh;
     width: 40vw;
@@ -16,7 +16,7 @@
 
 #large-parrot{
     position: absolute;
-    top: 11vh;
+    top: 6vh;
     right: 15vw;
     height: 18vh;
     width: 8vw;
