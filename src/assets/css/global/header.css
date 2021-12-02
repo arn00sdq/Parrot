@@ -137,28 +137,18 @@ nav{
     transform: translateX(-50%);
     bottom: -12px;
     right: -40%;
-    transform: translateX(-50%);
-
-    /*
-    content: "";
-    width: 0;
-    height: 0;
-    position: absolute;
-    border-width: 0 8px 8px 8px;
-    border-style: solid;
-    border-color: rgba(0,0,0,0.1) transparent;
-    transform: translateX(-50%);*/
+    transform: translateX(-100%);
   }
 .item:hover .dropdown-menu{
     opacity: 1;
     transform: scale(1);
-  }
+}
   
   .dropdown-menu {
     position: absolute;
     top: 40px;
     /*ajouter border voir le style de la page ect*/
-    left: -190%;
+    left: -220%;
     width: 10vw;
     /* Styles */
     background: white;
@@ -166,13 +156,14 @@ nav{
     border: 1px solid rgba(0,0,0,0.17);
     box-shadow: 0 0 5px rgba(0,0,0,0.1);
     font-weight: normal;
-    transition: all 0.5s ease-in;
+    transition: all .7s ease-in-out;
     list-style: none;
     
     opacity: 1;
-    transform-origin: top left;
+    transform-origin: top;
     transform: scale(0);
-    transition: top 1.3s ease-in-out,opacity .3s ease-in-out;
+    /*transition: top 2.9s ease-in-out;*/
+    
   }
 
   .dropdown-item {
@@ -204,5 +195,4 @@ nav{
     width: 2vw;
     height: 3vh;
     margin: 25px;
-    transition: color 1.2s ease-in-out;
 }

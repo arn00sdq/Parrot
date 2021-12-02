@@ -30,7 +30,7 @@ function DisplayExercise({ exercise }) {
   console.log(`displayExercise`, exercise)
 
   let currentStep = 0
-  console.log(exercise.content.step)
+  console.log(exercise)
   return (
     <div className="page-exercice-card card">
       <div className="page-exercice-container">
@@ -38,7 +38,7 @@ function DisplayExercise({ exercise }) {
           <div className="title-exercice">{exercise.title}</div>
           <div className="progress-exercice-bar">
             <img src={cross} className="cross"></img>
-            <p>{(currentStep / exercise.steps) * 100 + "%"}</p>
+            <p>{(currentStep / exercise.content.steps) * 100 + "%"}</p>
             <div className="large-bar">
               <div className="orange-bar"></div>
             </div>

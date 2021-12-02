@@ -4,7 +4,7 @@ import React from "react";
 
 import { treasure, feather_icon } from "../../../../database/images";
 
-function DisplaySummary( {summary} ) {
+function DisplaySummary({ summary }) {
   console.log("DisplayActivity - displaySummary: summary", summary);
   return (
     <div className="page-summary-card card">
@@ -16,8 +16,8 @@ function DisplaySummary( {summary} ) {
         <div className="section-summary-container">
           <div className="title-section-summary">Details</div>
           <div className="infos-section-summary">
-		  <div className="level-tag">{summary.level}</div>
-		  <div className="tag-point-small">{summary.theme}</div>
+            <div className="level-tag">{summary.level}</div>
+            <div className="tag-point-small">{summary.theme}</div>
             {/*<RowContentSummary title="Category" theme={summary.theme} />*/}
           </div>
           <div className="hr-horizontale"></div>
@@ -37,7 +37,7 @@ function DisplaySummary( {summary} ) {
                   <Reward imgReward="reward" classReward={feather_icon} />
                 );
               }
-			  return rewards
+              return rewards
             }}
           </div>
           <div className="hr-horizontale"></div>
