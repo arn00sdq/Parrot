@@ -31,7 +31,7 @@ function DisplayActivity({ id }) {
   });
   return (
     <div className="activity-container">
-      <DisplaySummary summary={currentExercise.summary} />
+      <DisplaySummary name={`${id} ${": "} ${currentExercise.type}`} summary={currentExercise.summary} />
       {switchContent(prefixType, currentExercise)}
     </div>
   );

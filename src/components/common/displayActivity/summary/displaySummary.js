@@ -21,20 +21,19 @@ function displayRewards({ treasures, feathers }) {
 
 
 
-function DisplaySummary({ summary }) {
+function DisplaySummary({ summary, name}) {
   console.log("DisplayActivity - displaySummary: summary", summary);
   return (
     <div className="page-summary-card card">
       <div className="page-summary-container">
         <div className="title-summary-container">
-          <div className="title-summary">Summary</div>
+          <div className="title-summary">Summary of {name}</div>
         </div>
         <div className="hr-horizontale"></div>
         <div className="section-summary-container">
-          <div className="title-section-summary">Details</div>
           <div className="infos-section-summary">
-            <div className="level-tag">{summary.level}</div>
-            {<DisplayTags title="Category" themes={summary.themes} />}
+          {<DisplayTags title="Level" tags={[summary.level]} />}
+            {<DisplayTags title="Categories" tags={summary.themes} />}
           </div>
           <div className="hr-horizontale"></div>
         </div>

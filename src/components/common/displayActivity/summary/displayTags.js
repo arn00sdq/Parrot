@@ -1,8 +1,16 @@
 import React from "react";
 
-function tagDisplay({ title, themes }) {
+function tagDisplay(tags ) {
+  if (!Array.isArray(tags)) {
+    console.log('tags :>> ', tags);
+    return (
+      <div key={tags} className="tag-point-small">
+        {tags}
+      </div>
+    );
+  }
   const row = [];
-  themes.forEach((element) => {
+  tags.forEach((element) => {
     row.push(
       <div key={element} className="tag-point-small">
         {element}
@@ -19,11 +27,11 @@ function tagDisplay({ title, themes }) {
   return row;
 }
 
-function DisplayTags(props) {
+function DisplayTags({ title, tags }) {
   return (
     <div className="row-section-summarize">
-      <div className="title-row-summarize">Themes: </div>
-      <div className="row-content-summarize">{tagDisplay(props)}</div>
+      <div className="title-row-summarize">{title}</div>
+      <div className="row-content-summarize">{tagDisplay(tags)}</div>
     </div>
   );
 }
