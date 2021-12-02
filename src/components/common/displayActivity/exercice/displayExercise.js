@@ -4,8 +4,8 @@ import React from "react";
 import { cross } from "../../../../database/images";
 
 import Word2img from "./types/word2img";
-import HeaderDisplayContent from "../common/header";
-import FooterContent from "../common/footer";
+import HeaderContent from "../common/headerContent";
+import FooterContent from "../common/footerContent";
 
 
 function typeExercice(exercise,currentStep) {
@@ -36,7 +36,7 @@ function DisplayExercise({ exercise }) {
   return (
     <div className="page-exercice-card card">
       <div className="page-exercice-container">
-        <HeaderDisplayContent exercise = {exercise} currentStep = {currentStep}/>
+        <HeaderContent title = {exercise.title} steps = {exercise.content.steps} currentStep = {currentStep}/>
           
         <div className="content-exercice-section">
         <div className="instruction-exercice">{exercise.content.order}</div>

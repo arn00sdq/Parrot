@@ -17,8 +17,10 @@ var data = [
         type: "Word2Img",
         summary: {
             level: levels.BEGINNER,
+            time : 5,
             themes: [
                 themes.ANIMALS,
+                themes.CLOTHING,
             ],
             rewards: {
                 treasures: 0,

@@ -1,7 +1,7 @@
 import Classic from './type/classic';
 import React from 'react';
-import HeaderDisplayContent from '../common/header'
-import FooterContent from '../common/footer'
+import HeaderContent from '../common/headerContent'
+import FooterContent from '../common/footerContent'
 
 function typeLecon(lecon,id) {
     const row = [];
@@ -24,7 +24,7 @@ function displayLecon(props) {
     return (
         <div className="page-exercice-card card">
             <div className="page-exercice-container">
-                <HeaderDisplayContent title={props.title}/>
+                <HeaderContent title={props.title}/>
                 {typeLecon(props.lecon,props.id)}
                 <FooterContent/>
             </div>
