@@ -20,6 +20,7 @@
 @import "./common/picker/filter.css";
 @import "./common/bandItem/cardContainer.css";
 @import "./exercice/skillPage/card.css";
+@import "./common/displayContent/exercicePage/word2img.css";
 
  *{
     --body-bg-color:#FFEEE2;

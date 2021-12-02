@@ -38,11 +38,9 @@ function DisplayExercise({ exercise }) {
         <HeaderContent title = {exercise.title} steps = {exercise.content.steps} currentStep = {currentStep}/>
           
         <div className="content-exercice-section">
-        <div className="instruction-exercice">{exercise.content.order}</div>
-            <div className="picture-exercice-container">
-            {typeExercice(exercise,currentStep)}
-            </div>                             
-        </div>
+          <div className="instruction-exercice">{exercise.content.order}</div>
+            {typeExercice(exercise,currentStep)}                        
+          </div>
         <FooterContent/>
       </div>
     </div>

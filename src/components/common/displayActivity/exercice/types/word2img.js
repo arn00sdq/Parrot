@@ -1,28 +1,44 @@
 import React from 'react';
+import { useState } from 'react';
 
 function Word2img(props){
 
-    
+    const [step, setStep] = useState(props.step);
 
+    const handleButtonChange = (e) => {
+        e.preventDefault();
 
-
-
-
-
-
-
-
+        const {
+            target: {value},
+        } = e;
+        console.log(value)
+        if (value == "Door" || value =="Dog" || value=="House"|| value=="Treasure" || value=="Cricket"){
+            setStep(step + 1)
+        }
+        
+        console.log(step)
+    }
     console.log(`props`, props)
     console.log(`props.content`, props.content)
+
+    let row = []
+    const wordArr = props.content.words;
+    const length = wordArr.length
+    if(step < length) {
+        for(let i = 0; i< wordArr[step].length; i++){
+            row.push(<button onClick={(e)=> handleButtonChange(e)} value={wordArr[step][i]} className="button-exercise">{wordArr[step][i]}</button>)
+        }
+    }else{
+        row.push("VICTOIRE")
+    }
+    
         return (
         <div className="picture-exercice-section">
             <img src={props.content.images[props.step].url} className="picture-exercice"/>
-            <select className="word-picker">
-                <option className="opt-word">{props.content.words[props.step][0]}</option>
-                <option className="opt-word">{props.content.words[props.step][1]}</option>
-                <option className="opt-word">{props.content.words[props.step][2]}</option>
-                <option className="opt-word">{props.content.words[props.step][3]}</option>
-            </select>
+            <div className="btn-exercice-container">
+                {row}
+            </div>
+           
         </div>
     );
 }
