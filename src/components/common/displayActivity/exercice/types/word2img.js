@@ -20,7 +20,7 @@ function Word2img(props){
     }
     console.log(`props`, props)
     console.log(`props.content`, props.content)
-    console.log(step)
+
     let row = []
     const wordArr = props.content.words;
     const length = wordArr.length

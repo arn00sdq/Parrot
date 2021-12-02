@@ -27,13 +27,12 @@
 .picture-exercice-section{
     display: flex;
     flex-direction: column;
-    margin-top: 2vh;
+    margin-top: 4vh;
     align-items: center;
 
 }
 .picture-exercice{
     height: 20vh;
-    width: 8vw;
 }
 .word-picker{
     display: flex;
