@@ -13,7 +13,7 @@ function typeExercice(exercise,currentStep) {
     case "Word2Img":
       console.log(exercise.type == "Word2Img")
       return (
-        <Word2img content={exercise.content} step={currentStep} />
+        <Word2img content={exercise.content} currentStep={currentStep} />
       );
       // <PictBtn />
       break;

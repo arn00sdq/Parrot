@@ -1,40 +1,38 @@
 import React from 'react';
 import { useState } from 'react';
 
-function Word2img(props){
+function Word2img({content,currentStep}){
 
-    const [step, setStep] = useState(props.step);
+    const [step, setStep] = useState(currentStep);
 
-    const handleButtonChange = (e) => {
+    const handleButtonClick = (e) => {
         e.preventDefault();
 
         const {
             target: {value},
         } = e;
         console.log(value)
-        if (value == "Door" || value =="Dog" || value=="House"|| value=="Treasure" || value=="Cricket"){
+        if (step < content.steps && value == content.images[step].word){
             setStep(step + 1)
         }
-        
-        console.log(step)
     }
-    console.log(`props`, props)
-    console.log(`props.content`, props.content)
+    console.log(`content`, content)
 
     let row = []
-    const wordArr = props.content.words;
-    const length = wordArr.length
-    if(step < length) {
-        for(let i = 0; i< wordArr[step].length; i++){
-            row.push(<button onClick={(e)=> handleButtonChange(e)} value={wordArr[step][i]} className="button-exercise">{wordArr[step][i]}</button>)
-        }
+    const wordArr = content.words;
+    if (step < content.steps) {
+        content.words[step].forEach(word => {
+            row.push(<button onClick={(e)=> handleButtonClick(e)} value={word} className="button-exercise">{word}</button>)
+
+        });
     }else{
         row.push("VICTOIRE")
     }
     
+    
         return (
         <div className="picture-exercice-section">
-            <img src={props.content.images[props.step].url} className="picture-exercice"/>
+            <img src={content.images[step].url} className="picture-exercice"/>
             <div className="btn-exercice-container">
                 {row}
             </div>
