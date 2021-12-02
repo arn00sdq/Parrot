@@ -17,7 +17,9 @@ var data = [
         type: "Word2Img",
         summary: {
             level: levels.BEGINNER,
-            theme: themes.ANIMALS,
+            themes: [
+                themes.ANIMALS,
+            ],
             rewards: {
                 treasures: 0,
                 feathers: 2,
