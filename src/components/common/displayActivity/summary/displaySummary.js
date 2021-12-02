@@ -4,21 +4,20 @@ import React from "react";
 
 import { treasure, feather_icon } from "../../../../database/images";
 
-function displayRewards({treasures, feathers})
-	{
-		let rewards = [];
-		for (let i = 0; i < treasures; i++) {
-		  rewards.push(
-			<Reward imgReward="reward" classReward={treasure} />
-		  );
-		}
-		for (let i = 0; i < feathers; i++) {
-		  rewards.push(
-			<Reward imgReward="reward" classReward={feather_icon} />
-		  );
-		}
-		return rewards
-	  }
+function displayRewards({ treasures, feathers }) {
+  let rewards = [];
+  for (let i = 0; i < treasures; i++) {
+    rewards.push(
+      <Reward imgReward="reward" classReward={treasure} />
+    );
+  }
+  for (let i = 0; i < feathers; i++) {
+    rewards.push(
+      <Reward imgReward="reward" classReward={feather_icon} />
+    );
+  }
+  return rewards
+}
 
 
 
