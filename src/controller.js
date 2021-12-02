@@ -1,5 +1,5 @@
 import App from "./components/app";
-
+import {data as model} from "./model"
 const Controller= () => {
   
   function handleChange(event){
@@ -8,7 +8,7 @@ const Controller= () => {
   return (
 
     <App
-      model="oui"
+      model={model}
     />
   );
 };

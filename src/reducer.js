@@ -1,4 +1,4 @@
-const types = require('./actiontypes')
+import {actionTypes as types} from './database/actiontypes'
 
 const reducer = (state, { type, payload }) => {
   switch (type) {
@@ -24,10 +24,10 @@ const reducer = (state, { type, payload }) => {
                 }
             }
         };
-    case types.exercise_PICKER.CONJUG_CLK:
-    conjugationsIndex = state.exercisePicker.conjugations.findIndex(
+    case types.EXERCISE_PICKER.CONJUG_CLK:
+    var conjugationsIndex = state.exercisePicker.conjugations.findIndex(
         (c) => {
-            c.id === payload.conjugationId
+            return c.id === payload.conjugationId
         }
     )
         return {

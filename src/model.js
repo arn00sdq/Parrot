@@ -1,4 +1,4 @@
-const model = {
+const data = {
 	config : {
 		debug : false,
 		authors : "Made by DUDES Arnaud et ALONSO Ivan"
@@ -170,4 +170,4 @@ const model = {
 	}
 };
 
-export default model;
+export {data};

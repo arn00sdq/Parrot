@@ -1,6 +1,17 @@
 import React from 'react';
 
 function Word2img(props){
+
+    
+
+
+
+
+
+
+
+
+
     console.log(`props`, props)
     console.log(`props.content`, props.content)
         return (

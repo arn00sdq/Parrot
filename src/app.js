@@ -1,4 +1,5 @@
 import * as React from "react";
+import reducer from "./reducer";
 import Layout from './components/Layout';
 import ExercicePicker from './components/exercice/exercicePicker'
 import ExercicePage from './components/exercice/exercicePage'
@@ -13,12 +14,8 @@ import "./assets/css/index.css"
 import { Routes, Route} from 'react-router-dom';
 
 export default function App(props) {
+    
     return (
-            /* 
-            -- Note -- 
-            comme les routes ne sont pas encore en dynamique
-            changez la variable route dans layout pour que le chemin se fasse
-            */ 
             <Routes>
                 <Route path="/" element={<Layout />}>
                     <Route exact path="home" element={<Home />} />
@@ -28,6 +25,6 @@ export default function App(props) {
                     <Route path="lessonPicker" element={<LessonPicker />} />
                     <Route path="toiecPage" element={<ToiecPage />} />
                 </Route>
-            </Routes>  
+            </Routes>
         );
 }

@@ -1,6 +1,5 @@
 import DisplayContent from "./displayContent";
-import React from "react";
-
+import React, { useState } from 'react';
 import { cross } from "../../../../database/images";
 
 import Word2img from "./types/word2img";
@@ -31,7 +30,7 @@ function typeExercice(exercise,currentStep) {
 function DisplayExercise({ exercise }) {
   console.log(`displayExercise`, exercise)
 
-  let currentStep = 0
+  const [currentStep, setCurrentStep] = useState(0);
   console.log(exercise)
   return (
     <div className="page-exercice-card card">
