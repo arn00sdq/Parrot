@@ -1,9 +1,9 @@
 import React from 'react';
 
-function RowLecon(lecon) {
+function RowLecon(lesson) {
     var row = []; 
     console.log("dd")   
-    for (const [key, value] of Object.entries(lecon)) { 
+    for (const [key, value] of Object.entries(lesson)) { 
         if (typeof(value) !== 'number')
             row.push(value)
     }
@@ -11,10 +11,10 @@ function RowLecon(lecon) {
 }
 
 function Classic(props) {
-    //console.log(props.leconProps)
+    //console.log(props.lessonProps)
     return (
-        <div className="content-lecon-section" key={props.leconProps.id}>
-            {RowLecon(props.leconProps)}
+        <div className="content-lesson-section" key={props.lessonProps.id}>
+            {RowLecon(props.lessonProps)}
         </div>
     );
 }

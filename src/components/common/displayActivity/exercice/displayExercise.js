@@ -33,7 +33,7 @@ function DisplayExercise({ exercise }) {
   const [currentStep, setCurrentStep] = useState(0);
   console.log(exercise)
   return (
-    <div className="page-exercice-card card">
+    <div className="card page-exercice-card">
       <div className="page-exercice-container">
         <HeaderContent title = {exercise.title} steps = {exercise.content.steps} currentStep = {currentStep}/>
           

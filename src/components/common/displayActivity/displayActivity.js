@@ -19,7 +19,7 @@ const switchContent = (prefix, content) => {
 };
 
 function DisplayActivity({ id }) {
-  // affiche journaux, lecon , exercice
+  // affiche journaux, lesson , exercice
   var exercises = exercisesData;
   var prefixType = id.substr(0, 2);
   /*exercises.forEach((element) => {

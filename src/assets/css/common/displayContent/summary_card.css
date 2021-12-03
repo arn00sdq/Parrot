@@ -1,22 +1,22 @@
-.page-summarize-card{
+.page-summary-card{
     width: 23vw;
-    height: 50%;
+    height: 80%;
 }
-.page-summarize-container{
+.page-summary-container{
     display: flex;
     flex-direction: column;
-    background-color: var(--summarize-bg-color);
+    background-color: var(--summary-bg-color);
     height: 50%;
     width: 100%;
     padding: 2vh 1vw;
     border-radius: 15px;
 }
-.title-summarize-container{
+.title-summary-container{
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
-.title-summarize{
+.title-summary{
     font-family: Monserrat;
     font-size: 30px;
 }
@@ -26,23 +26,23 @@
     width: 100%;
     margin-top: 2vh;
 }
-.section-summarize-container{
+.section-summary-container{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 }
-.title-section-summarize{
+.title-section-summary{
     font-family: Monserrat;
     font-weight: bold;
     font-size: 20px;
     margin-top: 1vh;
 }
-.infos-section-summarize{
+.infos-section-summary{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 }
-.row-section-summarize{
+.row-section-summary{
     display: flex;
     flex-direction: row;
     margin-top: 2vh;
@@ -50,7 +50,7 @@
     align-items: center;
 }
 
-.row-content-summarize{
+.row-content-summary{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -58,7 +58,7 @@
     width: 13vw;
 }
 
-.title-row-summarize{
+.title-row-summary{
     font-family: Monserrat;
     font-size: 18px;
 }
@@ -67,11 +67,11 @@
     font-family: Monserrat;
     font-size: 17px;
     text-decoration-line: underline;
-    text-decoration-color:var(--summarize-text-decoration);
+    text-decoration-color:var(--summary-text-decoration);
     text-underline-offset: 0.5vh;
 }
 
-.reward-section-summarize{
+.reward-section-summary{
     display: flex;
     flex-direction: row;
     justify-content: space-around;

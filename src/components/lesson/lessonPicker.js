@@ -31,7 +31,7 @@ const lessonPickerProps = {
         time: "10min",
         imgExercice: pres_perfect,
         state: "Terminer",
-        text: "Cette lecon est basé sur une description d'image.\
+        text: "Cette lesson est basé sur une description d'image.\
         VOus devrez decrire l'image en alternant...\
         Au travers de cet exercice nous verrons l'utilisation\
         du present perfect avec des descriptions, texte a trous..."
@@ -42,7 +42,7 @@ const lessonPickerProps = {
         time: "10min",
         imgExercice: pres_perfect,
         state: "Terminer",
-        text: "Cette lecon est basé sur une description d'image.\
+        text: "Cette lesson est basé sur une description d'image.\
             VOus devrez decrire l'image en alternant...\
             Au travers de cet exercice nous verrons l'utilisation\
             du present perfect avec des descriptions, texte a trous..."
@@ -53,7 +53,7 @@ const lessonPickerProps = {
         time: "10min",
         imgExercice: pres_perfect,
         state: "Terminer",
-        text: "Cette lecon est basé sur une description d'image.\
+        text: "Cette lesson est basé sur une description d'image.\
             VOus devrez decrire l'image en alternant...\
             Au travers de cet exercice nous verrons l'utilisation\
             du present perfect avec des descriptions, texte a trous..."

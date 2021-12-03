@@ -4,10 +4,10 @@ import DisplayActivity from '../common/displayActivity/displayActivity';
 
 import {bush} from '../../database/images'
 
-const classic_lecon = {
+const classic_lesson = {
 
     title : "Present perfect",
-    lecon: {
+    lesson: {
         id: 4000,
         section1 : {
             id: 4001,
@@ -32,7 +32,7 @@ const classic_lecon = {
         },
     },
 
-    summarize: {
+    summary: {
         level : "Débutant (A1 - A2)",
         repere :{
             title: "Repère :",
@@ -54,10 +54,10 @@ function LessonPage(props){
 
             <main>
                 
-            <DisplayActivity summarize={classic_lecon.summarize} 
-                            lecon={classic_lecon.lecon} 
-                            id={classic_lecon.id} 
-                            title={classic_lecon.title}
+            <DisplayActivity summary={classic_lesson.summary} 
+                            lesson={classic_lesson.lesson} 
+                            id={classic_lesson.id} 
+                            title={classic_lesson.title}
             />
             </main>
         </div>

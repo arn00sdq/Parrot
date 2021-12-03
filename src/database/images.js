@@ -4,11 +4,11 @@ import right_arrow from '../assets/img/arrow/right-orange-arrow.png';
 import feather_icon from '../assets/img/icon/feather-icon.svg';
 import flame_icon from '../assets/img/icon/flame.svg';
 import home_icon from '../assets/img/icon/home.svg';
-import lecon_icon from '../assets/img/icon/lecon.svg';
+import lesson_icon from '../assets/img/icon/lesson.svg';
 import paper_icon from '../assets/img/icon/paper.svg';
 import intero_sign from '../assets/img/icon/intero-sign.png';
 import orange_house from '../assets/img/icon/orange-house.png';
-import exercice_icon from '../assets/img/icon/exerice.svg';
+import exercise_icon from '../assets/img/icon/exercise.svg';
 import profil_icon from '../assets/img/icon/profil-icon.png';
 import ready_icon from '../assets/img/icon/ready-icon.png';
 import clock_icon from '../assets/img/icon/clock-icon.svg';
@@ -37,10 +37,10 @@ import sign_where from '../assets/img/photos/sign-where.jpg';
 import feather from '../assets/img/reward/feather.png';
 import treasure from '../assets/img/reward/treasure.png';
 import cross from '../assets/img/icon/cross.png';
-
+import achievement from '../assets/img/icon/achievement.png';
 export {
-    down_arrow, orange_down_arrow,right_arrow,feather_icon,flame_icon,home_icon,paper_icon,lecon_icon,intero_sign,orange_house,
-    exercice_icon,profil_icon,ready_icon,gaming,history,politics,science,sport,terrorisme,bush,liane,logo,large_parrot,
+    down_arrow, orange_down_arrow,right_arrow,feather_icon,flame_icon,home_icon,paper_icon,lesson_icon,intero_sign,orange_house,
+    exercise_icon,profil_icon,ready_icon,gaming,history,politics,science,sport,terrorisme,bush,liane,logo,large_parrot,
     medium_parrot,small_parrot,logo_parrot_adulte,basket_jump,everest,flag_britain,health,home_ex,interview,plus_perfect,pres_perfect,
-    sign_where,feather,treasure,clock_icon,cross
+    sign_where,feather,treasure,clock_icon,cross, achievement
   };

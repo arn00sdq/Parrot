@@ -1,10 +1,11 @@
 import React from 'react';
+import { achievement } from '../../../../../database/images';
 import { useState } from 'react';
 
 function Word2img({content,currentStep}){
 
     const [step, setStep] = useState(currentStep);
-
+    const finished = step < content.steps ? false : true
     const handleButtonClick = (e) => {
         e.preventDefault();
 
@@ -12,27 +13,22 @@ function Word2img({content,currentStep}){
             target: {value},
         } = e;
         console.log(value)
-        if (step < content.steps && value == content.images[step].word){
+        if (value == content.images[step].word){
             setStep(step + 1)
         }
     }
-    console.log(`content`, content)
-
     let row = []
-    const wordArr = content.words;
-    if (step < content.steps) {
+    if (finished){
+        row.push("VICTOIRE")
+    } else {
         content.words[step].forEach(word => {
             row.push(<button onClick={(e)=> handleButtonClick(e)} value={word} className="button-exercise">{word}</button>)
 
         });
-    }else{
-        row.push("VICTOIRE")
     }
-    
-    
         return (
         <div className="picture-exercice-section">
-            <img src={content.images[step].url} className="picture-exercice"/>
+            <img src={finished == false ? content.images[step].url : achievement} className="picture-exercice"/>
             <div className="btn-exercice-container">
                 {row}
             </div>

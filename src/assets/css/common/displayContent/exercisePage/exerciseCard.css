@@ -1,8 +1,9 @@
-.page-exercice-card{
+.page-exercise-card{
     width: 60vw;
+    height: 100%;
 }
 
-.page-exercice-container{
+.page-exercise-container{
     display: flex;
     flex-direction: column;
     background-color: var(--container-bg-color);
@@ -13,25 +14,25 @@
     border-radius: 15px;
 }
 
-.content-exercice-section{
+.content-exercise-section{
     display: flex;
     flex-direction: column;
     width: 100%;
     margin-top: 3vh;
 }
-.instruction-exercice{
+.instruction-exercise{
     font-family: Monserrat;
     font-size: 17px;
 }
 
-.picture-exercice-section{
+.picture-exercise-section{
     display: flex;
     flex-direction: column;
     margin-top: 4vh;
     align-items: center;
 
 }
-.picture-exercice{
+.picture-exercise{
     height: 20vh;
 }
 .word-picker{
@@ -43,7 +44,7 @@
     height: 3vh;
 }
 
-.syno-exercice-container{
+.syno-exercise-container{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

@@ -3,8 +3,8 @@ import '../assets/css/global/header.css';
 import React from 'react';
 import { Outlet } from "react-router-dom";
 import {
-    home_icon, lecon_icon, paper_icon, bush, logo_parrot_adulte,
-    flag_britain, flame_icon, down_arrow, feather_icon, profil_icon,exercice_icon
+    home_icon, lesson_icon, paper_icon, bush, logo_parrot_adulte,
+    flag_britain, flame_icon, down_arrow, feather_icon, profil_icon,exercise_icon
 
 } from '../database/images'
 
@@ -16,12 +16,12 @@ const headerProps = {
             text: "ACCEUIL",
         },
         exercice: {
-            icon: lecon_icon,
+            icon: lesson_icon,
             route: "exercicePage",
             text: "EXERCICES",
         },
-        lecon: {
-            icon: exercice_icon,
+        lesson: {
+            icon: exercise_icon,
             route: "lessonPicker",
             text: "OUTILS",
         },
