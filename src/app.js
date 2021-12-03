@@ -20,7 +20,7 @@ export default function App(props) {
                 <Route path="/" element={<Layout />}>
                     <Route exact path="home" element={<Home />} />
                     <Route path="exercicePicker" element={<ExercicePicker />} />
-                    <Route path="exercicePage" element={<ExercicePage />} />
+                    <Route path="exercicePage" element={<ExercicePage state = {props}/>} />
                     <Route path="paperPicker" element={<PaperPicker />} />
                     <Route path="lessonPicker" element={<LessonPicker />} />
                     <Route path="toiecPage" element={<ToiecPage />} />

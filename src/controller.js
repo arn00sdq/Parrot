@@ -7,13 +7,13 @@ import * as actions from "./actions"
 const Controller= () => {
   const [state, dispatch] = useReducer(reducer, model)
 
-  function handleChange(event){
+  function handleHoverLang(event){
     console.log(event.target.value);
   }
   return (
     
     <App
-      model={model}
+      state={state}
     />
   );
 };
