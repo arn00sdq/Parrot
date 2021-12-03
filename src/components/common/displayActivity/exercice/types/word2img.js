@@ -19,7 +19,7 @@ function Word2img({ content, currentStep }) {
     }
     let row = []
     if (finished) {
-        row.push("VICTOIRE")
+        row.push("Congratulations! ")
     } else {
         content.words[step].forEach(word => {
             row.push(<button onClick={(e) => handleButtonClick(e)} value={word} className="button-exercise">{word}</button>)

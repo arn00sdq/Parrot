@@ -97,7 +97,7 @@ const data = {
 			locked: false,
 			exercises: [
 				{
-					id: "1",
+					id: "EX1",
 				},
 			]
 		},
@@ -105,7 +105,7 @@ const data = {
 			locked: false,
 			exercises: [
 				{
-					id: "1",
+					id: "EX1",
 				},
 			]
 		},
@@ -113,14 +113,14 @@ const data = {
 			locked: false,
 			exercises: [
 				{
-					id: "1",
+					id: "EX1",
 				},
 			]
 		},
 	},
 	exercisePage: {
-		exerciseId: "1",
-		step: "1",
+		exerciseId: "EX1",
+		step: "0",
 	},
 	exercisePicker: {
 		conjugations: [

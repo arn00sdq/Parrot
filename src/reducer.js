@@ -1,7 +1,17 @@
 import {actionTypes as types} from './database/actiontypes'
 
-const reducer = (state, { type, payload }) => {
+const reducer = (state, action) => {
+    const { type, payload } = action
   switch (type) {
+      case types.EXERCISE_PAGE.NEXT_STEP:
+        return {
+            ...state,
+            exercisePage : {
+                ...state.exercisePage,
+                
+                step : state.exercisePage.step + 1
+            } 
+        };
     case types.HEADER.CHANGE_LANG:
       return { 
             ...state,
