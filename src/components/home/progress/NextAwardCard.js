@@ -1,22 +1,25 @@
 import React from 'react';
 import Reward from '../../common/reward/Reward';
-import {feather_icon,treasure } from '../../../database/images';
+import ProgressBar from '../../common/tool/ProgressBar'
+import { feather_icon, treasure } from '../../../database/images';
 
-function NextAwardCard(props){
+function NextAwardCard(props) {
     return (
-        <div className="progress-card">
-            <div className="progress-title-card">{props.titleCard}</div>
-            <div className="container-bar-xp">
-                <div className="large-text-xp">5/10 xp</div>
-                <div className="large-xp-bar">                          
-                    <div className="progress-xp-bar" style={{backgroundColor:'#F9A014',height:'5px',width:'70%',borderRadius: '10px' }}></div>
+        <div className="container-card">
+            <div className="container-card-header">
+                <div className="container-title-card">{props.titleCard}</div>
+            </div>
+            <div className="container-card-body">
+                <div className="container-bar-xp">
+                    <div className="large-text-xp">5/10 xp</div>
+                    <ProgressBar width="20vw" progress="70%" />
                 </div>
-            </div> 
-            <div className="daily-award">
-            <Reward imgReward='reward' classReward={feather_icon}/>
-            <Reward imgReward='reward' classReward={feather_icon}/>
-            <Reward imgReward='reward' classReward={feather_icon}/>
-            <Reward imgReward='reward' classReward={treasure}/>
+                <div className="daily-award">
+                    <Reward imgReward='reward' classReward={feather_icon} />
+                    <Reward imgReward='reward' classReward={feather_icon} />
+                    <Reward imgReward='reward' classReward={feather_icon} />
+                    <Reward imgReward='reward' classReward={treasure} />
+                </div>
             </div>
         </div>
     );

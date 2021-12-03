@@ -7,8 +7,8 @@
     width: 50px;
     background-color: orange;
     border-radius: 50%;
-
 }
+
 
 .inner-circle{
     display: flex;
@@ -26,4 +26,21 @@
     font-size: 12px;
     font-weight: bold;
     color: #231c3d;
+}
+
+.progress {
+    height: 5px;
+
+    overflow: hidden;
+    background-color: #494F56;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 2px rgb(0 0 0 / 10%);
+    box-shadow: inset 0 1px 2px rgb(0 0 0 / 10%);
+}
+
+.progress-bar{
+    width: 0%; 
+    height: 100%;
+    background-color: orange;
+    box-shadow: inset 0 -1px 0 rgb(0 0 0 / 15%);
 }

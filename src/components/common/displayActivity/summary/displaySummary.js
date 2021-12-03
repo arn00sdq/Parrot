@@ -18,27 +18,19 @@ function displayRewards({ treasures, feathers }) {
 function DisplaySummary({ summary, name }) {
   console.log("DisplayActivity - displaySummary: summary", summary);
   return (
-    <div className="page-summary-card card">
-      <div className="page-summary-container">
-        <div className="title-summary-container">
+
+    <div className="card">
+      <div className="container-card">
+        <div className="container-card-header">
           <div className="title-summary">Summary of {name}</div>
         </div>
-        <div className="hr-horizontale"></div>
-        <div className="section-summary-container">
-          <div className="infos-section-summary">
-            {<DisplayTags title="Level" tags={[summary.level]} />}
-            {<DisplayTags title="Categories" tags={summary.themes} />}
-          </div>
-          <div className="hr-horizontale"></div>
-        </div>
-        <div className="section-summary-container">
-          <div className="infos-section-summary">
-            <div className="title-section-summary">Rewards</div>
-            <div className="reward-section-summary">
+        <div className="container-card-body" style={{alignItems :"baseline"}}>
+          <DisplayTags title="Level" tags={[summary.level]} />
+          <DisplayTags title="Categories" tags={summary.themes} />
+          <div className="row-section-summary">
+            <div className="title-row-summary">Reward</div>
               {displayRewards(summary.rewards)}
-            </div>
           </div>
-          <div className="hr-horizontale"></div>
         </div>
       </div>
     </div>

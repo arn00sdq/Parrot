@@ -8,6 +8,7 @@ import ToiecPage from './components/exercice/toiecPage/toiecPage'
 import LessonPage from './components/lesson/lessonPage'
 import PaperPicker from './components/paper/paperPicker'
 import LessonPicker from './components/lesson/lessonPicker'
+import PaperPage from './components/paper/paperPage'
 
 import "./assets/css/index.css"
 
@@ -21,8 +22,8 @@ export default function App(props) {
                     <Route exact path="home" element={<Home />} />
                     <Route path="exercicePicker" element={<ExercicePicker />} />
                     <Route path="exercicePage" element={<ExercicePage />} />
-                    <Route path="paperPicker" element={<PaperPicker />} />
                     <Route path="lessonPicker" element={<LessonPicker />} />
+                    <Route path="paperPage" element={<PaperPage />} />
                     <Route path="toiecPage" element={<ToiecPage />} />
                 </Route>
             </Routes>
