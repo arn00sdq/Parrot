@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 
-function Word2img({content,currentStep}){
+function Word2img({ content, currentStep }) {
 
     const [step, setStep] = useState(currentStep);
 
@@ -9,34 +9,34 @@ function Word2img({content,currentStep}){
         e.preventDefault();
 
         const {
-            target: {value},
+            target: { value },
         } = e;
-        console.log(value)
-        if (step < content.steps && value == content.images[step].word){
+        if (step < content.steps && value == content.images[step].word) {
             setStep(step + 1)
         }
     }
-    console.log(`content`, content)
+    
 
     let row = []
-    const wordArr = content.words;
+
     if (step < content.steps) {
         content.words[step].forEach(word => {
-            row.push(<button onClick={(e)=> handleButtonClick(e)} value={word} className="button-exercise">{word}</button>)
+            row.push(<button onClick={(e) => handleButtonClick(e)} value={word} className="button-exercise">{word}</button>)
 
         });
-    }else{
+    } else {
+        console.log( step)
         row.push("VICTOIRE")
     }
-    
-    
-        return (
+
+
+    return (
         <div className="picture-exercice-section">
-            <img src={content.images[step].url} className="picture-exercice"/>
+            <img src={content.images[step].url} className="picture-exercice" />
             <div className="btn-exercice-container">
                 {row}
             </div>
-           
+
         </div>
     );
 }
