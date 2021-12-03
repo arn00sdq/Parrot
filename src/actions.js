@@ -81,3 +81,8 @@ const durationClick = (duration) => ({
 const incrementExercicePageStep = () => ({
     type : actionTypes.EXERCISE_PAGE.NEXT_STEP,
 })
+
+export {articleStart,categoryIconClick,changeLanguage,changeSection,
+    conjugaisonClick,durationClick,exerciceStart,expandCatBtnClick,
+    helpButtonClick,hoverFeather,hoverFlame,hoverLanguage,hoverUser,
+    incrementExercicePageStep,lessonStart,themeClick,trainBtnClick,}
