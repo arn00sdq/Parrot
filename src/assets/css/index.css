@@ -1,8 +1,8 @@
 @import "./common/tag/tag.css";
 @import "./common/reward//reward.css";
-@import "./common/displayContent/exercicePage/exerciceCard.css";
-@import "./common/displayContent/summarize_card.css";
-@import "./exercice/exercicePicker/exerciceCard.css";
+@import "./common/displayContent/exercisePage/exerciseCard.css";
+@import "./common/displayContent/summary_card.css";
+@import "./exercise/exercisePicker/exerciseCard.css";
 @import "./global/flag.css";
 @import "./global/font.css";
 @import "./global/header.css";
@@ -13,14 +13,14 @@
 @import "./home/paper.css";
 @import "./home/progress.css";
 @import "./introduction/introduction.css";
-@import "./common/displayContent/lecon/leconCard.css";
+@import "./common/displayContent/lesson/lessonCard.css";
 @import "./common/displayContent/header.css";
 @import "./common/displayContent/footer.css";
 @import "./common/bandItem/pictTimeContent.css";
 @import "./common/picker/filter.css";
 @import "./common/bandItem/cardContainer.css";
-@import "./exercice/skillPage/card.css";
-@import "./common/displayContent/exercicePage/word2img.css";
+@import "./exercise/skillPage/card.css";
+@import "./common/displayContent/exercisePage/word2img.css";
 
  *{
     --body-bg-color:#FFEEE2;
@@ -52,16 +52,16 @@
     --tag-border-color:#7E7E7E;
     --tag-bg-color:white;
 
-    --summarize-bg-color:white;
-    --summarize-text-decoration:slategrey;
+    --summary-bg-color:white;
+    --summary-text-decoration:slategrey;
 
     --header-content-large-bar:#494F56;
     --header-content-orange-bar:#F9A014;
 
     --footer-content-hr-border-color: #B2B2B2;
 
-    --lecon-subtitle-color:#00247D;
-    --lecon-wordPrimary-color:orange;
+    --lesson-subtitle-color:#00247D;
+    --lesson-wordPrimary-color:orange;
 
     --btnSyno-hover-color:red;
  }
