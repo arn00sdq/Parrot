@@ -1,46 +1,18 @@
-.page-summary-card{
-    width: 23vw;
-    height: 80%;
-}
-.page-summary-container{
-    display: flex;
-    flex-direction: column;
-    background-color: var(--summary-bg-color);
-    height: 50%;
-    width: 100%;
-    padding: 2vh 1vw;
-    border-radius: 15px;
-}
-.title-summary-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
 .title-summary{
     font-family: Monserrat;
     font-size: 30px;
 }
-.hr-horizontale{
-    border: solid;
-    border-width: 1px;
-    width: 100%;
-    margin-top: 2vh;
-}
-.section-summary-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
+
+
 .title-section-summary{
     font-family: Monserrat;
-    font-weight: bold;
     font-size: 20px;
     margin-top: 1vh;
 }
 .infos-section-summary{
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    flex-direction: row;
+    margin-top: 1vh;
 }
 .row-section-summary{
     display: flex;
@@ -48,6 +20,7 @@
     margin-top: 2vh;
     justify-content: flex-start;
     align-items: center;
+    width: 80%;
 }
 
 .row-content-summary{
@@ -55,12 +28,13 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content:space-around;
-    width: 13vw;
+
 }
 
 .title-row-summary{
     font-family: Monserrat;
     font-size: 18px;
+    width: 40%;
 }
 
 .level-tag{
@@ -74,6 +48,5 @@
 .reward-section-summary{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    margin-left: 1.5vw;
 }

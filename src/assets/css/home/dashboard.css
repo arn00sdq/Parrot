@@ -4,6 +4,7 @@
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
     border-top: 8px solid #EF9645;
+    opacity: 0.8;
     margin-left: 5px;
     margin-top: 5px;
 }
@@ -12,7 +13,6 @@
     display: flex;
     flex-direction: column;
     align-items:center;
-    width: 30vw;
 }
 
 #title-dash{
@@ -33,16 +33,6 @@
     width: 27.6vw;
 }
 
-.dash-card{
-    display: flex;
-    flex-direction: column;
-    height: fit-content;
-    width: 28vw;
-    border-radius: 25px;
-    padding: 2vh 2vw;
-    margin-top: 2vh;
-    background-color: white;
-}
 
 .header-dash-card{
     display: flex;
@@ -90,11 +80,6 @@
 
 }
 
-.main-card-dash{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
 
 .main-text-card{
     text-overflow:ellipsis;
@@ -111,7 +96,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin-top: 2vh;
+    margin: 1vh;
 }
 
 .text-resume{

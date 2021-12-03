@@ -27,7 +27,7 @@ const headerProps = {
         },
         paper: {
             icon: paper_icon,
-            route: "paperPicker",
+            route: "paperPage",
             text: "LIRE",
         },
         test: {

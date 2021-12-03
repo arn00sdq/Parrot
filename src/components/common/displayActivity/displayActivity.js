@@ -1,5 +1,6 @@
 import DisplayExercice from "./exercice/displayExercise";
 import DisplayLecon from "./lesson/displayLecon";
+import DisplayPaper from "./lesson/displayLecon";
 import DisplaySummary from "./summary/displaySummary";
 import { data as exercisesData } from "../../../database/exercises";
 import React from "react";
@@ -13,7 +14,7 @@ const switchContent = (prefix, content) => {
     case "1":
       return <DisplayLecon lesson={content} />;
     case "2":
-      //display paper
+      return <DisplayPaper paper={content} />;
       break;
   }
 };

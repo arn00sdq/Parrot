@@ -1,5 +1,6 @@
 import React from 'react';
 import Reward from '../../common/reward/Reward';
+import ProgressBar from '../../common/tool/ProgressBar'
 import {feather_icon,treasure } from '../../../database/images';
 
 function DailyContainer(props){
@@ -9,9 +10,7 @@ function DailyContainer(props){
             <div className="progress-text-card">{props.dailyText}</div>
             <div className="container-bar-xp">
                 <div className="small-text-xp">5/10 xp</div>
-                <div className="small-xp-bar">
-                    <div className="progress-xp-bar" style={{backgroundColor:'#F9A014',height:'5px',width:'50%',borderRadius: '10px'}}></div>
-                    </div>   
+                <ProgressBar width="5vw" progress="70%" />
             </div>   
         </div>
     );

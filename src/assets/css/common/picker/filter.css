@@ -28,8 +28,9 @@
 .theme-container{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    margin-top: 5vh;
+    align-items: center;
+    width: 15vw;
+    margin: 1vw;
 }
 
 .title-theme-container{
@@ -75,8 +76,9 @@
 .timer-container{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    margin-top: 5vh;
+    align-items: center;
+    width: 15vw;
+    margin: 1vw;
 }
 
 .checkbox-section-timer{
