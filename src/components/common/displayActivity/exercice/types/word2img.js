@@ -13,12 +13,12 @@ function Word2img({ content, currentStep }) {
             target: { value },
         } = e;
         console.log(value)
-        if (value == content.images[step].word){
+        if (value == content.images[step].word) {
             setStep(step + 1)
         }
     }
     let row = []
-    if (finished){
+    if (finished) {
         row.push("VICTOIRE")
     } else {
         content.words[step].forEach(word => {
@@ -26,9 +26,9 @@ function Word2img({ content, currentStep }) {
 
         });
     }
-        return (
+    return (
         <div className="picture-exercise-section">
-            <img src={finished == false ? content.images[step].url : achievement} className="picture-exercise"/>
+            <img src={finished == false ? content.images[step].url : achievement} className="picture-exercise" />
             <div className="btn-exercise-container">
                 {row}
             </div>
