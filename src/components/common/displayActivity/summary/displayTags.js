@@ -29,7 +29,7 @@ function tagDisplay(tags ) {
 function DisplayTags({ title, tags }) {
   return (
     <div className="row-section-summary">
-      <div className="title-row-summary">{title}</div>
+      <div className="title-row-summary">{title} : </div>
       <div className="row-content-summary">{tagDisplay(tags)}</div>
     </div>
   );

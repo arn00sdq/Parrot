@@ -21,13 +21,13 @@ function DisplaySummary({ summary, name }) {
     <div className="card">
       <div className="container-card">
         <div className="container-card-header">
-          <div className="title-summary">Summary of {name}</div>
+          <div className="title-summary">{name}</div>
         </div>
         <div className="container-card-body" style={{alignItems :"baseline"}}>
           <DisplayTags title="Level" tags={[summary.level]} />
           <DisplayTags title="Categories" tags={summary.themes} />
           <div className="row-section-summary">
-            <div className="title-row-summary">Reward</div>
+            <div className="title-row-summary">Reward :</div>
               {displayRewards(summary.rewards)}
           </div>
         </div>

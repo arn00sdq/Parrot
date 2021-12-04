@@ -1,6 +1,7 @@
 .title-summary{
     font-family: Monserrat;
-    font-size: 30px;
+    font-size: 28px;
+    font-weight: bold;
 }
 
 
@@ -20,7 +21,6 @@
     margin-top: 2vh;
     justify-content: flex-start;
     align-items: center;
-    width: 80%;
 }
 
 .row-content-summary{
@@ -34,7 +34,7 @@
 .title-row-summary{
     font-family: Monserrat;
     font-size: 18px;
-    width: 40%;
+    width: 8vw;
 }
 
 .level-tag{
