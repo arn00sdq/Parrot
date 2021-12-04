@@ -15,11 +15,11 @@ function LessonPage({ state, handles }) {
         <div id="root-css">
             <main>
                 <DisplaySummary
-                    name={`${id} ${": "} ${currentlesson.type}`}
-                    summary={currentlesson.summary}
+                    name={`${id} ${": "} ${state.lessonPage.lessonId}`}
+                    summary={lesson[0].summary}
                 />
                 <Displaylesson
-                    lesson={currentlesson}
+                    lesson={lesson[0]}
                     step={step}
                     handles={handles}
                 />

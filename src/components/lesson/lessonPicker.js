@@ -62,7 +62,12 @@ const lessonPickerProps = {
 }
 
 
-function LessonPicker(props) {
+function LessonPicker({ state, handles }) {
+
+    const lecPickerData = state.lessonPicker.lessons;
+    const lecId = Object.values(lecPickerData).map(x => x.id);
+    console.log(handles)
+
     return (
         <div id="root-css">
             <img className="bush2" src={bush} />
@@ -86,7 +91,11 @@ function LessonPicker(props) {
                         <div className="tag-point-medium">Present perfect</div>
                         <div className="n-exercices">8 exercices</div>
                     </div>
-                    <PictTimeContainer content={lessonPickerProps} />
+                    <PictTimeContainer
+                        content={lessonPickerProps} 
+                        id={lecId}
+                        handles={handles}
+                    />
                     <a href="#" className="button-ex-card">Charger plus</a>
                 </div>
 

@@ -16,7 +16,7 @@ function PictTimeContent(value, id, handles) {
         } = e;
         handles.handleExerciseRedirection(value)
         
-            navigate('/exercicePage');
+            navigate('/lessonPage');
     }
 
     let row = [];
@@ -37,7 +37,7 @@ function PictTimeContent(value, id, handles) {
                 <div className="footer-ptc">
                     <Reward imgReward="reward" classReward={treasure} />
                     <Link to="/home" >
-                        <button className="orange-arrow" value={"EX" + 2} onClick={(e) => handleButtonClick(e)} src={right_arrow} />
+                        <button className="orange-arrow" value={"LE" + 2} onClick={(e) => handleButtonClick(e)} src={right_arrow} />
                     </Link>
                 </div>
 

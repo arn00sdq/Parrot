@@ -22,7 +22,7 @@ const headerProps = {
         },
         lesson: {
             icon: exercise_icon,
-            route: "lessonPage",
+            route: "lessonPicker",
             text: "OUTILS",
         },
         paper: {

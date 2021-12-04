@@ -180,6 +180,58 @@ const data = {
 		lessonId: "LE1",
 		step: "0",
 	},
+	lessonPicker: {
+		categorie: [
+			{
+				id: "1",
+				checked: true,
+			},
+			{
+				id: "2",
+				checked: false,
+			},
+			{
+				id: "3",
+				checked: true,
+			},
+		],
+		journaux: [
+			{
+				id: "1",
+				checked: true,
+			},
+			{
+				id: "2",
+				checked: false,
+			},
+			{
+				id: "3",
+				checked: true,
+			},
+		],
+		durations: {
+			min5: true,
+			min10: true,
+			min15: false
+		},
+		/*OU
+		selectedConjugation: 'Present perfect',
+		selectedTheme: 'School',
+		selectedDuration: '5',*/
+		resultCount: 8,
+		lessons: [
+			{
+				id: "LE1",
+			},
+			{
+				id: "LE1",
+			},
+			{
+				id: "LE1",
+			},
+		],
+		pageNumber: 1,
+	},
 };
 
 export {data};
