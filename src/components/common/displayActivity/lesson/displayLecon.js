@@ -3,13 +3,16 @@ import React, { useState } from 'react';
 import HeaderContent from '../common/headerContent'
 import FooterContent from '../common/footerContent'
 
-function typeLecon(lesson,currentStep) {
+function typeLecon(lesson,currentStep,handles) {
     const row = [];
     switch (lesson.type) {
       case "Classic":
         console.log(lesson.type == "Word2Img")
         return (
-          <Classic content={lesson.content} currentStep={currentStep} />
+          <Classic content={lesson.content} 
+          currentStep={currentStep} 
+          handles={handles}
+          />
         );
         // <PictBtn />
         break;
@@ -24,11 +27,14 @@ function typeLecon(lesson,currentStep) {
 }
 
 function DisplayLecon({lesson, step, handles}) {
+  console.log(lesson)
     return (
       <div className="card page-exercice-card">
         <div className="page-exercice-container">
-        <HeaderContent title = {lesson.title} steps = {lesson.content.steps} currentStep = {step}/>
-            {typeLecon(lesson,step)}
+        <HeaderContent title = {lesson.title} 
+        steps = {lesson.content.steps} 
+        currentStep = {step}/>
+            {typeLecon(lesson,step,handles)}
         <FooterContent/>
         </div>
       </div>

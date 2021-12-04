@@ -166,7 +166,11 @@ const data = {
 			}
 		],
 		pageNumber: 1,
-	}
+	},
+	lessonPage: {
+		lessonId: "LE1",
+		step: "0",
+	},
 };
 
 export {data};
