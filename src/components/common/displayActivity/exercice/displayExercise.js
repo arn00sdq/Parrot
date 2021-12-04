@@ -1,20 +1,20 @@
-import DisplayContent from "./displayContent";
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import { cross } from "../../../../database/images";
 
 import Word2img from "./types/word2img";
 import HeaderContent from "../common/headerContent";
 import FooterContent from "../common/footerContent";
 
-
-function typeExercice(exercise,currentStep, handles) {
+function typeExercise(exercise, currentStep, handles) {
   const row = [];
   switch (exercise.type) {
     case "Word2Img":
       return (
-        <Word2img content={exercise.content} 
-        currentStep={currentStep}
-        handles = {handles} />
+        <Word2img
+          content={exercise.content}
+          currentStep={currentStep}
+          handles={handles}
+        />
       );
       // <PictBtn />
       break;
@@ -28,17 +28,21 @@ function typeExercice(exercise,currentStep, handles) {
   return row;
 }
 
-function DisplayExercise({exercise, step, handles}) {
+function DisplayExercise({ exercise, step, handles }) {
   return (
     <div className="card page-exercice-card">
       <div className="page-exercice-container">
-        <HeaderContent title = {exercise.title} steps = {exercise.content.steps} currentStep = {step}/>
-          
+        <HeaderContent
+          title={exercise.title}
+          steps={exercise.content.steps}
+          currentStep={step}
+        />
+
         <div className="content-exercice-section">
           <div className="instruction-exercice">{exercise.content.order}</div>
-            {typeExercice(exercise,step, handles)}                        
-          </div>
-        <FooterContent/>
+          {typeExercise(exercise, step, handles)}
+        </div>
+        <FooterContent />
       </div>
     </div>
   );
