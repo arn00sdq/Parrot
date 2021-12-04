@@ -3,6 +3,9 @@ const data = {
 		debug : false,
 		authors : "Made by DUDES Arnaud et ALONSO Ivan"
 	},
+	path : {
+		currentPath:"exercicePage"
+	},
 	header: {
 		selectedLanguage: "english",
 		featherCount: "4",
@@ -162,8 +165,14 @@ const data = {
 		resultCount: 8,
 		exercises: [
 			{
-				id: "1",
-			}
+				id: "EX1",
+			},
+			{
+				id: "EX1",
+			},
+			{
+				id: "EX1",
+			},
 		],
 		pageNumber: 1,
 	},

@@ -3,6 +3,7 @@ import React from 'react';
 import ThemeContainer from '../common/filter/ThemeContainer'
 import TimeContainer from '../common/filter/TimeContainer'
 import PictTimeContainer from '../common/bandItem/PictTimeContainer'
+import { data as exercisesData } from "../../database/exercises";
 
 import { bush, pres_perfect } from '../../database/images'
 
@@ -27,7 +28,7 @@ const timeProps = {
 const exercicePickerProps = {
     exercice: [{
         title: "Present Perfect",
-        className:"ptc-picker-container",
+        className: "ptc-picker-container",
         time: "10min",
         imgExercice: pres_perfect,
         state: "Terminer",
@@ -38,7 +39,7 @@ const exercicePickerProps = {
     },
     {
         title: "Present Perfect",
-        className:"ptc-picker-container",
+        className: "ptc-picker-container",
         time: "10min",
         imgExercice: pres_perfect,
         state: "Terminer",
@@ -49,7 +50,7 @@ const exercicePickerProps = {
     },
     {
         title: "Present Perfect",
-        className:"ptc-picker-container",
+        className: "ptc-picker-container",
         time: "10min",
         imgExercice: pres_perfect,
         state: "Terminer",
@@ -61,8 +62,11 @@ const exercicePickerProps = {
     ],
 }
 
-function ExercicePicker(props) {
+function ExercicePicker({ state, handles }) {
 
+    const exPickerData = state.exercisePicker.exercises;
+    const exId = Object.values(exPickerData).map(x => x.id);
+    console.log(handles)
     return (
         <div id="root-css">
             <img className="bush2" src={bush} />
@@ -81,7 +85,11 @@ function ExercicePicker(props) {
                         <div className="tag-point-medium">Present perfect</div>
                         <div className="n-exercices">8 exercices</div>
                     </div>
-                    <PictTimeContainer content={exercicePickerProps} />
+                    <PictTimeContainer 
+                        content={exercicePickerProps} 
+                        id={exId}
+                        handles={handles}
+                    />
                     <a href="#" className="button-ex-card">Charger plus</a>
                 </div>
 

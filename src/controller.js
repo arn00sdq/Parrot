@@ -6,15 +6,21 @@ import * as actions from "./actions"
 
 const Controller= () => {
   const [state, dispatch] = useReducer(reducer, model)
+  const [change,setChange] = useState("");
 
   function handleExerciseNextStep(){
     dispatch(actions.incrementExercicePageStep())
   }
-  const handles = {
-    handleExerciseNextStep,
+
+  function handleExerciseRedirection(value){
+    dispatch(actions.exerciseRedirection(value))
   }
+
+  const handles = {
+    handleExerciseNextStep,handleExerciseRedirection
+  }
+  console.log("state :" ,state)
   return (
-    
     <App
       state={state} handles = {handles}
     />

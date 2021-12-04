@@ -77,12 +77,18 @@ const durationClick = (duration) => ({
     type : actionTypes.EXERCICE_PICKER.DURATION_CLK,
     payload : {duration},
 })
+
+const exerciseRedirection = (exerciseId) => ({
+    type : actionTypes.EXERCISE_PICKER.PAGE_CHANGE,
+    payload : {exerciseId},
+})
 //EXERCICE PAGE
 const incrementExercicePageStep = () => ({
     type : actionTypes.EXERCISE_PAGE.NEXT_STEP,
 })
 
+
 export {articleStart,categoryIconClick,changeLanguage,changeSection,
     conjugaisonClick,durationClick,exerciceStart,expandCatBtnClick,
     helpButtonClick,hoverFeather,hoverFlame,hoverLanguage,hoverUser,
-    incrementExercicePageStep,lessonStart,themeClick,trainBtnClick,}
+    incrementExercicePageStep,lessonStart,themeClick,trainBtnClick,exerciseRedirection}
