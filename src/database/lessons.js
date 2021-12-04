@@ -8,7 +8,7 @@ import {
 } from "./themes";
 
 
-var data_lesson = [
+var data = [
     {
         id: "LE1",
         title: "Present perfect",
@@ -51,5 +51,5 @@ var data_lesson = [
 ];
 
 export { 
-    data_lesson 
+    data
 };

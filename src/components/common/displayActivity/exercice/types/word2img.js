@@ -1,6 +1,5 @@
 import React from 'react';
 import { achievement } from '../../../../../database/images';
-import { useState } from 'react';
 
 function Word2img({ content, currentStep, handles }) {
     const finished = currentStep < content.steps ? false : true
@@ -11,7 +10,7 @@ function Word2img({ content, currentStep, handles }) {
             target: { value },
         } = e;
         if (value == content.images[currentStep].word) {
-            handles()
+            handles.handleExerciseNextStep()
         }
     }
     let row = []
@@ -24,8 +23,9 @@ function Word2img({ content, currentStep, handles }) {
         });
     }
     return (
-        <div className="picture-exercise-section">
-            <img src={finished == false ? content.images[currentStep].url : achievement} className="picture-exercise" />
+        <div className="wordImg-container">
+            <img src={finished == false ? content.images[currentStep].url : achievement} className="wordImg-picture" />
+
             <div className="btn-exercise-container">
                 {row}
             </div>

@@ -1,40 +1,12 @@
-.page-exercise-card{
+
+.card-exercice{
     width: 60vw;
-    height: 100%;
 }
 
-.page-exercise-container{
-    display: flex;
-    flex-direction: column;
-    background-color: var(--container-bg-color);
-    justify-content: space-between;
-    height: 70vh;
-    width: 100%;
-    padding: 3vh 2vw;
-    border-radius: 15px;
+.page-exercice-container{
+    width: 55vw;
 }
 
-.content-exercise-section{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-top: 3vh;
-}
-.instruction-exercise{
-    font-family: Monserrat;
-    font-size: 17px;
-}
-
-.picture-exercise-section{
-    display: flex;
-    flex-direction: column;
-    margin-top: 4vh;
-    align-items: center;
-
-}
-.picture-exercise{
-    height: 20vh;
-}
 .word-picker{
     display: flex;
     justify-content: center;

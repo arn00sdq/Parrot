@@ -2,5 +2,38 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 30px;
+    margin: 20px 10px;
+}
+
+.wordImg-body{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(0,0,0,0.125);
+    border-bottom: 1 px solid rgba(0,0,0,.125);
+    /*background-image: url("../../../../img/photos/jugnlebackground.jpg");
+    background-size: cover;*/
+    background-color: white;
+    padding: 20px 40px;
+}
+
+.wordImg-order{
+    font-family: Monserrat;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.wordImg-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2vh;
+    
+}
+
+.wordImg-picture{
+    width: 16vw;
+    height: 19vh;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    padding: 4px;
 }

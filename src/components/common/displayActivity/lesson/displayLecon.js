@@ -21,18 +21,14 @@ function typeLecon(lesson,currentStep) {
         break;
     }
     return row;
-  }
-  
-  function DisplayLecon({ lesson }) {
-    console.log(`displayExercise`, lesson)
-  
-    const [currentStep, setCurrentStep] = useState(0);
-    console.log(lesson)
+}
+
+function DisplayLecon({lesson, step, handles}) {
     return (
       <div className="card page-exercice-card">
         <div className="page-exercice-container">
-        <HeaderContent title = {lesson.title} steps = {lesson.content.steps} currentStep = {currentStep}/>
-            {typeLecon(lesson,currentStep)}
+        <HeaderContent title = {lesson.title} steps = {lesson.content.steps} currentStep = {step}/>
+            {typeLecon(lesson,step)}
         <FooterContent/>
         </div>
       </div>
