@@ -16,10 +16,10 @@ function LessonPage({ state, handles }) {
             <main>
                 <DisplaySummary
                     name={`${id} ${": "} ${state.lessonPage.lessonId}`}
-                    summary={lesson[0].summary}
+                    summary={currentlesson.summary}
                 />
                 <Displaylesson
-                    lesson={lesson[0]}
+                    lesson={currentlesson}
                     step={step}
                     handles={handles}
                 />

@@ -61,7 +61,6 @@ const reducer = (state, action) => {
                     return c.id === payload.conjugationId
                 }
             )
-            
             return {
                 ...state,
                 exercisePicker: {

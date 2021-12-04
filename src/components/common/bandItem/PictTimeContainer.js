@@ -16,7 +16,7 @@ function PictTimeContent(value, id, handles) {
         } = e;
         handles.handleExerciseRedirection(value)
         
-            navigate('/lessonPage');
+        navigate('/lessonPage');
     }
 
     let row = [];
