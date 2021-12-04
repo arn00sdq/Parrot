@@ -7,13 +7,14 @@ import HeaderContent from "../common/headerContent";
 import FooterContent from "../common/footerContent";
 
 
-function typeExercice(exercise,currentStep) {
+function typeExercice(exercise,currentStep, handles) {
   const row = [];
   switch (exercise.type) {
     case "Word2Img":
-      console.log(exercise.type == "Word2Img")
       return (
-        <Word2img content={exercise.content} currentStep={currentStep} />
+        <Word2img content={exercise.content} 
+        currentStep={currentStep}
+        handles = {handles} />
       );
       // <PictBtn />
       break;
@@ -27,19 +28,15 @@ function typeExercice(exercise,currentStep) {
   return row;
 }
 
-function DisplayExercise({ exercise }) {
-  console.log(`displayExercise`, exercise)
-
-  const [currentStep, setCurrentStep] = useState(0);
-  console.log(exercise)
+function DisplayExercise({exercise, step, handles}) {
   return (
     <div className="card page-exercice-card">
       <div className="page-exercice-container">
-        <HeaderContent title = {exercise.title} steps = {exercise.content.steps} currentStep = {currentStep}/>
+        <HeaderContent title = {exercise.title} steps = {exercise.content.steps} currentStep = {step}/>
           
         <div className="content-exercice-section">
           <div className="instruction-exercice">{exercise.content.order}</div>
-            {typeExercice(exercise,currentStep)}                        
+            {typeExercice(exercise,step, handles)}                        
           </div>
         <FooterContent/>
       </div>

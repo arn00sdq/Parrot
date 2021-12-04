@@ -3,10 +3,9 @@ import React from 'react';
 import NavContent from './NavContent/NavContent'
 import UserContent from './UserContent/UserContent'
 
-function HeaderConstruction(props){
-    const nav = props.header.navProps;
-    const user = props.header.userProps;
-    console.log("Layout - HeaderConstruction : headerprops",props.header)
+function HeaderConstruction({state, handles, header}){
+    const nav = header.navProps;
+    const user = header.userProps;
     return (
 
         <header id="container-header">

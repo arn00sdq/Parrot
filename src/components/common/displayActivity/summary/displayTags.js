@@ -2,7 +2,6 @@ import React from "react";
 
 function tagDisplay(tags ) {
   if (!Array.isArray(tags)) {
-    console.log('tags :>> ', tags);
     return (
       <div key={tags} className="tag-point-small">
         {tags}

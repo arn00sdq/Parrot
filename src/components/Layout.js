@@ -56,12 +56,12 @@ const headerProps = {
     }
 }
 
-function Layout() {
+function Layout({state, handles}) {
     console.log("-- Debug actif --")
     return (
         <div id="root-css">
             <img className="bush2" src={bush} />
-            <HeaderConstruction header={headerProps}/>
+            <HeaderConstruction state = {state} handles = {handles} header={headerProps}/>
             <Outlet />
         </div>
     );

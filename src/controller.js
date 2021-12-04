@@ -1,4 +1,4 @@
-import App from "./components/app";
+import App from "./app";
 import React, { useState, useReducer } from 'react';
 import {data as model} from "./model"
 import {reducer} from "./reducer"
@@ -7,13 +7,16 @@ import * as actions from "./actions"
 const Controller= () => {
   const [state, dispatch] = useReducer(reducer, model)
 
-  function handleHoverLang(event){
-    console.log(event.target.value);
+  function handleExerciseNextStep(){
+    dispatch(actions.incrementExercicePageStep())
+  }
+  const handles = {
+    handleExerciseNextStep,
   }
   return (
     
     <App
-      state={state}
+      state={state} handles = {handles}
     />
   );
 };

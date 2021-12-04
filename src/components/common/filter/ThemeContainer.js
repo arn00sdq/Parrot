@@ -24,7 +24,6 @@ function RowThemeContainer(props){
 
 function ThemeContainer(props){
     let row = [];
-    console.log(props)
     for(let [key,value]of Object.entries(props.content)){
         row.push( 
         <div className="theme-container">

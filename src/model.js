@@ -3,14 +3,13 @@ const data = {
 		debug : false,
 		authors : "Made by DUDES Arnaud et ALONSO Ivan"
 	},
+	header: {
+		selectedLanguage: "english",
+		featherCount: "4",
+		flameCount: "4",
+	},
 	home: {
-		header: {
-			selectedLanguage: "english",
-			changeLanguageBtnToggle: false,
-			featherCount: "4",
-			flameCount: "4",
-			iconBtnToggle: false,
-		},
+		
 		stats: {
 			lessons: {
 				read: "10",

@@ -3,13 +3,21 @@ import {actionTypes as types} from './database/actiontypes'
 const reducer = (state, action) => {
     const { type, payload } = action
   switch (type) {
+      case types.HEADER.MSE_HOVER_LANG:
+        return {
+            ...state,
+            header : {
+                ...state.header,
+                changeLanguageBtnToggle : !state.header.changeLanguageBtnToggle,
+            }
+        }
       case types.EXERCISE_PAGE.NEXT_STEP:
         return {
             ...state,
             exercisePage : {
                 ...state.exercisePage,
                 
-                step : state.exercisePage.step + 1
+                step :  parseInt(state.exercisePage.step + 1)
             } 
         };
     case types.HEADER.CHANGE_LANG:
@@ -58,3 +66,5 @@ const reducer = (state, action) => {
       return state;
   }
 };
+
+export {reducer}

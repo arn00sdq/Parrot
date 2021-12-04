@@ -4,7 +4,7 @@ import { render } from "react-dom";
 import ReactDOM from 'react-dom';
 import { BrowserRouter} from 'react-router-dom';
 
-import App from "./app";
+import Controller from "./controller";
 
 import model from './model'
 
@@ -12,7 +12,7 @@ import model from './model'
 ReactDOM.render(
   
     <BrowserRouter>
-      <App />
+      <Controller />
     </BrowserRouter>,
     document.getElementById('root')
     );

@@ -16,7 +16,6 @@ function displayRewards({ treasures, feathers }) {
 }
 
 function DisplaySummary({ summary, name }) {
-  console.log("DisplayActivity - displaySummary: summary", summary);
   return (
 
     <div className="card">

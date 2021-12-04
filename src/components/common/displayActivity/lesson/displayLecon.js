@@ -20,7 +20,6 @@ function typeLecon(lesson,id) {
 }
 
 function displayLecon(props) {
-    console.log("DisplayContent - displayLecon: classic_lesson",props)
     return (
         <div className="page-exercice-card card">
             <div className="page-exercice-container">

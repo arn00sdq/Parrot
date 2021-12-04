@@ -24,7 +24,6 @@ function RowTimeContainer(props){
 
 function TimeContainer(props){
     let row = [];
-    console.log(props)
     for(let [key,value]of Object.entries(props.content)){
         row.push( 
             <div className="timer-container">

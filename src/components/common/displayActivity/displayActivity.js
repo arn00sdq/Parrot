@@ -7,22 +7,29 @@ import React from "react";
 
 const _ = require("lodash");
 
-const switchContent = (prefix, content) => {
-  switch (prefix) {
-    case "EX":
-      return <DisplayExercice exercise={content} />;
-    case "1":
-      return <DisplayLecon lesson={content} />;
-    case "2":
-      return <DisplayPaper paper={content} />;
-      break;
-  }
-};
 
-function DisplayActivity({ id }) {
-  // affiche journaux, lesson , exercice
+
+function DisplayActivity({ state, handles }) {
+  var id = state.exercisePage.exerciseId;
+  var step = state.exercisePage.step
   var exercises = exercisesData;
   var prefixType = id.substr(0, 2);
+
+  const switchActivity = (prefix, activity, step) => {
+    switch (prefix) {
+      case "EX":
+        return <DisplayExercice exercise={activity}
+         step = {step}
+         handles = {handles.handleExerciseNextStep} />;
+      case "1":
+        return <DisplayLecon lesson={activity} />;
+      case "2":
+        return <DisplayPaper paper={activity} />;
+        break;
+    }
+  };
+  // affiche journaux, lesson , exercice
+ 
   /*exercises.forEach((element) => {
     Object.assign(element.id,_.uniqueId("EX"));
     console.log("Id assigned :" + element.id + "\n")
@@ -32,8 +39,11 @@ function DisplayActivity({ id }) {
   });
   return (
     <>
-      <DisplaySummary name={`${id} ${": "} ${currentExercise.type}`} summary={currentExercise.summary} />
-      {switchContent(prefixType, currentExercise)}
+      <DisplaySummary
+        name={`${id} ${": "} ${currentExercise.type}`}
+        summary={currentExercise.summary}
+      />
+      {switchActivity(prefixType, currentExercise, step)}
     </>
   );
 }
