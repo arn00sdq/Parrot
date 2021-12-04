@@ -5,12 +5,12 @@ const reducer = (state, action) => {
     const { type, payload } = action
     
     switch (type) {
-        case types.HEADER.MSE_HOVER_LANG:
+        case types.USER.MSE_HOVER_LANG:
             return {
                 ...state,
-                header: {
-                    ...state.header,
-                    changeLanguageBtnToggle: !state.header.changeLanguageBtnToggle,
+                user: {
+                    ...state.user,
+                    changeLanguageBtnToggle: !state.user.changeLanguageBtnToggle,
                 }
             }
         case types.EXERCISE_PAGE.NEXT_STEP:
@@ -22,13 +22,13 @@ const reducer = (state, action) => {
                     step: parseInt(state.exercisePage.step + 1)
                 }
             };
-        case types.HEADER.CHANGE_LANG:
+        case types.USER.CHANGE_LANG:
             return {
                 ...state,
                 home: {
                     ...state.home,
-                    header: {
-                        ...state.home.header,
+                    user: {
+                        ...state.home.user,
                         selectedLanguage: payload.newLanguage,
                     }
                 }

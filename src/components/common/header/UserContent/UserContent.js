@@ -1,17 +1,17 @@
-import React from 'react';
-import UserSection from './UserSection'
-
-function UserContent(props){
-    var row = [];
-    const user = props.userContent;
-    for (const [key, value] of Object.entries(user)){
-        row.push(<div key={key} className="infos-section"> 
-                    <UserSection arr={value}/> 
-                </div>
-        )
-    }
-    return row;
-    
+import React from "react";
+import Feathers from "./Feathers";
+import Flames from "./Flames";
+import Language from "./Language";
+import User from "./User";
+function UserContent({ state, handles }) {
+  return (
+    <>
+      <Language state={state} handles={handles} />
+      <Feathers state={state} handles={handles} />
+      <Flames state={state} handles={handles} />
+      <User state={state} handles={handles} />
+    </>
+  );
 }
 
 export default UserContent;

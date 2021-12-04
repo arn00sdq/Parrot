@@ -1,3 +1,4 @@
+import { profil_icon } from "./database/images";
 const data = {
 	config : {
 		debug : false,
@@ -6,8 +7,10 @@ const data = {
 	path : {
 		currentPath:"exercicePage"
 	},
-	header: {
-		selectedLanguage: "english",
+	user: {
+		name: "Default User",
+		icon : profil_icon,
+		selectedLanguage: "English (US)",
 		featherCount: "4",
 		flameCount: "4",
 	},
