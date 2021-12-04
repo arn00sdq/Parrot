@@ -5,29 +5,6 @@ import Word2img from "./types/word2img";
 import HeaderContent from "../common/headerContent";
 import FooterContent from "../common/footerContent";
 
-function typeExercise(exercise, currentStep, handles) {
-  const row = [];
-  switch (exercise.type) {
-    case "Word2Img":
-      return (
-        <Word2img
-          content={exercise.content}
-          currentStep={currentStep}
-          handles={handles}
-        />
-      );
-      // <PictBtn />
-      break;
-    case "Img2Word":
-      //display ex2
-      break;
-    case "0003":
-      //display ex3
-      break;
-  }
-  return row;
-}
-
 function DisplayExercise({ exercise, step, handles }) {
   return (
     <div className="card card-exercice">
@@ -46,6 +23,27 @@ function DisplayExercise({ exercise, step, handles }) {
       </div>
     </div>
   );
+}
+
+function typeExercise(exercise, currentStep, handles) {
+  switch (exercise.type) {
+    case "Word2Img":
+      return (
+        <Word2img
+          content={exercise.content}
+          currentStep={currentStep}
+          handles={handles}
+        />
+      );
+      // <PictBtn />
+      break;
+    case "Img2Word":
+      //display ex2
+      break;
+    case "0003":
+      //display ex3
+      break;
+  }
 }
 
 export default DisplayExercise;

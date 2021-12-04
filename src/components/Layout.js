@@ -4,7 +4,7 @@ import React from 'react';
 import { Outlet } from "react-router-dom";
 import {
     home_icon, lesson_icon, paper_icon, bush, logo_parrot_adulte,
-    flag_britain, flame_icon, down_arrow, feather_icon, profil_icon,exercise_icon
+    united_states, flame_icon, down_arrow, feather_icon, profil_icon,exercise_icon
 
 } from '../database/images'
 
@@ -38,7 +38,7 @@ const headerProps = {
     },
     userProps: {
         flag: {
-            flag1: ["img", flag_britain, "flag-icon","dropdown"], //balise img [nom_balise,src,class]
+            flag1: ["img", united_states, "flag-icon","dropdown"], //balise img [nom_balise,src,class]
             flag2: ["img", down_arrow, "arrow-icon"],
         },
         feather: {

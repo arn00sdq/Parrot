@@ -1,7 +1,7 @@
 import React from 'react';
 
-import {flag_britain} from '../../../../database/images'
-
+import {united_states} from '../../../../database/images'
+import {languages} from '../../../../database/languages'
 function DropdownAssignment(value) {
 
     if (value[0] == "img") { // || a venir peut etre
@@ -11,12 +11,12 @@ function DropdownAssignment(value) {
                     <img src={value[1]} key={value[2]} className={value[2]} />
                     <div className="dropdown-menu" role="menu">
                         <ul className="menu-item-link">
-                            <img src={flag_britain} className="dropdown-item-img"/>
-                            <img src={flag_britain} className="dropdown-item-img"/>
-                            <img src={flag_britain} className="dropdown-item-img"/>
-                            <img src={flag_britain} className="dropdown-item-img"/>
-                            <img src={flag_britain} className="dropdown-item-img"/>
-                            <img src={flag_britain} className="dropdown-item-img"/>
+                            <img src={united_states} className="dropdown-item-img"/>
+                            <img src={united_states} className="dropdown-item-img"/>
+                            <img src={united_states} className="dropdown-item-img"/>
+                            <img src={united_states} className="dropdown-item-img"/>
+                            <img src={united_states} className="dropdown-item-img"/>
+                            <img src={united_states} className="dropdown-item-img"/>
                         </ul>
                     </div>
                 </div>)

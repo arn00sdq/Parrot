@@ -1,7 +1,7 @@
 const data = {
 	config : {
 		debug : false,
-		authors : "Made by DUDES Arnaud et ALONSO Ivan"
+		authors : "Made by DUDES Arnaud and ALONSO Ivan @UPPA"
 	},
 	header: {
 		selectedLanguage: "english",
