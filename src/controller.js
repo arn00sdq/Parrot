@@ -6,7 +6,6 @@ import * as actions from "./actions"
 
 const Controller= () => {
   const [state, dispatch] = useReducer(reducer, model)
-  const [change,setChange] = useState("");
 
   function handleExerciseNextStep(){
     dispatch(actions.incrementExercicePageStep())

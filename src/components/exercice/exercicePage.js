@@ -10,15 +10,16 @@ function ExercisePage({ state, handles }) {
   var currentExercise = exercises.find((e) => {
     return e.id == id;
   });
-
+  
+  console.log(state)
   return (
     <main>
       <DisplaySummary
-        name={`${id} ${": "} ${currentExercise.type}`}
-        summary={currentExercise.summary}
+        name={`${id} ${": "} ${state.exercisePage.exerciseId}`}
+        summary={exercises[0].summary}
       />
       <DisplayExercise
-        exercise={currentExercise}
+        exercise={exercises[0]}
         step={step}
         handles={handles}
       />

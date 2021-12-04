@@ -12,10 +12,15 @@ import PaperPage from './components/paper/paperPage'
 
 import "./assets/css/index.css"
 
-import { Routes, Route} from 'react-router-dom';
+import { Routes, Route, useLocation} from 'react-router-dom';
 
 export default function App({state, handles}) {
     console.log(state)
+    const location = useLocation();
+
+  React.useEffect(() => {
+    console.log('Location changed');
+  }, [location]);
     return (
             <Routes>
                 <Route path="/" element={<Layout state = {state} handles = {handles}/>}>
