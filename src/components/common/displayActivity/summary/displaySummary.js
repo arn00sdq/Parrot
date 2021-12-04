@@ -16,8 +16,9 @@ function displayRewards({ treasures, feathers }) {
 }
 
 function DisplaySummary({ summary, name }) {
+  console.log(summary);
   return (
-
+    
     <div className="card">
       <div className="container-card">
         <div className="container-card-header">

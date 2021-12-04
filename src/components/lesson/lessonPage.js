@@ -15,7 +15,7 @@ function LessonPage({ state, handles }) {
         <div id="root-css">
             <main>
                 <DisplaySummary
-                    name={`${id} ${": "} ${currentlesson.type}`}
+                    name={`${id} ${": "} ${state.lessonPage.lessonId}`}
                     summary={currentlesson.summary}
                 />
                 <Displaylesson

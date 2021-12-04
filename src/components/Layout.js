@@ -17,12 +17,12 @@ const headerProps = {
         },
         exercice: {
             icon: lesson_icon,
-            route: "exercicePage",
+            route: "exercicePicker",
             text: "EXERCICES",
         },
         lesson: {
             icon: exercise_icon,
-            route: "lessonPage",
+            route: "lessonPicker",
             text: "OUTILS",
         },
         paper: {

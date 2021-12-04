@@ -10,11 +10,16 @@ const Controller= () => {
   function handleExerciseNextStep(){
     dispatch(actions.incrementExercicePageStep())
   }
-  const handles = {
-    handleExerciseNextStep,
+
+  function handleExerciseRedirection(value){
+    dispatch(actions.exerciseRedirection(value))
   }
+
+  const handles = {
+    handleExerciseNextStep,handleExerciseRedirection
+  }
+  console.log("state :" ,state)
   return (
-    
     <App
       state={state} handles = {handles}
     />

@@ -29,7 +29,7 @@ const actionTypes = Object.freeze ({
         THEME_CLK : 'THEME_CLK',
         DURATION_CLK : 'DURATION_CLK',
         PAGE_CHANGE : 'PAGE_CHANGE',
-    }
+    },
 })
 
 export {actionTypes}

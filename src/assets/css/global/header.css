@@ -124,6 +124,7 @@ nav{
 /* Drop down a bougé*/
 .item {
     position: relative;
+    z-index: 1000;
   }
 
 .item:hover:before {

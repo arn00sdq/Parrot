@@ -3,6 +3,9 @@ const data = {
 		debug : false,
 		authors : "Made by DUDES Arnaud and ALONSO Ivan @UPPA"
 	},
+	path : {
+		currentPath:"exercicePage"
+	},
 	header: {
 		selectedLanguage: "english",
 		featherCount: "4",
@@ -162,14 +165,72 @@ const data = {
 		resultCount: 8,
 		exercises: [
 			{
-				id: "1",
-			}
+				id: "EX1",
+			},
+			{
+				id: "EX1",
+			},
+			{
+				id: "EX1",
+			},
 		],
 		pageNumber: 1,
 	},
 	lessonPage: {
 		lessonId: "LE1",
 		step: "0",
+	},
+	lessonPicker: {
+		categorie: [
+			{
+				id: "1",
+				checked: true,
+			},
+			{
+				id: "2",
+				checked: false,
+			},
+			{
+				id: "3",
+				checked: true,
+			},
+		],
+		journaux: [
+			{
+				id: "1",
+				checked: true,
+			},
+			{
+				id: "2",
+				checked: false,
+			},
+			{
+				id: "3",
+				checked: true,
+			},
+		],
+		durations: {
+			min5: true,
+			min10: true,
+			min15: false
+		},
+		/*OU
+		selectedConjugation: 'Present perfect',
+		selectedTheme: 'School',
+		selectedDuration: '5',*/
+		resultCount: 8,
+		lessons: [
+			{
+				id: "LE1",
+			},
+			{
+				id: "LE1",
+			},
+			{
+				id: "LE1",
+			},
+		],
+		pageNumber: 1,
 	},
 };
 
