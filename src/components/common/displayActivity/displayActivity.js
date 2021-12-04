@@ -8,21 +8,12 @@ import React from "react";
 
 const _ = require("lodash");
 
-const switchContent = (prefix, content) => {
-  switch (prefix) {
-    case "EX":
-      return <DisplayExercice exercise={content} />;
-    case "LE":
-      return <DisplayLecon lesson={content} />;
-    case "2":
-      return <DisplayPaper paper={content} />;
-      break;
-  }
-};
 
-function DisplayActivity({ id }) {
-  // affiche journaux, lesson , exercice
-  var activity = exercisesData;
+
+function DisplayActivity({ state, handles }) {
+  var id = state.exercisePage.exerciseId;
+  var step = state.exercisePage.step
+  var exercises = exercisesData;
   var prefixType = id.substr(0, 2);
 
   const switchActivity = (prefix, activity, step) => {
@@ -50,8 +41,11 @@ function DisplayActivity({ id }) {
   console.log(currentActivity)
   return (
     <>
-      <DisplaySummary name={`${id} ${": "} ${currentActivity.type}`} summary={currentActivity.summary} />
-      {switchContent(prefixType, currentActivity)}
+      <DisplaySummary
+        name={`${id} ${": "} ${currentExercise.type}`}
+        summary={currentExercise.summary}
+      />
+      {switchActivity(prefixType, currentExercise, step)}
     </>
   );
 }
