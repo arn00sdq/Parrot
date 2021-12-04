@@ -11,10 +11,10 @@ function RowLecon(lesson) {
 }
 
 function Classic(props) {
-    //console.log(props.lessonProps)
+    console.log(props)
     return (
-        <div className="content-lesson-section" key={props.lessonProps.id}>
-            {RowLecon(props.lessonProps)}
+        <div className="content-lesson-section" key={props.content.step}>
+            {RowLecon(props.content.text)}
         </div>
     );
 }

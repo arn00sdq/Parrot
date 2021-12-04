@@ -1,35 +1,42 @@
 import Classic from './type/classic';
-import React from 'react';
+import React, { useState } from 'react';
 import HeaderContent from '../common/headerContent'
 import FooterContent from '../common/footerContent'
 
-function typeLecon(lesson,id) {
+function typeLecon(lesson,currentStep) {
     const row = [];
-    switch (id) {
-        case "1001":
-            row.push(<Classic key={lesson.id} lessonProps={lesson.section1}/>); // <PictBtn />
-            break;
-        case "1002":
-            //display lec 1
-            break;
-        case "1003":
-            //display lec 2
-            break;
+    switch (lesson.type) {
+      case "Classic":
+        console.log(lesson.type == "Word2Img")
+        return (
+          <Classic content={lesson.content} currentStep={currentStep} />
+        );
+        // <PictBtn />
+        break;
+      case "r":
+        //display ex2
+        break;
+      case "0003":
+        //display ex3
+        break;
     }
     return row;
-}
-
-function displayLecon(props) {
-    console.log("DisplayContent - displayLecon: classic_lesson",props)
+  }
+  
+  function DisplayLecon({ lesson }) {
+    console.log(`displayExercise`, lesson)
+  
+    const [currentStep, setCurrentStep] = useState(0);
+    console.log(lesson)
     return (
-        <div className="page-exercice-card card">
-            <div className="page-exercice-container">
-                <HeaderContent title={props.title}/>
-                {typeLecon(props.lesson,props.id)}
-                <FooterContent/>
-            </div>
+      <div className="card page-exercice-card">
+        <div className="page-exercice-container">
+        <HeaderContent title = {lesson.title} steps = {lesson.content.steps} currentStep = {currentStep}/>
+            {typeLecon(lesson,currentStep)}
+        <FooterContent/>
         </div>
+      </div>
     );
-}
-
-export default displayLecon;
+  }
+  
+  export default DisplayLecon;
