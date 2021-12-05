@@ -36,9 +36,7 @@ function PictTimeContent(value, id, handles) {
                     <div className="text-ptc">{value.text}</div>
                     <div className="footer-ptc">
                         <Reward imgReward="reward" classReward={treasure} />
-                        <Link to="/home" >
-                            <button className="orange-arrow" value={"LE" + 2} onClick={(e) => handleButtonClick(e)} src={right_arrow} />
-                        </Link>
+                        <button className="btn-ptcCard" value={"LE" + 2} onClick={(e) => handleButtonClick(e)} src={right_arrow} >Continuer</button>
                     </div>
 
                 </div>
