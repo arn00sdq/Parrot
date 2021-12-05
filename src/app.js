@@ -4,7 +4,7 @@ import Layout from "./components/Layout";
 import ExercicePicker from "./components/exercice/exercicePicker";
 import ExercicePage from "./components/exercice/exercicePage";
 import Home from "./components/home/home";
-import ToiecPage from "./components/exercice/toiecPage/toiecPage";
+import ToiecPage from "./components/toiecPage/toiecPage";
 import LessonPage from "./components/lesson/lessonPage";
 import PaperPicker from "./components/paper/paperPicker";
 import LessonPicker from "./components/lesson/lessonPicker";

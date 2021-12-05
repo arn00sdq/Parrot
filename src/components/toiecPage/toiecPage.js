@@ -3,10 +3,10 @@ import SectionCard from './exercice/SectionCard';
 
 import {
     bush, logo_parrot_adulte, pres_perfect, medium_parrot, small_parrot, sign_where, home_ex
-} from '../../../database/images'
+} from '../../database/images'
 
 const toiecBeginner = {
-    beginner: [{
+    exercice: [{
         title: "Present Perfect",
         className: "ptc-skill-container",
         time: "10min",
@@ -50,7 +50,7 @@ const toiecBeginner = {
 }
 
 const toiecIndependant = {
-    Independant: [{
+    exercice: [{
         title: "Present Perfect",
         className: "ptc-skill-container",
         time: "10min",
@@ -94,7 +94,7 @@ const toiecIndependant = {
 }
 
 const toiecAdvanced = {
-    Advanced: [{
+    exercice: [{
         title: "Present Perfect",
         className: "ptc-skill-container",
         time: "10min",
@@ -138,16 +138,16 @@ const toiecAdvanced = {
 }
 
 
-function ToiecPage(props) {
+function ToiecPage({ state, handles }) {
     return (
         <div id="root-css">
             <img id="large-parrot" src={logo_parrot_adulte} />
             <img id="medium-parrot" src={medium_parrot} />
             <img id="baby-parrot" src={small_parrot} />
             <main>
-                <SectionCard titleCard="Beginner" content={toiecBeginner} />
-                <SectionCard titleCard="Independant" content={toiecIndependant} />
-                <SectionCard titleCard="Advanced" content={toiecAdvanced} />
+                <SectionCard titleCard="Beginner" content={toiecBeginner} state={state} handles={handles}/>
+                <SectionCard titleCard="Independant" content={toiecIndependant} state={state} handles={handles}/>
+                <SectionCard titleCard="Advanced" content={toiecAdvanced} state={state} handles={handles}/>
             </main>
         </div>
     )

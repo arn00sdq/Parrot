@@ -1,5 +1,5 @@
 import React from 'react';
-import {intero_sign } from '../../../../database/images';
+import {intero_sign } from '../../../database/images';
 
 function HeaderLevel(props){
     return(

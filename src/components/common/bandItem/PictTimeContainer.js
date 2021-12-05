@@ -49,6 +49,7 @@ function PictTimeContent(value, id, handles) {
 
 function PictTimeContainer({ content, id, handles }) {
     let row = [];
+    console.log(content)
     for (let [key, value] of Object.entries(content.exercice)) {
         row.push(PictTimeContent(value, id[key], handles));
     }
