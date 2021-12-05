@@ -64,8 +64,9 @@ const exercicePickerProps = {
 
 function ExercicePicker({ state, handles }) {
 
+    const exercisesToShow = exercisesData;
     const exPickerData = state.exercisePicker.exercises;
-    const exId = Object.values(exPickerData).map(x => x.id);
+    const exId = "EX1";
 
     return (
         <div id="root-css">
