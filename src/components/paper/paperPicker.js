@@ -20,44 +20,38 @@ const paperPickerProps = {
         title: "Covid-19: les laboratoires s'inquitent",
         date: "10/11/2020",
         text : "Depuis quelques jours, le gouvernement français et l'Union européenne \
-        appellent la population à se faire administrer une dose de vaccin de rappel pour \
-        endiguer le rebond épidémique observé. Pourtant, une incertitude plane déjà sur la protection offerte par cette troisième dose."
+            appellent..."
         },
         {
         title: "Covid-19: les laboratoires s'inquitent",
         date: "10/11/2020",
         text : "Depuis quelques jours, le gouvernement français et l'Union européenne \
-        appellent la population à se faire administrer une dose de vaccin de rappel pour \
-        endiguer le rebond épidémique observé. Pourtant, une incertitude plane déjà sur la protection offerte par cette troisième dose."
+            appellent..."
         },
         {
             title: "Covid-19: les laboratoires s'inquitent",
             date: "10/11/2020",
             text : "Depuis quelques jours, le gouvernement français et l'Union européenne \
-            appellent la population à se faire administrer une dose de vaccin de rappel pour \
-            endiguer le rebond épidémique observé. Pourtant, une incertitude plane déjà sur la protection offerte par cette troisième dose."
+            appellent..."
             }
         ],
     Science : [{
         title: "Covid-19: les laboratoires s'inquitent",
         date: "10/11/2020",
         text : "Depuis quelques jours, le gouvernement français et l'Union européenne \
-        appellent la population à se faire administrer une dose de vaccin de rappel pour \
-        endiguer le rebond épidémique observé. Pourtant, une incertitude plane déjà sur la protection offerte par cette troisième dose."
+            appellent..."
         },
         {
         title: "Covid-19: les laboratoires s'inquitent",
         date: "10/11/2020",
         text : "Depuis quelques jours, le gouvernement français et l'Union européenne \
-        appellent la population à se faire administrer une dose de vaccin de rappel pour \
-        endiguer le rebond épidémique observé. Pourtant, une incertitude plane déjà sur la protection offerte par cette troisième dose."
+        appellent..."
         },
         {
             title: "Covid-19: les laboratoires s'inquitent",
             date: "10/11/2020",
             text : "Depuis quelques jours, le gouvernement français et l'Union européenne \
-            appellent la population à se faire administrer une dose de vaccin de rappel pour \
-            endiguer le rebond épidémique observé. Pourtant, une incertitude plane déjà sur la protection offerte par cette troisième dose."
+            appellent..."
             }
         ], 
 }

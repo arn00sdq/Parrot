@@ -1,85 +1,146 @@
+@import url('http://font.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+.paperCard{
+    font-family: sans-serif;
+}
+
 .cardContent-container{
     display: flex;
     flex-direction: column;
     margin-top: 1vh;
-    border-radius: 25px;
-    width: 55vw;
-    padding: 2vh 3vw;
+    border-radius: 8px;
+    width: 60vw;
+
     background-color: var(--container-bg-color);
    
 
 }
 .cardContent-header-container{
+    padding: 0.8rem 4rem;
+    background-color: rgba(0,0,0,.03);
+    border-bottom: 1px solid rgba(0,0,0,.125);
 
 }
 .title-header{
-    font-family: Monserrat;
-    font-size: 20px;
+    
+    font-size: 23px;
     font-weight: bold;
 
-}
-.hr-cardContent{
-    border: solid;
-    border-width: 1px;
-    margin-left: -3vw;
-    width: 55vw;
-    opacity: 0.55;
 }
 
 .paperCard-Container{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .paperCard{
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 13vw;
+    position: relative;
+    height: 440px;
+    min-width:320px;
+    box-shadow: inset 5px 5px 5px rgba(0,0,0,0.05),
+                inset -5px -5px 5px rgba(255,255,255,0.5),
+                5px 5px 5px rgba(255,255,255,0.5),
+                -5px -5px 5px rgba(255,255,255,0.5);
+    border-radius: 15px;
+    margin:30px
     
 }
+
+.box{
+    position: absolute;
+    top: 20px;
+    left:20px;
+    right: 20px;
+    bottom: 20px;
+    background: #ebf5fc;
+    box-shadow:  0 10px 20px rgba(0,0,0,0.1);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+.paperCard:hover .box{
+    transform: translateY(-10%);
+    box-shadow:  0 10px 40px rgba(0,0,0,0.2);
+    background: linear-gradient(45deg,#F07C27, #e54142);
+}
+
+
+.content-paperCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.content-paperCard div{
+    margin-top: 10px;
+}
+
 .img-paperCard{
     height: 10vh;
 
 }
-.content-paperCard{
-    display: flex;
-    flex-direction: column;
-   
-    background-color: var(--card-bg-color);
-    padding: 10px 10px ;
-    
-}
+
 .date-paperCard{
+    font-size: 1em;
+    color: #777;
+    font-weight: 300;
 
 }
+
 .title-paperCard{
     
-    font-family: Monserrat;
-    font-size: 15px;
-    font-weight: bold;
-
-    padding: 5px 0;
-    height: 3vh;
-    white-space: nowrap;
-    width: 100%;
-    overflow:hidden;
-    text-overflow:ellipsis;
-
-
+    font-size: 1.3em;
+    color: #777;
+    z-index: 1;
+    transition: 0.5s;
+    overflow: hidden;
+    width: 18vw;
+    height: 50px;
+    position: relative;
+    text-align: center;
+    text-overflow: ellipsis;
+    
 }
 .text-paperCard{
-    font-family: Monserrat;
-    font-size: 13px;
-    font-weight: bold;
-    padding: 5px 0;
-    height: 7vh;
-    white-space: normal;
-    width: 100%;
-    overflow:hidden;
-    text-overflow:ellipsis;
+    font-size: 1em;
+    color: #777;
+    font-weight: 300;
+    z-index: 1;
+    transition: 0.5s;
+    max-width: 15vw;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .btn-paperCard{
-    margin-top: 1vh;
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: #03a9f4;
+    margin-top: 15px;
+    border-radius: 20px;
+    color:#fff;
+    text-decoration: none;
+    border: none;
+    font-weight: 400;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.paperCard:hover .btn-paperCard{
+    background: #ff568f;
+    cursor: pointer; 
+}
+
+.paperCard:hover .text-paperCard,
+.paperCard:hover .title-paperCard,
+.paperCard:hover .date-paperCard
+{
+    color:#fff
 }

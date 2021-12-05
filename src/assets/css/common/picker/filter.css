@@ -8,6 +8,11 @@
     margin-top: 2vh;
 }*/
 
+.n-exercices{
+    color: #777;
+    font-weight: bold;
+}
+
 .filter-container{
     display: flex;
     flex-direction: column;
