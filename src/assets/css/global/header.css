@@ -96,10 +96,14 @@ nav{
 }
 
 .infos-section{
+    position: relative;
     display: flex;
+    justify-content: center;
     align-items: center;
     flex-direction: row;
     margin-left: 1.5vw;
+    color: #333;
+    font-weight: 500;
 }
 
 .flag-icon{
@@ -108,8 +112,46 @@ nav{
 }
 
 .infos-icon{
+    position: relative;
+    display: block;
+    line-height: 75px;
+    text-align: center;
+    transition: 0.5s;
     height: 2.5vh;
     opacity: .8;
+}
+
+.infos-section:hover .user-text {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%,-50%);
+}
+
+
+.user-text{
+    position: absolute;
+    top: 60px;
+    left:50%;
+    transform: translate((50%,15%));
+    background: #fff;
+    width: auto;
+    padding: 8px 12px;
+    border-radius: 6px;
+    box-shadow: 0 5px 15px rgba (0,0,0,0.5);
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.user-text::before{
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    top: 0px;
+    left: 48%;
+    transform: rotate(45deg) translateX(-50%);
 }
 
 .arrow-icon{

@@ -3,7 +3,7 @@ function User({state, handles}) {
   return (
     <div className="infos-section">
       <img className="infos-icon" src={state.user.icon} />
-      <p className="user-number">{state.user.name}</p>
+      <span className="user-text">{state.user.name}</span>
     </div>
   );
 }
