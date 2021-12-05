@@ -1,7 +1,7 @@
 import React from 'react';
 import Reward from '../reward/Reward';
 import handlePickerItem from './handlePickerItem'
-import { Link,useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import {
     clock_icon, right_arrow, treasure
 
@@ -21,26 +21,29 @@ function PictTimeContent(value, id, handles) {
 
     let row = [];
     row.push(
-        <div className={value.className} key={id}>
-            <img className="img-ptc" src={value.imgExercice} />
-            <div className="time-container">
-                <img className="clock" src={clock_icon} />
-                <div className="time-shift">{value.time}</div>
-            </div>
-            <div className="content-ptc-container">
-                <div className="header-ptc-container">
-                    <div className="title-ptc">{value.title}</div>
-                    <div className="validation">{value.state}</div>
+        <div className="ptc-card" key={id}>
+            <div className="ptc-box">
+                <img className="img-ptc" src={value.imgExercice} />
+                <div className="time-container">
+                    <img className="clock" src={clock_icon} />
+                    <div className="time-shift">{value.time}</div>
                 </div>
-                <div className="text-ptc">{value.text}</div>
-                <div className="footer-ptc">
-                    <Reward imgReward="reward" classReward={treasure} />
-                    <Link to="/home" >
-                        <button className="orange-arrow" value={"LE" + 2} onClick={(e) => handleButtonClick(e)} src={right_arrow} />
-                    </Link>
-                </div>
+                <div className="content-ptc-container">
+                    <div className="header-ptc-container">
+                        <div className="title-ptc">{value.title}</div>
+                        <div className="validation">{value.state}</div>
+                    </div>
+                    <div className="text-ptc">{value.text}</div>
+                    <div className="footer-ptc">
+                        <Reward imgReward="reward" classReward={treasure} />
+                        <Link to="/home" >
+                            <button className="orange-arrow" value={"LE" + 2} onClick={(e) => handleButtonClick(e)} src={right_arrow} />
+                        </Link>
+                    </div>
 
+                </div>
             </div>
+
         </div>)
 
     return row;
