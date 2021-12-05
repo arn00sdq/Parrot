@@ -117,6 +117,10 @@
     margin-right: 1vw;
 }
 
+.btn-ptcCard:hover{
+    cursor: pointer;
+}
+
 .ptc-card:hover .text-ptc,
 .ptc-card:hover .title-ptc
 .ptc-card:hover .time-shift
