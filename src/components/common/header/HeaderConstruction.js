@@ -13,6 +13,7 @@ function HeaderConstruction({ state, handles, header }) {
       </div>
       <nav>
         <NavContent navContent={nav} />
+        <div className="indicator"></div>
       </nav>
       <div className="user-infos">
         <UserContent state={state} handles={handles} userContent={user} />

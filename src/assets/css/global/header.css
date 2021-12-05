@@ -19,11 +19,14 @@
     color: white;
 }
 
+
+
 nav{
     display: flex;
     align-items: center;
     flex-direction: row;
     margin-left: 2vw;
+   
 }
 
 .nav-section{
@@ -31,6 +34,7 @@ nav{
     align-items: center;
     flex-direction: row;
     margin-left: 1.4vw;
+    z-index: 2;
 }
 
 .nav-icon{
@@ -87,6 +91,10 @@ nav{
    
 
 }
+/* USER
+    SECTION
+        */
+
 .user-infos{
     display: flex;
     align-items: center;

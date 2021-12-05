@@ -12,7 +12,7 @@ function RowLecon(lesson) {
 function Classic(props) {
     console.log(props)
     return (
-        <div className="content-lesson-section" key={props.content.step}>
+        <div className="classic-body" key={props.content.step}>
             {RowLecon(props.content.text)}
         </div>
     );

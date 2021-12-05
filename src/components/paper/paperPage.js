@@ -22,7 +22,7 @@ function PaperPage({ state, handles }) {
                     summary={paperData[0].summary}
                 />
                 <DisplayPaper
-                    paper={currentpaper}
+                    paper={paperData[0]}
                     step={step}
                     handles={handles}
                 />
