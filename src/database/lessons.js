@@ -47,8 +47,8 @@ var data = [
 
             ],
         },
-        id: "LE1",
-        title: "Present perfect",
+        id: "LE2",
+        title: "Past Simple",
         type: "Classic",
         summary: {
             level: levels.BEGINNER,
@@ -75,11 +75,7 @@ var data = [
                     <p className="text">I<span className="wordPrimary"> met  </span> her 3 weeks ago. </p>
 
                     <p className="subTitle">2) raconter les événements dans une narration: </p>
-            
-                    <p className="explication">
-                        Quand l'action a-t-elle commencé ?
-                        Il y a dix ans. Est-elle terminée ? Non, Paul habite toujours à Londres. Cela fait 10 ans qu'il y habit
-                </p>
+                    {/*a finir*/}
                 </>
 
             ],
