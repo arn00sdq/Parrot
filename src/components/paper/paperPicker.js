@@ -62,9 +62,10 @@ const paperPickerProps = {
         ], 
 }
 
-function PaperPicker(props) {
+function PaperPicker({ state, handles }) {
     
-    
+    const papPickerData = state.paperPicker.papers;
+    const paperId = Object.values(papPickerData).map(x => x.id);
     return (
         <div id="root-css">
             <img className="bush2" src={bush}/>
@@ -83,7 +84,11 @@ function PaperPicker(props) {
                         <div className="tag-point-medium">Present perfect</div>
                         <div className="n-exercices">8 exercices</div>
                     </div>
-                    <CardContainer title="Santé" content={paperPickerProps} />
+                    <CardContainer 
+                        content={paperPickerProps} 
+                        id={paperId}
+                        handles={handles}
+                    />
                     
                 </div>
            

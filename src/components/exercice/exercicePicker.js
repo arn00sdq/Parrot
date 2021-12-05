@@ -66,7 +66,7 @@ function ExercicePicker({ state, handles }) {
 
     const exPickerData = state.exercisePicker.exercises;
     const exId = Object.values(exPickerData).map(x => x.id);
-    console.log(handles)
+
     return (
         <div id="root-css">
             <img className="bush2" src={bush} />

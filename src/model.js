@@ -217,10 +217,6 @@ const data = {
 			min10: true,
 			min15: false
 		},
-		/*OU
-		selectedConjugation: 'Present perfect',
-		selectedTheme: 'School',
-		selectedDuration: '5',*/
 		resultCount: 8,
 		lessons: [
 			{
@@ -231,6 +227,67 @@ const data = {
 			},
 			{
 				id: "LE1",
+			},
+		],
+		pageNumber: 1,
+	},
+	paperPicker: {
+		categorie: [
+			{
+				id: "1",
+				checked: true,
+			},
+			{
+				id: "2",
+				checked: false,
+			},
+			{
+				id: "3",
+				checked: true,
+			},
+		],
+		journaux: [
+			{
+				id: "1",
+				checked: true,
+			},
+			{
+				id: "2",
+				checked: false,
+			},
+			{
+				id: "3",
+				checked: true,
+			},
+		],
+		durations: {
+			min5: true,
+			min10: true,
+			min15: false
+		},
+		/*OU
+		selectedConjugation: 'Present perfect',
+		selectedTheme: 'School',
+		selectedDuration: '5',*/
+		resultCount: 8,
+		papers: [
+			{
+				id: "PA1",
+			},
+			{
+				id: "PA1",
+			},
+			{
+				id: "PA1",
+			},
+			{
+				id: "PA1",
+			},
+			{
+				id: "PA1",
+			},
+			{
+				id: "PA1",
 			},
 		],
 		pageNumber: 1,

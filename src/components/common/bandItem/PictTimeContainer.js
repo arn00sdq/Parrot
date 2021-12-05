@@ -1,5 +1,6 @@
 import React from 'react';
 import Reward from '../reward/Reward';
+import handlePickerItem from './handlePickerItem'
 import { Link,useNavigate } from "react-router-dom";
 import {
     clock_icon, right_arrow, treasure
@@ -19,7 +20,6 @@ function PictTimeContent(value, id, handles) {
     }
 
     let row = [];
-    console.log(id)
     row.push(
         <div className={value.className} key={id}>
             <img className="img-ptc" src={value.imgExercice} />
