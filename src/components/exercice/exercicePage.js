@@ -16,10 +16,10 @@ function ExercisePage({ state, handles }) {
     <main>
       <DisplaySummary
         name={name}
-        summary={currentExercise.summary}
+        summary={exercisesData[0].summary}
       />
       <DisplayExercise
-        exercise={currentExercise}
+        exercise={exercisesData[0]}
         step={step}
         handles={handles}
       />
