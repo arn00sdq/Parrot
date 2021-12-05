@@ -21,6 +21,7 @@
 @import "./common/bandItem/cardContainer.css";
 @import "./exercise/skillPage/card.css";
 @import "./common/displayContent/exercisePage/word2img.css";
+@import "./common/tool/checkbox.css";
 
  *{
     --body-bg-color:#FFEEE2;

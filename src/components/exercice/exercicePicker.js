@@ -74,7 +74,9 @@ function ExercicePicker({ state, handles }) {
 
                 <div className="card">
                     <div className="filter-container">
-                        <div className="title-filter">Recherche</div>
+                        <div className="filter-container-header">
+                            <div className="title-filter">Recherche</div>
+                        </div>
                         <ThemeContainer key="89" title="Recherche" content={themeProps} />
                         <TimeContainer key="890" title="Durée" content={timeProps} />
                     </div>
@@ -85,8 +87,8 @@ function ExercicePicker({ state, handles }) {
                         <div className="tag-point-medium">Present perfect</div>
                         <div className="n-exercices">8 exercices</div>
                     </div>
-                    <PictTimeContainer 
-                        content={exercicePickerProps} 
+                    <PictTimeContainer
+                        content={exercicePickerProps}
                         id={exId}
                         handles={handles}
                     />
