@@ -28,7 +28,7 @@ function CardContent(value,id,handles) {
                     <div className="date-paperCard">{value[i].date}</div>
                     <div className="title-paperCard">{value[i].title}</div>
                     <div className="text-paperCard">{value[i].text}</div>
-                    <button className="button-card" value={"PA" + 2} onClick={(e) => handleButtonClick(e)} >READ</button>
+                    <button className="button-card" value={"EX" + 2} onClick={(e) => handleButtonClick(e)} >READ</button>
                 </div>
             </div>
         )

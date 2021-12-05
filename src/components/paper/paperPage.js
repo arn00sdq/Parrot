@@ -1,14 +1,31 @@
 import React from 'react';
+import DisplaySummary from "../common/displayActivity/summary/displaySummary";
+import DisplayPaper from "../common/displayActivity/paper/displayPaper";
 import { bush } from '../../database/images'
+import { data as paperData } from "../../database/paper";
 
-function PaperPage(props) {
-
+function PaperPage({ state, handles }) {
+   
+    var paper = paperData;
+    var id = state.paperPage.paperId;
+    var step = state.paperPage.step;
+    var currentpaper = paper.find((e) => {
+        return e.id == id;
+    });
     return (
         <div id="root-css">
             <img className="bush2" src={bush} />
 
             <main>
-
+                <DisplaySummary
+                    name={`${id} ${": "} ${state.paperPage.paperId}`}
+                    summary={paperData[0].summary}
+                />
+                <DisplayPaper
+                    paper={paperData[0]}
+                    step={step}
+                    handles={handles}
+                />
             </main>
         </div>
     )

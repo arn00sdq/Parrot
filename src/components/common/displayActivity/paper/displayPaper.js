@@ -1,13 +1,19 @@
-import Classic from './type/classic';
 import React from 'react';
 import HeaderContent from '../common/headerContent'
 import FooterContent from '../common/footerContent'
+import Article from './type/article'
 
-function typeLecon(lesson,id) {
+function typeLecon(paper,currentStep,handles) {
     const row = [];
-    switch (id) {
-        case "1001":
-            row.push(<Classic key={lesson.id} lessonProps={lesson.section1}/>); // <PictBtn />
+    switch (paper.type) {
+        case "Article":
+            return ( 
+                <Article 
+                    content={paper.content} 
+                    currentStep={currentStep} 
+                    handles={handles}
+                />
+            )
             break;
         case "1002":
             //display lec 1
@@ -19,16 +25,21 @@ function typeLecon(lesson,id) {
     return row;
 }
 
-function displayPaper(props) {
+function displayPaper({paper, step, handles}) {
+    console.log(paper)
     return (
         <div className="page-exercice-card card">
             <div className="page-exercice-container">
-                <HeaderContent title={props.title}/>
-                {typeLecon(props.lesson,props.id)}
+                <HeaderContent 
+                    title = {paper.title} 
+                    steps = {paper.content.steps} 
+                    currentStep = {step}
+                />
+                {typeLecon(paper,step,handles)}
                 <FooterContent/>
             </div>
         </div>
     );
 }
 
-export default displayLecon;
+export default displayPaper;

@@ -8,11 +8,11 @@ import {
 } from "./themes";
 
 
-var data_lesson = [
+var data = [
     {
         id: "LE1",
         title: "Present perfect",
-        type: "Classic",
+        type: "Article",
         summary: {
             level: levels.BEGINNER,
             time : 5,
@@ -26,23 +26,19 @@ var data_lesson = [
             },
         },
         content: {
-            step: '2',
+            step: '1',
             text: [
                 <>
-                    <p className="title"> 1) Principaux emplois </p>
-                    <p className="subTitle">1) Actions passées qui ont des conséquences sur le présent.</p>
-                    <p className="text"> Paul all <span className="wordPrimary">has eaten</span>  the cookies</p>
-                    <p className="explication">
-                        Quand l'action s'est-elle passée ? Dans le passé : il y a quelques minutes/hier Quelle conséquence a-t-elle sur le présent ?
-                        Paul a mangé tous les gâteaux ; il n'en reste plus pour moi.,
-                </p>
-                    <p className="subTitle">2) Actions qui ont commencé dans le passé et qui sont encore en progression au moment où l'on parle.</p>
-                    <p className="text">Paul all <span className="wordPrimary"> has eaten </span> the cookies
-                </p>
-                    <p className="explication">
-                        Quand l'action a-t-elle commencé ?
-                        Il y a dix ans. Est-elle terminée ? Non, Paul habite toujours à Londres. Cela fait 10 ans qu'il y habit
-                </p>
+                    <p className="article-title"> Covid-19 : les laboratoires sur le pied de guerre pour adapter leur vaccin au variant Omicron</p>
+                    <p className="article-reporter-infos">Par Paul Marion et AFP agence</p>
+                    <p className="article-date">Publié le 27/11/2021 à 15:33, mis à jour le 01/12/2021 à 15:56</p>
+                    <img src=""></img>
+                    <p className="article-subtitle">Pfizer-BioNTech et Moderna sont prêts à mettre à jour rapidement 
+                                                    leurs vaccins actuels pour les rendre efficaces contre le variant Omicron.</p>
+                    <p className="article-text">Pfizer a déjà commencé à travailler sur une nouvelle version de son vaccin anti-Covid ciblant plus spécifiquement Omicron 
+                    au cas où le vaccin actuel ne serait pas suffisamment efficace contre le nouveau variant, a assuré lundi le PDG de Pfizer, Albert Bourla. 
+                    «Il y a encore beaucoup d'inconnues» autour du nouveau variant détecté en Afrique du Sud et jugé «préoccupant» par l'OMS, a-t-il souligné dans une interview sur la chaîne américaine CNBC. 
+                    «Nous saurons l'essentiel de ce qu'il y a à savoir d'ici quelques semaines».</p>
                 </>
 
             ],
@@ -51,5 +47,5 @@ var data_lesson = [
 ];
 
 export { 
-    data_paper
+    data
 };

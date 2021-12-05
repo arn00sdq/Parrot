@@ -30,6 +30,7 @@ export default function App({state, handles}) {
                     <Route path="paperPicker" element={<PaperPicker state = {state} handles = {handles}/>} />
                     <Route path="exercicePage" element={<ExercicePage state = {state} handles = {handles}/>} />
                     <Route path="lessonPage" element={<LessonPage state = {state} handles = {handles}/>} />
+                    <Route path="paperPage" element={<PaperPage state = {state} handles = {handles}/>} />
                     
                     {/*<Route path="lessonPicker" element={<LessonPicker state = {state} handles = {handles}/>} />
                     <Route path="paperPage" element={<PaperPage state = {state} handles = {handles}/>} />

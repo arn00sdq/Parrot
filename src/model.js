@@ -231,6 +231,10 @@ const data = {
 		],
 		pageNumber: 1,
 	},
+	paperPage: {
+		paperId: "PA1",
+		step: "0",
+	},
 	paperPicker: {
 		categorie: [
 			{
