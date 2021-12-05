@@ -47,6 +47,11 @@ import south_korea from "../assets/img/flags/south_korea.png";
 import spain from "../assets/img/flags/spain.png";
 import thailand from "../assets/img/flags/thailand.png";
 import united_states from "../assets/img/flags/united_states.png";
+import ar1_img1 from "../assets/img/paper/article/ar1-img1.jpg"
+import guitare from "../assets/img/exercise/word2Img/guitare.png"
+import clarinette from "../assets/img/exercise/word2Img/clarinette.png"
+import trombone from "../assets/img/exercise/word2Img/trombone.png"
+import flute_traversiere from "../assets/img/exercise/word2Img/flute-traversiere.jpeg"
 
 const flags = {
   netherlands,
@@ -61,8 +66,16 @@ const flags = {
   united_states,
 };
 
+const Word2Img = {
+  guitare,
+  clarinette,
+  trombone,
+  flute_traversiere
+};
+
 export {
   flags,
+  Word2Img,
   down_arrow,
   orange_down_arrow,
   right_arrow,
@@ -103,4 +116,5 @@ export {
   clock_icon,
   cross,
   achievement,
+  ar1_img1,
 };

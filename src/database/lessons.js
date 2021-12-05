@@ -47,6 +47,43 @@ var data = [
 
             ],
         },
+        id: "LE1",
+        title: "Present perfect",
+        type: "Classic",
+        summary: {
+            level: levels.BEGINNER,
+            time : 5,
+            themes: [
+                themes.ANIMALS,
+                themes.CLOTHING,
+            ],
+            rewards: {
+                treasures: 0,
+                feathers: 2,
+            },
+        },
+        content: {
+            step: '2',
+            text: [
+                <>
+                    <p className="title"> 1) Le Past Simple (prétérit simple) s'emploie pour : </p>
+                    <p className="subTitle">1) parler d'une action, événement, ou état qui a eu lieu dans une période de temps qui est terminée et où il n'y a pas de lien avec le présent. 
+                                               Il est souvent employé avec un complément de temps :</p>
+                    <p className="text"> yesterday, last Summer, in 2005, 40 years ago, the day before yesterday, when I was a little girl</p>
+                    <p className="text">I<span className="wordPrimary"> went </span> to the new gym club last Wednesday </p>
+                    <p className="explication"> Ici, on ne s'intéresse qu'à ce qui s'est passé mercredi dernier. </p>
+                    <p className="text">I<span className="wordPrimary"> met  </span> her 3 weeks ago. </p>
+
+                    <p className="subTitle">2) raconter les événements dans une narration: </p>
+            
+                    <p className="explication">
+                        Quand l'action a-t-elle commencé ?
+                        Il y a dix ans. Est-elle terminée ? Non, Paul habite toujours à Londres. Cela fait 10 ans qu'il y habit
+                </p>
+                </>
+
+            ],
+        },
     }
 ];
 

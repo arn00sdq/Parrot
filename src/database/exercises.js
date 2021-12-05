@@ -2,7 +2,8 @@ import {
     basket_jump,
     everest,
     medium_parrot,
-    feather
+    feather,
+    Word2Img
 } from "./images";
 import {
     data as levels
@@ -18,7 +19,7 @@ var data = [
         type: "Word2Img",
         summary: {
             level: levels.BEGINNER,
-            time : 5,
+            time: 5,
             themes: [
                 themes.ANIMALS,
                 themes.CLOTHING,
@@ -32,27 +33,71 @@ var data = [
             order: "Pick the word that best suits the image",
             steps: 4,
             images: [{
-                    url: everest,
-                    word: "Mountain",
-                },
-                {
-                    url: medium_parrot,
-                    word: "Bird",
-                },
-                {
-                    url: feather,
-                    word: "Feather",
-                },
-                {
-                    url: basket_jump,
-                    word: "Basketball",
-                },
+                url: everest,
+                word: "Mountain",
+            },
+            {
+                url: medium_parrot,
+                word: "Bird",
+            },
+            {
+                url: feather,
+                word: "Feather",
+            },
+            {
+                url: basket_jump,
+                word: "Basketball",
+            },
             ],
             words: [
                 ["Door", "Hand", "Guitar", "Mountain"],
                 ["Dog", "Bird", "Spider", "Mouse"],
                 ["Plane", "Feather", "Treasure", "House"],
                 ["Football", "Cricket", "Basketball", "School"],
+            ],
+        },
+    },
+    {
+        id: "EX2",
+        title: "Matching!",
+        type: "Word2Img",
+        summary: {
+            level: levels.INTERMEDIATE,
+            time: 5,
+            themes: [
+                themes.ANIMALS,
+                themes.CLOTHING,
+            ],
+            rewards: {
+                treasures: 0,
+                feathers: 2,
+            },
+        },
+        content: {
+            order: "Pick the word that best suits the image",
+            steps: 4,
+            images: [{
+                url: Word2Img.clarinette,
+                word: "Clarinet",
+            },
+            {
+                url: Word2Img.flute_traversiere,
+                word: "Transverse flute",
+            },
+            {
+                url: Word2Img.guitare,
+                word: "Guitar",
+            },
+            {
+                url: Word2Img.trombone,
+                word: "Trombone",
+            },
+            ],
+            words: [
+                ["Door", "Hand", "Clarinet", "Paer"],
+                ["Clip", "Bird", "Transverse-flute", "Mouse"],
+                ["Plane", "Guitar", "Treasure", "Laptop"],
+                ["Table", "Cricket", "Basketball", "Trombone"],
             ],
         },
     },

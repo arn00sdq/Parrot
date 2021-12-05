@@ -7,6 +7,7 @@ import {
     data as themes
 } from "./themes";
 
+import {ar1_img1} from '../database/images'
 
 var data = [
     {
@@ -32,7 +33,7 @@ var data = [
                     <p className="article-title"> Covid-19 : les laboratoires sur le pied de guerre pour adapter leur vaccin au variant Omicron</p>
                     <p className="article-reporter-infos">Par Paul Marion et AFP agence</p>
                     <p className="article-date">Publié le 27/11/2021 à 15:33, mis à jour le 01/12/2021 à 15:56</p>
-                    <img src=""></img>
+                    <img src={ar1_img1}></img>
                     <p className="article-subtitle">Pfizer-BioNTech et Moderna sont prêts à mettre à jour rapidement 
                                                     leurs vaccins actuels pour les rendre efficaces contre le variant Omicron.</p>
                     <p className="article-text">Pfizer a déjà commencé à travailler sur une nouvelle version de son vaccin anti-Covid ciblant plus spécifiquement Omicron 
