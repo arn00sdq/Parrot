@@ -1,10 +1,13 @@
 import React from 'react';
 const Checkbox = ({ id,label, value, onChange }) => {
     return (
-      <label className="filter-text-label">
-        <input type="checkbox" checked={value} onChange={onChange} />
-        {label}
-      </label>
+      <li>
+        <label>
+          <input type="checkbox" name=""/>
+          {label}
+          <span class="check"></span>
+        </label>
+      </li>
     );
   };
 

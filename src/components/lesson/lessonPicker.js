@@ -75,9 +75,9 @@ function LessonPicker({ state, handles }) {
             <main>
 
                 <div className="card">
-                    <div className="container-card">
-                        <div className="container-card-header">
-                            <div className="container-title-card">Recherche</div>
+                    <div className="filter-container">
+                        <div className="filter-container-header">
+                            <div className="title-filter">Recherche</div>
                         </div>
                         <div className="container-card-body">
                             <ThemeContainer title="Recherche" content={themeProps} />
@@ -92,7 +92,7 @@ function LessonPicker({ state, handles }) {
                         <div className="n-exercices">8 exercices</div>
                     </div>
                     <PictTimeContainer
-                        content={lessonPickerProps} 
+                        content={lessonPickerProps}
                         id={lecId}
                         handles={handles}
                     />

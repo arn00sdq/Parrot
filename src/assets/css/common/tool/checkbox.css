@@ -1,0 +1,70 @@
+.theme-container{
+    margin-top: 3vh;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    /*transform: translate(-50%,50%);*/
+    background: #ebf5fc;
+    padding: 10px 20px;
+    width: 13vw;
+    margin-top: 1vh;
+}
+
+ul li{
+    list-style: none;
+    position: relative;
+    padding: 10px 0;
+}
+
+ul li:last-child{
+    border-bottom: none;
+}
+
+ul li label{
+    font-size: 18px;
+    color: black;
+    padding-left: 30px;
+    cursor: pointer;
+}
+
+ul li label input{
+    opacity: 0;
+    cursor: pointer;
+}
+
+ul li label .check{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border: 1px solid rgba(0,0,0,0.5);
+    display: block;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+}
+
+ul li label .check:before{
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    right: 3px;
+    bottom: 3px;
+    background: white;
+    border-radius: 2px;
+    transition: 0.5s;
+    transform: translateX(185px);
+
+}
+
+ul li label input:checked ~ .check:before{
+    background: orange;
+    box-shadow:  0 0 15px orange;
+    transform: translate(0);
+
+}
