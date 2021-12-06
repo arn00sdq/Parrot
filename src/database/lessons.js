@@ -15,7 +15,7 @@ var data = [
         type: "Classic",
         summary: {
             level: levels.BEGINNER,
-            time : 5,
+            time: 5,
             themes: [
                 themes.ANIMALS,
                 themes.CLOTHING,
@@ -52,7 +52,7 @@ var data = [
         type: "Classic",
         summary: {
             level: levels.BEGINNER,
-            time : 5,
+            time: 5,
             themes: [
                 themes.ANIMALS,
                 themes.CLOTHING,
@@ -66,15 +66,21 @@ var data = [
             step: '2',
             text: [
                 <>
-                    <p className="title"> 1) Le Past Simple (prétérit simple) s'emploie pour : </p>
-                    <p className="subTitle">1) parler d'une action, événement, ou état qui a eu lieu dans une période de temps qui est terminée et où il n'y a pas de lien avec le présent. 
-                                               Il est souvent employé avec un complément de temps :</p>
-                    <p className="text"> yesterday, last Summer, in 2005, 40 years ago, the day before yesterday, when I was a little girl</p>
-                    <p className="text">I<span className="wordPrimary"> went </span> to the new gym club last Wednesday </p>
+                    <h2 className="title"> Grammar explaination : </h2>
+                    <ul>
+                        <li className="subTitle"> Il est utilisé pour parler d'une action, événement, ou état qui a eu lieu dans une période de temps qui est terminée et où il n'y a pas de lien avec le présent.
+                                               Il est souvent employé avec un complément de temps :</li>
+                    </ul>
+                    <blockquote className="text">yesterday, last Summer,<br /> in 2005, 40 years ago, <br />the day before yesterday, when I was a little girl</blockquote>
+                    <blockquote className="text">
+                        I<span className="wordPrimary"> went </span> to the new gym club last Wednesday <br />
+                        <span className="traduction">Je suis allé au nouveau club de gym, mercredi dernier.</span>
+                    </blockquote>
                     <p className="explication"> Ici, on ne s'intéresse qu'à ce qui s'est passé mercredi dernier. </p>
-                    <p className="text">I<span className="wordPrimary"> met  </span> her 3 weeks ago. </p>
-
-                    <p className="subTitle">2) raconter les événements dans une narration: </p>
+                    <blockquote className="text">
+                        I<span className="wordPrimary"> met  </span> her 3 weeks ago.<br />
+                        <span className="traduction">Je l'ai rencontrée il y a 3 semaines.</span>
+                    </blockquote>
                     {/*a finir*/}
                 </>
 
@@ -83,6 +89,6 @@ var data = [
     }
 ];
 
-export { 
+export {
     data
 };

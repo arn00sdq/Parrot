@@ -17,20 +17,46 @@
 }
 
 .title{
-    font-family: Monserrat;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    font-size: 22px;
+    line-height: 1.1;
+    color: #23085A;
 }
 
+blockquote{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 12.5px 25px;
+    border-left: 5px solid #eeeeee;
+    font-weight: 800;
+}
+
+.classic-body .ul{
+    display: flex;
+  flex-direction: column;
+
+}
+.classic-body  .li{
+  text-align: left;
+  margin-bottom: 0;
+  padding: 4px 0;
+  font-size: 22px;
+  line-height: 30px;
+}
 .subTitle{
-    font-family: Monserrat;
-    font-size: 20px;
-    color:var(--lesson-subtitle-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 1.4;
+    color:black;
 }
 
 .text{
-    font-family: Monserrat;
-    font-size: 19px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    line-height: 1.4;
+}
+
+.traduction{
+    opacity: 0.4;
 }
 
 .explication{

@@ -47,11 +47,17 @@ import south_korea from "../assets/img/flags/south_korea.png";
 import spain from "../assets/img/flags/spain.png";
 import thailand from "../assets/img/flags/thailand.png";
 import united_states from "../assets/img/flags/united_states.png";
-import ar1_img1 from "../assets/img/paper/article/ar1-img1.jpg"
-import guitare from "../assets/img/exercise/word2Img/guitare.png"
-import clarinette from "../assets/img/exercise/word2Img/clarinette.png"
-import trombone from "../assets/img/exercise/word2Img/trombone.png"
-import flute_traversiere from "../assets/img/exercise/word2Img/flute-traversiere.jpeg"
+import ar1_img1 from "../assets/img/paper/article/ar1-img1.jpg";
+import guitare from "../assets/img/exercise/word2Img/guitare.png";
+import clarinette from "../assets/img/exercise/word2Img/clarinette.png";
+import trombone from "../assets/img/exercise/word2Img/trombone.png";
+import flute_traversiere from "../assets/img/exercise/word2Img/flute-traversiere.jpeg";
+import wave from "../assets/img/profilPage/curve.png";
+import close from "../assets/img/profilPage/close.png";
+import palm_tree from "../assets/img/profilPage/palm_tree.png"
+import facebook from "../assets/img/profilPage/facebook.png"
+import twitter from "../assets/img/profilPage/twitter.png"
+import instagram from "../assets/img/profilPage/instagram.png"
 
 const flags = {
   netherlands,
@@ -73,9 +79,20 @@ const Word2Img = {
   flute_traversiere
 };
 
+const ProfilImg = {
+  wave,
+  close,
+  palm_tree,
+  facebook,
+  twitter,
+  instagram
+
+};
+
 export {
   flags,
   Word2Img,
+  ProfilImg,
   down_arrow,
   orange_down_arrow,
   right_arrow,

@@ -9,18 +9,15 @@ import LessonPage from "./components/lesson/lessonPage";
 import PaperPicker from "./components/paper/paperPicker";
 import LessonPicker from "./components/lesson/lessonPicker";
 import PaperPage from "./components/paper/paperPage";
+import ProfilPage from "./components/profil/profilPage";
 
 import "./assets/css/index.css";
 
-import { Routes, Route, useLocation } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
 export default function App({ state, handles }) {
   console.log(state)
-  const location = useLocation();
 
-  React.useEffect(() => {
-    console.log('Location changed');
-  }, [location]);
   return (
     <Routes>
       <Route path="/" element={<Layout state={state} handles={handles} />}>
@@ -32,6 +29,7 @@ export default function App({ state, handles }) {
         <Route path="lessonPage" element={<LessonPage state={state} handles={handles} />} />
         <Route path="paperPage" element={<PaperPage state={state} handles={handles} />} />
         <Route path="toiecPage" element={<ToiecPage state={state} handles={handles} />} />
+        <Route path="profilPage" element={<ProfilPage/>} />
       </Route>
     </Routes>
   );

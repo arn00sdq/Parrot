@@ -1,40 +1,39 @@
-.theme-container{
-    margin-top: 3vh;
-}
 
-ul{
+
+.filter-container ul{
     margin: 0;
     padding: 0;
     /*transform: translate(-50%,50%);*/
     background: #ebf5fc;
-    padding: 10px 20px;
+    padding: 5px 20px;
     width: 13vw;
     margin-top: 1vh;
 }
 
-ul li{
+.filter-container ul li{
     list-style: none;
     position: relative;
     padding: 10px 0;
 }
 
-ul li:last-child{
+.filter-container ul li:last-child{
     border-bottom: none;
 }
 
-ul li label{
-    font-size: 18px;
+.filter-container ul li label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
     color: black;
     padding-left: 30px;
     cursor: pointer;
 }
 
-ul li label input{
+.filter-container ul li label input{
     opacity: 0;
     cursor: pointer;
 }
 
-ul li label .check{
+.filter-container ul li label .check{
     position: absolute;
     top: 10px;
     left: 0;
@@ -48,7 +47,7 @@ ul li label .check{
 
 }
 
-ul li label .check:before{
+.filter-container ul li label .check:before{
     content: '';
     position: absolute;
     top: 3px;
@@ -62,7 +61,7 @@ ul li label .check:before{
 
 }
 
-ul li label input:checked ~ .check:before{
+.filter-container ul li label input:checked ~ .check:before{
     background: orange;
     box-shadow:  0 0 15px orange;
     transform: translate(0);
