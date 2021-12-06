@@ -38,7 +38,7 @@ section{
     left: 45vw;
     height: 45vh;
     transform: scaleX(-1);
-    z-index: 20000;
+    z-index: 2000;
 }
 
 .palm2{
@@ -46,7 +46,7 @@ section{
     bottom: 2vh;
     right: 0vw;
     height: 45vh;
-    z-index: 20000;
+    z-index: 2000;
 }
 
 .contentBx .countdown{
@@ -71,7 +71,7 @@ section{
 }
 
 .contentBx .countdown .time span{
-    margin-top: -10px;
+    margin-top: 10px;
     font-size: 20px;
     font-weight: 600;
     color: #312747;
@@ -108,17 +108,23 @@ section{
     justify-content: center;
     align-items: center;
     filter:  invert(1);
+    
+    
 }
 
 .sci li{
     list-style: none;
+    
+    
 }
 
 .sci li a{
-    display: block;
+    display: flex;
+    align-items: center;
     margin-top: 20px;
     transform: scale(0.8);
     background: none;
+    height: 8vh;
 }
 
 .newletter{
@@ -134,9 +140,10 @@ section{
     visibility: hidden;
     opacity: 0;
     transition: 0.5s;
+    
 }
 
-.newletter.active{
+ .active{
     visibility: visible;
     opacity: 1;
 }
