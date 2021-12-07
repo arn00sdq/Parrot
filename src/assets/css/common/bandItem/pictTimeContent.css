@@ -19,9 +19,8 @@
     left:20px;
     right: 20px;
     bottom: 20px;
-    background: #ebf5fc;
+    background: white;
     box-shadow:  0 10px 20px rgba(0,0,0,0.1);
-    border: 1px solid rgba(0,0,0,.125);
     border-radius: 15px;
     display: flex;
     flex-direction: row;

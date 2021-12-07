@@ -23,6 +23,7 @@
 @import "./common/displayContent/exercisePage/word2img.css";
 @import "./common/tool/checkbox.css";
 @import "./profil/profil.css";
+@import "./common/displayContent/paper/paperPage.css";
 
  *{
     --body-bg-color:#FFEEE2;

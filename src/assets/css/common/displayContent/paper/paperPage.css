@@ -1,0 +1,78 @@
+.content-lesson-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.article-title{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.3571428571;
+    color: #163860;
+    margin-top: 14px;
+    margin-bottom: 11px;
+}
+
+.article-reporter-infos{
+    color: #727272;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 1rem;
+    line-height: 1.375;
+    
+}
+
+.reporter{
+    color: #163860;
+}
+
+.article-date{
+    color: #727272;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 1rem;
+    line-height: 1.375;
+    margin-bottom: 5px;
+}
+
+.media-picture{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 23vw;
+}
+
+.large-ptc-article{
+ 
+}
+
+.article-figcation{
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: .875rem;
+    line-height: 1.4285714286;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: left;
+    color: #163860;
+}
+
+.fig-credit{
+    color: #727272;
+    font-style: italic;
+}
+
+.article-subtitle{
+    color: #163860;
+    font-family: noto-serif,Verdana,Georgia,Times,Times New Roman,Garamond,Palatino,serif;
+    font-size: 1.25rem;
+    line-height: 1.4;
+    margin: 16px 0 0px;
+    font-weight: 700;
+}
+
+.article-text{
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.5555555556;
+    margin-bottom: 16px;
+    margin-top: 16px;
+    color: #163860;
+}

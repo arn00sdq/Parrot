@@ -75,3 +75,101 @@
     font-weight: bold;
     text-decoration: none;
 }
+
+.toiec-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1vh;
+    border-radius: 8px;
+    background-color: var(--container-bg-color);
+}
+
+.containerT{
+    position: relative;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    
+}
+
+.containerT .cardT{
+    position: relative;
+    padding: initial;
+    width:22vw;
+    height: 17vh;
+    background: #fff;
+    margin:13px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow:  0 15px 25px rgba(0,0,0,0.2);
+    transition: 0.5s;
+}
+
+.containerT .cardT .circle{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    clip-path: circle(40% at left );
+    text-align: center;
+}
+
+.containerT .cardT .circle h2{
+    position: absolute;
+    color: #fff;
+    font-size: 30px;
+    top:36px;
+    left:29px
+}
+
+.containerT .cardT .content{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10vw;
+    margin-top: 1vh;
+
+}
+
+.containerT .cardT .content  p{
+    color: #666
+}
+
+.containerT .cardT .content  a{
+        padding: 8px 20px;
+        width: 5vw;
+        background: #03a9f4;
+        border-radius: 20px;
+        color: #fff;
+        text-decoration: none;
+        border: none;
+        font-weight: 400;
+        box-shadow: 0 10px 20px rgb(0 0 0 / 20%);
+
+}
+
+.containerT .cardT:nth-child(1) .circle,
+.containerT .cardT .content a{
+    background: #ffaf00;
+}
+
+.containerT .cardT:nth-child(2) .circle,
+.containerT .cardT:nth-child(2) .content a{
+    background: #da2268;
+}
+
+.containerT .cardT:nth-child(3) .circle,
+.containerT .cardT:nth-child(3) .content a{
+    background: #03a9f4;
+}
+
+.containerT .cardT .content a:hover{
+    cursor: pointer;
+}
+
+.cardT:hover{
+    transform: translateY(-10%);
+    opacity: 0.8;
+}
