@@ -55,11 +55,14 @@ nav{
     /*margin: 6px 10px 7px ;*/
     text-decoration: none;
     color: var(--header-text-color);
+    transition: 0.5s;
 }
 
-.text-header:hover{
+.nav-section:hover .text-header{
     color: #FB830F;
+    transform: translateY(-5%);
 }
+
 
 .nav-toiec-test{
     color: #FF8F00;
@@ -70,14 +73,17 @@ nav{
     width: max-content;
     /*margin-left: 2vw;*/
     padding: 8px;
+    transition: 0.5s;
 }
+  
 
 .nav-toiec-test:hover{
-  /*  color: #FF8F00;*/
-    color: #FFA430;
+    color: #FB830F;
+    transform: translateY(-5%);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     border: 1px solid #FFA430;
-    opacity: 0.8;
 }
+
 
 .current-page{
     font-family: Menlo;
@@ -112,6 +118,11 @@ nav{
     margin-left: 1.5vw;
     color: #333;
     font-weight: 500;
+    transition: 0.5s;
+}
+
+.infos-section:hover{
+    cursor: pointer;
 }
 
 .flag-icon{

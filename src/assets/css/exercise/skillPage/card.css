@@ -150,19 +150,31 @@
 
 }
 
-.containerT .cardT:nth-child(1) .circle,
-.containerT .cardT .content a{
+.containerT .cardT:nth-child(1) .circle{
+    background: url("../../../img/photos/basket-jump.jpg");
+    background-size: contain;
+}
+
+.containerT .cardT:nth-child(1) .content a{
     background: #ffaf00;
 }
 
-.containerT .cardT:nth-child(2) .circle,
-.containerT .cardT:nth-child(2) .content a{
-    background: #da2268;
+.containerT .cardT:nth-child(2) .circle{
+    background: url("../../../img/photos/everest.jpg");
+    background-size: contain;
 }
 
-.containerT .cardT:nth-child(3) .circle,
+.containerT .cardT:nth-child(2) .content a{
+    background: #ffaf00;
+}
+
+.containerT .cardT:nth-child(3) .circle{
+    background: url("../../../img/photos/interview.jpg");
+   background-repeat: no-repeat;
+}
+
 .containerT .cardT:nth-child(3) .content a{
-    background: #03a9f4;
+    background: #ffaf00;
 }
 
 .containerT .cardT .content a:hover{

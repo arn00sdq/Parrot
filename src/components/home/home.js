@@ -8,12 +8,13 @@ import PaperCard from './read/PaperCard'
 import ReadCategory from './read/ReadCategory'
 
 import {
-    basket_jump,everest,science,history,politics,sport,terrorisme,gaming,logo_parrot_adulte
+    basket_jump,everest,science,history,politics,sport,terrorisme,gaming,logo_parrot_adulte,bush
 } from '../../database/images'
 
 function Home(props) {
     return (
             <main>
+                <img className="bush2" src={bush} />
                 <img id="parrot-home" src={logo_parrot_adulte} />
                 <div id="progress-card" className="card">
                     <div id="title-progress">Progression</div>
