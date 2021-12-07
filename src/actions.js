@@ -1,8 +1,8 @@
 import { actionTypes } from './database/actiontypes';
 //STARTERS
 const exerciceStart = (exerciceId) => ({
-    type : actionTypes.EXERCICE_START,
-    payload : {exerciceId}
+    type : actionTypes.EXERCISE_START,
+    payload : exerciceId
 })
 
 const articleStart = (articleId) => ({
@@ -78,12 +78,8 @@ const durationClick = (duration) => ({
     payload : {duration},
 })
 
-const exerciseRedirection = (exerciseId) => ({
-    type : actionTypes.EXERCISE_PICKER.PAGE_CHANGE,
-    payload : {exerciseId},
-})
 //EXERCICE PAGE
-const incrementExercicePageStep = () => ({
+const incrementExercisePageStep = () => ({
     type : actionTypes.EXERCISE_PAGE.NEXT_STEP,
 })
 
@@ -91,4 +87,4 @@ const incrementExercicePageStep = () => ({
 export {articleStart,categoryIconClick,changeLanguage,changeSection,
     conjugaisonClick,durationClick,exerciceStart,expandCatBtnClick,
     helpButtonClick,hoverFeather,hoverFlame,hoverLanguage,hoverUser,
-    incrementExercicePageStep,lessonStart,themeClick,trainBtnClick,exerciseRedirection}
+    incrementExercisePageStep,lessonStart,themeClick,trainBtnClick}

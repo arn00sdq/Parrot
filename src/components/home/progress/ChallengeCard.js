@@ -13,9 +13,9 @@ function ChallengeCard({ titleCard }) {
             <div className="container-card-body">
                 <ChallengeContainer ExText="Les temps du passé. Ex 6" />
                 <div className="daily-award">
-                    <Reward imgReward="reward" classReward={treasure} />
-                    <Reward imgReward="reward" classReward={treasure} />
-                    <Reward imgReward="reward" classReward={treasure} />
+                    <Reward className="reward" type="treasure" />
+                    <Reward className="reward" type="treasure" />
+                    <Reward className="reward" type="treasure" />
                 </div>
             </div>
         </div>

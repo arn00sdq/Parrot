@@ -8,7 +8,7 @@ import {
 const toiecBeginner = {
     exercice: [{
         title: "Present Perfect",
-        className: "ptc-skill-container",
+        className: "pct-skill-container",
         time: "10min",
         imgExercice: pres_perfect,
         state: "Terminer",
@@ -18,7 +18,7 @@ const toiecBeginner = {
     },
     {
         title: "Present Perfect",
-        className: "ptc-skill-container",
+        className: "pct-skill-container",
         time: "10min",
         imgExercice: home_ex,
         state: "Terminer",
@@ -28,7 +28,7 @@ const toiecBeginner = {
     },
     {
         title: "Present Perfect",
-        className: "ptc-skill-container",
+        className: "pct-skill-container",
         time: "10min",
         imgExercice: sign_where,
         state: "Terminer",
@@ -38,7 +38,7 @@ const toiecBeginner = {
     },
     {
         title: "Present Perfect",
-        className: "ptc-skill-container",
+        className: "pct-skill-container",
         time: "10min",
         imgExercice: sign_where,
         state: "Terminer",
@@ -52,7 +52,7 @@ const toiecBeginner = {
 const toiecIndependant = {
     exercice: [{
         title: "Present Perfect",
-        className: "ptc-skill-container",
+        className: "pct-skill-container",
         time: "10min",
         imgExercice: pres_perfect,
         state: "Terminer",
@@ -62,7 +62,7 @@ const toiecIndependant = {
     },
     {
         title: "Present Perfect",
-        className: "ptc-skill-container",
+        className: "pct-skill-container",
         time: "10min",
         imgExercice: home_ex,
         state: "Terminer",
@@ -72,7 +72,7 @@ const toiecIndependant = {
     },
     {
         title: "Present Perfect",
-        className: "ptc-skill-container",
+        className: "pct-skill-container",
         time: "10min",
         imgExercice: sign_where,
         state: "Terminer",
@@ -82,7 +82,7 @@ const toiecIndependant = {
     },
     {
         title: "Present Perfect",
-        className: "ptc-skill-container",
+        className: "pct-skill-container",
         time: "10min",
         imgExercice: sign_where,
         state: "Terminer",
@@ -96,7 +96,7 @@ const toiecIndependant = {
 const toiecAdvanced = {
     exercice: [{
         title: "Present Perfect",
-        className: "ptc-skill-container",
+        className: "pct-skill-container",
         time: "10min",
         imgExercice: pres_perfect,
         state: "Terminer",
@@ -106,7 +106,7 @@ const toiecAdvanced = {
     },
     {
         title: "Present Perfect",
-        className: "ptc-skill-container",
+        className: "pct-skill-container",
         time: "10min",
         imgExercice: home_ex,
         state: "Terminer",
@@ -116,7 +116,7 @@ const toiecAdvanced = {
     },
     {
         title: "Present Perfect",
-        className: "ptc-skill-container",
+        className: "pct-skill-container",
         time: "10min",
         imgExercice: sign_where,
         state: "Terminer",
@@ -126,7 +126,7 @@ const toiecAdvanced = {
     },
     {
         title: "Present Perfect",
-        className: "ptc-skill-container",
+        className: "pct-skill-container",
         time: "10min",
         imgExercice: sign_where,
         state: "Terminer",

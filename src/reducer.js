@@ -3,8 +3,22 @@ import { actionTypes as types } from './database/actiontypes'
 const reducer = (state, action) => {
     
     const { type, payload } = action
-    
+    console.log(`type, payload`, type, payload)
     switch (type) {
+        case types.EXERCISE_START:
+        console.log(`in reducer ex start!`)
+            return {
+                ...state,
+                path: {
+                    ...state.path,
+                    currentPath: "exercisePage"
+                },
+                exercisePage: {
+                    ...state.exercisePage,
+                    exerciseId: payload,
+                    step: parseInt(0)
+                }
+            }
         case types.HEADER.MSE_HOVER_LANG:
             return {
                 ...state,

@@ -3,9 +3,7 @@ const data = Object.freeze({
   CLOTHING : "Clothing",
   FOOD : "Food",
   GEOGRAPHY : "Geography",
-  HOLIDAYS_AND_TRAVEL : "Holidays and travel",
-  NUMBERS_AND_MONEY : "Numbers and money",
-  SPORTS_AND_HEALTH : "Sports and health",
+  SPORTS_AND_HEALTH : "Sports",
 });
 
 export {data};

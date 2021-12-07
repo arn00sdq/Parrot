@@ -2,7 +2,7 @@ import * as React from "react";
 import reducer from "./reducer";
 import Layout from "./components/Layout";
 import ExercicePicker from "./components/exercice/exercicePicker";
-import ExercicePage from "./components/exercice/exercicePage";
+import ExercisePage from "./components/exercice/exercicePage";
 import Home from "./components/home/home";
 import ToiecPage from "./components/toiecPage/toiecPage";
 import LessonPage from "./components/lesson/lessonPage";
@@ -28,7 +28,7 @@ export default function App({ state, handles }) {
         <Route path="exercicePicker" element={<ExercicePicker state={state} handles={handles} />} />
         <Route path="LessonPicker" element={<LessonPicker state={state} handles={handles} />} />
         <Route path="paperPicker" element={<PaperPicker state={state} handles={handles} />} />
-        <Route path="exercicePage" element={<ExercicePage state={state} handles={handles} />} />
+        <Route path="exercisePage" element={<ExercisePage state={state} handles={handles} />} />
         <Route path="lessonPage" element={<LessonPage state={state} handles={handles} />} />
         <Route path="paperPage" element={<PaperPage state={state} handles={handles} />} />
         <Route path="toiecPage" element={<ToiecPage state={state} handles={handles} />} />

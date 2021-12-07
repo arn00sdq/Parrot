@@ -7,10 +7,10 @@ import { treasure, feather_icon } from "../../../../database/images";
 function displayRewards({ treasures, feathers }) {
   let rewards = [];
   for (let i = 0; i < treasures; i++) {
-    rewards.push(<Reward imgReward="reward" classReward={treasure} />);
+    rewards.push(<Reward className="reward" type="treasure" />);
   }
   for (let i = 0; i < feathers; i++) {
-    rewards.push(<Reward imgReward="reward" classReward={feather_icon} />);
+    rewards.push(<Reward className="reward" type="feather" />);
   }
   return rewards;
 }

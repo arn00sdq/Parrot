@@ -75,8 +75,8 @@ var data = [
       duration: 5,
       themes: [themes.ANIMALS, themes.CLOTHING],
       rewards: {
-        treasures: 0,
-        feathers: 2,
+        treasures: 2,
+        feathers: 1,
       },
     },
     content: {

@@ -36,17 +36,17 @@
     font-size: 30px;
 }
 
-.theme-container{
+.filter-container{
     margin: 2vh;
 }
 
-.title-theme-container{
+.title-filter-container{
     font-family: Monserrat;
     font-size: 20px;
     font-weight: bold;
 }
 
-.content-theme{
+.content-filter{
     display: flex;
     flex-direction: row;
     border:solid;
@@ -72,10 +72,10 @@
     color: var(--filter-label-color);
 }
 
-.slider[type=range][orient=vertical]
+.slider[type=range][orient=horizontal]
 {
     writing-mode: bt-lr; /* IE */
-    -webkit-appearance: slider-vertical; /* WebKit */
+    -webkit-appearance: slider-horizontal; /* WebKit */
     width: 8px;
     padding: 0 5px;
 }

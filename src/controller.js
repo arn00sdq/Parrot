@@ -8,17 +8,18 @@ const Controller= () => {
   const [state, dispatch] = useReducer(reducer, model)
 
   function handleExerciseNextStep(){
-    dispatch(actions.incrementExercicePageStep())
+    dispatch(actions.incrementExercisePageStep())
   }
 
-  function handleExerciseRedirection(value){
-    dispatch(actions.exerciseRedirection(value))
+  function handleExerciseStart(id){
+    dispatch(actions.exerciceStart(id))
+    console.log(`controller: exercise id `, id, `started` )
+    console.log(`state`, state)
   }
 
   const handles = {
-    handleExerciseNextStep,handleExerciseRedirection
+    handleExerciseNextStep,handleExerciseStart
   }
-  console.log("state :" ,state)
   return (
     <App
       state={state} handles = {handles}

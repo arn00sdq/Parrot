@@ -5,8 +5,3 @@ const data = Object.freeze({
   });
   
 export {data}
-
-/**PROFONDEUR BOX SHADOW
- check okame
-* */
-  

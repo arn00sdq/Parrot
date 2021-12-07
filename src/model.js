@@ -6,7 +6,7 @@ const data = {
     authors: "Made by DUDES Arnaud and ALONSO Ivan @UPPA",
   },
   path: {
-    currentPath: "exercicePage",
+    currentPath: "exercisePage",
   },
   user: {
     name: "Default User",

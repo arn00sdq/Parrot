@@ -15,10 +15,10 @@ function NextAwardCard(props) {
                     <ProgressBar width="20vw" progress="70%" />
                 </div>
                 <div className="daily-award">
-                    <Reward imgReward='reward' classReward={feather_icon} />
-                    <Reward imgReward='reward' classReward={feather_icon} />
-                    <Reward imgReward='reward' classReward={feather_icon} />
-                    <Reward imgReward='reward' classReward={treasure} />
+                    <Reward className="reward" type="feather" />
+                    <Reward className="reward" type="feather" />
+                    <Reward className="reward" type="feather" />
+                    <Reward className="reward" type="treasure" />
                 </div>
             </div>
         </div>

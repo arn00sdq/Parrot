@@ -1,14 +1,14 @@
-import React from 'react';
-const Checkbox = ({ id,label, value, onChange }) => {
-    return (
-      <li>
-        <label>
-          <input type="checkbox" name=""/>
-          {label}
-          <span class="check"></span>
-        </label>
-      </li>
-    );
-  };
+import React from "react";
+const Checkbox = ({ label, from, handles }) => {
+  return (
+    <li>
+      <label>
+        <input type="checkbox" />
+        {label}
+        <span class="check"></span>
+      </label>
+    </li>
+  );
+};
 
-  export default Checkbox;
+export default Checkbox;

@@ -27,7 +27,7 @@ const timeProps = {
 const lessonPickerProps = {
     exercice: [{
         title: "Present Perfect",
-        className: "ptc-picker-container",
+        className: "pct-picker-container",
         time: "10min",
         imgExercice: pres_perfect,
         state: "Terminer",
@@ -38,7 +38,7 @@ const lessonPickerProps = {
     },
     {
         title: "Present Perfect",
-        className: "ptc-picker-container",
+        className: "pct-picker-container",
         time: "10min",
         imgExercice: pres_perfect,
         state: "Terminer",
@@ -49,7 +49,7 @@ const lessonPickerProps = {
     },
     {
         title: "Present Perfect",
-        className: "ptc-picker-container",
+        className: "pct-picker-container",
         time: "10min",
         imgExercice: pres_perfect,
         state: "Terminer",

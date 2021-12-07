@@ -1,4 +1,4 @@
-.ptc-card{
+.pct-card{
 
     position: relative;
     height: 19vh;
@@ -13,7 +13,7 @@
 
 }
 
-.ptc-box{
+.pct-box{
     position: absolute;
     top: 20px;
     left:20px;
@@ -29,13 +29,13 @@
     transition: 0.5s;
 }
 
-.ptc-card:hover .ptc-box{
+.pct-card:hover .pct-box{
     transform: translateY(-10%);
     box-shadow:  0 10px 40px rgba(0,0,0,0.2);
     background: linear-gradient(45deg,#F07C27, #e54142);
 }
 
-.img-ptc{
+.img-pct{
     width: 25%;
     height: 100%;
     object-fit: cover;
@@ -60,7 +60,7 @@
     font-size: 14px; 
 }
 
-.content-ptc-container{
+.content-pct-container{
     display: flex;
     width: 70%;
     flex-direction: column;
@@ -69,7 +69,7 @@
     border-left: 1px solid rgba(0,0,0,.125);
 }
 
-.header-ptc-container{
+.header-pct-container{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -77,7 +77,7 @@
     height: 20%;
 }
 
-.text-ptc{
+.text-pct{
     height: 40%;
     width: 100%;
     text-overflow: ellipsis;
@@ -87,21 +87,21 @@
 }
 
 
-.footer-ptc{
+.footer-pct{
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-between;
     width: 100%;
     align-items: center;
 }
 
-.title-ptc{
+.title-pct{
     font-family: Monserrat;
     font-size:20px;
     font-weight: bold;
 }
 
-.btn-ptcCard{
+.btn-pctCard{
     position: relative;
     display: inline-block;
     padding: 8px 20px;
@@ -117,13 +117,13 @@
     margin-right: 1vw;
 }
 
-.btn-ptcCard:hover{
+.btn-pctCard:hover{
     cursor: pointer;
 }
 
-.ptc-card:hover .text-ptc,
-.ptc-card:hover .title-ptc
-.ptc-card:hover .time-shift
+.pct-card:hover .text-pct,
+.pct-card:hover .title-pct
+.pct-card:hover .time-shift
 {
     color:#fff
 }

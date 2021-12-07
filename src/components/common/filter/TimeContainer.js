@@ -15,8 +15,8 @@ function TimeContainer(props){
     let row = [];
     for(let [key,value]of Object.entries(props.content)){
         row.push( 
-            <div className="theme-container">
-                <div className="title-theme-container">Durée</div>
+            <div className="filter-container">
+                <div className="title-filter-container">Durée</div>
                 <ul>
                     {RowTimeContainer(value)}
                 </ul>
