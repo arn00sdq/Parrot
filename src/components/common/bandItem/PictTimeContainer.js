@@ -24,15 +24,9 @@ function listRewards({ treasures, feathers }) {
 }
 
 function PictTimeContent(ex, handles) {
-  const navigate = useNavigate();
-  const handleButtonClick = (e) => {
-    e.preventDefault();
 
-    const {
-      target: { value },
-    } = e;
+  const handleButtonClick = () => {
     handles.handleExerciseStart(ex.id);
-    navigate("/exercisePage");
   };
 
   let row = [];
@@ -52,14 +46,7 @@ function PictTimeContent(ex, handles) {
           <div className="text-pct">{ex.description}</div>
           <div className="footer-pct">
             <div>{listRewards(ex.summary.rewards)}</div>
-            <button
-              className="btn-pctCard"
-              value={"LE" + 2}
-              onClick={(e) => handleButtonClick(e)}
-              src={right_arrow}
-            >
-              Continue
-            </button>
+            <Link className="btn-pctCard" to="/exercisePage" onClick={handleButtonClick}>Continue</Link>
           </div>
         </div>
       </div>
