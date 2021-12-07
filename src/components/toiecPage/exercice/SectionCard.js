@@ -1,5 +1,5 @@
 import React from 'react';
-import PictTimeContainer from '../../common/bandItem/PictTimeContainer';
+import ToiecCard from '../../common/bandItem/toiecCard';
 import HeaderLevel from './HeaderLevel';
 
 const toiecId = ["1","1","1"];
@@ -9,7 +9,7 @@ function SectionCard({titleCard,content,state,handles}){
         <div className ="section-skill-card">
             <HeaderLevel titleCard={titleCard} />    
             <div className="card exercice-card">
-                <PictTimeContainer 
+                <ToiecCard 
                 content={content}
                 id={toiecId}
                 handles={handles}/>
