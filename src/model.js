@@ -138,10 +138,6 @@ const data = {
 		  },
     ],
     selectedDuration: 5,
-    /*OU
-		selectedConjugation: 'Present perfect',
-		selectedTheme: 'School',
-		selectedDuration: '5',*/
     exercisesShown: [
       {
         id: "EX1",

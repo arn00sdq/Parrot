@@ -10,6 +10,7 @@ import PaperPicker from "./components/paper/paperPicker";
 import LessonPicker from "./components/lesson/lessonPicker";
 import PaperPage from "./components/paper/paperPage";
 import ProfilPage from "./components/profil/profilPage";
+import Parrot from "./components/parrot/Parrot"
 
 import "./assets/css/index.css";
 
@@ -20,8 +21,10 @@ export default function App({ state, handles }) {
 
   return (
     <Routes>
+      <Route exact path="/parrot" element={<Parrot />} />
       <Route path="/" element={<Layout state={state} handles={handles} />}>
-        <Route exact path="home" element={<Home state={state} handles={handles} />} />
+        
+        <Route path="home" element={<Home state={state} handles={handles} />} />
         <Route path="exercicePicker" element={<ExercicePicker state={state} handles={handles} />} />
         <Route path="LessonPicker" element={<LessonPicker state={state} handles={handles} />} />
         <Route path="paperPicker" element={<PaperPicker state={state} handles={handles} />} />

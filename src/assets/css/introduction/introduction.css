@@ -23,11 +23,18 @@
     font-size: 20px;
 }
 
+.welcome-section{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vh;
+    min-height: 70vh;
+    padding: 0 10vw;
+}
+
 #main-title{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 17vh;
 }
 
 #title-part-1{
@@ -89,24 +96,25 @@
 
 #bush1{
     position: absolute;
-    bottom: -38vh;
-    right: -47vw;
-    height: 100vh;
-    width: 100vw;
+    bottom: -9vh;
+    left: -7vw;
+    height: 38vh;
+    width: 40vw;
 }
 
 #bush2{
     position: absolute;
-    bottom: -38vh;
-    left: -35vw;
-    height: 100vh;
-    width: 100vw;
+    bottom: -9vh;
+    right: -7vw;
+    height: 38vh;
+    width: 40vw;
+    transform: scaleX(-1);
 }
 
 #parrot{
     position: absolute;
-    top: 10vh;
-    right: -30vw;
-    height: 70vh;
-    width: 70vw;
+    top: 30vh;
+    right: -4vw;
+    height: 29vh;
+    width: 14vw;
 }
