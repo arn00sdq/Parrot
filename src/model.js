@@ -128,27 +128,8 @@ const data = {
     step: "0",
   },
   exercisePicker: {
-    
-    selectedThemes: [
-		{
-			name: "Animals",
-		  },
-		  {
-			name: "Clothing",
-		  },
-    ],
+    selectedThemes: [],
     selectedDuration: 5,
-    exercisesShown: [
-      {
-        id: "EX1",
-      },
-      {
-        id: "EX2",
-      },
-      {
-        id: "EX2",
-      },
-    ],
     pageNumber: 1,
   },
   lessonPage: {
@@ -156,43 +137,12 @@ const data = {
     step: "0",
   },
   lessonPicker: {
-    selectedCategories: [
+    selectedTenses: [
       {
         name: "Present perfect",
       },
 	  {
         name: "Future continuous",
-      },
-    ],
-    journaux: [
-      {
-        id: "1",
-        checked: true,
-      },
-      {
-        id: "2",
-        checked: false,
-      },
-      {
-        id: "3",
-        checked: true,
-      },
-    ],
-    durations: {
-      min5: true,
-      min10: true,
-      min15: false,
-    },
-    resultCount: 8,
-    lessons: [
-      {
-        id: "LE1",
-      },
-      {
-        id: "LE1",
-      },
-      {
-        id: "LE1",
       },
     ],
     pageNumber: 1,

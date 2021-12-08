@@ -4,6 +4,9 @@ const actionTypes = Object.freeze ({
     EXERCISE_START : 'EXERCICE_START',
     ARTICLE_START : 'ARTICLE_START',
     LESSON_START : 'LESSON_START',
+    FILTER: {
+        THEME_CLK : 'THEME_CLK',
+    },
     HEADER : {
         MSE_HOVER_LANG : 'MSE_HOVER_LANG',
         CHANGE_LANG : 'CHANGE_LANG',
@@ -26,7 +29,6 @@ const actionTypes = Object.freeze ({
     },
     EXERCISE_PICKER : {
         CONJUG_CLK : 'CONJUG_CLK',
-        THEME_CLK : 'THEME_CLK',
         DURATION_CLK : 'DURATION_CLK',
         PAGE_CHANGE : 'PAGE_CHANGE',
     },

@@ -64,17 +64,17 @@ const categoryIconClick = () => ({
 
 //EXERCICE PICKER
 const conjugaisonClick = (conjugationId) => ({
-    type : actionTypes.EXERCICE_PICKER.CONJUG_CLK,
+    type : actionTypes.EXERCISE_PICKER.CONJUG_CLK,
     payload : {conjugationId},
 })
-
-const themeClick = (theme) => ({
-    type : actionTypes.EXERCICE_PICKER.THEME_CLK,
-    payload : {theme},
+//GENERAL
+const themeFilterChange = (themeName, from) => ({
+    type : actionTypes.FILTER.THEME_CLK,
+    payload : {themeName, from},
 })
 
 const durationClick = (duration) => ({
-    type : actionTypes.EXERCICE_PICKER.DURATION_CLK,
+    type : actionTypes.EXERCISE_PICKER.DURATION_CLK,
     payload : {duration},
 })
 
@@ -87,4 +87,4 @@ const incrementExercisePageStep = () => ({
 export {articleStart,categoryIconClick,changeLanguage,changeSection,
     conjugaisonClick,durationClick,exerciceStart,expandCatBtnClick,
     helpButtonClick,hoverFeather,hoverFlame,hoverLanguage,hoverUser,
-    incrementExercisePageStep,lessonStart,themeClick,trainBtnClick}
+    incrementExercisePageStep,lessonStart,themeFilterChange,trainBtnClick}

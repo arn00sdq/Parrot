@@ -17,7 +17,7 @@ import "./assets/css/index.css";
 import { Routes, Route } from 'react-router-dom';
 
 export default function App({ state, handles }) {
-  console.log(state)
+  console.log("App state : " + state)
 
   return (
     <Routes>

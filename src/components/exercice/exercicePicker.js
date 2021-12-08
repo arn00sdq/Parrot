@@ -1,6 +1,6 @@
 import React from 'react';
 
-import PictTimeContainer from '../common/bandItem/PictTimeContainer'
+import ActivityListContainer from '../common/bandItem/activityListContainer'
 import { data as exercisesData } from "../../database/exercises";
 import ThemeFilter from '../common/filter/themeFilter'
 import {bush} from '../../database/images';
@@ -30,8 +30,10 @@ function ExercicePicker({ state, handles }) {
                         <div className="filter-container-header">
                             <div className="title-filter">Search</div>
                         </div>
+                        <div className="container-card-body">
                         <LevelFilter handles = {handles} from = "exercisePicker"/>
                         <ThemeFilter handles = {handles} from = "exercisePicker"/>
+                        </div>
                     </div>
                 </div>
 
@@ -40,11 +42,12 @@ function ExercicePicker({ state, handles }) {
                         <div className="tag-point-medium">Exercises</div>
                         <div className="n-exercices">{`Showing ${exercisesToShow.length} of ${exercisesData.length} exercises`}</div>
                     </div>
-                    <PictTimeContainer
-                        exercises={exercisesToShow}
+                    <ActivityListContainer
+                    from = "exercisePicker"
+                        activities={exercisesToShow}
                         handles={handles}
                     />
-                    <a href="#" className="button-ex-card">Charger plus</a>
+                    {/* <a href="#" className="button-ex-card">Charger plus</a> */}
                 </div>
 
             </main>

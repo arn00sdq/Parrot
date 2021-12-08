@@ -13,12 +13,13 @@ const Controller= () => {
 
   function handleExerciseStart(id){
     dispatch(actions.exerciceStart(id))
-    console.log(`controller: exercise id `, id, `started` )
-    console.log(`state`, state)
   }
 
+  function handleThemeFilterChange(themeName, from){
+    dispatch(actions.themeFilterChange(themeName, from))
+  }
   const handles = {
-    handleExerciseNextStep,handleExerciseStart
+    handleExerciseNextStep,handleExerciseStart, handleThemeFilterChange
   }
   return (
     <App

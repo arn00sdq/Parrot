@@ -20,7 +20,6 @@ function CardContent(value, id, handles) {
     }
     let row = [];
     for (let i = 0; i < value.length; i++) {
-        console.log(value)
         row.push(
             <div className="paperCard">
                 <div className="box">
@@ -43,7 +42,6 @@ function CardContainer({ content, id, handles }) {
     let row = [];
     var values = Object.keys(content);
 
-    console.log(content)
     row.push(
         <div className="cardContent-container">
             <div className="cardContent-header-container">

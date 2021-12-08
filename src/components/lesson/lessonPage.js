@@ -10,7 +10,6 @@ function LessonPage({ state, handles }) {
     var currentlesson = lesson.find((e) => {
         return e.id == id;
     });
-    console.log(currentlesson)
     return (
         <div id="root-css">
             <main>

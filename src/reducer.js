@@ -1,98 +1,116 @@
-import { actionTypes as types } from './database/actiontypes'
+import { actionTypes as types } from "./database/actiontypes";
 
 const reducer = (state, action) => {
-    
-    const { type, payload } = action
-    console.log(`type, payload`, type, payload)
-    switch (type) {
-        case types.EXERCISE_START:
-        console.log(`in reducer ex start!`)
-            return {
-                ...state,
-                path: {
-                    ...state.path,
-                    currentPath: "exercisePage"
-                },
-                exercisePage: {
-                    ...state.exercisePage,
-                    exerciseId: payload,
-                    step: parseInt(0)
-                }
-            }
-        case types.HEADER.MSE_HOVER_LANG:
-            return {
-                ...state,
-                user: {
-                    ...state.user,
-                    changeLanguageBtnToggle: !state.user.changeLanguageBtnToggle,
-                }
-            }
-        case types.EXERCISE_PAGE.NEXT_STEP:
-            return {
-                ...state,
-                exercisePage: {
-                    ...state.exercisePage,
+  const { type, payload } = action;
+  //console.log(`type, payload`, type, payload);
+  switch (type) {
+    case types.FILTER.THEME_CLK:
+      const { themeName, from } = payload;
+      switch (from) {
+        case "exercisePicker":
+          const newThemes = state.exercisePicker.selectedThemes;
+          const existsIndex = newThemes.findIndex(theme => {
+              return theme.name === themeName
+          });
+          existsIndex == -1
+            ? newThemes.push({name: themeName})
+            : newThemes.splice(existsIndex, 1);
+          return {
+            ...state,
+            exercisePicker: {
+              ...state.exercisePicker,
+              selectedThemes: newThemes,
+            },
+          };
 
-                    step: parseInt(state.exercisePage.step + 1)
-                }
-            };
-        case types.HEADER.CHANGE_LANG:
-            return {
-                ...state,
-                home: {
-                    ...state.home,
-                    user: {
-                        ...state.home.user,
-                        selectedLanguage: payload.newLanguage,
-                    }
-                }
-            };
-        case types.HOME.DSHB_CHANGE_SECTION:
-            return {
-                ...state,
-                home: {
-                    ...state.home,
-                    dashboard: {
-                        ...state.home.dashboard,
-                        section: payload.selectedSection,
-                    }
-                }
-            };
-        case types.EXERCISE_PICKER.PAGE_CHANGE:
-            console.log(payload.exerciseId)
-            return {
-                ...state,
-                exercisePage: {
-                    ...state.exercisePage,
-                    exerciseId: payload.exerciseId,
-                    
-                }
-                
-            };
-        case types.EXERCISE_PICKER.CONJUG_CLK:
-            var conjugationsIndex = state.exercisePicker.conjugations.findIndex(
-                (c) => {
-                    return c.id === payload.conjugationId
-                }
-            )
-            return {
-                ...state,
-                exercisePicker: {
-                    ...state.exercisePicker,
-                    conjugations: {
-                        ...state.exercisePicker.conjugations,
-                        [conjugationsIndex]: {
-                            ...state.exercisePicker.conjugations[conjugationsIndex],
-                            checked: state.exercisePicker.conjugations[conjugationsIndex].checked ? false : true,
-                        },
-                    }
-
-                }
-            }
         default:
-            return state;
-    }
-    
+          break;
+      }
+    case types.EXERCISE_START:
+      return {
+        ...state,
+        path: {
+          ...state.path,
+          currentPath: "exercisePage",
+        },
+        exercisePage: {
+          ...state.exercisePage,
+          exerciseId: payload,
+          step: parseInt(0),
+        },
+      };
+    case types.HEADER.MSE_HOVER_LANG:
+      return {
+        ...state,
+        user: {
+          ...state.user,
+          changeLanguageBtnToggle: !state.user.changeLanguageBtnToggle,
+        },
+      };
+    case types.EXERCISE_PAGE.NEXT_STEP:
+      return {
+        ...state,
+        exercisePage: {
+          ...state.exercisePage,
+
+          step: parseInt(state.exercisePage.step + 1),
+        },
+      };
+    case types.HEADER.CHANGE_LANG:
+      return {
+        ...state,
+        home: {
+          ...state.home,
+          user: {
+            ...state.home.user,
+            selectedLanguage: payload.newLanguage,
+          },
+        },
+      };
+    case types.HOME.DSHB_CHANGE_SECTION:
+      return {
+        ...state,
+        home: {
+          ...state.home,
+          dashboard: {
+            ...state.home.dashboard,
+            section: payload.selectedSection,
+          },
+        },
+      };
+    case types.EXERCISE_PICKER.PAGE_CHANGE:
+      return {
+        ...state,
+        exercisePage: {
+          ...state.exercisePage,
+          exerciseId: payload.exerciseId,
+        },
+      };
+    case types.EXERCISE_PICKER.CONJUG_CLK:
+      var conjugationsIndex = state.exercisePicker.conjugations.findIndex(
+        (c) => {
+          return c.id === payload.conjugationId;
+        }
+      );
+      return {
+        ...state,
+        exercisePicker: {
+          ...state.exercisePicker,
+          conjugations: {
+            ...state.exercisePicker.conjugations,
+            [conjugationsIndex]: {
+              ...state.exercisePicker.conjugations[conjugationsIndex],
+              checked: state.exercisePicker.conjugations[conjugationsIndex]
+                .checked
+                ? false
+                : true,
+            },
+          },
+        },
+      };
+    default:
+      return state;
+  }
 };
 
-export { reducer }
+export { reducer };

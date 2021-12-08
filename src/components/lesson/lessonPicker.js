@@ -1,72 +1,22 @@
 import React from 'react';
 
-import ThemeContainer from '../common/filter/ThemeContainer'
-import TimeContainer from '../common/filter/TimeContainer'
-import PictTimeContainer from '../common/bandItem/PictTimeContainer'
-
+import TensesFilter from '../common/filter/tensesFilter'
+import LevelFilter from '../common/filter/levelFilter'
+import ActivityListContainer from '../common/bandItem/activityListContainer'
+import {data as lessonsData} from '../../database/lessons'
 import { bush, pres_perfect } from '../../database/images'
-
-const themeProps = {
-    Categorie: {
-        title: "Conjugaisons",
-        props: ["Present perfect", "Past", "PastContinous"],
-    },
-    Journaux: {
-        title: "Themes",
-        props: ["Voyage", "Montagne", "Hopital"],
-    }
-}
-
-const timeProps = {
-    Time: {
-        title: "Durée",
-        props: ["5min", "10min", "15min"]
-    }
-}
-
-const lessonPickerProps = {
-    exercice: [{
-        title: "Present Perfect",
-        className: "pct-picker-container",
-        time: "10min",
-        imgExercice: pres_perfect,
-        state: "Terminer",
-        text: "Cette lesson est basé sur une description d'image.\
-        VOus devrez decrire l'image en alternant...\
-        Au travers de cet exercice nous verrons l'utilisation\
-        du present perfect avec des descriptions, texte a trous..."
-    },
-    {
-        title: "Present Perfect",
-        className: "pct-picker-container",
-        time: "10min",
-        imgExercice: pres_perfect,
-        state: "Terminer",
-        text: "Cette lesson est basé sur une description d'image.\
-            VOus devrez decrire l'image en alternant...\
-            Au travers de cet exercice nous verrons l'utilisation\
-            du present perfect avec des descriptions, texte a trous..."
-    },
-    {
-        title: "Present Perfect",
-        className: "pct-picker-container",
-        time: "10min",
-        imgExercice: pres_perfect,
-        state: "Terminer",
-        text: "Cette lesson est basé sur une description d'image.\
-            VOus devrez decrire l'image en alternant...\
-            Au travers de cet exercice nous verrons l'utilisation\
-            du present perfect avec des descriptions, texte a trous..."
-    }
-    ],
-}
-
 
 function LessonPicker({ state, handles }) {
 
-    const lecPickerData = state.lessonPicker.lessons;
-    const lecId = Object.values(lecPickerData).map(x => x.id);
-    console.log(handles)
+    const lessonsToShow = lessonsData.filter(le => {
+        let corresponds = false;
+        state.lessonPicker.selectedTenses.forEach(tense => {
+            if (le.summary.tenses.indexOf(tense.name) != -1) {
+                corresponds = true;
+            }
+        })
+        return corresponds;
+    });
 
     return (
         <div id="root-css">
@@ -77,26 +27,26 @@ function LessonPicker({ state, handles }) {
                 <div className="card">
                     <div className="filter-container">
                         <div className="filter-container-header">
-                            <div className="title-filter">Recherche</div>
+                            <div className="title-filter">Search</div>
                         </div>
                         <div className="container-card-body">
-                            <ThemeContainer title="Recherche" content={themeProps} />
-                            <TimeContainer title="Durée" content={timeProps} />
+                        <LevelFilter handles = {handles} from = "lessonPicker"/>
+                        <TensesFilter handles = {handles} from = "lessonPicker"/>
                         </div>
                     </div>
                 </div>
 
                 <div className="exercice-picker-card card">
                     <div className="header-picker">
-                        <div className="tag-point-medium">Present perfect</div>
-                        <div className="n-exercices">8 exercices</div>
+                        <div className="tag-point-medium">Lessons</div>
+                        <div className="n-exercices">{`Showing ${lessonsToShow.length} of ${lessonsData.length} lessons`}</div>
                     </div>
-                    <PictTimeContainer
-                        content={lessonPickerProps}
-                        id={lecId}
-                        handles={handles}
-                    />
-                    <a href="#" className="button-ex-card">Charger plus</a>
+                    <ActivityListContainer
+                    from = "lessonPicker"
+                    activities={lessonsToShow}
+                    handles={handles}
+                />
+                    {/* <a href="#" className="button-ex-card">Charger plus</a> */}
                 </div>
 
             </main>

@@ -26,7 +26,6 @@ function typeLecon(paper,currentStep,handles) {
 }
 
 function displayPaper({paper, step, handles}) {
-    console.log(paper)
     return (
         <div className="page-exercice-card card">
             <div className="page-exercice-container">

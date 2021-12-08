@@ -1,7 +1,6 @@
 import React from "react";
 import { data as languages } from "../../../../database/languages";
 function User({ state, handles }) {
-  console.log(`User`);
   var row = [];
   var currLang = state.user.selectedLanguage;
   var currLangObj = languages.find((l) => l.hasOwnProperty(currLang));

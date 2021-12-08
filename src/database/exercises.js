@@ -73,7 +73,7 @@ var data = [
     summary: {
       level: levels.INTERMEDIATE,
       duration: 5,
-      themes: [themes.ANIMALS, themes.CLOTHING],
+      themes: [themes.GEOGRAPHY, themes.SPORTS],
       rewards: {
         treasures: 2,
         feathers: 1,
@@ -102,7 +102,7 @@ var data = [
       ],
       words: [
         ["Door", "Hand", "Clarinet", "Paer"],
-        ["Clip", "Bird", "Transverse-flute", "Mouse"],
+        ["Clip", "Bird", "Transverse flute", "Mouse"],
         ["Plane", "Guitar", "Treasure", "Laptop"],
         ["Table", "Cricket", "Basketball", "Trombone"],
       ],

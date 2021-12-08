@@ -10,7 +10,7 @@ export default function LevelFilter({handles, from}) {
     </div>
   );
 
-  function listLevel(from) {
+  function listLevel(handles, from) {
     let row = [];
     for (const levelName in levels) {
       if (Object.hasOwnProperty.call(levels, levelName)) {

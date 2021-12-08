@@ -12,7 +12,6 @@ function ProfilPage() {
     const [isContainerActive, setIsContainerActive] = React.useState(false);
 
     const toggleIn = () => {
-        console.log("true")
         setIsContainerActive(true);
     };
 

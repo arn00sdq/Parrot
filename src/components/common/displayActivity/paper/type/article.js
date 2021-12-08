@@ -10,7 +10,6 @@ function RowArticle(lesson) {
 }
 
 function Article(props) {
-    console.log(props)
     return (
         <div className="content-lesson-section" key={props.content.step}>
             {RowArticle(props.content.text)}

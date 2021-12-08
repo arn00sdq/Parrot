@@ -1,4 +1,4 @@
-import { data as tenses } from "../../../database/tenses";
+import { data as tenses } from "../../../database/english_tenses";
 import Checkbox from '../tool/Checkbox'
 import React from "react";
 
