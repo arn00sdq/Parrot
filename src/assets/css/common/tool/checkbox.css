@@ -8,6 +8,12 @@
     padding: 5px 20px;
     width: 13vw;
     margin-top: 1vh;
+ 
+}
+
+.filter-container:nth-child(2) ul {
+    height: 23vh;
+    overflow: scroll;
 }
 
 .filter-container ul li{
