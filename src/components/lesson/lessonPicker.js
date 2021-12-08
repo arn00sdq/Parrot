@@ -23,7 +23,6 @@ function LessonPicker({ state, handles }) {
             <img className="bush2" src={bush} />
 
             <main>
-
                 <div className="card">
                     <div className="filter-container">
                         <div className="filter-container-header">
