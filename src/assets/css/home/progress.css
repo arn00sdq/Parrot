@@ -96,3 +96,8 @@
     width: 20vw;
 }
 
+.challenge-btn{
+    margin-bottom: 1vh;
+    cursor: pointer;
+}
+

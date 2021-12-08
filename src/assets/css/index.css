@@ -24,6 +24,7 @@
 @import "./common/tool/checkbox.css";
 @import "./profil/profil.css";
 @import "./common/displayContent/paper/paperPage.css";
+@import "./common/tool/helpMessage.css";
 
  *{
     --body-bg-color:#FFEEE2;

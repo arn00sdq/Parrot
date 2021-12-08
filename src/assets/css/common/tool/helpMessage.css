@@ -1,0 +1,48 @@
+.help-container{
+    position: relative;
+    display: flex;
+    z-index:6;
+    align-items: center;
+}
+
+
+.help-container:hover .help-text {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-10%);
+    z-index: -6;
+    
+}
+
+
+.help-text{
+    position: absolute;
+    background: #fff;
+    padding: 10px 12px;
+    border-radius: 6px;
+    width: 20vw;
+    right: -9.4vw;
+    top: -5vw;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    transition: 0.5s;
+    transform: translate((50%,15%));
+    border: 1px solid rgba(0,0,0,0.2);
+    color: #333;
+    font-weight: 500;
+    opacity: 0;
+    visibility: hidden;
+
+}
+
+.help-text::before{
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    top: 7.2vh;
+    left: 48%;
+    background: grey;
+    transform: rotate(45deg) translateX(-50%);
+    z-index: -6;
+}

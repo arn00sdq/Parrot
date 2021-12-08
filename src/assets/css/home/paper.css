@@ -17,6 +17,19 @@
     flex-direction: row;
     justify-content: space-between;
     margin-top: 2vh;
+    
+}
+
+.paper-card:hover .paper-infos-card {
+    transform: translateY(-5%);
+    box-shadow:  0 10px 40px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+.paper-card:hover .paper-img{
+    transform: translateY(-5%);
+    box-shadow:  0 10px 40px rgba(0,0,0,0.2);
+    cursor: pointer;
 }
 
 .paper-infos-card{
@@ -28,11 +41,13 @@
     border: 1px solid rgba(0,0,0,.125);
     padding: 1vh 1vw;
     background-color: white;
+    transition: 0.5s;
 }
 
 .paper-img{
     height: 20vh;
     width: 10vw;
+    transition: 0.5s;
 }
 
 .paper-category-text{
@@ -124,3 +139,5 @@
     text-decoration: none;
     margin-top: 2vh;
 }
+
+
