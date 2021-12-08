@@ -9,8 +9,8 @@ function HeaderContent({title,steps,currentStep}) {
                 <div>{(currentStep / steps) * 100 + "%"}</div>
                 <div className="progress-content-bar">
                     <img src={cross} className="cross"></img>
-                    <div className="large-bar">
-                        <div className="orange-bar"></div>
+                    <div className="progress-step">
+                        <div className="fill a" style={{width: (currentStep / steps) * 100 + "%"}}></div>
                     </div>
                 </div>
                 
