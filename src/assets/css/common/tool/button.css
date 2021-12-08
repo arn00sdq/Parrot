@@ -49,7 +49,19 @@
 }
 
 .button-exercise {
-  appearance: none;
+  margin: .5em;
+  padding: .7em 1.5em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.3em;
+  font-weight: bold;
+  color: white;
+  background-color: #e1d2b8;
+  border: 2px solid rgba(112,111,211,0);
+  border-radius: 15px;
+  outline: none;
+  cursor: pointer;
+  transition: .3s;
+  /*appearance: none;
   background-color: #F9A014;
   border-radius: 10px;
   border-style: none;
@@ -60,15 +72,17 @@
   font-weight: 500;
   line-height: 1.5;
   padding: 14px 30px;
-  margin: 50px;
+  margin: 50px;*/
 }
 
 .button-exercise:hover {
-  background-color: slategrey;
+  border: 2px solid rgba(255,255,255,1);
+  box-shadow: 0px 0px 1px rgba(58, 57, 110,0.8);
+ /* background-color: slategrey;
   box-shadow: rgba(0, 0, 0, .05) 0 5px 30px, rgba(0, 0, 0, .05) 0 1px 4px;
   opacity: 1;
   transform: translateY(0);
-  transition-duration: .35s;
+  transition-duration: .35s;*/
 }
 
 .button-exercise:hover:after {

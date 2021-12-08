@@ -1,5 +1,5 @@
 import React from "react";
-import { achievement } from "../../../../../database/images";
+import { achievement,Word2Img } from "../../../../../database/images";
 
 function Word2img({ content, currentStep, handles }) {
   const finished = currentStep < content.steps ? false : true;
@@ -31,11 +31,19 @@ function Word2img({ content, currentStep, handles }) {
   }
   return (
     <div className="wordImg-container">
-      <img
-        src={finished == false ? content.images[currentStep].url : achievement}
-        className="wordImg-picture"
-      />
-
+      
+      <div className="center">
+        <div className="monitor">
+          <img
+          src={finished == false ? content.images[currentStep].url : achievement}
+          className="wordImg-picture"
+        />
+          <img className="monitor-logo" src={Word2Img.apple}></img>
+        </div>
+        <div className="m-1"></div>
+        <div className="m-2"></div>
+      </div>
+      
       <div className="btn-exercise-container">{row}</div>
     </div>
   );

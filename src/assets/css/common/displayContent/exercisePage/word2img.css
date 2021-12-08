@@ -10,8 +10,6 @@
     flex-direction: column;
     border: 1px solid rgba(0,0,0,0.125);
     border-bottom: 1 px solid rgba(0,0,0,.125);
-    /*background-image: url("../../../../img/photos/jugnlebackground.jpg");
-    background-size: cover;*/
     background-color: white;
     padding: 20px 40px;
 }
@@ -31,9 +29,52 @@
 }
 
 .wordImg-picture{
-    width: 16vw;
-    height: 19vh;
+    width: 100%;
+    height: 100%;
     border-radius: 10px;
-    border: 1px solid #ddd;
-    padding: 4px;
+    padding: 2px;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.monitor{
+    margin-top: 3vh;
+    display: flex;
+    flex-direction: column;
+    width: 45vh;
+    height: 25vh;
+    background: #000;
+    border-bottom: 30px solid #d8d8d8;
+    z-index: 5;
+}
+
+.m-1{
+    width: 70px;
+    height:60px;
+    background: #bdbdbd;
+    margin-top: -18px;
+    margin-left: 72px;
+    transform: perspective(100px) translateX(-50%) rotateX(25deg) skewX(7deg);
+    z-index: 4;
+    transform-origin: bottom;
+}
+
+.m-2{
+    width: 140px;
+    height:15px;
+    background: #d8d8d8;
+    z-index: -1;
+    transform-origin: bottom;
+    z-index: 5;
+}
+
+.monitor .monitor-logo{
+    margin-top: -25vh;
+    margin-left: 3px;
+    transform: scale(0.03);
 }

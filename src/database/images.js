@@ -58,6 +58,7 @@ import palm_tree from "../assets/img/profilPage/palm_tree.png"
 import facebook from "../assets/img/profilPage/facebook.png"
 import twitter from "../assets/img/profilPage/twitter.png"
 import instagram from "../assets/img/profilPage/instagram.png"
+import apple from "../assets/img/icon/apple.svg"
 
 const flags = {
   netherlands,
@@ -76,7 +77,8 @@ const Word2Img = {
   guitare,
   clarinette,
   trombone,
-  flute_traversiere
+  flute_traversiere,
+  apple
 };
 
 const ProfilImg = {
