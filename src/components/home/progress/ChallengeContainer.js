@@ -10,7 +10,7 @@ function ChallengeContainer(props){
                 </div>
             </div>
             <div className="progress-text-card">{props.ExText}</div>
-                <img className="yellow-button" src={ready_icon}/>
+            <button className="btn-paperCard challenge-btn" style={{background: "orange"}}>continuer</button>
         </div>
     );
 }

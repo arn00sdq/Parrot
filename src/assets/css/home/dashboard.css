@@ -7,6 +7,16 @@
     opacity: 0.8;
     margin-left: 5px;
     margin-top: 5px;
+    transition: 0.5s;
+}
+
+.help-container:hover{
+    cursor: pointer;
+}
+
+.help-container:hover .orange-triangle-down{
+    transform: rotate(180deg);
+    
 }
 
 #dashboard-container{
@@ -73,10 +83,10 @@
 
 
 .help-container{
-    display: flex;
+   /*display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: center;*/
 
 }
 
