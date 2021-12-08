@@ -25,6 +25,7 @@
 @import "./profil/profil.css";
 @import "./common/displayContent/paper/paperPage.css";
 @import "./common/tool/helpMessage.css";
+@import "./common/displayContent/exercisePage/wordDrifting.css";
 
  *{
     --body-bg-color:#FFEEE2;

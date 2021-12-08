@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { cross } from "../../../../database/images";
 
 import Word2img from "./types/word2img";
+import WordDrifting from "./types/wordDrifting"
 import HeaderContent from "../common/headerContent";
 import FooterContent from "../common/footerContent";
 
@@ -29,11 +30,12 @@ function typeExercise(exercise, currentStep, handles) {
   switch (exercise.type) {
     case "Word2Img":
       return (
-        <Word2img
+        /*<Word2img
           content={exercise.content}
           currentStep={currentStep}
           handles={handles}
-        />
+        />*/
+        <WordDrifting />
       );
       // <PictBtn />
       break;
