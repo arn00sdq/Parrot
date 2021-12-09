@@ -1,6 +1,5 @@
 import React from 'react';
 import Reward from '../reward/Reward';
-import handlePickerItem from './handlePickerItem'
 import { Link, useNavigate } from "react-router-dom";
 import {
     history

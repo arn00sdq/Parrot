@@ -2,7 +2,7 @@ import React from 'react';
 import DisplaySummary from "../common/displayActivity/summary/displaySummary";
 import DisplayPaper from "../common/displayActivity/paper/displayPaper";
 import { bush } from '../../database/images'
-import { data as paperData } from "../../database/paper";
+import { data as paperData } from "../../database/papers";
 
 function PaperPage({ state, handles }) {
    
@@ -22,7 +22,7 @@ function PaperPage({ state, handles }) {
                     summary={paperData[0].summary}
                 />
                 <DisplayPaper
-                    paper={paperData[0]}
+                    paper={id}
                     step={step}
                     handles={handles}
                 />

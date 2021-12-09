@@ -4,6 +4,7 @@ const data = Object.freeze({
   FOOD : "Food",
   GEOGRAPHY : "Geography",
   SPORTS : "Sports",
+  SCIENCE : "Science"
 });
 
 export {data};

@@ -1,6 +1,5 @@
 import React from "react";
 import Reward from "../reward/Reward";
-import handlePickerItem from "./handlePickerItem";
 import { Link } from "react-router-dom";
 import { clock_icon, right_arrow, treasure } from "../../../database/images";
 
