@@ -22,13 +22,14 @@ var data = [
         treasures: 0,
         feathers: 2,
       },
-      description:
+      
+    },
+    description:
         "This exercise is meant to teach\
        you the basics of english vocabulary.\
         You will be presented an image\
          and be asked to chose the word \
          that corresponds to the presented photography.",
-    },
     content: {
       order: "Pick the word that best suits the image",
       steps: 4,
