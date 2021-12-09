@@ -15,14 +15,14 @@ function User({ state, handles }) {
   });
 
   return (
-    <div className="infos-section">
+    <div className="infos-section ">
       <div className="item">
-        <img src={currIcon} className="flag-icon" />
+        <img src={currIcon} className=" flag-icon infos-icon " />
         <div className="dropdown-menu" role="menu">
           <ul className="menu-item-link">{row}</ul>
         </div>
+        </div>
       </div>
-    </div>
   );
 }
 

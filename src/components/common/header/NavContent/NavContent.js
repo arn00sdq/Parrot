@@ -1,11 +1,14 @@
 import React from 'react';
 import NavSection from './NavSection';
+import {navProps as navContent} from '../navProps';
 
-function NavContent(props){
+function NavContent(){
     var row = [];
-    const nav = props.navContent;
-    for (const [key, value] of Object.entries(nav)){
-        row.push(<NavSection url={value.icon} key={value.route} value={value}/>)// implementer object.key pour match
+    for (const navLink in navContent) {
+        if (navContent.hasOwnProperty.call(navContent, navLink)) {
+            const element = navContent[navLink];
+            row.push(<NavSection content={element}/>)
+        }
     }
     return row;
 }

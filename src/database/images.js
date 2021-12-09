@@ -59,6 +59,7 @@ import facebook from "../assets/img/profilPage/facebook.png"
 import twitter from "../assets/img/profilPage/twitter.png"
 import instagram from "../assets/img/profilPage/instagram.png"
 import apple from "../assets/img/icon/apple.svg"
+import certificateIcon from "../assets/img/mini_logo/certificateicon.png"
 
 const flags = {
   netherlands,
@@ -92,6 +93,7 @@ const ProfilImg = {
 };
 
 export {
+  certificateIcon,
   flags,
   Word2Img,
   ProfilImg,

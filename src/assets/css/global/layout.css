@@ -1,12 +1,12 @@
-main{
+main {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background: linear-gradient(#F07C27, #e54142);;
+    background: linear-gradient(#F07C27, #e54142);
     align-self: center;
-    margin-top: 2vh;
-    width: 95vw;
-    height: 88vh;
+    margin-top: 1.5vh;
+    width: 98vw;
+    height: 89.5vh;
     padding: 2vh 2vw;
 }
 
