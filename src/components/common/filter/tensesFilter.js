@@ -4,8 +4,8 @@ import React from "react";
 
 export default function TensesFilter({handles, from}) {
   return (
-    <div className="filter-container">
-      <div className="title-filter-container">Filter by tense:</div>
+    <div className="theme-container">
+      <div className="title-theme-container">Filter by tense:</div>
       <ul>{listTenses(from)}</ul>
     </div>
   );

@@ -12,9 +12,9 @@ const Checkbox = ({ label, from, handles, type}) => {
   return (
     <li>
       <label>
-        <input onClick={onCheckBoxClick} type="checkbox" />
-        {label}
-        <span class="check"></span>
+        <input className="checkInput" onClick={onCheckBoxClick} type="checkbox" />
+        
+        <span class="check">{label}</span>
       </label>
     </li>
   );

@@ -4,8 +4,8 @@ import React from "react";
 
 export default function ThemeFilter({ handles, from }) {
   return (
-    <div className="filter-container">
-      <div className="title-filter-container">Filter by theme:</div>
+    <div className="theme-container">
+      <div className="title-theme-container">Filter by theme:</div>
       <ul>{listThemes(handles, from)}</ul>
     </div>
   );

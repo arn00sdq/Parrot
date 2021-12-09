@@ -29,7 +29,7 @@ function ExercicePicker({ state, handles }) {
             <div className="filter-container-header">
               <div className="title-filter">Search</div>
             </div>
-            <div className="container-card-body">
+            <div className="filter-card-body">
               <LevelFilter handles={handles} from="exercisePicker" />
               <ThemeFilter handles={handles} from="exercisePicker" />
             </div>

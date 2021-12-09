@@ -30,7 +30,7 @@ function LessonPicker({ state, handles }) {
             <div className="filter-container-header">
               <div className="title-filter">Search</div>
             </div>
-            <div className="container-card-body">
+            <div className="filter-card-body">
               <LevelFilter handles={handles} from="lessonPicker" />
               <TensesFilter handles={handles} from="lessonPicker" />
             </div>

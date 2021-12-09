@@ -60,6 +60,8 @@ import twitter from "../assets/img/profilPage/twitter.png"
 import instagram from "../assets/img/profilPage/instagram.png"
 import apple from "../assets/img/icon/apple.svg"
 import certificateIcon from "../assets/img/mini_logo/certificateicon.png"
+import check from "../assets/img/icon/check-solid.svg"
+
 
 const flags = {
   netherlands,
@@ -97,6 +99,7 @@ export {
   flags,
   Word2Img,
   ProfilImg,
+  check,
   down_arrow,
   orange_down_arrow,
   right_arrow,

@@ -11,7 +11,7 @@ function NextAwardCard(props) {
             </div>
             <div className="container-card-body">
                 <div className="container-bar-xp">
-                    <div className="large-text-xp">5/10 xp</div>
+                    <div className="large-text-xp">1/2 steps</div>
                     <ProgressBar width="20vw" progress="70%" />
                 </div>
                 <div className="daily-award">

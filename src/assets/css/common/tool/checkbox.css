@@ -3,17 +3,13 @@
 .filter-container ul{
     margin: 0;
     padding: 0;
-    /*transform: translate(-50%,50%);*/
-    background: #ebf5fc;
-    padding: 5px 20px;
-    width: 13vw;
     margin-top: 1vh;
  
 }
 
 .filter-container:nth-child(2) ul {
-    height: 23vh;
-    overflow: scroll;
+  /*  height: 23vh;
+    overflow: scroll;*/
 }
 
 .filter-container ul li{
@@ -22,54 +18,54 @@
     padding: 10px 0;
 }
 
-.filter-container ul li:last-child{
-    border-bottom: none;
-}
 
 .filter-container ul li label{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 17px;
     color: black;
-    padding-left: 30px;
     cursor: pointer;
+    display: flex;
+    justify-content:flex-start;
 }
 
 .filter-container ul li label input{
-    opacity: 0;
+    transform: scale(1.2);
     cursor: pointer;
 }
 
-.filter-container ul li label .check{
-    position: absolute;
-    top: 10px;
-    left: 0;
-    width: 20px;
+.filter-container ul li .check{
+    margin-left: 1vw;
+}
+
+input[type="checkbox"]{ 
+    appearance: none;
+    -webkit-appearance: none;
+    height: 15px;
+    width: 15px;
+    background-color: #d5d5d5;
+    cursor: pointer;
+
+  }
+
+  input[type="checkbox"]:after{ 
+    content: url(../../../img/icon/check-solid.svg);
     height: 20px;
-    background: white;
-    border: 1px solid rgba(0,0,0,0.5);
+    width: 20px;
+    margin: -2px 0px 10px -2px;
+    transform: scale(0.6);
+    color: white;
+    display: none;
+    
+  }
+
+input[type="checkbox"]:checked{ 
+    background-color: orange;
+}
+
+input[type="checkbox"]:checked::after{ 
     display: block;
-    box-sizing: border-box;
-    border-radius: 4px;
+    filter: invert(99%) sepia(6%) saturate(2%) hue-rotate(140deg) brightness(114%) contrast(100%);
 
 }
 
-.filter-container ul li label .check:before{
-    content: '';
-    position: absolute;
-    top: 3px;
-    left: 3px;
-    right: 3px;
-    bottom: 3px;
-    background: white;
-    border-radius: 2px;
-    transition: 0.5s;
-    transform: translateX(185px);
 
-}
-
-.filter-container ul li label input:checked ~ .check:before{
-    background: orange;
-    box-shadow:  0 0 15px orange;
-    transform: translate(0);
-
-}

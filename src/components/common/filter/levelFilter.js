@@ -4,8 +4,8 @@ import React from "react";
 
 export default function LevelFilter({handles, from}) {
   return (
-    <div className="filter-container">
-      <div className="title-filter-container">Filter by level:</div>
+    <div className="theme-container">
+      <div className="title-theme-container">Filter by level:</div>
       <ul>{listLevel(from)}</ul>
     </div>
   );
