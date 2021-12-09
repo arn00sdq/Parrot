@@ -102,9 +102,9 @@
 .btn-pctCard{
     position: relative;
     display: inline-block;
-    padding: 8px 20px;
+    padding: 0.8vh 1.5vw;
     background-color: #03a9f4;
-    margin-top: 15px;
+    margin-top: 1vh;
     border-radius: 20px;
     color:#fff;
     text-decoration: none;
