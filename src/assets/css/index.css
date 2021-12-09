@@ -26,6 +26,7 @@
 @import "./common/displayContent/paper/paperPage.css";
 @import "./common/tool/helpMessage.css";
 @import "./common/displayContent/exercisePage/wordDrifting.css";
+@import "./home/feature.css";
 
  *{
     --body-bg-color:#FFEEE2;

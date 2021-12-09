@@ -7,11 +7,6 @@
  
 }
 
-.filter-container:nth-child(2) ul {
-  /*  height: 23vh;
-    overflow: scroll;*/
-}
-
 .filter-container ul li{
     list-style: none;
     position: relative;
@@ -44,6 +39,7 @@ input[type="checkbox"]{
     width: 15px;
     background-color: #d5d5d5;
     cursor: pointer;
+    transition: 0.5s;
 
   }
 

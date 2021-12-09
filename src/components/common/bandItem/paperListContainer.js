@@ -8,9 +8,9 @@ import {
 } from '../../../database/images'
 
 
-function PaperListContainer({papers, handles}) {
+function PaperListContainer({ papers, handles }) {
     const papersToShow = papers
-    return(
+    return (
         <div className="cardContent-container">
             <div className="cardContent-header-container">
                 <div className="title-header">Papers</div>
@@ -21,16 +21,12 @@ function PaperListContainer({papers, handles}) {
             </div>
         </div>
     )
-        
-    
 }
 
 function PaperList(papers, handles) {
-   
-    
     let row = [];
     papers.forEach(paper => {
-        row.push(<CardContainer paper = {paper} handles = {handles}/>)
+        row.push(<CardContainer paper={paper} handles={handles} />)
     })
     return row;
 }

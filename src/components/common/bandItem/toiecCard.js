@@ -6,7 +6,8 @@ import {
 
 } from '../../../database/images'
 
-function CardContent(value, id, handles) {
+function ToiecCard({ content, id, handles }) {
+
     const navigate = useNavigate();
     const handleButtonClick = (e) => {
         e.preventDefault();
@@ -18,7 +19,9 @@ function CardContent(value, id, handles) {
         navigate('/paperPage');
     }
     let row = [];
-    for (let i = 0; i < value.length-1; i++) {
+    var values = Object.keys(content);
+    const propsValues = content[values[0]];
+    for (let i = 0; i < propsValues.length-1; i++) {
         row.push(
             <div className="cardT">
                 <div className="circle">
@@ -28,31 +31,13 @@ function CardContent(value, id, handles) {
                     {/*<img src={history} className="img-paperCard" />
                     <div className="date-paperCard">{value[i].date}</div>
                     <div className="title-paperCard">{value[i].title}</div>*/}
-                    <p>{value[i].text}</p>
-                    <a  value={"EX" + 2} onClick={(e) => handleButtonClick(e)} >READ</a>
+                    <p>{propsValues[i].text}</p>
+                    <a  propsValues={"EX" + 2} onClick={(e) => handleButtonClick(e)} >READ</a>
                 </div>
 
             </div>
         )
     }
-    return row;
-}
-
-function ToiecCard({ content, id, handles }) {
-    let row = [];
-    var values = Object.keys(content);
-
-    row.push(
-        <div className="toiec-container">
-            <div className="cardContent-header-container">
-                <div className="title-header">{values[0]}</div>
-            </div>
-            <div className="containerT">
-                {CardContent(content[values[0]], id, handles)}
-            </div>
-        </div>
-    )
-
     return row;
 }
 
