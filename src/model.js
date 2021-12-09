@@ -1,5 +1,5 @@
 import { profil_icon } from "./database/images";
-import {data as ENG} from "./database/english_tenses"
+import { data as ENG } from "./database/english_tenses";
 const data = {
   config: {
     debug: false,
@@ -129,8 +129,6 @@ const data = {
   },
   exercisePicker: {
     selectedThemes: [],
-    selectedDuration: 5,
-    pageNumber: 1,
   },
   lessonPage: {
     lessonId: "LE1",
@@ -141,76 +139,18 @@ const data = {
       {
         name: "Present perfect",
       },
-	  {
+      {
         name: "Future continuous",
       },
     ],
-    pageNumber: 1,
   },
   paperPage: {
     paperId: "PA1",
     step: "0",
   },
   paperPicker: {
-    categorie: [
-      {
-        id: "1",
-        checked: true,
-      },
-      {
-        id: "2",
-        checked: false,
-      },
-      {
-        id: "3",
-        checked: true,
-      },
-    ],
-    journaux: [
-      {
-        id: "1",
-        checked: true,
-      },
-      {
-        id: "2",
-        checked: false,
-      },
-      {
-        id: "3",
-        checked: true,
-      },
-    ],
-    durations: {
-      min5: true,
-      min10: true,
-      min15: false,
-    },
-    /*OU
-		selectedConjugation: 'Present perfect',
-		selectedTheme: 'School',
-		selectedDuration: '5',*/
-    resultCount: 8,
-    papers: [
-      {
-        id: "PA1",
-      },
-      {
-        id: "PA1",
-      },
-      {
-        id: "PA1",
-      },
-      {
-        id: "PA1",
-      },
-      {
-        id: "PA1",
-      },
-      {
-        id: "PA1",
-      },
-    ],
-    pageNumber: 1,
+    level: undefined,
+    selectedThemes: [],
   },
 };
 

@@ -15,7 +15,6 @@ var data = [
       "In this lesson, you will learn the basics about the usage of the Present Perfect.",
     summary: {
       level: levels.BEGINNER,
-      time: 5,
       tenses: [
         {
           name: tenses.PRESENT_PERFECT,

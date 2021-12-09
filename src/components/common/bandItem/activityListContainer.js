@@ -53,16 +53,11 @@ function ActivityContent(activity, handles, from) {
     <div className="pct-card" key={activity.id}>
       <div className="pct-box">
         <img className="img-pct" src={activity.icon} />
-        {/* <div className="time-container">
-                    <img className="clock" src={clock_icon} />
-                    <div className="time-shift">{value.time}</div>
-                </div> */}
         <div className="content-pct-container">
           <div className="header-pct-container">
             <div className="title-pct">
               {activity.id + " : " + activity.title}
             </div>
-            {/* <div className="validation">{value.state}</div> */}
           </div>
           <div className="text-pct">{activity.description}</div>
           <div className="footer-pct">
