@@ -1,11 +1,14 @@
 .acc{
     display: flex;
-    background: linear-gradient(#F07C27, #e54142);;
+    flex-direction: row;
+    justify-content: space-around;
+    background: linear-gradient(#F07C27, #e54142);
     align-self: center;
     margin-top: 2vh;
     width: 95vw;
     height: 88vh;
     padding: 2vh 2vw;
+;
 }
 
 section{
@@ -17,8 +20,12 @@ section{
 
 .contentBx{
     position: relative;
+    display: flex;
+    flex-direction: column;
     max-width: 50vw;
+    max-height: 60vh;
     z-index: 1000;
+    align-items: flex-start;
 }
 
 .contentBx h2{
@@ -100,15 +107,12 @@ section{
 }
 
 .sci{
-    position: absolute;
-    bottom: 26vh;
-    left: -4.2vw;
+
     z-index: 1000;
     display: flex;
-    justify-content: center;
-    align-items: center;
     filter:  invert(1);
-    
+    margin: 0;
+    padding: 0;
     
 }
 
@@ -121,10 +125,8 @@ section{
 .sci li a{
     display: flex;
     align-items: center;
-    margin-top: 20px;
     transform: scale(0.8);
     background: none;
-    height: 8vh;
 }
 
 .newletter{
