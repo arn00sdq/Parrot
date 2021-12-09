@@ -23,8 +23,8 @@ function ProfilPage() {
     return (
         <div id="root-css">
             <div class="acc">
-                <img src={ProfilImg.palm_tree} className="palm"/>
-                <img src={ProfilImg.palm_tree} className="palm2"/>
+                {/*<img src={ProfilImg.palm_tree} className="palm"/>
+                <img src={ProfilImg.palm_tree} className="palm2"/>*/}
                 <section>
                     <div className="contentBx">
                         <h2>Coming Soon</h2>

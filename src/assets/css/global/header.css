@@ -198,7 +198,7 @@ nav{
     border-color: rgba(0,0,0,0.1) transparent;
     transform: translateX(-50%);
     bottom: -12px;
-    right: -40%;
+    right: -70%;
     transform: translateX(-100%);
   }
 .item:hover .dropdown-menu{
@@ -211,7 +211,7 @@ nav{
     top: 40px;
     /*ajouter border voir le style de la page ect*/
     left: -220%;
-    width: 10vw;
+    width: 12vw;
     /* Styles */
     background: white;
     border-radius: inherit;
