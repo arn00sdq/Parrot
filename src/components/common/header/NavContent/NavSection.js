@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 function NavSection({content}) {
     const classLink = content.route != "toiecPage" ? "nav-icon text-header" : "nav-toiec-test text-header";
     return (
-        <li className="nav-section" >
+        <div className="nav-section" >
             
-            <Link to={content.route} key={content.text} className={classLink}>{<img src={content.icon} />} {content.text}</Link>
-        </li>
+            <Link to={content.route}  className={classLink}>{<img src={content.icon} />} {content.text}</Link>
+        </div>
     );
 }
 

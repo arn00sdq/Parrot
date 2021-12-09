@@ -129,28 +129,23 @@ const data = {
   },
   exercisePicker: {
     selectedThemes: [],
+    selectedLevels: []
   },
   lessonPage: {
     lessonId: "LE1",
     step: "0",
   },
   lessonPicker: {
-    selectedTenses: [
-      {
-        name: "Present perfect",
-      },
-      {
-        name: "Future continuous",
-      },
-    ],
+    selectedTenses: [],
+    selectedLevels: []
   },
   paperPage: {
     paperId: "PA1",
     step: "0",
   },
   paperPicker: {
-    level: undefined,
     selectedThemes: [],
+    selectedLevels: []
   },
 };
 

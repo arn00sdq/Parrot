@@ -1,5 +1,6 @@
 import React from "react";
 import { data as languages } from "../../../../database/languages";
+
 function User({ state, handles }) {
   var row = [];
   var currLang = state.user.selectedLanguage;
@@ -21,8 +22,8 @@ function User({ state, handles }) {
         <div className="dropdown-menu" role="menu">
           <ul className="menu-item-link">{row}</ul>
         </div>
-        </div>
       </div>
+    </div>
   );
 }
 

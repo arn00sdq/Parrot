@@ -1,21 +1,29 @@
 import { data as levels } from "../../../database/levels";
-import Checkbox from '../tool/Checkbox'
+import Checkbox from "../tool/Checkbox";
 import React from "react";
 
-export default function LevelFilter({handles, from}) {
+export default function LevelsFilter({ handles, from }) {
   return (
     <div className="theme-container">
       <div className="title-theme-container">Filter by level:</div>
-      <ul>{listLevel(from)}</ul>
+      <ul>{listLevels(handles, from)}</ul>
     </div>
   );
 
-  function listLevel(handles, from) {
+  function listLevels(handles, from) {
     let row = [];
-    for (const levelName in levels) {
-      if (Object.hasOwnProperty.call(levels, levelName)) {
-        const level = levels[levelName];
-        row.push(<Checkbox key = {level} from={from} label={level} />);
+    for (const levelsName in levels) {
+      if (Object.hasOwnProperty.call(levels, levelsName)) {
+        const level = levels[levelsName];
+        row.push(
+          <Checkbox
+            key={level}
+            handles={handles}
+            from={from}
+            label={level}
+            type="level"
+          />
+        );
       }
     }
     return row;

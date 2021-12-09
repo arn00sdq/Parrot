@@ -7,18 +7,25 @@ import { data as lessonsData } from "../../database/lessons";
 import { bush, pres_perfect } from "../../database/images";
 
 function LessonPicker({ state, handles }) {
-  const lessonsToShow =
-    state.lessonPicker.selectedTenses.length == 0
-      ? lessonsData.filter((le) => {
-          let corresponds = false;
-          state.lessonPicker.selectedTenses.forEach((tense) => {
-            if (le.summary.tenses.indexOf(tense.name) != -1) {
-              corresponds = true;
-            }
-          });
-          return corresponds;
-        })
-      : lessonsData;
+  var lessonsToShow =
+  state.lessonPicker.selectedTenses.length +
+    state.lessonPicker.selectedLevels.length 
+    == 0
+    ? lessonsData
+    : lessonsData.filter((lesson) => {
+        let corresponds = false;
+        state.lessonPicker.selectedTenses.forEach((tense) => {
+          if (lesson.summary.tenses.indexOf(tense.name) != -1) {
+            corresponds = true;
+          }
+        });
+        state.lessonPicker.selectedLevels.forEach((level) => {
+          if (lesson.summary.level == level.name) {
+            corresponds = true;
+          }
+        });
+        return corresponds;
+      });
 
   return (
     <div id="root-css">

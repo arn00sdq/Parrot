@@ -2,18 +2,20 @@ import { actionTypes as types } from "./database/actiontypes";
 
 const reducer = (state, action) => {
   const { type, payload } = action;
+  var { filterName, from } = payload;
+  console.log(`filterName`, filterName)
+  let existsIndex, newLevels, newThemes, newTenses;
   //console.log(`type, payload`, type, payload);
   switch (type) {
     case types.FILTER.THEME_CLK:
-      const { themeName, from } = payload;
       switch (from) {
         case "exercisePicker":
-          const newThemes = state.exercisePicker.selectedThemes;
-          const existsIndex = newThemes.findIndex(theme => {
-              return theme.name === themeName
+          newThemes = state.exercisePicker.selectedThemes;
+          existsIndex = newThemes.findIndex((theme) => {
+            return theme.name === filterName;
           });
           existsIndex == -1
-            ? newThemes.push({name: themeName})
+            ? newThemes.push({ name: filterName })
             : newThemes.splice(existsIndex, 1);
           return {
             ...state,
@@ -22,7 +24,91 @@ const reducer = (state, action) => {
               selectedThemes: newThemes,
             },
           };
-
+        case "paperPicker":
+          newThemes = state.paperPicker.selectedThemes;
+          existsIndex = newThemes.findIndex((theme) => {
+            return theme.name === filterName;
+          });
+          existsIndex == -1
+            ? newThemes.push({ name: filterName })
+            : newThemes.splice(existsIndex, 1);
+          return {
+            ...state,
+            paperPicker: {
+              ...state.paperPicker,
+              selectedThemes: newThemes,
+            },
+          };
+        default:
+          break;
+      }
+      case types.FILTER.TENSE_CLK:
+      switch (from) {
+        case "lessonPicker":
+          newTenses = state.lessonPicker.selectedTenses;
+          existsIndex = newTenses.findIndex((lesson) => {
+            return lesson.name === filterName;
+          });
+          existsIndex == -1
+            ? newTenses.push({ name: filterName })
+            : newTenses.splice(existsIndex, 1);
+          return {
+            ...state,
+            lessonPicker: {
+              ...state.lessonPicker,
+              selectedTenses: newTenses,
+            },
+          };
+        default:
+          break;
+      }
+    case types.FILTER.LEVEL_CLK:
+      switch (from) {
+        case "exercisePicker":
+          newLevels = state.exercisePicker.selectedLevels;
+          existsIndex = newLevels.findIndex((level) => {
+            return level.name === filterName;
+          });
+          existsIndex == -1
+            ? newLevels.push({ name: filterName })
+            : newLevels.splice(existsIndex, 1);
+          return {
+            ...state,
+            exercisePicker: {
+              ...state.exercisePicker,
+              selectedLevels: newLevels,
+            },
+          };
+        case "lessonPicker":
+          newLevels = state.lessonPicker.selectedLevels;
+          existsIndex = newLevels.findIndex((lesson) => {
+            return lesson.name === filterName;
+          });
+          existsIndex == -1
+            ? newLevels.push({ name: filterName })
+            : newLevels.splice(existsIndex, 1);
+          return {
+            ...state,
+            lessonPicker: {
+              ...state.lessonPicker,
+              selectedLevels: newLevels,
+            },
+          };
+        case "paperPicker":
+          newLevels = state.paperPicker.selectedLevels;
+          existsIndex = newLevels.findIndex((paper) => {
+            return paper.name === filterName;
+          });
+          existsIndex == -1
+            ? newLevels.push({ name: filterName })
+            : newLevels.splice(existsIndex, 1);
+          return {
+            ...state,
+            paperPicker: {
+              ...state.paperPicker,
+              selectedPapers: newLevels,
+            },
+          };
         default:
           break;
       }

@@ -62,21 +62,20 @@ const categoryIconClick = () => ({
     type : actionTypes.HOME.READING_CAT_ICON_CLK,
 })
 
-//EXERCICE PICKER
-const conjugaisonClick = (conjugationId) => ({
-    type : actionTypes.EXERCISE_PICKER.CONJUG_CLK,
-    payload : {conjugationId},
-})
-//GENERAL
-const themeFilterChange = (themeName, from) => ({
+//PICKERS
+const themeFilterChange = (filterName, from) => ({
     type : actionTypes.FILTER.THEME_CLK,
-    payload : {themeName, from},
+    payload : {filterName, from},
+})
+const levelFilterChange = (filterName, from) => ({
+    type : actionTypes.FILTER.LEVEL_CLK,
+    payload : {filterName, from},
+})
+const tenseFilterChange = (filterName, from) => ({
+    type : actionTypes.FILTER.TENSE_CLK,
+    payload : {filterName, from},
 })
 
-const durationClick = (duration) => ({
-    type : actionTypes.EXERCISE_PICKER.DURATION_CLK,
-    payload : {duration},
-})
 
 //EXERCICE PAGE
 const incrementExercisePageStep = () => ({
@@ -84,7 +83,7 @@ const incrementExercisePageStep = () => ({
 })
 
 
-export {articleStart,categoryIconClick,changeLanguage,changeSection,
-    conjugaisonClick,durationClick,exerciceStart,expandCatBtnClick,
+export {levelFilterChange,articleStart,categoryIconClick,changeLanguage,changeSection,
+    tenseFilterChange,exerciceStart,expandCatBtnClick,
     helpButtonClick,hoverFeather,hoverFlame,hoverLanguage,hoverUser,
     incrementExercisePageStep,lessonStart,themeFilterChange,trainBtnClick}

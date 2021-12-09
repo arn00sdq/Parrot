@@ -2,13 +2,33 @@ import React from 'react';
 
 import PaperListContainer from '../common/bandItem/paperListContainer'
 import ThemeFilter from '../common/filter/themeFilter'
+import LevelFilter from '../common/filter/levelFilter'
+
 import { bush, pres_perfect } from '../../database/images'
 import {data as papersData} from '../../database/papers'
 
 
 function PaperPicker({ state, handles }) {
 
-    const papersToShow = papersData
+    var papersToShow =
+    state.paperPicker.selectedThemes.length +
+      state.paperPicker.selectedLevels.length 
+      == 0
+      ? papersData
+      : papersData.filter((paper) => {
+          let corresponds = false;
+          state.paperPicker.selectedThemes.forEach((theme) => {
+            if (paper.summary.themes.indexOf(theme.name) != -1) {
+              corresponds = true;
+            }
+          });
+          state.paperPicker.selectedLevels.forEach((level) => {
+            if (paper.summary.level == level.name) {
+              corresponds = true;
+            }
+          });
+          return corresponds;
+        });
     return (
         <div id="root-css">
             <img className="bush2" src={bush} />
@@ -20,6 +40,7 @@ function PaperPicker({ state, handles }) {
                         <div className="filter-container-header">
                             <div className="title-filter">Recherche</div>
                         </div>
+                        <LevelFilter handles={handles} from = "paperPicker" />
                         <ThemeFilter handles={handles} from = "paperPicker" />
                     </div>
                 </div>

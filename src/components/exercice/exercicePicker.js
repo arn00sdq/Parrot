@@ -7,8 +7,11 @@ import { bush } from "../../database/images";
 import LevelFilter from "../common/filter/levelFilter";
 
 function ExercicePicker({ state, handles }) {
+
   var exercisesToShow =
-    state.exercisePicker.selectedThemes.length == 0
+    state.exercisePicker.selectedThemes.length +
+      state.exercisePicker.selectedLevels.length 
+      == 0
       ? exercisesData
       : exercisesData.filter((ex) => {
           let corresponds = false;
@@ -17,9 +20,13 @@ function ExercicePicker({ state, handles }) {
               corresponds = true;
             }
           });
+          state.exercisePicker.selectedLevels.forEach((level) => {
+            if (ex.summary.level == level.name) {
+              corresponds = true;
+            }
+          });
           return corresponds;
         });
-
   return (
     <div id="root-css">
       <img className="bush2" src={bush} />

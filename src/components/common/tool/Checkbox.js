@@ -5,6 +5,12 @@ const Checkbox = ({ label, from, handles, type}) => {
       case "theme":
         handles.handleThemeFilterChange(label, from)
       break;
+      case "tense":
+        handles.handleTenseFilterChange(label, from)
+      break;
+      case "level":
+        handles.handleLevelFilterChange(label, from)
+      break;
     }
     
   }

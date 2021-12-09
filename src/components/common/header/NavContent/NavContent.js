@@ -7,7 +7,7 @@ function NavContent(){
     for (const navLink in navContent) {
         if (navContent.hasOwnProperty.call(navContent, navLink)) {
             const element = navContent[navLink];
-            row.push(<NavSection content={element}/>)
+            row.push(<NavSection key={element.text} content={element}/>)
         }
     }
     return row;

@@ -6,6 +6,8 @@ const actionTypes = Object.freeze ({
     LESSON_START : 'LESSON_START',
     FILTER: {
         THEME_CLK : 'THEME_CLK',
+        LEVEL_CLK : 'LEVEL_CLK',
+        TENSE_CLK : 'TENSE_CLK',        
     },
     HEADER : {
         MSE_HOVER_LANG : 'MSE_HOVER_LANG',

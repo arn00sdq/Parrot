@@ -10,22 +10,22 @@ export const navProps = {
   home: {
     icon: home_icon,
     route: "home",
-    text: "ACCEUIL",
+    text: "DASHBOARD",
   },
   exercices: {
     icon: exercise_icon,
     route: "exercicePicker",
-    text: "EXERCICES",
+    text: "EXERCISES",
   },
   lesson: {
-    icon: exercise_icon,
+    icon: lesson_icon,
     route: "lessonPicker",
-    text: "OUTILS",
+    text: "LESSONS",
   },
   paper: {
     icon: paper_icon,
     route: "paperPicker",
-    text: "LIRE",
+    text: "READING",
   },
   toeic: {
     icon: certificateIcon,
