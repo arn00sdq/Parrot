@@ -20,7 +20,10 @@ function PaperPicker({ state, handles }) {
                         <div className="filter-container-header">
                             <div className="title-filter">Recherche</div>
                         </div>
-                        <ThemeFilter handles={handles} from = "paperPicker" />
+                        <div className="filter-card-body">
+                            <ThemeFilter handles={handles} from = "paperPicker" />
+                        </div>
+                        
                     </div>
                 </div>
 

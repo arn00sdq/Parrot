@@ -53,6 +53,12 @@
 .theme-container
 {
     margin-top: 3vh;
+
 }
+
+.theme-container:nth-child(2) ul {
+    height: 23vh;
+     overflow: scroll;
+ }
 
 
