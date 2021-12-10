@@ -2,7 +2,10 @@ import { actionTypes as types } from "./database/actiontypes";
 
 const reducer = (state, action) => {
   const { type, payload } = action;
-  var { filterName, from } = payload;
+  if (Object.hasOwnProperty.call(action, 'filterName')) {
+    var { filterName, from } = payload;
+  }
+  
   let existsIndex, newLevels, newThemes, newTenses;
   switch (type) {
     case types.FILTER.THEME_CLK:

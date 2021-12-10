@@ -30,12 +30,12 @@ function typeExercise(exercise, currentStep, handles) {
   switch (exercise.type) {
     case "Word2Img":
       return (
-        /*<Word2img
+        <Word2img
           content={exercise.content}
           currentStep={currentStep}
           handles={handles}
-        />*/
-        <WordDrifting />
+        />
+        /* { <WordDrifting /> } */
       );
       // <PictBtn />
       break;
