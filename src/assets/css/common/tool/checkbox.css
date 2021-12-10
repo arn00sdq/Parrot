@@ -20,7 +20,10 @@
     color: black;
     cursor: pointer;
     display: flex;
-    justify-content:flex-start;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
 }
 
 .filter-container ul li label input{
@@ -30,6 +33,14 @@
 
 .filter-container ul li .check{
     margin-left: 1vw;
+}
+
+.filter-container span{
+    width: 8vw;
+}
+
+.filter-container p{
+    margin-right: 1vw;
 }
 
 input[type="checkbox"]{ 
