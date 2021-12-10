@@ -21,7 +21,10 @@ const Checkbox = ({ label, from, handles, type, count}) => {
         <input className="checkInput" onClick={onCheckBoxClick} type="checkbox" />
         
         <span class="check">{label}</span>
-        <p className="check">{count}</p>
+        <div class="badge">
+          <p className="check">{count}</p>
+        </div>
+        
       </label>
       
     </li>

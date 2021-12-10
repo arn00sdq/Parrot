@@ -64,4 +64,6 @@
 .theme-container:nth-child(2) ul {
     height: fit-content;
     overflow-y: scroll;
+    min-width: 14vw;
+ 
 }
