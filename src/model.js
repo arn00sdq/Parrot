@@ -11,23 +11,12 @@ const data = {
     icon: profil_icon,
     selectedLanguage: "English (US)",
     featherCount: "4",
-    flameCount: "4",
+    flameCount: "2",
+    exercisesDone: [{id: "EX1"}],
+    lessonsRead: [{id: "LE1"}],
+    papersRead: [{id: "PA1"}],
   },
   home: {
-    stats: {
-      lessons: {
-        read: "10",
-        total: "120",
-      },
-      exercises: {
-        done: "5",
-        total: "42",
-      },
-      articles: {
-        read: "5",
-        total: "42",
-      },
-    },
     progression: {
       dailyChallenge: [
         {
