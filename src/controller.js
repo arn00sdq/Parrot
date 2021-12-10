@@ -17,17 +17,14 @@ const Controller= () => {
 
   function handleThemeFilterChange(themeName, from){
     dispatch(actions.themeFilterChange(themeName, from))
-    console.log(`themeName`, themeName)
   }
 
   function handleTenseFilterChange(tenseName, from){
     dispatch(actions.themeFilterChange(tenseName, from))
-    console.log(`tenseName`, tenseName)
   }
 
   function handleLevelFilterChange(levelName, from){
     dispatch(actions.levelFilterChange(levelName, from))
-    console.log(`levelName`, levelName)
   }
   const handles = {
     handleExerciseNextStep,handleExerciseStart, handleThemeFilterChange, 

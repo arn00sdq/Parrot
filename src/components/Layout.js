@@ -5,7 +5,6 @@ import { Outlet } from "react-router-dom";
 
 
 function Layout({ state, handles }) {
-  console.log("-- Debug actif --");
   return (
     <div id="root-css">
       {/*<img className="bush2" src={bush} />*/}

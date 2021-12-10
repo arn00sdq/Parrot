@@ -3,7 +3,6 @@ import Reward from "../reward/Reward";
 import { Link, useNavigate } from "react-router-dom";
 
 function CardContainer({ paper, handles }) {
-    console.log(`paper`, paper)
     const navigate = useNavigate();
     const handleButtonClick = (e) => {
         e.preventDefault();

@@ -1,8 +1,6 @@
 import { profil_icon } from "./database/images";
-import { data as ENG } from "./database/english_tenses";
 const data = {
   config: {
-    debug: false,
     authors: "Made by DUDES Arnaud and ALONSO Ivan @UPPA",
   },
   path: {
@@ -58,7 +56,6 @@ const data = {
     dashboard: {
       section: "recentActivities",
       recentActivities: {
-        helpBtnToggle: false,
         activities: [
           {
             id: "1",
@@ -75,7 +72,6 @@ const data = {
         ],
       },
       suggestedLessons: {
-        helpBtnToggle: false,
         lessons: [
           {
             id: "1",

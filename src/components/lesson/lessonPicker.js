@@ -8,39 +8,45 @@ import { bush, pres_perfect } from "../../database/images";
 
 function LessonPicker({ state, handles }) {
   var lessonsToShow =
-  state.lessonPicker.selectedTenses.length +
-    state.lessonPicker.selectedLevels.length 
-    == 0
-    ? lessonsData
-    : lessonsData.filter((lesson) => {
-        let corresponds = false;
-        state.lessonPicker.selectedTenses.forEach((tense) => {
-          if (lesson.summary.tenses.indexOf(tense.name) != -1) {
-            corresponds = true;
-          }
+    state.lessonPicker.selectedTenses.length +
+      state.lessonPicker.selectedLevels.length ==
+    0
+      ? lessonsData
+      : lessonsData.filter((lesson) => {
+          let corresponds = false;
+          state.lessonPicker.selectedTenses.forEach((tense) => {
+            if (lesson.summary.tenses.indexOf(tense.name) != -1) {
+              corresponds = true;
+            }
+          });
+          state.lessonPicker.selectedLevels.forEach((level) => {
+            if (lesson.summary.level == level.name) {
+              corresponds = true;
+            }
+          });
+          return corresponds;
         });
-        state.lessonPicker.selectedLevels.forEach((level) => {
-          if (lesson.summary.level == level.name) {
-            corresponds = true;
-          }
-        });
-        return corresponds;
-      });
 
   return (
     <div id="root-css">
       <img className="bush2" src={bush} />
 
       <main>
-        <div className="card">
-          <div className="filter-container">
-            <div className="filter-container-header">
-              <div className="title-filter">Search</div>
-            </div>
-            <div className="filter-card-body">
-              <LevelFilter handles={handles} from="lessonPicker" />
-              <TensesFilter handles={handles} from="lessonPicker" />
-            </div>
+        <div className="card filter-container">
+          <div className="filter-container-header">
+            <div className="title-filter">Search</div>
+          </div>
+          <div className="filter-card-body">
+            <LevelFilter
+              handles={handles}
+              from="lessonPicker"
+              filterData={lessonsData}
+            />
+            <TensesFilter
+              handles={handles}
+              from="lessonPicker"
+              filterData={lessonsData}
+            />
           </div>
         </div>
 

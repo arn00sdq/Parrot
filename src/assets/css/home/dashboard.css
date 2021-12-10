@@ -109,6 +109,10 @@
     margin: 1vh;
 }
 
+.activity-list-container{
+    overflow-y: scroll;
+}
+
 .text-resume{
     font-family: Quicksand;
     font-size: 20px;

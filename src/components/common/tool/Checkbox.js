@@ -1,5 +1,5 @@
 import React from "react";
-const Checkbox = ({ label, from, handles, type}) => {
+const Checkbox = ({ label, from, handles, type, count}) => {
   function onCheckBoxClick() {
     switch (type) {
       case "theme":
@@ -21,7 +21,9 @@ const Checkbox = ({ label, from, handles, type}) => {
         <input className="checkInput" onClick={onCheckBoxClick} type="checkbox" />
         
         <span class="check">{label}</span>
+        <p className="check">{count}</p>
       </label>
+      
     </li>
   );
 };

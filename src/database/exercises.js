@@ -107,6 +107,150 @@ var data = [
       ],
     },
   },
+  {
+    id: "EX3",
+    title: "Matching!",
+    type: "Word2Img",
+    icon: pres_perfect,
+    summary: {
+      level: levels.INTERMEDIATE,
+      themes: [themes.GEOGRAPHY, themes.SPORTS],
+      rewards: {
+        treasures: 2,
+        feathers: 1,
+      },
+    },
+    description:
+      "This exercise is meant to teach\
+     you the basics of english vocabulary.\
+      You will be presented an image\
+       and be asked to chose the word \
+       that corresponds to the presented photography.",
+    content: {
+      order: "Pick the word that best suits the image",
+      steps: 4,
+      images: [
+        {
+          url: Word2Img.clarinette,
+          word: "Clarinet",
+        },
+        {
+          url: Word2Img.flute_traversiere,
+          word: "Transverse flute",
+        },
+        {
+          url: Word2Img.guitare,
+          word: "Guitar",
+        },
+        {
+          url: Word2Img.trombone,
+          word: "Trombone",
+        },
+      ],
+      words: [
+        ["Door", "Hand", "Clarinet", "Paer"],
+        ["Clip", "Bird", "Transverse flute", "Mouse"],
+        ["Plane", "Guitar", "Treasure", "Laptop"],
+        ["Table", "Cricket", "Basketball", "Trombone"],
+      ],
+    },
+  },
+  {
+    id: "EX4",
+    title: "Matching!",
+    type: "Word2Img",
+    icon: pres_perfect,
+    summary: {
+      level: levels.INTERMEDIATE,
+      themes: [themes.GEOGRAPHY, themes.SPORTS],
+      rewards: {
+        treasures: 2,
+        feathers: 1,
+      },
+    },
+    description:
+      "This exercise is meant to teach\
+     you the basics of english vocabulary.\
+      You will be presented an image\
+       and be asked to chose the word \
+       that corresponds to the presented photography.",
+    content: {
+      order: "Pick the word that best suits the image",
+      steps: 4,
+      images: [
+        {
+          url: Word2Img.clarinette,
+          word: "Clarinet",
+        },
+        {
+          url: Word2Img.flute_traversiere,
+          word: "Transverse flute",
+        },
+        {
+          url: Word2Img.guitare,
+          word: "Guitar",
+        },
+        {
+          url: Word2Img.trombone,
+          word: "Trombone",
+        },
+      ],
+      words: [
+        ["Door", "Hand", "Clarinet", "Paer"],
+        ["Clip", "Bird", "Transverse flute", "Mouse"],
+        ["Plane", "Guitar", "Treasure", "Laptop"],
+        ["Table", "Cricket", "Basketball", "Trombone"],
+      ],
+    },
+  },
+  {
+    id: "EX5",
+    title: "Matching!",
+    type: "Word2Img",
+    icon: pres_perfect,
+    summary: {
+      level: levels.INTERMEDIATE,
+      themes: [themes.GEOGRAPHY, themes.SPORTS],
+      rewards: {
+        treasures: 2,
+        feathers: 1,
+      },
+    },
+    description:
+      "This exercise is meant to teach\
+     you the basics of english vocabulary.\
+      You will be presented an image\
+       and be asked to chose the word \
+       that corresponds to the presented photography.",
+    content: {
+      order: "Pick the word that best suits the image",
+      steps: 4,
+      images: [
+        {
+          url: Word2Img.clarinette,
+          word: "Clarinet",
+        },
+        {
+          url: Word2Img.flute_traversiere,
+          word: "Transverse flute",
+        },
+        {
+          url: Word2Img.guitare,
+          word: "Guitar",
+        },
+        {
+          url: Word2Img.trombone,
+          word: "Trombone",
+        },
+      ],
+      words: [
+        ["Door", "Hand", "Clarinet", "Paer"],
+        ["Clip", "Bird", "Transverse flute", "Mouse"],
+        ["Plane", "Guitar", "Treasure", "Laptop"],
+        ["Table", "Cricket", "Basketball", "Trombone"],
+      ],
+    },
+  },
 ];
 
 export { data };

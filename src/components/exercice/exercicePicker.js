@@ -7,11 +7,10 @@ import { bush } from "../../database/images";
 import LevelFilter from "../common/filter/levelFilter";
 
 function ExercicePicker({ state, handles }) {
-
   var exercisesToShow =
     state.exercisePicker.selectedThemes.length +
-      state.exercisePicker.selectedLevels.length 
-      == 0
+      state.exercisePicker.selectedLevels.length ==
+    0
       ? exercisesData
       : exercisesData.filter((ex) => {
           let corresponds = false;
@@ -27,19 +26,26 @@ function ExercicePicker({ state, handles }) {
           });
           return corresponds;
         });
+
   return (
     <div id="root-css">
       <img className="bush2" src={bush} />
       <main>
-        <div className="card">
-          <div className="filter-container">
-            <div className="filter-container-header">
-              <div className="title-filter">Search</div>
-            </div>
-            <div className="filter-card-body">
-              <LevelFilter handles={handles} from="exercisePicker" />
-              <ThemeFilter handles={handles} from="exercisePicker" />
-            </div>
+        <div className="card filter-container">
+          <div className="container-card-header filter-container-header">
+            <div className="title-filter">Search</div>
+          </div>
+          <div className="filter-card-body">
+            <LevelFilter
+              handles={handles}
+              from="exercisePicker"
+              filterData={exercisesData}
+            />
+            <ThemeFilter
+              handles={handles}
+              from="exercisePicker"
+              filterData={exercisesData}
+            />
           </div>
         </div>
 
@@ -48,12 +54,13 @@ function ExercicePicker({ state, handles }) {
             <div className="tag-point-medium">Exercises</div>
             <div className="n-exercices">{`Showing ${exercisesToShow.length} of ${exercisesData.length} exercises`}</div>
           </div>
+          <div className="activity-list-container">
           <ActivityListContainer
             from="exercisePicker"
             activities={exercisesToShow}
             handles={handles}
           />
-          {/* <a href="#" className="button-ex-card">Charger plus</a> */}
+          </div>
         </div>
       </main>
     </div>

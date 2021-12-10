@@ -1,19 +1,17 @@
-import React from 'react';
+import React from "react";
 
-import PaperListContainer from '../common/bandItem/paperListContainer'
-import ThemeFilter from '../common/filter/themeFilter'
-import LevelFilter from '../common/filter/levelFilter'
+import PaperListContainer from "../common/bandItem/paperListContainer";
+import ThemeFilter from "../common/filter/themeFilter";
+import LevelFilter from "../common/filter/levelFilter";
 
-import { bush, pres_perfect } from '../../database/images'
-import {data as papersData} from '../../database/papers'
-
+import { bush, pres_perfect } from "../../database/images";
+import { data as papersData } from "../../database/papers";
 
 function PaperPicker({ state, handles }) {
-
-    var papersToShow =
+  var papersToShow =
     state.paperPicker.selectedThemes.length +
-      state.paperPicker.selectedLevels.length 
-      == 0
+      state.paperPicker.selectedLevels.length ==
+    0
       ? papersData
       : papersData.filter((paper) => {
           let corresponds = false;
@@ -29,38 +27,39 @@ function PaperPicker({ state, handles }) {
           });
           return corresponds;
         });
-    return (
-        <div id="root-css">
-            <img className="bush2" src={bush} />
+  return (
+    <div id="root-css">
+      <img className="bush2" src={bush} />
 
-            <main>
-
-                <div className="card">
-                    <div className="filter-container">
-                        <div className="filter-container-header">
-                            <div className="title-filter">Recherche</div>
-                        </div>
-                        <LevelFilter handles={handles} from = "paperPicker" />
-                        <ThemeFilter handles={handles} from = "paperPicker" />
-                    </div>
-                </div>
-
-                <div className="exercice-picker-card card">
-                    <div className="header-picker">
-                        <div className="tag-point-medium">Papers</div>
-                        <div className="n-exercices">{`Showing ${papersToShow.lentgh} of ${papersData.length} papers`}</div>
-                    </div>
-                    <PaperListContainer
-                        papers={papersToShow}
-                        id={1}
-                        handles={handles}
-                    />
-
-                </div>
-
-            </main>
+      <main>
+        <div className="card filter-container">
+          <div className="filter-container-header">
+            <div className="title-filter">Search</div>
+          </div>
+          <div className="filter-card-body">
+            <LevelFilter
+              handles={handles}
+              from="paperPicker"
+              filterData={papersData}
+            />
+            <ThemeFilter
+              handles={handles}
+              from="paperPicker"
+              filterData={papersData}
+            />
+          </div>
         </div>
-    )
+
+        <div className="exercice-picker-card card">
+          <div className="header-picker">
+            <div className="tag-point-medium">Papers</div>
+            <div className="n-exercices">{`Showing ${papersToShow.length} of ${papersData.length} papers`}</div>
+          </div>
+          <PaperListContainer papers={papersToShow} id={1} handles={handles} />
+        </div>
+      </main>
+    </div>
+  );
 }
 
 export default PaperPicker;
