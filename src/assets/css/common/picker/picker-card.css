@@ -1,4 +1,5 @@
 .exercice-picker-card{
     border: 5px;
-    background-color: #767c7e;
+    background-color: #F5F5F5;
+    max-height: 100%;
 }

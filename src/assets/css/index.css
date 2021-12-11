@@ -29,6 +29,7 @@
 @import "./home/feature.css";
 @import "./exercise/exercisePicker/exerciseCard.css";
 @import "./common/displayContent/exercisePage/wordDriftAnimation.css";
+@import "./common/picker/picker-card.css";
 
  *{
     --body-bg-color:#FFEEE2;
@@ -39,7 +40,7 @@
     --header-text-current-corlor:#F9A014;
     --header-icon-color:black;
 
-    --card-bg-color:#F7F3F2;
+    --card-bg-color:#F5F5F5;
     --container-bg-color:white;
 
     --button-bg-color:#F9A014;

@@ -66,6 +66,7 @@ import level_icon from "../assets/img/icon/level-up.svg"
 import theme_icon from "../assets/img/icon/form.svg"
 import search_icon from "../assets/img/icon/search.svg"
 import jungle_game from "../assets/img/game/jungle.jpg"
+import cross_icon from "../assets/img/icon/cross-solid.svg"
 
 
 const flags = {
@@ -117,6 +118,7 @@ export {
   ProfilImg,
   PickerImg,
   GameImg,
+  cross_icon,
   check,
   down_arrow,
   orange_down_arrow,
