@@ -62,7 +62,7 @@ function ExercicePicker({ state, handles }) {
           </div>
         </div>
 
-        <div className="exercice-picker-card card">
+        <div className="card exercice-picker-card ">
           <div className="header-picker">
             <div className="tag-point-medium">Exercises</div>
             <div className="n-exercices">{`Showing ${exercisesToShow.length} of ${exercisesData.length} exercises`}</div>

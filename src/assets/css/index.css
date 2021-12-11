@@ -27,6 +27,7 @@
 @import "./common/tool/helpMessage.css";
 @import "./common/displayContent/exercisePage/wordDrifting.css";
 @import "./home/feature.css";
+@import "./exercise/exercisePicker/exerciseCard.css";
 
  *{
     --body-bg-color:#FFEEE2;
