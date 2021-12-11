@@ -82,8 +82,16 @@ const incrementExercisePageStep = () => ({
     type : actionTypes.EXERCISE_PAGE.NEXT_STEP,
 })
 
+const substractLifeExercicePage = () => ({
+    type: actionTypes.EXERCISE_PAGE.SUBS_LIFE
+})
+
+const addPointsExercicePage = () => ({
+    type: actionTypes.EXERCISE_PAGE.ADD_POINT
+})
 
 export {levelFilterChange,articleStart,categoryIconClick,changeLanguage,changeSection,
     tenseFilterChange,exerciceStart,expandCatBtnClick,
     helpButtonClick,hoverFeather,hoverFlame,hoverLanguage,hoverUser,
-    incrementExercisePageStep,lessonStart,themeFilterChange,trainBtnClick}
+    incrementExercisePageStep,lessonStart,themeFilterChange,trainBtnClick,
+    substractLifeExercicePage,addPointsExercicePage}

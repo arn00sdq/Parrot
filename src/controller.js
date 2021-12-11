@@ -26,10 +26,15 @@ const Controller= () => {
   function handleLevelFilterChange(levelName, from){
     dispatch(actions.levelFilterChange(levelName, from))
   }
+
+  function handleAddPointExercisePage(){
+    dispatch(actions.addPointsExercicePage())
+  }
   const handles = {
     handleExerciseNextStep,handleExerciseStart, handleThemeFilterChange, 
-    handleTenseFilterChange, handleLevelFilterChange
+    handleTenseFilterChange, handleLevelFilterChange,handleAddPointExercisePage
   }
+  
   return (
     <App
       state={state} handles = {handles}

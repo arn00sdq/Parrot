@@ -1,21 +1,42 @@
 import React from 'react';
-import { achievement,GameImg,feather_icon } from "../../../../../database/images";
+import { achievement, GameImg, feather_icon } from "../../../../../database/images";
 
-function WordDrifting({ content, currentStep, handles }) {
+function WordDrifting({ content, currentStep, handles, gameInfo }) {
+ 
+    const handleButtonClick = (e) => {
+        e.preventDefault();
+
+        const {
+            target: { value },
+        } = e;
+
+        if (content.theme[0].answer.includes(value)) {
+            handles.handleAddPointExercisePage();
+        }else{
+
+        }
+    };
+
+    var life = gameInfo.life;
+    var points = gameInfo.points;
+
     return (
         <div className="drift-container">
             {/*<div className="title-drift">The word is : <span className="word-drift">Car</span></div>*/}
             <div className="life-container">
-                <span className="life-number">Life 5</span>
+                <span className="life-number">{life}</span>
             </div>
 
             <div className="points-container">
-                <img className="life-icon" src={feather_icon}/>
-                <span className="points-number">5</span>
+                <img className="life-icon" src={feather_icon} />
+                <span className="points-number">{points}</span>
             </div>
 
             <div className="word-container">
-                    <span className="word-vrom">Doggo</span>
+                <button
+                    onClick={(e) => handleButtonClick(e)}
+                    value={"saw"}
+                    className="word-vrom">Doggo</button>
             </div>
             {/*<div className="infinite">
                 

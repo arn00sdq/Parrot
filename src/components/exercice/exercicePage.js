@@ -7,6 +7,7 @@ function ExercisePage({ state, handles }) {
   var exercises = exercisesData;
   var id = state.exercisePage.exerciseId;
   var step = state.exercisePage.step;
+  var gameInfo = state.exercisePage.wordDrift;
   var currentExercise = exercises.find((e) => {
     return e.id == id;
   });
@@ -22,6 +23,7 @@ function ExercisePage({ state, handles }) {
         exercise={currentExercise}
         step={step}
         handles={handles}
+        gameInfo={gameInfo}
       />
     </main>
   );
