@@ -1,7 +1,23 @@
+.summary-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2vh;
+    border-radius: 0.25rem;
+    background-color: white;
+    height: fit-content;
+}
+
+.summary-container-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 1rem;
+}
+
 .title-summary{
-    font-family: Monserrat;
+    font-family: 'Lato';
     font-size: 28px;
-    font-weight: bold;
+    font-weight: 400;
 }
 
 
@@ -32,9 +48,11 @@
 }
 
 .title-row-summary{
-    font-family: Monserrat;
-    font-size: 18px;
+    font-family: 'Lato';
+    font-size: 19px;
+    font-weight: bold;
     width: 8vw;
+    color: #767c7e;
 }
 
 .level-tag{

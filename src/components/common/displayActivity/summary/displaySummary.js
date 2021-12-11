@@ -18,9 +18,8 @@ function displayRewards({ treasures, feathers }) {
 function DisplaySummary({ summary, name }) {
   return (
     
-    <div className="card">
-      <div className="container-card">
-        <div className="container-card-header">
+      <div className="summary-container">
+        <div className="summary-container-header">
           <div className="title-summary">{name}</div>
         </div>
         <div className="container-card-body" style={{alignItems :"baseline"}}>
@@ -32,7 +31,6 @@ function DisplaySummary({ summary, name }) {
           </div>
         </div>
       </div>
-    </div>
   );
 }
 
