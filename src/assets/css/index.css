@@ -28,6 +28,7 @@
 @import "./common/displayContent/exercisePage/wordDrifting.css";
 @import "./home/feature.css";
 @import "./exercise/exercisePicker/exerciseCard.css";
+@import "./common/displayContent/exercisePage/wordDriftAnimation.css";
 
  *{
     --body-bg-color:#FFEEE2;
