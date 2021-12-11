@@ -1,11 +1,15 @@
 import { data as themes } from "../../../database/themes";
 import Checkbox from "../tool/Checkbox";
 import React from "react";
+import {PickerImg } from "../../../database/images";
 
 export default function ThemeFilter({handles, from, filterData }) {
   return (
     <div className="theme-container">
-      <div className="title-theme-container">Filter by theme:</div>
+      <p className="title-search-section">
+        <img src={PickerImg.theme_icon} className="icon-filter"/>
+        <span className="title-search">Filter by theme:</span>
+      </p>
       <ul>{listThemes(handles, from, filterData)}</ul>
     </div>
   );

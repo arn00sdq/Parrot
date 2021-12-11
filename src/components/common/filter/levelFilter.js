@@ -1,11 +1,15 @@
 import { data as levels } from "../../../database/levels";
 import Checkbox from "../tool/Checkbox";
 import React from "react";
+import {PickerImg } from "../../../database/images";
 
 export default function LevelsFilter({handles, from ,filterData}) {
   return (
     <div className="theme-container">
-      <div className="title-theme-container">Filter by level:</div>
+      <p className="title-search-section">
+        <img src={PickerImg.level_icon} className="icon-filter"/>
+        <span className="title-search">Filter by level:</span>
+      </p>
       <ul>{listLevels(handles, from, filterData)}</ul>
     </div>
   );

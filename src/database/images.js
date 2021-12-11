@@ -61,6 +61,10 @@ import instagram from "../assets/img/profilPage/instagram.png"
 import apple from "../assets/img/icon/apple.svg"
 import certificateIcon from "../assets/img/mini_logo/certificateicon.png"
 import check from "../assets/img/icon/check-solid.svg"
+import key from "../assets/img/icon/key.svg"
+import level_icon from "../assets/img/icon/level-up.svg"
+import theme_icon from "../assets/img/icon/form.svg"
+import search_icon from "../assets/img/icon/search.svg"
 
 
 const flags = {
@@ -94,11 +98,19 @@ const ProfilImg = {
 
 };
 
+const PickerImg = {
+  key,
+  level_icon,
+  theme_icon,
+  search_icon
+}
+
 export {
   certificateIcon,
   flags,
   Word2Img,
   ProfilImg,
+  PickerImg,
   check,
   down_arrow,
   orange_down_arrow,

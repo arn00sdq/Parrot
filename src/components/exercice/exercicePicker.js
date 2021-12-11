@@ -3,8 +3,9 @@ import React from "react";
 import ActivityListContainer from "../common/bandItem/activityListContainer";
 import { data as exercisesData } from "../../database/exercises";
 import ThemeFilter from "../common/filter/themeFilter";
-import { bush } from "../../database/images";
+import { bush,PickerImg } from "../../database/images";
 import LevelFilter from "../common/filter/levelFilter";
+
 
 function ExercicePicker({ state, handles }) {
   var exercisesToShow =
@@ -29,11 +30,23 @@ function ExercicePicker({ state, handles }) {
 
   return (
     <div id="root-css">
-      <img className="bush2" src={bush} />
+     {/*<img className="bush2" src={bush} />*/}
       <main>
-        <div className="card filter-container">
-          <div className="container-card-header filter-container-header">
-            <div className="title-filter">Search</div>
+        <div className="filter-container">
+          <div className="filter-container-header">
+            <div className="title-filter">Filtre des guides de conversations</div>
+            <div className="section-filter-search">
+              <p className="title-search-section">
+                <img src={PickerImg.key} className="icon-filter"/>
+                <span className="title-search">Keys Words</span>
+              </p>
+              <div className="search-bar">
+                <div className="search-form">
+                  <input name="keywords" type="text" placeholder="Research" className="search-field"></input>
+                  <button className="search-send"><img src={PickerImg.search_icon} className="icon-filter-button"/></button>
+                </div>
+              </div>
+            </div>
           </div>
           <div className="filter-card-body">
             <LevelFilter

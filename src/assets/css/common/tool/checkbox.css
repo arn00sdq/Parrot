@@ -36,7 +36,7 @@
 }
 
 .filter-container span{
-    width: 8vw;
+    width: 10vw;
 }
 
 .filter-container p{
@@ -82,7 +82,7 @@ input[type="checkbox"]:checked::after{
     WIDTH: 2vh;
     height: 2vh;
     border-radius: 50%;
-    transform: translate(11vw, 0px);
+    transform: translate(13vw, 0px);
     justify-content: center;
     align-items: center;
 }

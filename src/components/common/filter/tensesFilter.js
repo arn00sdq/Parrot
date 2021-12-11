@@ -1,11 +1,16 @@
 import { data as tenses } from "../../../database/english_tenses";
 import Checkbox from "../tool/Checkbox";
 import React from "react";
+import {PickerImg } from "../../../database/images";
+
 
 export default function TensesFilter({ handles, from, filterData }) {
   return (
     <div className="theme-container">
-      <div className="title-theme-container">Filter by tense:</div>
+      <p className="title-search-section">
+        <img src={PickerImg.key} className="icon-filter"/>
+        <span className="title-search">Filter by tense :</span>
+      </p>
       <ul>{listTenses(handles, from, filterData)}</ul>
     </div>
   );
