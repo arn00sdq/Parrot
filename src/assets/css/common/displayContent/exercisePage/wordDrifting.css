@@ -1,8 +1,21 @@
 
+.drift-body
+{
+    border: 1px solid rgba(0,0,0,0.125);
+    border-bottom: 1 px solid rgba(0,0,0,.125);
+    height: 50vh;
+    overflow: hidden;
+    
+}
+
 .drift-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    background: url(../../../../img/game/jungle.jpg);
+    background-size: contain;
+    height: 110%;
+    animation:  animateRoad 60s linear infinite;
+    background-repeat: repeat;
+    animation-delay: 5s;
+    
 }
 
 .title-drift{
@@ -14,6 +27,41 @@
 .word-drift{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
+    font-weight: bold;
+    
+}
+
+.life-container{
+    position: relative;
+    top: 27px;
+    left: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.life-number{
+    font-family: 'Lato';
+    font-size: 23px;
+    color: white;
+}
+
+.life-icon{
+    height: 3vh;
+    width: 3vw;
+}
+
+.points-container{
+    position: relative;
+    top: 0px;
+    right: -90%;
+    display: flex;
+    align-items: center;
+}
+
+.points-number{
+    font-family: 'Lato';
+    font-size: 25px;
+    color: #fff;
     font-weight: bold;
 }
 
@@ -48,12 +96,20 @@
 {
     0%
     {
+        transform-origin: bottom top;
+        transform: scale(1.0);
         background-position:0px;
+        
+    }
+
+    50%
+    {
+        background-position: -2000px;
     }
 
     100%
     {
-        background-position: -120px;
+        background-position: -4000px;
     }
 }
 
@@ -86,11 +142,12 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    top : 289px;
     height: 50px;
     width: 100px; /*hauteur / nbr elt*/
     background: yellowgreen;
     transform: perspective(500px) rotateX(-15deg) translateY(24px) translateZ(25px);
-    -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+   /* -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);*/
     animation: animateWord 10s linear infinite;
 }
 
@@ -112,7 +169,7 @@
 
     100%
     {
-        left: 800px;
+        left: 57vw;
     }
 
 }
