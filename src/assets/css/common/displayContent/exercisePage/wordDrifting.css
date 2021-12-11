@@ -68,74 +68,7 @@
 /* Drift
     Road
         */
-.infinite{
-    position: relative;
-    width: 800px;
-    height: 160px;
-    margin-bottom: 5vh;
-    background: #525252;
-    transform-origin: bottom;
-    transform-style: preserve-3d;
-    transform: perspective(500px) rotateX(30deg);
-}
 
-.infinite::before{
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    width:100%;
-    height: 10px;
-    background: linear-gradient(90deg,#fff 0%,#fff 70%,#525252 70%,#525252 100%);
-    background-size: 120px;
-    animation: animateRoad 0.4s linear infinite;
-}
-
-@keyframes animateRoad
-{
-    0%
-    {
-        transform-origin: bottom top;
-        transform: scale(1.0);
-        background-position:0px;
-        
-    }
-
-    50%
-    {
-        background-position: -2000px;
-    }
-
-    100%
-    {
-        background-position: -4000px;
-    }
-}
-
-.infinite::after{
-    content: '';
-    position: absolute;
-    width:100%;
-    height: 30px;
-    background: #333;
-    bottom: -30px;
-    transform-origin: top;
-    transform: perspective(500px) rotateX(-25deg);
-
-    
-}
-
-.shadow{
-    position: absolute;
-    bottom: -90px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 95%;
-    height : 60px;
-    background: linear-gradient(#000,transparent);
-    opacity: 0.5;
-}
 
 .word-container{
     display: flex;
@@ -160,6 +93,71 @@
     padding: 30px;
 }
 
+.points-word{
+
+    position: absolute;
+    font-size: 25px;
+    color: green;
+    font-weight: bold;
+    top: -20px;
+    left: 30px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+.active-points{
+    animation: animatePoints 1.5s linear;
+}
+
+@keyframes animatePoints
+{
+    0%
+    {  
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1.5);
+        transform: translateY(0px);
+        
+    }
+
+    50%
+    {
+        opacity: 0.5;
+        transform: scale(1.3);
+        transform: translateY(-30px);
+    }
+
+    100%
+    {
+        opacity: 0;
+        transform: scale(1.0);
+        transform: translateY(-60px);
+        visibility: hidden;
+    }
+}
+
+@keyframes animateRoad
+{
+    0%
+    {
+        transform-origin: bottom top;
+        transform: scale(1.0);
+        background-position:0px;
+        
+    }
+
+    50%
+    {
+        background-position: -2000px;
+    }
+
+    100%
+    {
+        background-position: -4000px;
+    }
+}
+
 @keyframes animateWord{
 
     0%
@@ -173,3 +171,53 @@
     }
 
 }
+
+/*.infinite{
+    position: relative;
+    width: 800px;
+    height: 160px;
+    margin-bottom: 5vh;
+    background: #525252;
+    transform-origin: bottom;
+    transform-style: preserve-3d;
+    transform: perspective(500px) rotateX(30deg);
+}
+
+.infinite::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width:100%;
+    height: 10px;
+    background: linear-gradient(90deg,#fff 0%,#fff 70%,#525252 70%,#525252 100%);
+    background-size: 120px;
+    animation: animateRoad 0.4s linear infinite;
+}
+
+
+
+.infinite::after{
+    content: '';
+    position: absolute;
+    width:100%;
+    height: 30px;
+    background: #333;
+    bottom: -30px;
+    transform-origin: top;
+    transform: perspective(500px) rotateX(-25deg);
+
+    
+}
+
+.shadow{
+    position: absolute;
+    bottom: -90px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95%;
+    height : 60px;
+    background: linear-gradient(#000,transparent);
+    opacity: 0.5;
+}*/

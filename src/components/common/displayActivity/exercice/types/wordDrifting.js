@@ -1,8 +1,10 @@
-import React from 'react';
+import React , {useState} from 'react';
 import { achievement, GameImg, feather_icon } from "../../../../../database/images";
 
 function WordDrifting({ content, currentStep, handles, gameInfo }) {
- 
+    
+    const [isActive, setActive]= useState(false)
+
     const handleButtonClick = (e) => {
         e.preventDefault();
 
@@ -12,10 +14,18 @@ function WordDrifting({ content, currentStep, handles, gameInfo }) {
 
         if (content.theme[0].answer.includes(value)) {
             handles.handleAddPointExercisePage();
+            toggleClass();
         }else{
 
         }
     };
+
+    const toggleClass = () => {
+        setActive(!isActive);
+        setTimeout(() => {
+            setActive(false);
+          }, 200)
+    }
 
     var life = gameInfo.life;
     var points = gameInfo.points;
@@ -36,7 +46,9 @@ function WordDrifting({ content, currentStep, handles, gameInfo }) {
                 <button
                     onClick={(e) => handleButtonClick(e)}
                     value={"saw"}
-                    className="word-vrom">Doggo</button>
+                    className="word-vrom">Doggo
+                </button>
+                <span className={isActive ? "active-points points-word" : "points-word"}>+1</span>
             </div>
             {/*<div className="infinite">
                 

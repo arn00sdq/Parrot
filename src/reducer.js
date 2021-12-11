@@ -149,7 +149,7 @@ const reducer = (state, action) => {
         exercisePage: {
           ...state.exercisePage,
           wordDrift: {
-            ...state.exercisePage,
+            ...state.exercisePage.wordDrift,
             points: state.exercisePage.wordDrift.points + 1,
           }
           
