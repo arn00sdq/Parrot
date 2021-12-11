@@ -9,10 +9,10 @@ function SectionCard({ titleCard, content, state, handles }) {
     return (
         <div className="section-skill-card">
             <HeaderLevel titleCard={titleCard} />
-            <div className="card exercice-card">
+            <div className="toiec-card">
                 <div className="toiec-container">
                     <div className="cardContent-header-container">
-                        <div className="title-header">{values[0]}</div>
+                        <div className="toiec-title-header">Indépedant</div>
                     </div>
                     <div className="containerT">
                         <ToiecCard
