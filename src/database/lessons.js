@@ -25,6 +25,7 @@ var data = [
       stepsContent: [
         <>
           <div className="title">
+
             <div className="num-block">
               <span className="num-section-less">1</span>
             </div>
@@ -94,22 +95,39 @@ var data = [
           <p className="explication">
             Quand l'action s'est-elle passée ? Dans le passé : il y a quelques
             minutes/hier Quelle conséquence a-t-elle sur le présent ? Paul a
-            mangé tous les gâteaux ; il n'en reste plus pour moi.,
+            mangé tous les gâteaux ; il n'en reste plus pour moi., xd
           </p>
+
+        </>,
+        <>
           <p className="subTitle">
             Actions qui ont commencé dans le passé et qui sont encore en
             progression au moment où l'on parle.
           </p>
-          <p className="text">
-            Paul all <span className="wordPrimary"> has eaten </span> the
-            cookies
-          </p>
+
+          <div className="exemple-section">
+            <div className="lesson-exemple">
+              <span className="title-exemple">Exemple</span>
+              <p className="text">
+                Paul all <span className="wordPrimary">has eaten</span> the cookies
+              </p>
+              <span className="trad-exemple">Paul a mangé tout les cookies</span>
+            </div>
+            <div className="lesson-exemple">
+              <span className="title-exemple">Exemple</span>
+              <p className="text">
+                Paul all <span className="wordPrimary">has eaten</span> the cookies
+              </p>
+              <span className="trad-exemple">Paul a mangé tout les cookies</span>
+            </div>
+          </div>
+
           <p className="explication">
             Quand l'action a-t-elle commencé ? Il y a dix ans. Est-elle terminée
             ? Non, Paul habite toujours à Londres. Cela fait 10 ans qu'il y
             habit
           </p>
-        </>,
+        </>
       ],
     },
   },
