@@ -29,6 +29,9 @@ const Controller = () => {
   function handleInputSearchFilterChange(newInputChange, from) {
     dispatch(actions.inputSearchFilterChange(newInputChange, from));
   }
+  function handleAddPointExercisePage(){
+    dispatch(actions.addPointsExercicePage())
+  }
   const handles = {
     handleExerciseNextStep,
     handleExerciseStart,
@@ -36,8 +39,15 @@ const Controller = () => {
     handleTenseFilterChange,
     handleLevelFilterChange,
     handleInputSearchFilterChange,
+    handleAddPointExercisePage
   };
-  return <App state={state} handles={handles} />;
+  
+
+  return (
+    <App
+      state={state} handles = {handles}
+    />
+  );
 };
 
 export default Controller;

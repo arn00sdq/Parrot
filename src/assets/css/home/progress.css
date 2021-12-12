@@ -12,7 +12,7 @@
 .container-card{
     display: flex;
     flex-direction: column;
-    border-radius: 25px;
+    border-radius: 5px;
     margin-top: 2vh;
     border: 1px solid rgba(0,0,0,.125);
     border-radius: 0.25rem;

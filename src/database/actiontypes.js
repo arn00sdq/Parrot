@@ -28,6 +28,8 @@ const actionTypes = Object.freeze ({
     },
     EXERCISE_PAGE : {
         NEXT_STEP : 'NEXT_STEP',
+        ADD_POINT : 'ADD_POINT',
+        SUBS_LIFE : "SUBS_LIFE",
         //A SPECIFIER ULTERIEUREMENT
     },
     EXERCISE_PICKER : {

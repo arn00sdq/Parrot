@@ -4,7 +4,7 @@ import PaperListContainer from "../common/bandItem/paperListContainer";
 import ThemeFilter from "../common/filter/themeFilter";
 import LevelFilter from "../common/filter/levelFilter";
 
-import { bush, pres_perfect,PickerImg } from "../../database/images";
+import { bush, pres_perfect, PickerImg,cross_icon } from "../../database/images";
 import { data as papersData } from "../../database/papers";
 
 function PaperPicker({ state, handles }) {
@@ -64,7 +64,10 @@ function PaperPicker({ state, handles }) {
 
         <div className="exercice-picker-card card">
           <div className="header-picker">
-            <div className="tag-point-medium">Papers</div>
+            <div className="tag-section">
+              <span className="tag-point-medium">Papers</span>
+              <img className="tag-medium-cross" src={cross_icon} />
+            </div>
             <div className="n-exercices">{`Showing ${papersToShow.length} of ${papersData.length} papers`}</div>
           </div>
           <PaperListContainer papers={papersToShow} id={1} handles={handles} />

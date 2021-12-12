@@ -111,6 +111,10 @@ const data = {
   exercisePage: {
     exerciseId: "EX1",
     step: "0",
+    wordDrift : {
+      life : 3,
+      points : 0,
+    }
   },
   exercisePicker: {
     keywords_input : "",

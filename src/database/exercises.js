@@ -8,6 +8,7 @@ import {
 } from "./images";
 import { data as levels } from "./levels";
 import { data as themes } from "./themes";
+import { data as tenses } from "./english_tenses";
 
 var data = [
   {
@@ -204,13 +205,13 @@ var data = [
     },
   },
   {
-    id: "EX5",
-    title: "Matching!",
-    type: "Word2Img",
+    id: "EX6",
+    title: "Match",
+    type: "DriftWord",
     icon: pres_perfect,
     summary: {
       level: levels.INTERMEDIATE,
-      themes: [themes.GEOGRAPHY, themes.SPORTS],
+      themes: [themes.ANIMALS, themes.SPORTS],
       rewards: {
         treasures: 2,
         feathers: 1,
@@ -223,31 +224,16 @@ var data = [
        and be asked to chose the word \
        that corresponds to the presented photography.",
     content: {
-      order: "Pick the word that best suits the image",
-      steps: 4,
-      images: [
+      order: "Select the right words for each tense",
+      steps: 1,
+      theme: [
         {
-          url: Word2Img.clarinette,
-          word: "Clarinet",
-        },
-        {
-          url: Word2Img.flute_traversiere,
-          word: "Transverse flute",
-        },
-        {
-          url: Word2Img.guitare,
-          word: "Guitar",
-        },
-        {
-          url: Word2Img.trombone,
-          word: "Trombone",
+          tense: tenses.PAST_SIMPLE,
+          answer: ["went","bought", "saw", "rode", "had"],
         },
       ],
       words: [
-        ["Door", "Hand", "Clarinet", "Paer"],
-        ["Clip", "Bird", "Transverse flute", "Mouse"],
-        ["Plane", "Guitar", "Treasure", "Laptop"],
-        ["Table", "Cricket", "Basketball", "Trombone"],
+        ["went", "bought", "saw", "rode","had","have","go","catch","see"],
       ],
     },
   },

@@ -6,7 +6,8 @@ import WordDrifting from "./types/wordDrifting"
 import HeaderContent from "../common/headerContent";
 import FooterContent from "../common/footerContent";
 
-function DisplayExercise({ exercise, step, handles }) {
+function DisplayExercise({ exercise, step, handles, gameInfo }) {
+  const order = exercise.content.order;
   return (
     <div className="card card-exercice">
       <div className="page-exercice-container">
@@ -15,32 +16,43 @@ function DisplayExercise({ exercise, step, handles }) {
           steps={exercise.content.steps}
           currentStep={step}
         />
-
-        <div className="wordImg-body">
-          <div className="wordImg-order">{exercise.content.order}</div>
-          {typeExercise(exercise, step, handles)}
-        </div>
+        {typeExercise(exercise, step, handles,gameInfo, order)}
         <FooterContent />
       </div>
     </div>
   );
 }
 
-function typeExercise(exercise, currentStep, handles) {
+function typeExercise(exercise, currentStep, handles, gameInfo, order) {
   switch (exercise.type) {
     case "Word2Img":
       return (
-        <Word2img
-          content={exercise.content}
-          currentStep={currentStep}
-          handles={handles}
-        />
-        /* { <WordDrifting /> } */
+        <div className="wordImg-body">
+          <div className="wordImg-order">{exercise.content.order}</div>
+          <Word2img
+            content={exercise.content}
+            currentStep={currentStep}
+            handles={handles}
+            
+          />
+        </div>
+
+
       );
       // <PictBtn />
       break;
-    case "Img2Word":
-      //display ex2
+    case "DriftWord":
+        return (
+        <div className="drift-body">
+          <div className="wordImg-order">{order}</div>
+          <WordDrifting 
+            content={exercise.content}
+            currentStep={currentStep}
+            handles={handles}
+            gameInfo={gameInfo}
+          />
+        </div>
+      )
       break;
     case "0003":
       //display ex3

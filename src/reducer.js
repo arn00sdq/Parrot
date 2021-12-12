@@ -143,6 +143,18 @@ const reducer = (state, action) => {
           step: parseInt(state.exercisePage.step + 1),
         },
       };
+    case types.EXERCISE_PAGE.ADD_POINT:
+      return{
+        ...state, 
+        exercisePage: {
+          ...state.exercisePage,
+          wordDrift: {
+            ...state.exercisePage.wordDrift,
+            points: state.exercisePage.wordDrift.points + 1,
+          }
+          
+        },
+      };
     case types.HEADER.CHANGE_LANG:
       return {
         ...state,
