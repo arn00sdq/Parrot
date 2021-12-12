@@ -82,33 +82,8 @@ const inputSearchFilterChange = (newInputChange, from) => ({
 });
 //EXERCICE PAGE
 const incrementExercisePageStep = () => ({
-<<<<<<< HEAD
   type: actionTypes.EXERCISE_PAGE.NEXT_STEP,
 });
-
-export {
-  inputSearchFilterChange,
-  levelFilterChange,
-  articleStart,
-  categoryIconClick,
-  changeLanguage,
-  changeSection,
-  tenseFilterChange,
-  exerciceStart,
-  expandCatBtnClick,
-  helpButtonClick,
-  hoverFeather,
-  hoverFlame,
-  hoverLanguage,
-  hoverUser,
-  incrementExercisePageStep,
-  lessonStart,
-  themeFilterChange,
-  trainBtnClick,
-};
-=======
-    type : actionTypes.EXERCISE_PAGE.NEXT_STEP,
-})
 
 const substractLifeExercicePage = () => ({
     type: actionTypes.EXERCISE_PAGE.SUBS_LIFE
@@ -122,5 +97,4 @@ export {levelFilterChange,articleStart,categoryIconClick,changeLanguage,changeSe
     tenseFilterChange,exerciceStart,expandCatBtnClick,
     helpButtonClick,hoverFeather,hoverFlame,hoverLanguage,hoverUser,
     incrementExercisePageStep,lessonStart,themeFilterChange,trainBtnClick,
-    substractLifeExercicePage,addPointsExercicePage}
->>>>>>> 55cf261f8ea926a75cb022ddcc30a390f2fa683e
+    substractLifeExercicePage,addPointsExercicePage, inputSearchFilterChange}
