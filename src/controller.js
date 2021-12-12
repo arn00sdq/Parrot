@@ -7,8 +7,13 @@ import * as actions from "./actions";
 const Controller = () => {
   const [state, dispatch] = useReducer(reducer, model);
 
-  function handleExerciseNextStep() {
-    dispatch(actions.incrementExercisePageStep());
+  function handleExerciseNextStep(from) {
+    dispatch(actions.incrementExercisePageStep(from));
+  }
+
+  function handleLessonNextStep(from) {
+    
+    dispatch(actions.incrementLessonPageStep(from));
   }
 
   function handleExerciseStart(id) {
@@ -39,7 +44,8 @@ const Controller = () => {
     handleTenseFilterChange,
     handleLevelFilterChange,
     handleInputSearchFilterChange,
-    handleAddPointExercisePage
+    handleAddPointExercisePage,
+    handleLessonNextStep
   };
   
 

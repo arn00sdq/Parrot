@@ -81,8 +81,9 @@ const inputSearchFilterChange = (newInputChange, from) => ({
   payload: { newInputChange, from },
 });
 //EXERCICE PAGE
-const incrementExercisePageStep = () => ({
-  type: actionTypes.EXERCISE_PAGE.NEXT_STEP,
+const incrementExercisePageStep = (from) => ({
+  type: actionTypes.NEXT_STEP,
+  payload : {from},
 });
 
 const substractLifeExercicePage = () => ({
@@ -93,8 +94,16 @@ const addPointsExercicePage = () => ({
     type: actionTypes.EXERCISE_PAGE.ADD_POINT
 })
 
+//LESSON PAGE
+
+const incrementLessonPageStep = (from) => ({
+  type: actionTypes.NEXT_STEP,
+  payload : {from},
+});
+
+
 export {levelFilterChange,articleStart,categoryIconClick,changeLanguage,changeSection,
     tenseFilterChange,exerciceStart,expandCatBtnClick,
     helpButtonClick,hoverFeather,hoverFlame,hoverLanguage,hoverUser,
     incrementExercisePageStep,lessonStart,themeFilterChange,trainBtnClick,
-    substractLifeExercicePage,addPointsExercicePage, inputSearchFilterChange}
+    substractLifeExercicePage,addPointsExercicePage, inputSearchFilterChange, incrementLessonPageStep}

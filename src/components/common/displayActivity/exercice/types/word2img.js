@@ -10,7 +10,7 @@ function Word2img({ content, currentStep, handles }) {
       target: { value },
     } = e;
     if (value == content.images[currentStep].word) {
-      handles.handleExerciseNextStep();
+      handles.handleExerciseNextStep("exercicePage");
     }
   };
   let row = [];

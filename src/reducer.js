@@ -5,7 +5,6 @@ const reducer = (state, action) => {
   if (Object.hasOwnProperty.call(action, 'filterName')) {
     var { filterName, from } = payload;
   }
-  
   let existsIndex, newLevels, newThemes, newTenses;
   switch (type) {
     case types.FILTER.THEME_CLK:
@@ -43,7 +42,7 @@ const reducer = (state, action) => {
         default:
           break;
       }
-      case types.FILTER.TENSE_CLK:
+    case types.FILTER.TENSE_CLK:
       switch (from) {
         case "lessonPicker":
           newTenses = state.lessonPicker.selectedTenses;
@@ -113,6 +112,26 @@ const reducer = (state, action) => {
         default:
           break;
       }
+    case types.NEXT_STEP:
+      switch (payload.from) {
+        case "exercicePage":
+          return {
+            ...state,
+            exercisePage: {
+              ...state.exercisePage,
+
+              step: parseInt(state.exercisePage.step + 1),
+            },
+          };
+        case "lessonPage":
+          return {
+            ...state,
+            lessonPage: {
+              ...state.lessonPage,
+              step: parseInt(state.lessonPage.step + 1)
+            }
+          }
+      }
     case types.EXERCISE_START:
       return {
         ...state,
@@ -134,25 +153,16 @@ const reducer = (state, action) => {
           changeLanguageBtnToggle: !state.user.changeLanguageBtnToggle,
         },
       };
-    case types.EXERCISE_PAGE.NEXT_STEP:
+    case types.EXERCISE_PAGE.ADD_POINT:
       return {
         ...state,
-        exercisePage: {
-          ...state.exercisePage,
-
-          step: parseInt(state.exercisePage.step + 1),
-        },
-      };
-    case types.EXERCISE_PAGE.ADD_POINT:
-      return{
-        ...state, 
         exercisePage: {
           ...state.exercisePage,
           wordDrift: {
             ...state.exercisePage.wordDrift,
             points: state.exercisePage.wordDrift.points + 1,
           }
-          
+
         },
       };
     case types.HEADER.CHANGE_LANG:

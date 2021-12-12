@@ -4,6 +4,7 @@ const actionTypes = Object.freeze ({
     EXERCISE_START : 'EXERCICE_START',
     ARTICLE_START : 'ARTICLE_START',
     LESSON_START : 'LESSON_START',
+    NEXT_STEP : 'NEXT_STEP',
     FILTER: {
         KEYWORD_INPUT_CHANGE : 'KEYWORD_INPUT_CHANGE',
         THEME_CLK : 'THEME_CLK',
@@ -26,8 +27,9 @@ const actionTypes = Object.freeze ({
     },
     SKILLPAGE : {
     },
+    LESSONPAGE : {
+    },
     EXERCISE_PAGE : {
-        NEXT_STEP : 'NEXT_STEP',
         ADD_POINT : 'ADD_POINT',
         SUBS_LIFE : "SUBS_LIFE",
         //A SPECIFIER ULTERIEUREMENT

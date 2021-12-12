@@ -27,6 +27,7 @@ function typeLecon(lesson, currentStep, handles) {
 }
 
 function DisplayLecon({ lesson, step, handles }) {
+  
   return (
     <div className="lesson-card">
       <HeaderContent
@@ -35,7 +36,9 @@ function DisplayLecon({ lesson, step, handles }) {
         currentStep={step}
       />
       {typeLecon(lesson, step, handles)}
-      <FooterContent />
+      <FooterContent 
+        handles = {handles}
+      />
     </div>
   );
 }
