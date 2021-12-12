@@ -5,54 +5,107 @@
     margin: 20px 10px;
 }
 
+.lesson-card {
+    height : 85vh;
+    width: 66vw;
+    background: white;
+}
+
 .classic-body{
     display: flex;
     flex-direction: column;
-    border: 1px solid rgba(0,0,0,0.125);
-    border-bottom: 1 px solid rgba(0,0,0,.125);
-    /*background-image: url("../../../../img/photos/jugnlebackground.jpg");
-    background-size: cover;*/
     background-color: white;
-    padding: 20px 40px;
+    padding: 0rem 4rem;
 }
 
 .title{
-    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.num-block{
+    height: 3vh;
+    width: 2vw;
+    background-color: #23085A;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:15px
+    
+}
+
+.num-section-less{
+    font-family: 'Lato';
+    font-size: 15px;
+}
+
+.title-section-less{
+    font-family: "Lato";
     font-weight: bold;
     line-height: 1.1;
     color: #23085A;
+    font-size: 20px;
+    margin-left: 1vw;
 }
 
-blockquote{
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 12.5px 25px;
-    border-left: 5px solid #eeeeee;
-    font-weight: 800;
-}
-
-.classic-body .ul{
-    display: flex;
-  flex-direction: column;
-
-}
-.classic-body  .li{
-  text-align: left;
-  margin-bottom: 0;
-  padding: 4px 0;
-  font-size: 22px;
-  line-height: 30px;
-}
 .subTitle{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Lato';
+    font-weight: bold;
     font-size: 18px;
-    line-height: 1.4;
+    margin-top: 10px;
+    margin-bottom: 0;
     color:black;
 }
 
+
+.grammar-rule{
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.grammar-rule p{
+    font-family: 'Lato';
+    font-size: 17px;
+    line-height: 1;
+}
+
+.exemple-section{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.lesson-exemple{
+    margin-top: 2.5vh;
+    padding: 16px;
+    border-radius: 8px;
+    background: #E8EAED;
+    width: 22vw;
+    
+}
+
+.lesson-exemple:last-child{
+    margin-left: 15px;
+}
+
+.title-exemple{
+    font-family: 'Lato';
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #939aa2;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+
 .text{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:'Lato';
     font-size: 17px;
     line-height: 1.4;
+    margin-bottom: 5px;
+    margin-top: 10px;
 }
 
 .traduction{
@@ -60,8 +113,15 @@ blockquote{
 }
 
 .explication{
-    font-family: Monserrat;
+    font-family:'Lato';
     font-size: 19px;
+}
+
+blockquote{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 12.5px 25px;
+    border-left: 5px solid #eeeeee;
+    font-weight: 800;
 }
 
 .wordPrimary{
