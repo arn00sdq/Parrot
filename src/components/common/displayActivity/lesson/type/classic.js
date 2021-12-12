@@ -1,6 +1,6 @@
 import React from 'react';
 
-function RowLecon(lesson) {
+/* function RowLecon(lesson) {
     var row = []; 
     for (const [key, value] of Object.entries(lesson)) { 
         if (typeof(value) !== 'number')
@@ -8,11 +8,15 @@ function RowLecon(lesson) {
     }
     return row;
 }
-
-function Classic(props) {
+ */
+function Classic({content, currentStep, handles}) {
+    console.log('content :>> ', content);
     return (
-        <div className="classic-body" key={props.content.step}>
-            {RowLecon(props.content.text)}
+        <div className="classic-body" key={currentStep}>
+            {
+            /* RowLecon(props.content.text) */
+            content
+            }
         </div>
     );
 }
