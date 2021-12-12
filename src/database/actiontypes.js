@@ -5,6 +5,7 @@ const actionTypes = Object.freeze ({
     ARTICLE_START : 'ARTICLE_START',
     LESSON_START : 'LESSON_START',
     FILTER: {
+        KEYWORD_INPUT_CHANGE : 'KEYWORD_INPUT_CHANGE',
         THEME_CLK : 'THEME_CLK',
         LEVEL_CLK : 'LEVEL_CLK',
         TENSE_CLK : 'TENSE_CLK',        

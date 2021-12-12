@@ -113,6 +113,7 @@ const data = {
     step: "0",
   },
   exercisePicker: {
+    keywords_input : "",
     selectedThemes: [],
     selectedLevels: []
   },
@@ -121,6 +122,7 @@ const data = {
     step: "0",
   },
   lessonPicker: {
+    keywords_input : "",
     selectedTenses: [],
     selectedLevels: []
   },
@@ -129,6 +131,7 @@ const data = {
     step: "0",
   },
   paperPicker: {
+    keywords_input : "",
     selectedThemes: [],
     selectedLevels: []
   },

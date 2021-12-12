@@ -5,6 +5,7 @@ import { data as exercisesData } from "../../database/exercises";
 import ThemeFilter from "../common/filter/themeFilter";
 import { bush,PickerImg } from "../../database/images";
 import LevelFilter from "../common/filter/levelFilter";
+import KeywordFilter from "../common/filter/keywordFilter";
 
 
 function ExercicePicker({ state, handles }) {
@@ -35,18 +36,10 @@ function ExercicePicker({ state, handles }) {
         <div className="filter-container">
           <div className="filter-container-header">
             <div className="title-filter">Filtre des guides de conversations</div>
-            <div className="section-filter-search">
-              <p className="title-search-section">
-                <img src={PickerImg.key} className="icon-filter"/>
-                <span className="title-search">Keys Words</span>
-              </p>
-              <div className="search-bar">
-                <div className="search-form">
-                  <input name="keywords" type="text" placeholder="Research" className="search-field"></input>
-                  <button className="search-send"><img src={PickerImg.search_icon} className="icon-filter-button"/></button>
-                </div>
-              </div>
-            </div>
+            <KeywordFilter 
+            handles={handles}
+            from="exercisePicker"
+            />
           </div>
           <div className="filter-card-body">
             <LevelFilter
