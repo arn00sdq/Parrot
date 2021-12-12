@@ -12,10 +12,6 @@ function PaperListContainer({ papers, handles }) {
     const papersToShow = papers
     return (
         <div className="cardContent-container">
-            <div className="cardContent-header-container">
-                <div className="title-header">Papers</div>
-            </div>
-            <hr className="hr-cardContent" />
             <div className="paperCard-Container">
                 {PaperList(papersToShow, handles)}
             </div>

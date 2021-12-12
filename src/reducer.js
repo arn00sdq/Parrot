@@ -135,7 +135,6 @@ const reducer = (state, action) => {
     case types.PREVIOUS_STEP:
       switch (payload.from) {
         case "lessonPage":
-          console.log("dddd")
           return {
             ...state,
             lessonPage: {

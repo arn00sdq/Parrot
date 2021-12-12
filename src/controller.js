@@ -24,6 +24,10 @@ const Controller = () => {
     dispatch(actions.exerciceStart(id));
   }
 
+  function handlePaperStart(id) {
+    dispatch(actions.articleStart(id));
+  }
+
   function handleThemeFilterChange(themeName, from) {
     dispatch(actions.themeFilterChange(themeName, from));
   }
@@ -50,7 +54,8 @@ const Controller = () => {
     handleInputSearchFilterChange,
     handleAddPointExercisePage,
     handleLessonNextStep,
-    handleLessonPreviousStep
+    handleLessonPreviousStep,
+    handlePaperStart
   };
   
 

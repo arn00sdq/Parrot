@@ -1,3 +1,9 @@
+.paper-Card{
+    height: 85vh;
+    width: 66vw;
+    background: white;
+}
+
 .content-lesson-section{
     display: flex;
     flex-direction: column;

@@ -3,15 +3,16 @@ import HeaderContent from '../common/headerContent'
 import FooterContent from '../common/footerContent'
 import Article from './type/article'
 
-function typeLecon(paper,currentStep,handles) {
+function typeArticle(paper,currentStep,handles) {
     const row = [];
+    const currentStepContent = paper.content.stepContent[currentStep]
+    
     switch (paper.type) {
         case "Article":
             return ( 
                 <Article 
-                    content={paper.content} 
+                    content={currentStepContent} 
                     currentStep={currentStep} 
-                    handles={handles}
                 />
             )
             break;
@@ -26,17 +27,16 @@ function typeLecon(paper,currentStep,handles) {
 }
 
 function displayPaper({paper, step, handles}) {
+
     return (
-        <div className="page-exercice-card card">
-            <div className="page-exercice-container">
+        <div className="paper-Card">
                 <HeaderContent 
                     title = {paper.title} 
                     steps = {paper.content.steps} 
                     currentStep = {step}
                 />
-                {typeLecon(paper,step,handles)}
+                {typeArticle(paper,step,handles)}
                 <FooterContent/>
-            </div>
         </div>
     );
 }

@@ -24,11 +24,9 @@ var data = [
       },
     },
     content: {
-      step: "1",
-      text: [
+      stepContent : [
         <>
           <p className="article-title">
-            {" "}
             Covid-19 : les laboratoires sur le pied de guerre pour adapter leur
             vaccin au variant Omicron
           </p>
@@ -84,7 +82,7 @@ var data = [
       },
     },
     content: {
-      step: "1",
+      steps: "1",
       text: [
         <>
           <p className="article-title">

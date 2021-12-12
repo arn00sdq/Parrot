@@ -3,16 +3,30 @@ import Reward from "../reward/Reward";
 import { Link, useNavigate } from "react-router-dom";
 
 function CardContainer({ paper, handles }) {
-    const navigate = useNavigate();
+    var to;
+    
+    switch ("paperPicker") {
+      case "paperPicker":
+        to = "/paperPage";
+        break;
+      case "lessonPicker":
+        to = "/lessonPage";
+        break;
+  
+      default:
+        break;
+    }
+    console.log(paper)
     const handleButtonClick = (e) => {
         e.preventDefault();
 
         const {
             target: { value },
         } = e;
-        handles.handleExerciseRedirection(value)
-        navigate('/paperPage');
+        handles.handlePaperStart(value)
+        
     }
+
   return (
     <div className="paperCard">
       <div className="box">
@@ -21,13 +35,9 @@ function CardContainer({ paper, handles }) {
           <div className="date-paperCard">{paper.date}</div>
           <div className="title-paperCard">{paper.title}</div>
           <div className="text-paperCard">{paper.description}</div>
-          <button
-            className="btn-paperCard"
-            value={paper.id}
-            onClick={(e) => handleButtonClick(e)}
-          >
-            READ
-          </button>
+          <Link className="btn-paperCard" to={to}  onClick={(e) => handleButtonClick(e)}>
+              READ
+          </Link>
         </div>
       </div>
     </div>
