@@ -10,7 +10,7 @@ function FooterContent({handles }) {
         if (value == "1") {
             handles.handleLessonNextStep("lessonPage");
         }else{
-
+            handles.handleLessonPreviousStep("lessonPage");
         }
     };
     return (

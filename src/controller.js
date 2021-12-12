@@ -16,6 +16,10 @@ const Controller = () => {
     dispatch(actions.incrementLessonPageStep(from));
   }
 
+  function handleLessonPreviousStep(from){
+    dispatch(actions.decrementLessonPageStep(from))
+  }
+
   function handleExerciseStart(id) {
     dispatch(actions.exerciceStart(id));
   }
@@ -45,7 +49,8 @@ const Controller = () => {
     handleLevelFilterChange,
     handleInputSearchFilterChange,
     handleAddPointExercisePage,
-    handleLessonNextStep
+    handleLessonNextStep,
+    handleLessonPreviousStep
   };
   
 

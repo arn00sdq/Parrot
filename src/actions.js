@@ -101,9 +101,15 @@ const incrementLessonPageStep = (from) => ({
   payload : {from},
 });
 
+const decrementLessonPageStep = (from) => ({
+  type: actionTypes.PREVIOUS_STEP,
+  payload : {from},
+});
+
 
 export {levelFilterChange,articleStart,categoryIconClick,changeLanguage,changeSection,
     tenseFilterChange,exerciceStart,expandCatBtnClick,
     helpButtonClick,hoverFeather,hoverFlame,hoverLanguage,hoverUser,
     incrementExercisePageStep,lessonStart,themeFilterChange,trainBtnClick,
-    substractLifeExercicePage,addPointsExercicePage, inputSearchFilterChange, incrementLessonPageStep}
+    substractLifeExercicePage,addPointsExercicePage, inputSearchFilterChange, 
+    incrementLessonPageStep,decrementLessonPageStep}
