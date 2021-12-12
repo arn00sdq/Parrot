@@ -70,7 +70,8 @@ import cross_icon from "../assets/img/icon/cross-solid.svg"
 import tag_icon from "../assets/img/icon/tags.svg"
 import treasure_icon from "../assets/img/icon/treasure.svg"
 import paperclip_icon from "../assets/img/icon/paperclip.svg"
-
+import next_arrow from "../assets/img/icon/caret_right.svg"
+import previous_arrow from "../assets/img/icon/caret_left.svg"
 
 const flags = {
   netherlands,
@@ -121,6 +122,8 @@ const SummImg = {
 }
 
 export {
+  next_arrow,
+  previous_arrow,
   certificateIcon,
   flags,
   Word2Img,

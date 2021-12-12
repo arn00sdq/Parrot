@@ -1,25 +1,24 @@
 import React from 'react';
-import Displaylesson from "../common/displayActivity/lesson/displayLecon";
+import DisplayLesson from "../common/displayActivity/lesson/displayLesson";
 import DisplaySummary from "../common/displayActivity/summary/displaySummary";
-import { data as lessonData } from "../../database/lessons";
+import { data as lessonsData } from "../../database/lessons";
 
 function LessonPage({ state, handles }) {
-    var lesson = lessonData;
     var id = state.lessonPage.lessonId;
-    var step = state.lessonPage.step;
-    var currentlesson = lesson.find((e) => {
-        return e.id == id;
+    var currentStep = state.lessonPage.step;
+    var currentLesson = lessonsData.find((lesson) => {
+        return lesson.id == id;
     });
     return (
         <div id="root-css">
             <main>
                 <DisplaySummary
-                    name={`${id} ${": "} ${state.lessonPage.lessonId}`}
-                    summary={lessonData[0].summary}
+                    name={`${id}`}
+                    summary={currentLesson.summary}
                 />
-                <Displaylesson
-                    lesson={lessonData[0]}
-                    step={step}
+                <DisplayLesson
+                    lesson={currentLesson}
+                    step={currentStep}
                     handles={handles}
                 />
             </main>

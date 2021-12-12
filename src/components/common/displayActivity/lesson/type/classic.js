@@ -1,17 +1,12 @@
 import React from 'react';
 
-function RowLecon(lesson,currentStep) {
-    var row = []; 
-    row.push(lesson[currentStep])
-    
-    return row;
-}
-
-function Classic(props) {
-    console.log()
+function Classic({content, currentStep, handles}) {
+    console.log('content :>> ', content);
     return (
-        <div className="classic-body" key={props.content.step}>
-            {RowLecon(props.content.text,props.currentStep)}
+        <div className="classic-body" key={currentStep}>
+            {
+            content
+            }
         </div>
     );
 }
