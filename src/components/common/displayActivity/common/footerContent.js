@@ -1,14 +1,10 @@
 import React from "react";
-import { next_arrow, previous_arrow } from "../../../../database/images";
+import { next_arrow, previous_arrow,chevron_left,chevron_right } from "../../../../database/images";
 
 
-function FooterContent({handles }) {
-    const handleButtonClick = (e) => {
-        e.preventDefault();
-
-        const {
-            target: { value },
-        } = e;
+function FooterContent({handles, currentStep }) {
+    const handleButtonClick = (value) => {
+        
         if (value == "1") {
             handles.handleLessonNextStep("lessonPage");
         }else{
@@ -17,20 +13,18 @@ function FooterContent({handles }) {
     };
     return (
         <>
-            <div className="hr-horizontale-exercice"></div>
-            <div className="footer-exercice-container">
-                <button
-                    onClick={(e) => handleButtonClick(e)}
-                    value="-1"
-                    className="button-displayActivity  button-previous">
-                    Previous
-                </button>
-                <button
-                    onClick={(e) => handleButtonClick(e)}
-                    value="1"
-                    className="button-displayActivity  button-continue">
-                    Continuer
-                </button>
+            <div className="footer-container">
+                <img
+                    src={chevron_left}
+                    onClick={currentStep <= 1 ? undefined : () => handleButtonClick("-1")}
+                    className="chevron-arrow"
+                />
+                <div class="footer-current-number">{currentStep + 1}</div>
+                <img
+                    src={chevron_right}
+                    onClick={() => handleButtonClick("1")}
+                    className="chevron-arrow"
+                />
             </div>
         </>
     );

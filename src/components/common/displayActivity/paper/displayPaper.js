@@ -36,7 +36,7 @@ function displayPaper({paper, step, handles}) {
                     currentStep = {step}
                 />
                 {typeArticle(paper,step,handles)}
-                <FooterContent/>
+                <FooterContent currentStep={step}/>
         </div>
     );
 }

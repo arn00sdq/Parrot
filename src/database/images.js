@@ -72,6 +72,8 @@ import treasure_icon from "../assets/img/icon/treasure.svg"
 import paperclip_icon from "../assets/img/icon/paperclip.svg"
 import next_arrow from "../assets/img/icon/caret_right.svg"
 import previous_arrow from "../assets/img/icon/caret_left.svg"
+import chevron_right from "../assets/img/icon/chevron-right.svg"
+import chevron_left from "../assets/img/icon/chevron-left.svg"
 
 const flags = {
   netherlands,
@@ -131,6 +133,8 @@ export {
   PickerImg,
   GameImg,
   SummImg,
+  chevron_left,
+  chevron_right,
   cross_icon,
   check,
   down_arrow,
