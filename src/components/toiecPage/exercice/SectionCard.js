@@ -8,18 +8,17 @@ function SectionCard({ titleCard, content, state, handles }) {
     var values = Object.keys(content);
     return (
         <div className="section-skill-card">
-            <HeaderLevel titleCard={titleCard} />
             <div className="toiec-card">
                 <div className="toiec-container">
                     <div className="cardContent-header-container">
-                        <div className="toiec-title-header">Indépedant</div>
+                        <div className="toiec-title-header">{titleCard}</div>
                     </div>
                     <div className="containerT">
                         <ToiecCard
                             content={content}
                             id={toiecId}
                             handles={handles} />
-                        <a href="#" className="button-train-skill">S'entrainer</a>
+                        <button href="#" className="button-toiec">S'entrainer</button>
                     </div>
                 </div>
             </div>
