@@ -36,27 +36,14 @@ var data = [
           <ul className="grammar-rule">
             <li>
               <p>Pour les verbes réguliers :</p>
-              <p>
-                {" "}
-                sujet + <b>
-                  {" "}
-                  auxiliaire have au present + base verbale + -ed
-                </b>{" "}
-              </p>
+              <p> sujet + <b> auxiliaire have au present + base verbale  + -ed</b> </p>
             </li>
             <li>
               <p>Pour les verbes irrégulier :</p>
-              <p>
-                sujet +{" "}
-                <b>
-                  auxiliaire have au present + base verbale + participe passé
-                  régulier
-                </b>
-              </p>
+              <p>sujet + <b>auxiliaire have au present + base verbale  + participe passé régulier</b></p>
             </li>
           </ul>
-        </>,
-        <>
+
           <div className="title">
             <div className="num-block">
               <span className="num-section-less">2</span>
@@ -64,39 +51,30 @@ var data = [
             <p className="title-section-less"> Principaux emplois </p>
           </div>
 
-          <p className="subTitle">
-            Actions passées qui ont des conséquences sur le présent.
-          </p>
+          <p className="subTitle">Actions passées qui ont des conséquences sur le présent.</p>
 
           <div className="exemple-section">
             <div className="lesson-exemple">
               <span className="title-exemple">Exemple</span>
               <p className="text">
-                Paul all <span className="wordPrimary">has eaten</span> the
-                cookies
-              </p>
-              <span className="trad-exemple">
-                Paul a mangé tout les cookies
-              </span>
+                Paul all <span className="wordPrimary">has eaten</span> the cookies
+          </p>
+              <span className="trad-exemple">Paul a mangé tout les cookies</span>
             </div>
             <div className="lesson-exemple">
               <span className="title-exemple">Exemple</span>
               <p className="text">
-                Paul all <span className="wordPrimary">has eaten</span> the
-                cookies
-              </p>
-              <span className="trad-exemple">
-                Paul a mangé tout les cookies
-              </span>
+                Paul all <span className="wordPrimary">has eaten</span> the cookies
+          </p>
+              <span className="trad-exemple">Paul a mangé tout les cookies</span>
             </div>
           </div>
-        </>,
-        <>
+
           <p className="explication">
             Quand l'action s'est-elle passée ? Dans le passé : il y a quelques
             minutes/hier Quelle conséquence a-t-elle sur le présent ? Paul a
             mangé tous les gâteaux ; il n'en reste plus pour moi., xd
-          </p>
+      </p>
 
         </>,
         <>
