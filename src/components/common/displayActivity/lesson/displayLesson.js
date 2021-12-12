@@ -37,7 +37,7 @@ function DisplayLesson({ lesson, step, handles }) {
         currentStep={step}
       />
       {typeLesson(lesson, step, handles)}
-      <FooterContent currentStep={step}/>
+      <FooterContent handles={handles}/>
     </div>
   );
 }
