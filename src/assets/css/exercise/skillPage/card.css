@@ -73,21 +73,6 @@
     align-self: flex-end;
 }
 
-.button-train-skill{
-    display: flex;
-    align-self: center;
-    justify-content: center;
-    padding: 8px 12px;
-    border-radius: 5px;
-    font-family: Quicksand;
-    font-size: 25px;
-    background-color: var(--button-bg-color);
-    color: var(--button-color-text);
-    font-weight: bold;
-    text-decoration: none;
-    margin-bottom: 1vh;
-}
-
 .toiec-container{
     display: flex;
     flex-direction: column;
@@ -127,12 +112,11 @@
     text-align: center;
 }
 
-.containerT .cardT .circle h2{
-    position: absolute;
-    color: #fff;
-    font-size: 30px;
-    top:36px;
-    left:29px
+.containerT .cardT .title-content{
+    font-family: 'Lato';
+    font-size: 18px;
+    color: #666;
+    font-weight: bold;
 }
 
 .containerT .cardT .content{

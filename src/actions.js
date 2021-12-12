@@ -94,14 +94,13 @@ const addPointsExercicePage = () => ({
     type: actionTypes.EXERCISE_PAGE.ADD_POINT
 })
 
-//LESSON PAGE
 
-const incrementLessonPageStep = (from) => ({
+const incrementPageStep = (from) => ({
   type: actionTypes.NEXT_STEP,
   payload : {from},
 });
 
-const decrementLessonPageStep = (from) => ({
+const decrementPageStep = (from) => ({
   type: actionTypes.PREVIOUS_STEP,
   payload : {from},
 });
@@ -112,4 +111,4 @@ export {levelFilterChange,articleStart,categoryIconClick,changeLanguage,changeSe
     helpButtonClick,hoverFeather,hoverFlame,hoverLanguage,hoverUser,
     incrementExercisePageStep,lessonStart,themeFilterChange,trainBtnClick,
     substractLifeExercicePage,addPointsExercicePage, inputSearchFilterChange, 
-    incrementLessonPageStep,decrementLessonPageStep}
+    incrementPageStep,decrementPageStep}

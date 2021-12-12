@@ -12,7 +12,7 @@ function typeArticle(paper,currentStep,handles) {
             return ( 
                 <Article 
                     content={currentStepContent} 
-                    currentStep={currentStep} 
+                    currentStep={currentStep}
                 />
             )
             break;
@@ -26,7 +26,7 @@ function typeArticle(paper,currentStep,handles) {
     return row;
 }
 
-function displayPaper({paper, step, handles}) {
+function displayPaper({paper, step, handles,from}) {
 
     return (
         <div className="paper-Card">
@@ -36,7 +36,7 @@ function displayPaper({paper, step, handles}) {
                     currentStep = {step}
                 />
                 {typeArticle(paper,step,handles)}
-                <FooterContent/>
+                <FooterContent handles={handles} currentStep={step} from ={from}/>
         </div>
     );
 }

@@ -31,6 +31,7 @@ function ToiecCard({ content, id, handles }) {
                     {/*<img src={history} className="img-paperCard" />
                     <div className="date-paperCard">{value[i].date}</div>
                     <div className="title-paperCard">{value[i].title}</div>*/}
+                    <div className="title-content">Titre Card</div>
                     <p>{propsValues[i].text}</p>
                     <a  propsValues={"EX" + 2} onClick={(e) => handleButtonClick(e)} >READ</a>
                 </div>

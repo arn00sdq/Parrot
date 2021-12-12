@@ -1,22 +1,29 @@
-.footer-exercise-container{
+.footer-container{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-}
-.footer-lesson-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    align-items: center;
+    margin-left: 29vw;
+    margin-top: 3vh;
 }
 
-.footer-arrow{
-    height: 30px;
+.footer-container img{
+    cursor: pointer;
+    transition: 0.5s;
 }
 
-.hr-horizontale-exercise{
-    border: solid;
-    border-width: thin;
-    border-color: var(--footer-content-hr-border-color);
-    margin-left: -2vw;
-    width : 56vw;
+.footer-container img:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.chevron-arrow {
+    height: 2vh;
+    width: 2vw;
+}
+
+.footer-current-number{
+    font-family: 'Lato';
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 1vw;
 }
