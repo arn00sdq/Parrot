@@ -1,8 +1,6 @@
 import React from "react";
 import { next_arrow, previous_arrow } from "../../../../database/images";
-function FooterContent({ currentStep, handles }) {
-  const handleButtonClick = (e) => {
-    e.preventDefault();
+
 
 function FooterContent({handles }) {
     const handleButtonClick = (e) => {
