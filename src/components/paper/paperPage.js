@@ -25,6 +25,7 @@ function PaperPage({ state, handles }) {
                     paper={currentpaper}
                     step={step}
                     handles={handles}
+                    from="paperPage"
                 />
             </main>
         </div>

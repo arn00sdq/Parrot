@@ -20,6 +20,7 @@ function LessonPage({ state, handles }) {
                     lesson={currentLesson}
                     step={currentStep}
                     handles={handles}
+                    from="lessonPage"
                 />
             </main>
         </div>

@@ -2,13 +2,13 @@ import React from "react";
 import { next_arrow, previous_arrow,chevron_left,chevron_right } from "../../../../database/images";
 
 
-function FooterContent({handles, currentStep }) {
+function FooterContent({handles, currentStep,from }) {
     const handleButtonClick = (value) => {
-        
+        console.log(handles)
         if (value == "1") {
-            handles.handleLessonNextStep("lessonPage");
+            handles.handleNextStep(from);
         }else{
-            handles.handleLessonPreviousStep("lessonPage");
+            handles.handlePreviousStep(from);
         }
     };
     return (

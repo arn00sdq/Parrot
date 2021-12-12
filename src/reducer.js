@@ -131,6 +131,14 @@ const reducer = (state, action) => {
               step: parseInt(state.lessonPage.step + 1)
             }
           };
+        case "paperPage":
+          return {
+            ...state,
+            paperPage: {
+              ...state.paperPage,
+              step: parseInt(state.paperPage.step + 1)
+            }
+          };
       }
     case types.PREVIOUS_STEP:
       switch (payload.from) {
@@ -140,6 +148,14 @@ const reducer = (state, action) => {
             lessonPage: {
               ...state.lessonPage,
               step: parseInt(state.lessonPage.step - 1)
+            }
+          };
+          case "paperPage":
+          return {
+            ...state,
+            paperPage: {
+              ...state.paperPage,
+              step: parseInt(state.paperPage.step - 1)
             }
           };
       }

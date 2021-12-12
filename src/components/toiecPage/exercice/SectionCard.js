@@ -1,6 +1,5 @@
 import React from 'react';
 import ToiecCard from '../../common/bandItem/toiecCard';
-import HeaderLevel from './HeaderLevel';
 
 const toiecId = ["1", "1", "1"];
 

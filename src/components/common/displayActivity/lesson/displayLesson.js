@@ -28,7 +28,7 @@ function typeLesson(lesson, currentStep, handles) {
   return row;
 }
 
-function DisplayLesson({ lesson, step, handles }) {
+function DisplayLesson({ lesson, step, handles, from }) {
   return (
     <div className="lesson-card">
       <HeaderContent
@@ -37,7 +37,7 @@ function DisplayLesson({ lesson, step, handles }) {
         currentStep={step}
       />
       {typeLesson(lesson, step, handles)}
-      <FooterContent handles={handles} currentStep={step}/>
+      <FooterContent handles={handles} currentStep={step} from={from}/>
     </div>
   );
 }

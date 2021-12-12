@@ -72,7 +72,11 @@ function PaperPicker({ state, handles }) {
 
            {/*<div className="n-exercices">{`Showing ${lessonsToShow.length} of ${lessonsData.length} lessons`}</div>*/}
           </div>
-          <PaperListContainer papers={papersToShow} id={1} handles={handles} />
+          <PaperListContainer 
+            papers={papersToShow} 
+            id={1} 
+            handles={handles} 
+          />
         </div>
       </main>
     </div>

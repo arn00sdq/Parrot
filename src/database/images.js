@@ -74,6 +74,7 @@ import next_arrow from "../assets/img/icon/caret_right.svg"
 import previous_arrow from "../assets/img/icon/caret_left.svg"
 import chevron_right from "../assets/img/icon/chevron-right.svg"
 import chevron_left from "../assets/img/icon/chevron-left.svg"
+import quote_left from "../assets/img/icon/quote-left.svg"
 
 const flags = {
   netherlands,
@@ -123,6 +124,10 @@ const SummImg = {
   paperclip_icon
 }
 
+const PaperImg = {
+  quote_left
+}
+
 export {
   next_arrow,
   previous_arrow,
@@ -133,6 +138,7 @@ export {
   PickerImg,
   GameImg,
   SummImg,
+  PaperImg,
   chevron_left,
   chevron_right,
   cross_icon,
