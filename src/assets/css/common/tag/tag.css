@@ -6,6 +6,7 @@
     padding: 1vh 1vw;
     display: flex;
     align-items: center;
+    margin-top:10px;
     
 }
 
@@ -27,12 +28,7 @@
 }
 
 .tag-point-small{
-    border: solid;
-    border-width: 2px;
-    border-radius: 5px;
-    border-color: var(--tag-border-color);
-    background-color: var(--tag-bg-color);
-    font-family: Monserrat;
-    padding: 0.4vh 0.4vw;
+    font-family: 'Lato';
+    color: #767c7e;
     font-size: 13px;
 }

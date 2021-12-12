@@ -67,6 +67,9 @@ import theme_icon from "../assets/img/icon/form.svg"
 import search_icon from "../assets/img/icon/search.svg"
 import jungle_game from "../assets/img/game/jungle.jpg"
 import cross_icon from "../assets/img/icon/cross-solid.svg"
+import tag_icon from "../assets/img/icon/tags.svg"
+import treasure_icon from "../assets/img/icon/treasure.svg"
+import paperclip_icon from "../assets/img/icon/paperclip.svg"
 
 
 const flags = {
@@ -111,6 +114,12 @@ const GameImg = {
   jungle_game
 }
 
+const SummImg = {
+  tag_icon,
+  treasure_icon,
+  paperclip_icon
+}
+
 export {
   certificateIcon,
   flags,
@@ -118,6 +127,7 @@ export {
   ProfilImg,
   PickerImg,
   GameImg,
+  SummImg,
   cross_icon,
   check,
   down_arrow,

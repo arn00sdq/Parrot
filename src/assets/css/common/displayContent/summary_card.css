@@ -1,10 +1,11 @@
 .summary-container{
     display: flex;
     flex-direction: column;
-    margin-top: 2vh;
+    width: 25vw;
     border-radius: 0.25rem;
     background-color: white;
     height: fit-content;
+    padding: 13px 1.5vw;
 }
 
 .summary-container-header{
@@ -14,37 +15,27 @@
     padding: 1rem 1rem;
 }
 
+.container-summary-body{
+    padding: 0vh 1vw;
+}
+
+.summary-section{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+
+}
+
+.summary-adjustement{
+    display: flex;
+    margin-top: 2vh;
+}
+
 .title-summary{
     font-family: 'Lato';
     font-size: 28px;
     font-weight: 400;
-}
-
-
-.title-section-summary{
-    font-family: Monserrat;
-    font-size: 20px;
-    margin-top: 1vh;
-}
-.infos-section-summary{
-    display: flex;
-    flex-direction: row;
-    margin-top: 1vh;
-}
-.row-section-summary{
-    display: flex;
-    flex-direction: row;
-    margin-top: 2vh;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.row-content-summary{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content:space-around;
-
 }
 
 .title-row-summary{
@@ -53,18 +44,75 @@
     font-weight: bold;
     width: 8vw;
     color: #767c7e;
+    margin-left: 20px;
 }
 
-.level-tag{
-    font-family: Monserrat;
-    font-size: 17px;
-    text-decoration-line: underline;
-    text-decoration-color:var(--summary-text-decoration);
-    text-underline-offset: 0.5vh;
+.tag-section-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 17vw;
+    margin-top: 2vh;
+}
+
+.infos-section-summary{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1vh;
+}
+.row-section-summary{
+    margin-left: 1vw;
+    margin-top: 1.5vh;
 }
 
 .reward-section-summary{
     display: flex;
     flex-direction: row;
     margin-left: 1.5vw;
+}
+
+
+.summary div{
+    margin-bottom: 8px;
+}
+
+.summary-number-primary{
+    height: 26px;
+    min-width: 26px;
+    margin-right: 8px;
+    background: #1B1C20;
+    color: #fff;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+}
+
+.summary .row-summary:nth-child(2){
+    margin-top: 3vh;
+}
+
+.summary-number-secondary{
+    height: 26px;
+    min-width: 26px;
+    margin-right: 8px;
+    background: #fff;
+    color: #1B1C20;
+    border: 1px solid #1B1C20;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+}
+
+.summary .row-summary{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.summary-primary-text{
+    color: #1b1c20
 }

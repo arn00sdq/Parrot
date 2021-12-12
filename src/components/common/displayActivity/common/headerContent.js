@@ -1,5 +1,5 @@
 import React from 'react';
-import {cross} from '../../../../database/images'
+import {cross_icon} from '../../../../database/images'
 
 function HeaderContent({title,steps,currentStep}) {
     return (
@@ -8,7 +8,7 @@ function HeaderContent({title,steps,currentStep}) {
             <div className="progress-bar-section">
                 <div>{(currentStep / steps) * 100 + "%"}</div>
                 <div className="progress-content-bar">
-                    <img src={cross} className="cross"></img>
+                    <img src={cross_icon} className="cross"></img>
                     <div className="progress-step">
                         <div className="fill a" style={{width: (currentStep / steps) * 100 + "%"}}></div>
                     </div>
