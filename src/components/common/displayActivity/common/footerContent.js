@@ -16,7 +16,7 @@ function FooterContent({handles, currentStep }) {
             <div className="footer-container">
                 <img
                     src={chevron_left}
-                    onClick={currentStep <= 1 ? undefined : () => handleButtonClick("-1")}
+                    onClick={currentStep < 1 ? undefined : () => handleButtonClick("-1")}
                     className="chevron-arrow"
                 />
                 <div class="footer-current-number">{currentStep + 1}</div>
