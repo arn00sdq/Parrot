@@ -20,7 +20,7 @@ function DisplaySummary({ summary, name }) {
 
     <div className="summary-container">
       <div className="summary-container-header">
-        <div className="title-summary">Summary : {name}</div>
+        <div className="title-summary">Summary of {name}</div>
       </div>
 
       <div className="container-summary-body" style={{ alignItems: "baseline" }}>

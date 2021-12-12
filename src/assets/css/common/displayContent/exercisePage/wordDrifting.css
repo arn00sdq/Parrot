@@ -14,7 +14,7 @@
     height: 110%;
     animation:  animateRoad 60s linear infinite;
     background-repeat: repeat;
-    animation-delay: 5s;
+    animation-delay: 1s;
     
 }
 
@@ -28,7 +28,6 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     font-weight: bold;
-    
 }
 
 .life-container{
@@ -83,10 +82,10 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    top : 289px;
+    top : 250px;
     height: 50px;
     width: 100px; /*hauteur / nbr elt*/
-    transform: perspective(500px) rotateX(-15deg) translateY(24px) translateZ(25px);
+   transform: perspective(500px) rotateX(-15deg) translateY(24px) translateZ(25px);
    /* -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);*/
     animation: animateWord 10s linear infinite;
 }
@@ -97,8 +96,7 @@
 
 .word-vrom{
     font-size: 18px;
-    padding: 30px;
-    
+    padding: 15px;
 }
 
 .points-word{

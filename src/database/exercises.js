@@ -206,35 +206,26 @@ var data = [
   },
   {
     id: "EX6",
-    title: "Match",
+    title: "Vocabulary Word Race",
     type: "DriftWord",
     icon: pres_perfect,
     summary: {
       level: levels.INTERMEDIATE,
-      themes: [themes.ANIMALS, themes.SPORTS],
+      themes: [themes.ANIMALS],
       rewards: {
-        treasures: 2,
-        feathers: 1,
+        treasures: 3,
+        feathers: 3,
       },
     },
     description:
-      "This exercise is meant to teach\
-     you the basics of english vocabulary.\
-      You will be presented an image\
-       and be asked to chose the word \
-       that corresponds to the presented photography.",
+      "In this exercise, you will have to choose the words\
+       that correspond to the word presented. They go fast,\
+        so you will have to be twice as fast to succeed!",
     content: {
-      order: "Select the right words for each tense",
-      steps: 1,
-      theme: [
-        {
-          tense: tenses.PAST_SIMPLE,
-          answer: ["went","bought", "saw", "rode", "had"],
-        },
-      ],
-      words: [
-        ["went", "bought", "saw", "rode","had","have","go","catch","see"],
-      ],
+      order: "Select the words that correpond to the theme below.",
+      theme: "Mammals",
+      correctWords: ['rat','cat','dog', 'deer', 'monkey', 'bat', 'whale', 'dolphin'],
+      wrongWords: ['lizard', 'shark', 'snake', 'chicken']
     },
   },
 ];
