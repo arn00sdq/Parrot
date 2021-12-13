@@ -8,6 +8,7 @@ function ExercisePage({ state, handles }) {
   var id = state.exercisePage.exerciseId;
   var step = state.exercisePage.step;
   var currentExercise = exercises.find((e) => {
+    console.log(e.id)
     return e.id == id;
   });
   var name =`${id} ${": "} ${currentExercise.type}`

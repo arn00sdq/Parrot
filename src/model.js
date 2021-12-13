@@ -111,6 +111,7 @@ const data = {
   exercisePage: {
     exerciseId: "EX1",
     step: "0",
+    end: false,
     wordDrift : {
       life : 3,
       points : 0,
@@ -124,6 +125,7 @@ const data = {
   lessonPage: {
     lessonId: "LE1",
     step: "0",
+    end: false,
   },
   lessonPicker: {
     keywords_input : "",
@@ -133,6 +135,7 @@ const data = {
   paperPage: {
     paperId: "PA1",
     step: "0",
+    end: false
   },
   paperPicker: {
     keywords_input : "",

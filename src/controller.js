@@ -31,6 +31,10 @@ const Controller = () => {
     dispatch(actions.lessonStart(id))
   }
 
+  function handleEndActivity(isFinish,id,from) {
+    dispatch(actions.activityEnd(isFinish,id,from));
+  }
+
   function handleThemeFilterChange(themeName, from) {
     dispatch(actions.themeFilterChange(themeName, from));
   }
@@ -59,7 +63,8 @@ const Controller = () => {
     handleNextStep,
     handlePreviousStep,
     handlePaperStart,
-    handleLessonStart
+    handleLessonStart,
+    handleEndActivity,
   };
   
 

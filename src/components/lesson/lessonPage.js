@@ -7,10 +7,12 @@ function LessonPage({ state, handles }) {
     var lessons = lessonsData;
     var id = state.lessonPage.lessonId;
     var currentStep = state.lessonPage.step;
-    var currentLesson = lessons.find((e) => {
-        return e.id ==  Object.values(id );
+    console.log(lessonsData)
+    var currentLesson = lessonsData.find((e) => {
+        console.log(e.id == id)
+        return e.id ==  id ;
     });
-
+    console.log(currentLesson)
     return (
         <div id="root-css">
             <main>

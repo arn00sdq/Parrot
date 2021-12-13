@@ -173,6 +173,7 @@ const reducer = (state, action) => {
         },
       };
     case types.LESSON_START:
+      console.log(payload.lessonId)
       return {
         ...state,
         path: {
@@ -181,7 +182,7 @@ const reducer = (state, action) => {
         },
         lessonPage: {
           ...state.lessonPage,
-          lessonId: payload,
+          lessonId: payload.lessonId,
           step: parseInt(0),
         },
       };
@@ -199,6 +200,41 @@ const reducer = (state, action) => {
             step: parseInt(0),
           },
         };
+    /**/
+    case types.ACTIVTY_END:
+      switch (payload.from) {
+        case "exercicePage":
+          return {
+            ...state,
+            exercisePage: {
+              ...state.exercisePage,
+              exerciseId : payload.id,
+              step: parseInt(state.exercisePage.step + 1),
+              end : payload.isFinished
+            },
+          };
+        case "lessonPage":
+          return {
+            ...state,
+            lessonPage: {
+              ...state.lessonPage,
+              lessonId : payload.id,
+              step: parseInt(state.lessonPage.step + 1),
+              end : payload.isFinished
+            }
+          };
+        case "paperPage":
+          return {
+            ...state,
+            paperPage: {
+              ...state.paperPage,
+              paperId : payload.id,
+              step: parseInt(state.paperPage.step + 1),
+              end : payload.isFinished
+            }
+          };
+      }
+    /**/  
     case types.HEADER.MSE_HOVER_LANG:
       return {
         ...state,

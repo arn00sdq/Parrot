@@ -40,7 +40,6 @@ function ActivityContent(activity, handles, from) {
         handles.handleExerciseStart(activity.id);
         break;
       case "lessonPicker":
-        console.log("id : "+activity.id )
         handles.handleLessonStart(activity.id);
         break;
       default:
@@ -62,7 +61,7 @@ function ActivityContent(activity, handles, from) {
           <div className="text-pct">{activity.description}</div>
           <div className="footer-pct">
             <div>{listRewards(activity.summary.rewards)}</div>
-            <Link className="btn-pctCard" to={to} onClick={handleButtonClick}>
+            <Link className="btn-pctCard" to={to} onClick={() => handleButtonClick()}>
               Continue
             </Link>
           </div>

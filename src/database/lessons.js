@@ -253,11 +253,7 @@ var data = [
       "In this lesson, you will learn the basics about the usage of the Past Simple.",
     summary: {
       level: levels.BEGINNER,
-      tenses: [
-        {
-          name: tenses.PAST_SIMPLE,
-        },
-      ],
+      tenses: [tenses.PRESENT_PERFECT, tenses.FUTURE_CONTINUOUS],
       rewards: {
         treasures: 0,
         feathers: 2,

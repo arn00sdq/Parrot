@@ -15,6 +15,11 @@ const lessonStart = (lessonId) => ({
   payload: { lessonId },
 });
 
+const activityEnd= (isFinished,activityId,from) => ({
+  type: actionTypes.ACTIVTY_END,
+  payload: {isFinished,activityId,from},
+});
+
 //HEADER
 const hoverLanguage = () => ({
   type: actionTypes.HEADER.MSE_HOVER_LANG,
@@ -111,4 +116,4 @@ export {levelFilterChange,articleStart,categoryIconClick,changeLanguage,changeSe
     helpButtonClick,hoverFeather,hoverFlame,hoverLanguage,hoverUser,
     incrementExercisePageStep,lessonStart,themeFilterChange,trainBtnClick,
     substractLifeExercicePage,addPointsExercicePage, inputSearchFilterChange, 
-    incrementPageStep,decrementPageStep}
+    incrementPageStep,decrementPageStep,activityEnd}

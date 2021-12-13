@@ -14,7 +14,7 @@ function listRewards({ treasures, feathers }) {
   
 
 function ActivityCompleted({reward , active}) {
-
+    console.log("j'ai capté")
     return (
         <div className={`activity-finished ${active == "active" ? "activefs": "" }`}>
             <div className="af-header">

@@ -5,7 +5,6 @@ import FooterContent from '../common/footerContent'
 
 function typeLesson(lesson, currentStep, handles) {
   const row = [];
-  console.log(`lesson`, lesson.summary.rewards)
   switch (lesson.type) {
     case "Classic":
     const currentStepContent = lesson.content.stepsContent[currentStep];
@@ -40,7 +39,7 @@ function DisplayLesson({ lesson, step, handles, from }) {
         currentStep={step}
       />
       {typeLesson(lesson, step, handles)}
-      <FooterContent handles={handles} totalStep={currentStepContent} currentStep={step} from={from}/>
+      <FooterContent id={lesson.id} handles={handles} totalStep={currentStepContent} currentStep={step} from={from}/>
     </div>
   );
 }
