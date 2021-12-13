@@ -11,7 +11,7 @@ function FooterContent({handles,totalStep, currentStep,from }) {
             handles.handlePreviousStep(from);
         }
     };
-    console.log(totalStep)
+    console.log("totalStep :" + totalStep + "CurrentStep :" + currentStep)
     return (
         <>
             <div className="footer-container">

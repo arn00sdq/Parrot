@@ -1,8 +1,20 @@
 import React from "react";
 
 import { certificate } from "../../../database/images";
+import Reward from "../reward/Reward"
 
-function ActivityCompleted({active}) {
+function listRewards({ treasures, feathers }) {
+    let row = [];
+    for (let i = 0; i < treasures; i++)
+      row.push(<Reward className="reward" type="treasure" />);
+    for (let i = 0; i < feathers; i++)
+      row.push(<Reward className="reward" type="feather" />);
+    return row;
+}
+  
+
+function ActivityCompleted({reward , active}) {
+
     return (
         <div className={`activity-finished ${active}`}>
             <div className="af-header">
@@ -19,11 +31,15 @@ function ActivityCompleted({active}) {
                 <div className="recap-af">
                     <div className="af-text">Lesson en cours :<div className="af-sub-text">Present perfect and be -ing </div></div>
                     <div className="af-text">Reward :</div>
+                    <div>{listRewards(reward)}</div>
                 </div>
             </div>
             <div className="af-footer">
-                <button className="btn-paperCard" >Quittez</button>
-                <button className="btn-paperCard">S'entrainer</button>
+                <div className="af-row1">
+                    <button className="button-af" >Quittez</button>
+                    <button className="button-af">S'entrainer</button>
+                </div>
+                <button className="button-af">Restez</button>
             </div>
         </div>
     );

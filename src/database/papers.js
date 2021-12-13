@@ -3,7 +3,7 @@ import React from "react";
 import { data as levels } from "./levels";
 import { data as themes } from "./themes";
 
-import { ar1_img1, history, PaperImg } from "./images";
+import { history, PaperImg } from "./images";
 
 var data = [
   {
@@ -11,7 +11,7 @@ var data = [
     title: "Covid-19: les laboratoires s'inquitent",
     date: "10/11/2020",
     type: "Article",
-    icon: history,
+    icon: PaperImg.paper_politic_1,
     description:
       "Depuis quelques jours, le gouvernement français et l'Union européenne \
             appellent...",
@@ -40,7 +40,7 @@ var data = [
           </span>
           <div className="row">
             <div className="media-picture">
-              <img className="large-ptc-article" src={ar1_img1}></img>
+              <img className="large-ptc-article" src={PaperImg.paper_politic_1}></img>
               <figcaption className="article-figcation">
                 Des chercheurs en tenue de protection travaillent dans un
                 laboratoire de l’Institut de virologie de Wuhan, le 6 février
@@ -133,7 +133,7 @@ var data = [
     title: "Ligue des champions : l'incroyable couac...",
     date: "3/11/2021",
     type: "Article",
-    icon: ar1_img1,
+    icon: PaperImg.paper_sport_1,
     description: "En raison d'un «incident technique», le tirage des 8es de C1 \
                   a été considéré comme nul et a dû entièrement refait.",
     summary: {

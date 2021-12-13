@@ -47,7 +47,7 @@ import south_korea from "../assets/img/flags/south_korea.png";
 import spain from "../assets/img/flags/spain.png";
 import thailand from "../assets/img/flags/thailand.png";
 import united_states from "../assets/img/flags/united_states.png";
-import ar1_img1 from "../assets/img/paper/article/ar1-img1.jpg";
+import paper_politic_1 from "../assets/img/paper/article/ar1-img1.jpg";
 import guitare from "../assets/img/exercise/word2Img/guitare.png";
 import clarinette from "../assets/img/exercise/word2Img/clarinette.png";
 import trombone from "../assets/img/exercise/word2Img/trombone.png";
@@ -128,7 +128,8 @@ const SummImg = {
 
 const PaperImg = {
   quote_left,
-  paper_sport_1
+  paper_sport_1,
+  paper_politic_1,
 }
 
 export {
@@ -187,5 +188,4 @@ export {
   clock_icon,
   cross,
   achievement,
-  ar1_img1,
 };
