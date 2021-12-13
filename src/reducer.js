@@ -150,7 +150,7 @@ const reducer = (state, action) => {
               step: parseInt(state.lessonPage.step - 1)
             }
           };
-          case "paperPage":
+        case "paperPage":
           return {
             ...state,
             paperPage: {
@@ -169,6 +169,19 @@ const reducer = (state, action) => {
         exercisePage: {
           ...state.exercisePage,
           exerciseId: payload,
+          step: parseInt(0),
+        },
+      };
+    case types.LESSON_START:
+      return {
+        ...state,
+        path: {
+          ...state.path,
+          currentPath: "lessonPage",
+        },
+        lessonPage: {
+          ...state.lessonPage,
+          lessonId: payload,
           step: parseInt(0),
         },
       };

@@ -29,6 +29,7 @@ function typeLesson(lesson, currentStep, handles) {
 }
 
 function DisplayLesson({ lesson, step, handles, from }) {
+  const currentStepContent = lesson.content.stepsContent.length;
   return (
     <div className="lesson-card">
       <HeaderContent
@@ -37,7 +38,7 @@ function DisplayLesson({ lesson, step, handles, from }) {
         currentStep={step}
       />
       {typeLesson(lesson, step, handles)}
-      <FooterContent handles={handles} currentStep={step} from={from}/>
+      <FooterContent handles={handles} totalStep={currentStepContent} currentStep={step} from={from}/>
     </div>
   );
 }

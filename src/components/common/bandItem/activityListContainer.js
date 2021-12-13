@@ -40,6 +40,7 @@ function ActivityContent(activity, handles, from) {
         handles.handleExerciseStart(activity.id);
         break;
       case "lessonPicker":
+        console.log("id : "+activity.id )
         handles.handleLessonStart(activity.id);
         break;
       default:

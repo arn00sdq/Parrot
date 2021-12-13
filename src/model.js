@@ -123,7 +123,7 @@ const data = {
   },
   lessonPage: {
     lessonId: "LE1",
-    step: 0,
+    step: "0",
   },
   lessonPicker: {
     keywords_input : "",

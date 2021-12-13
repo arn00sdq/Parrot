@@ -4,11 +4,14 @@ import DisplaySummary from "../common/displayActivity/summary/displaySummary";
 import { data as lessonsData } from "../../database/lessons";
 
 function LessonPage({ state, handles }) {
+    var lessons = lessonsData;
     var id = state.lessonPage.lessonId;
     var currentStep = state.lessonPage.step;
-    var currentLesson = lessonsData.find((lesson) => {
-        return lesson.id == id;
+    console.log("id : ")
+    var currentLesson = lessons.find((e) => {
+        return e.id ==  Object.values(id );
     });
+    console.log(currentLesson)
     return (
         <div id="root-css">
             <main>
