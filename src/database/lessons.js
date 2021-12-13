@@ -4,7 +4,8 @@ import { data as levels } from "./levels";
 import { data as themes } from "./themes";
 import { data as tenses } from "./english_tenses";
 
-import { pres_perfect } from "./images";
+import { pres_perfect,certificate } from "./images";
+import ActivityCompleted from "../components/common/displayActivity/ActivityCompleted";
 var data = [
   {
     id: "LE1",
@@ -239,6 +240,9 @@ var data = [
               </tbody>
             </table>
           </div>
+        </>,
+        <>
+          <ActivityCompleted />
         </>
       ],
     },

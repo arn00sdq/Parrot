@@ -75,6 +75,7 @@ import previous_arrow from "../assets/img/icon/caret_left.svg"
 import chevron_right from "../assets/img/icon/chevron-right.svg"
 import chevron_left from "../assets/img/icon/chevron-left.svg"
 import quote_left from "../assets/img/icon/quote-left.svg"
+import certificate from "../assets/img/icon/certificate-solid.svg"
 
 const flags = {
   netherlands,
@@ -139,6 +140,7 @@ export {
   GameImg,
   SummImg,
   PaperImg,
+  certificate,
   chevron_left,
   chevron_right,
   cross_icon,
