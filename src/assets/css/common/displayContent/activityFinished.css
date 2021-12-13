@@ -1,0 +1,99 @@
+
+
+.activity-finished{
+    position: absolute;
+    top:20%;
+    left: 32%;
+    font-family: 'Lato';
+    height: 40vh;
+    width: 20vw;
+    background: #fff;
+    box-shadow: 5px 5px 2px 1px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    padding: 2vh 3vw;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+.activefs{
+    opacity: 1;
+    visibility: visible;
+}
+
+.certificate{
+    width: 3vw;
+    height: 3vh;
+}
+
+.af-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.title-af{
+    font-size: 24px;
+    font-weight: bold;    
+}
+
+.point-af{
+    font-size: 20px;
+}
+
+.af-summarize{
+    margin-top: 4vh;
+}
+
+.text-bar-af{
+    margin-bottom: 2vh;
+    margin-bottom: 0.5vh;
+    color: #718096
+}
+
+.step-bar-af{
+    background-color: #2b2f3c;
+    height: 10px;
+    
+    border-radius: 5px
+
+}
+
+.fill-af{
+    background-color: orange;
+    height: 10px;
+    width: 0%;
+    transition: 1.5s;
+    
+}
+
+.recap-af {
+    margin-top: 3vh;
+}
+
+.af-text{
+    font-size: 18px;
+    margin-top: 2vh;
+}
+
+.af-sub-text{
+    color: #718096;
+    font-size: 16px;
+    font-weight: bold;
+}
+.af-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1vh;
+    
+}
+
+.af-row1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}

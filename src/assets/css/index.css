@@ -30,6 +30,7 @@
 @import "./exercise/exercisePicker/exerciseCard.css";
 @import "./common/displayContent/exercisePage/wordDriftAnimation.css";
 @import "./common/picker/picker-card.css";
+@import "./common/displayContent/activityFinished.css";
 
  *{
     --body-bg-color:#FFEEE2;

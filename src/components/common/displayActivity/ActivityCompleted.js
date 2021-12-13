@@ -16,7 +16,7 @@ function listRewards({ treasures, feathers }) {
 function ActivityCompleted({reward , active}) {
 
     return (
-        <div className={`activity-finished ${active}`}>
+        <div className={`activity-finished ${active == "active" ? "activefs": "" }`}>
             <div className="af-header">
                 <img src={certificate} className="certificate" />
                 <div className="title-af">Activity finished !</div>
@@ -25,7 +25,7 @@ function ActivityCompleted({reward , active}) {
 
                 <div className="text-bar-af">Course 100% completed</div>
                 <div className="step-bar-af">
-                    <div className="fill-af" style={{ width: "0%" }}></div>
+                    <div className={`fill-af ${active == "active" ? "filling-af": ""}`} style={{ width: active == "active" ? "100%": "0%" }}></div>
                 </div>
 
                 <div className="recap-af">
