@@ -5,8 +5,8 @@ import { clock_icon, right_arrow, treasure } from "../../../database/images";
 
 function ActivityListContainer({ from, activities, handles }) {
   let row = [];
-  activities.forEach((exercise) => {
-    row.push(ActivityContent(exercise, handles, from));
+  activities.forEach((activity) => {
+    row.push(ActivityContent(activity, handles, from));
   });
 
   return row;
