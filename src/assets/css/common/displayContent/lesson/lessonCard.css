@@ -1,3 +1,4 @@
+/*General*/
 .btn-exercise-container{
     display: flex;
     flex-direction: row;
@@ -18,14 +19,44 @@
     padding: 0rem 4rem;
 }
 
+.shift-lesson{
+    margin-left: 0vw;
+}
+
+/* Title and subtitle */
 .title{
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
+.num-section-less{
+    font-family: 'Lato';
+    font-size: 15px;
+}
+
+.num-primary-block{
+    height: 3.5vh;
+    width: 2vw;
+    background-color: #1B1C20;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:15px
+}
+
+.title-primary-less{
+    font-family: "Lato";
+    font-weight: bold;
+    line-height: 1.1;
+    color: #1B1C20;
+    font-size: 20px;
+    margin-left: 1vw;
+}
+
 .num-block{
-    height: 3vh;
+    height: 3.5vh;
     width: 2vw;
     background-color: #23085A;
     color: white;
@@ -34,11 +65,6 @@
     align-items: center;
     padding:15px
     
-}
-
-.num-section-less{
-    font-family: 'Lato';
-    font-size: 15px;
 }
 
 .title-section-less{
@@ -58,8 +84,7 @@
     margin-bottom: 0;
     color:black;
 }
-
-
+/* ul li */
 .grammar-rule{
     margin-top: 10px;
     margin-bottom: 0;
@@ -70,6 +95,10 @@
     font-size: 17px;
     line-height: 1;
 }
+/* text under title */
+
+/* exemple */
+
 
 .exemple-section{
     display: flex;
@@ -128,3 +157,56 @@ blockquote{
     color:var(--lesson-wordPrimary-color);
 }
 
+/* Table */
+
+.lesson-table{
+    display: flex;
+    align-items:center;
+    flex-wrap: wrap;
+    min-height: 96px;
+    padding: 16px 16px 0;
+    border: 2px solid #466FFF;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 3vh;
+    width: 40vw;
+
+}
+
+.lesson-table p{
+    font-family: 'Lato';
+    
+    color: #1b1c20;
+    margin-bottom: 0.5vh;
+    line-height: 1.5;
+}
+
+.lesson-table table{
+    font-size: 1.1em;
+}
+
+.lesson-table .table-text{
+    line-height: 1.5;
+    font-size: 1em;
+    font-family: 'Lato';
+    color: #1b1c20;
+}
+
+.lesson-table td{
+    border-right: 2px solid #f3f4f5;
+    border-bottom: 2px solid #f3f4f5;
+    padding: 16px;
+    vertical-align: top;
+}
+
+.table-exemple{
+    overflow:scroll;
+    height: 22vh;
+    width: 100%;
+}
+
+.lesson-table .lesson-exemple{
+    margin-top: 1vh;
+
+    width: 25vw;
+}
