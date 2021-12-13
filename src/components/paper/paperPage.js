@@ -10,8 +10,9 @@ function PaperPage({ state, handles }) {
     var id = state.paperPage.paperId;
     var step = state.paperPage.step;
     var currentpaper = paper.find((e) => {
-        return e.id == id;
+        return e.id ==  Object.values(id );
     });
+    console.log(currentpaper)
     return (
         <div id="root-css">
             <img className="bush2" src={bush} />
@@ -19,7 +20,7 @@ function PaperPage({ state, handles }) {
             <main>
                 <DisplaySummary
                     name={`${id} ${": "} ${state.paperPage.paperId}`}
-                    summary={paperData[0].summary}
+                    summary={currentpaper.summary}
                 />
                 <DisplayPaper
                     paper={currentpaper}

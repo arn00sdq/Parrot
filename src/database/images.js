@@ -76,6 +76,7 @@ import chevron_right from "../assets/img/icon/chevron-right.svg"
 import chevron_left from "../assets/img/icon/chevron-left.svg"
 import quote_left from "../assets/img/icon/quote-left.svg"
 import certificate from "../assets/img/icon/certificate-solid.svg"
+import paper_sport_1 from "../assets/img/paper/article/paper-sport1.png"
 
 const flags = {
   netherlands,
@@ -126,7 +127,8 @@ const SummImg = {
 }
 
 const PaperImg = {
-  quote_left
+  quote_left,
+  paper_sport_1
 }
 
 export {

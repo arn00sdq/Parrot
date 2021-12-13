@@ -16,6 +16,7 @@ function displayRewards({ treasures, feathers }) {
 }
 
 function DisplaySummary({ summary, name }) {
+  console.log(summary)
   return (
 
     <div className="summary-container">

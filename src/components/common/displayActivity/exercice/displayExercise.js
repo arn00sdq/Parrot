@@ -36,8 +36,6 @@ function typeExercise(exercise, currentStep, handles, order) {
             
           />
         </div>
-
-
       );
       // <PictBtn />
       break;

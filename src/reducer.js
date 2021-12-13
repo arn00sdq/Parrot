@@ -185,6 +185,20 @@ const reducer = (state, action) => {
           step: parseInt(0),
         },
       };
+      case types.ARTICLE_START:
+        console.log(payload)
+        return {
+          ...state,
+          path: {
+            ...state.path,
+            currentPath: "paperPage",
+          },
+          paperPage: {
+            ...state.paperPage,
+            paperId: payload,
+            step: parseInt(0),
+          },
+        };
     case types.HEADER.MSE_HOVER_LANG:
       return {
         ...state,

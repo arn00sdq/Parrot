@@ -7,7 +7,6 @@ function LessonPage({ state, handles }) {
     var lessons = lessonsData;
     var id = state.lessonPage.lessonId;
     var currentStep = state.lessonPage.step;
-    console.log("id : ")
     var currentLesson = lessons.find((e) => {
         return e.id ==  Object.values(id );
     });

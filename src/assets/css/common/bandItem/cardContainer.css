@@ -89,12 +89,9 @@
     color: #777;
     z-index: 1;
     transition: 0.5s;
-    overflow: hidden;
-    width: 18vw;
     height: 50px;
     position: relative;
     text-align: center;
-    text-overflow: ellipsis;
     
 }
 .text-paperCard{

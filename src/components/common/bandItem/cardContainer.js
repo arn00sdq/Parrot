@@ -4,7 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 
 function CardContainer({ paper, handles }) {
     var to;
-    
+    const navigate = useNavigate()
     switch ("paperPicker") {
       case "paperPicker":
         to = "/paperPage";
@@ -16,14 +16,16 @@ function CardContainer({ paper, handles }) {
       default:
         break;
     }
-    console.log(paper)
+    
     const handleButtonClick = (e) => {
+        console.log(paper.id)
         e.preventDefault();
 
         const {
             target: { value },
         } = e;
-        handles.handlePaperStart(value)
+        handles.handlePaperStart(paper.id)
+        navigate('/paperPage')
         
     }
 
