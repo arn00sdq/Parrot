@@ -17,7 +17,7 @@ function DisplayExercise({ exercise, step, handles }) {
           currentStep={step}
         />
         {typeExercise(exercise, step, handles, order)}
-        <FooterContent />
+        {/* <FooterContent /> */}
       </div>
     </div>
   );

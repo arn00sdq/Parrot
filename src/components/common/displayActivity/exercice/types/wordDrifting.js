@@ -6,11 +6,13 @@ import {
 } from "../../../../../database/images";
 
 function WordDrifting({ content, handles }) {
-  const [isActive, setActive] = useState(false);
-  const [isActiveButton, setActiveButton] = useState(false);
-  const [getActiveWords, setActiveWords] = useState([]);
-  const [getLife, setLife] = useState(3);
-  const [getPoints, setPoints] = useState(0);
+  var possibleWords = [...content.correctWords, ...content.wrongWords];
+  var [isActive, setActive] = useState(false);
+  var [isActiveButton, setActiveButton] = useState(false);
+  var [getActiveWords, setActiveWords] = useState([]);
+  var [getLife, setLife] = useState(3);
+  var [getPoints, setPoints] = useState(0);
+  var [getId, setId] = useState(0);
   var row = [];
 
   const handleButtonClick = (e) => {
@@ -20,13 +22,21 @@ function WordDrifting({ content, handles }) {
       target: { value },
     } = e;
 
-    if (content.theme[0].answer.includes(value)) {
+    if (content.correctWords.includes(value)) {
       toggleClass();
-      handles.handleAddPointExercisePage();
-      renderButton();
+      setPoints(getPoints+100);
     } else {
+      if (getPoints < 50) {
+        setPoints(0)
+      } else {
+        setPoints(getPoints-50)
+      }
     }
   };
+
+  const wordIsActive = (id => {
+    return getActiveWords.filter(w => w.id === id).length === 1
+  })
 
   const toggleClass = () => {
     setActive(!isActive);
@@ -36,41 +46,47 @@ function WordDrifting({ content, handles }) {
     }, 800);
   };
 
-  const renderButton = () => {
-    row.push(
-      <button
-        onClick={(e) => handleButtonClick(e)}
-        value={"saw"}
-        className={isActiveButton ? "active-container" : "word-vrom"}
-      >
-        Doggo
-      </button>
-    );
+  const renderWords = () => {
+    let row = [];
+    getActiveWords.forEach((word) => {
+      row.push(word.content);
+    });
+    return row;
   };
-
   /* Defintion vague */
-  function addWord(possibleWords) {
+  function addWord() {
     let randomWord =
       possibleWords[Math.floor(Math.random() * possibleWords.length)];
-    let randomY = -Math.round(Math.random()*250);
-    return (
-      <div className="word-container">
-        <button
-          onClick={(e) => handleButtonClick(e)}
-          value={"saw"}
-          className={isActiveButton ? "active-container" : "word-vrom"}
-          style={{ transform: `translateY(${randomY}px)` }}
-        >
-          {randomWord}
-        </button>
-        <span
-          className={isActive ? "active-points points-word" : "points-word"}
-        >
-          +1
-        </span>
-      </div>
-    );
+    let randomY = -Math.round(Math.random() * 250);
+    setActiveWords([
+      ...getActiveWords,
+      {
+        id: getId,
+        content: (
+          <div className="word-container" id={getId}>
+            <button
+              onClick={(e) => handleButtonClick(e)}
+              value={randomWord}
+              className={isActiveButton ? "active-container" : "word-vrom"}
+              style={{ transform: `translateY(${randomY}px)` }}
+            >
+              {randomWord}
+            </button>
+            <span
+              className={isActive ? "active-points points-word" : "points-word"}
+            >
+              +1
+            </span>
+          </div>
+        ),
+      },
+    ]);
+    setId(getId++)
   }
+
+  setTimeout(() => {
+    addWord();
+  }, 3000);
 
   return (
     <>
@@ -81,7 +97,7 @@ function WordDrifting({ content, handles }) {
         <div className="life-container">
           <span className="life-number">{getLife}</span>
         </div>
-        {addWord([...content.correctWords, ...content.wrongWords])}
+        {renderWords()}
         <div className="points-container">
           <img className="life-icon" src={feather_icon} />
           <span
