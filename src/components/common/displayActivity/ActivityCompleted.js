@@ -2,9 +2,9 @@ import React from "react";
 
 import { certificate } from "../../../database/images";
 
-function ActivityCompleted() {
+function ActivityCompleted({active}) {
     return (
-        <div className="activity-finished">
+        <div className={`activity-finished ${active}`}>
             <div className="af-header">
                 <img src={certificate} className="certificate" />
                 <div className="title-af">Activity finished !</div>
