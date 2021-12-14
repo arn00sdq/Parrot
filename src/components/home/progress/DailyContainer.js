@@ -3,14 +3,16 @@ import Reward from '../../common/reward/Reward';
 import ProgressBar from '../../common/tool/ProgressBar'
 import {feather_icon,treasure } from '../../../database/images';
 
-function DailyContainer(props){
+function DailyContainer({progressEx, imgReward, dailyText}){
+    console.log(progressEx.count)
+    var barProgress = (progressEx.count / progressEx.total) * 100 
     return (
         <div className="objectif-container">
             <Reward className="reward" type="treasure"/>
-            <div className="progress-text-card">{props.dailyText}</div>
+            <div className="progress-text-card">{dailyText}</div>
             <div className="container-bar-xp">
-                <div className="small-text-xp">2/3 steps</div>
-                <ProgressBar width="5vw" progress="70%" />
+                <div className="small-text-xp">{progressEx.count} / {progressEx.total}</div>
+                <ProgressBar width="5vw" progress={barProgress+"%"} />
             </div>   
         </div>
     );

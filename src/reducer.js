@@ -207,27 +207,54 @@ const reducer = (state, action) => {
         case "exercisePage":
           return {
             ...state,
+            home:{
+              ...state.home,
+              dailyObjectives:{
+                ...state.home.dailyObjectives,
+                exercises:{
+                  ...state.home.dailyObjectives.exercises,
+                  count: parseInt(state.home.dailyObjectives.exercises.count + 1),
+                },
+              },
+            },
             exercisePage: {
               ...state.exercisePage,
-            /*  exerciseId : payload.id,*/
               end : payload.isFinished
             },
           };
         case "lessonPage":
           return {
             ...state,
+            home:{
+              ...state.home,
+              dailyObjectives:{
+                ...state.home.dailyObjectives,
+                lessons:{
+                  ...state.home.dailyObjectives.lessons,
+                  count: parseInt(state.home.dailyObjectives.lessons.count + 1),
+                },
+              },
+            },
             lessonPage: {
               ...state.lessonPage,
-              /*lessonId : payload.id,*/
               end : payload.isFinished
             }
           };
         case "paperPage":
           return {
             ...state,
+            home:{
+              ...state.home,
+              dailyObjectives:{
+                ...state.home.dailyObjectives,
+                papers:{
+                  ...state.home.dailyObjectives.papers,
+                  count: parseInt(state.home.dailyObjectives.papers.count + 1),
+                },
+              },
+            },
             paperPage: {
               ...state.paperPage,
-             /* paperId : payload.id,*/
               end : payload.isFinished
             }
           };

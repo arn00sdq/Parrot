@@ -23,6 +23,7 @@ function Home({ state, handles }) {
   let exercisesTotal = exercisesData.length;
   let papersRead = state.user.papersRead.length;
   let papersTotal = papersData.length;
+
   return (
     <main>
       <img className="bush2" src={bush} />
