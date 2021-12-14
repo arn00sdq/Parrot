@@ -5,6 +5,7 @@ import {
   feather,
   Word2Img,
   pres_perfect,
+  
 } from "./images";
 import { data as levels } from "./levels";
 import { data as themes } from "./themes";
@@ -40,11 +41,11 @@ var data = [
           word: "Mountain",
         },
         {
-          url: medium_parrot,
+          url: Word2Img.bird_photo,
           word: "Bird",
         },
         {
-          url: feather,
+          url: Word2Img.feather_photo,
           word: "Feather",
         },
         {

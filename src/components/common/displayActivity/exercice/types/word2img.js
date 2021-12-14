@@ -52,7 +52,7 @@ function Word2img({reward, content, currentStep, handles, isFinished,from }) {
       <div className="center">
         <div className="monitor">
           <img
-            src={finished == false ? content.images[currentStep].url : achievement}
+            src={finished == false ? content.images[currentStep].url : Word2Img.badge_photo}
             className="wordImg-picture"
           />
           <img className="monitor-logo" src={Word2Img.apple}></img>

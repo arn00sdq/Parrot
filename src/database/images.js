@@ -77,6 +77,9 @@ import chevron_left from "../assets/img/icon/chevron-left.svg"
 import quote_left from "../assets/img/icon/quote-left.svg"
 import certificate from "../assets/img/icon/certificate-solid.svg"
 import paper_sport_1 from "../assets/img/paper/article/paper-sport1.png"
+import feather_photo from "../assets/img/exercise/word2Img/feather.jpg"
+import badge_photo from "../assets/img/exercise/word2Img/finished.jpg"
+import bird_photo from "../assets/img/exercise/word2Img/bird.jpg"
 
 const flags = {
   netherlands,
@@ -96,7 +99,10 @@ const Word2Img = {
   clarinette,
   trombone,
   flute_traversiere,
-  apple
+  apple,
+  feather_photo,
+  badge_photo,
+  bird_photo
 };
 
 const ProfilImg = {
