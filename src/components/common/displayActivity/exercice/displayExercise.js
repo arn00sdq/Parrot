@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { cross } from "../../../../database/images";
 
 import Word2img from "./types/word2img";
-import WordDrifting from "./types/wordDrifting"
+import WordDriftingGame from "./types/wordDrifting"
 import HeaderContent from "../common/headerContent";
 import FooterContent from "../common/footerContent";
 
@@ -47,9 +47,9 @@ function typeExercise(exercise, currentStep, handles, order, isFinished,from) {
         return (
         <div className="drift-body">
           <div className="wordImg-order">{order}</div>
-          <WordDrifting 
+          <WordDriftingGame 
             content={exercise.content}
-            currentStep={currentStep}
+            /* currentStep={currentStep} */
             handles={handles}
           />
         </div>
