@@ -47,7 +47,6 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
     width: 20vw;
 }
 
@@ -58,11 +57,13 @@
     font-family: Quicksand;
     font-size: 17px;
     width: 10vw;
+    margin-left: 1vw;
 }
 
 .container-bar-xp{
     display: flex;
     flex-direction: column;
+    margin-left: 1.5vw;
     
 }
 
@@ -102,5 +103,12 @@
 .container-card-body .daily-award{
 
     margin-top: 2vh;
+}
+
+.daily-text-finish{
+    color :green;
+    font-family: 'Lato';
+    font-size: 15px;
+    margin-left: 1.5vw;
 }
 

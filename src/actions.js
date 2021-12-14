@@ -43,6 +43,14 @@ const hoverUser = () => ({
 });
 
 //HOME
+
+//PROGRESS
+
+const incrementProgression = (from) => ({
+  type: actionTypes.HOME.INCREMENT_STPS,
+  payload: { from },
+})
+
 //    DASHBOARD
 const changeSection = (selectedSection) => ({
   type: actionTypes.HOME.DSHB_CHANGE_SECTION,
@@ -116,4 +124,4 @@ export {levelFilterChange,articleStart,categoryIconClick,changeLanguage,changeSe
     helpButtonClick,hoverFeather,hoverFlame,hoverLanguage,hoverUser,
     incrementExercisePageStep,lessonStart,themeFilterChange,trainBtnClick,
     substractLifeExercicePage,addPointsExercicePage, inputSearchFilterChange, 
-    incrementPageStep,decrementPageStep,activityEnd}
+    incrementPageStep,decrementPageStep,activityEnd, incrementProgression}

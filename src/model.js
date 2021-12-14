@@ -12,35 +12,40 @@ const data = {
     selectedLanguage: "English (US)",
     featherCount: "4",
     flameCount: "2",
-    exercisesDone: [{id: "EX1"}],
-    lessonsRead: [{id: "LE1"}],
-    papersRead: [{id: "PA1"}],
+    exercisesDone: [{ id: "EX1" }],
+    lessonsRead: [{ id: "LE1" }],
+    papersRead: [{ id: "PA1" }],
   },
   home: {
-    progression: {
-      dailyChallenge: [
-        {
-          id: "1",
-          completed: false,
-          rewards: {
-            feathers: "0",
-            treasures: "3",
-          },
+    dailyChallenge: [
+      {
+        id: "1",
+        completed: false,
+        rewards: {
+          feathers: "0",
+          treasures: "3",
         },
-      ],
-      dailyObjectives: [
-        {
-          id: "1",
-          progression: {
-            count: "0",
-            total: "2",
-          },
-        },
-      ],
-      nextAward: {
-        currentXP: "5",
-        totalXP: "10",
       },
+    ],
+    dailyObjectives: 
+      {
+        id: "1",
+        exercises: {
+          count: "0",
+          total: "1",
+        },
+        lessons: {
+          count: "0",
+          total: "3",
+        },
+        papers: {
+          count: "0",
+          total: "0",
+        }
+      },
+    nextAward: {
+      currentStep: "1",
+      totalStep: "2",
     },
     dashboard: {
       section: "recentActivities",
@@ -108,17 +113,18 @@ const data = {
       ],
     },
   },
+
   exercisePage: {
     exerciseId: "EX1",
     step: "0",
     end: false,
-    wordDrift : {
-      life : 3,
-      points : 0,
+    wordDrift: {
+      life: 3,
+      points: 0,
     }
   },
   exercisePicker: {
-    keywords_input : "",
+    keywords_input: "",
     selectedThemes: [],
     selectedLevels: []
   },
@@ -128,7 +134,7 @@ const data = {
     end: false,
   },
   lessonPicker: {
-    keywords_input : "",
+    keywords_input: "",
     selectedTenses: [],
     selectedLevels: []
   },
@@ -138,7 +144,7 @@ const data = {
     end: false
   },
   paperPicker: {
-    keywords_input : "",
+    keywords_input: "",
     selectedThemes: [],
     selectedLevels: []
   },

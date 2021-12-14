@@ -7,6 +7,10 @@ import * as actions from "./actions";
 const Controller = () => {
   const [state, dispatch] = useReducer(reducer, model);
 
+  function handlesIncrementProgression(from){
+    dispatch(actions.incrementProgression(from));
+  }
+
   function handleExerciseNextStep(from) {
     dispatch(actions.incrementExercisePageStep(from));
   }
@@ -65,6 +69,7 @@ const Controller = () => {
     handlePaperStart,
     handleLessonStart,
     handleEndActivity,
+    handlesIncrementProgression,
   };
   
 

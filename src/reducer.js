@@ -200,7 +200,54 @@ const reducer = (state, action) => {
             step: parseInt(0),
           },
         };
-    /**/
+    /*STEPS*/
+    case types.HOME.INCREMENT_STPS:{
+      switch (payload.from) {
+        case "exercisePage":
+          return {
+            ...state,
+            home:{
+              ...state.home,
+              dailyObjectives:{
+                ...state.home.dailyObjectives,
+                exercises:{
+                  ...state.home.dailyObjectives.exercises,
+                  count: parseInt(state.home.dailyObjectives.exercises.count + 1),
+                },
+              },
+            },
+          };
+        case "lessonPage":
+          return {
+            ...state,
+            home:{
+              ...state.home,
+              dailyObjectives:{
+                ...state.home.dailyObjectives,
+                lessons:{
+                  ...state.home.dailyObjectives.lessons,
+                  count: parseInt(state.home.dailyObjectives.lessons.count + 1),
+                },
+              },
+            },
+          };
+        case "paperPage":
+          return {
+            ...state,
+            home:{
+              ...state.home,
+              dailyObjectives:{
+                ...state.home.dailyObjectives,
+                papers:{
+                  ...state.home.dailyObjectives.papers,
+                  count: parseInt(state.home.dailyObjectives.papers.count + 1),
+                },
+              },
+            },
+          };
+      }
+    /**/  
+    };
     case types.ACTIVTY_END:
       console.log(payload.isFinished)
       switch (payload.from) {
@@ -209,7 +256,6 @@ const reducer = (state, action) => {
             ...state,
             exercisePage: {
               ...state.exercisePage,
-            /*  exerciseId : payload.id,*/
               end : payload.isFinished
             },
           };
@@ -218,7 +264,6 @@ const reducer = (state, action) => {
             ...state,
             lessonPage: {
               ...state.lessonPage,
-              /*lessonId : payload.id,*/
               end : payload.isFinished
             }
           };
@@ -227,7 +272,6 @@ const reducer = (state, action) => {
             ...state,
             paperPage: {
               ...state.paperPage,
-             /* paperId : payload.id,*/
               end : payload.isFinished
             }
           };

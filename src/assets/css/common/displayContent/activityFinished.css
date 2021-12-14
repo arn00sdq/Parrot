@@ -11,15 +11,16 @@
     height: 40vh;
     width: 20vw;
     background: #fff;
-    box-shadow: 5px 5px 20px 1px rgba(0,0,0,0.5);
+    box-shadow: 0px 5px 15px -1px rgba(0,0,0,0.5);
+    border-radius: 3px;
     display: flex;
     flex-direction: column;
-    padding: 2vh 3vw;
+    padding: 4vh 3vw;
     opacity: 0;
     visibility: hidden;
-    transition: 0.2s;
     opacity: 1;
     z-index: 5;
+    transition: 0.5s;
 }
 
 .activefs{
@@ -71,7 +72,7 @@
     background-color: orange;
     height: 10px;
     width: 0%;
-   /* transition: 1.5s;*/
+    transition: 0.5s;
     
 }
 
@@ -80,13 +81,15 @@
 }
 
 .af-text{
-    font-size: 18px;
+    font-size: 19px;
+    font-weight: bold;
+    color: #767c7e;
 }
 
 .af-sub-text{
-    color: #718096;
+    font-family: 'Lato';
+    color: black;
     font-size: 16px;
-    font-weight: bold;
 }
 
 .reward-af{

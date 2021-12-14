@@ -19,8 +19,8 @@ function ActivityCompleted({reward , active, isFinished, handles,from}) {
 
     const handleButtonClick = (value) => {
         handles.handleEndActivity(value,"",from);
+        handles.handlesIncrementProgression(from);
     };
-
     return (
         <div className={`activity-finished ${isFinished == false ?"" : "activefs" }`}>
             <div className="af-header">
@@ -31,7 +31,7 @@ function ActivityCompleted({reward , active, isFinished, handles,from}) {
 
                 <div className="text-bar-af">Course 100% completed</div>
                 <div className="step-bar-af">
-                    <div className={`fill-af ${active == "active" ? "filling-af": ""}`} style={{ width: active == "active" ? "100%": "0%" }}></div>
+                    <div className={`fill-af ${active == "active" ? "filling-af": ""}`} style={{ width: isFinished == true ? "100%": "0%" }}></div>
                 </div>
 
                 <div className="recap-af">
