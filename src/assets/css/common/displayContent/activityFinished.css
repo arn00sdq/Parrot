@@ -17,7 +17,7 @@
     padding: 2vh 3vw;
     opacity: 0;
     visibility: hidden;
-    transition: 0.5s;
+    transition: 0.2s;
     opacity: 1;
 }
 
@@ -70,7 +70,7 @@
     background-color: orange;
     height: 10px;
     width: 0%;
-    transition: 1.5s;
+   /* transition: 1.5s;*/
     
 }
 
@@ -80,13 +80,23 @@
 
 .af-text{
     font-size: 18px;
-    margin-top: 2vh;
 }
 
 .af-sub-text{
     color: #718096;
     font-size: 16px;
     font-weight: bold;
+}
+
+.reward-af{
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.af-mr{
+    margin-left: 1vw;
 }
 .af-footer{
     display: flex;

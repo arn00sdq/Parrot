@@ -12,7 +12,7 @@ function LessonPage({ state, handles }) {
     var currentLesson = lessonsData.find((e) => {
         return e.id ==  id ;
     });
-    console.log(currentLesson)
+
     return (
         <div id="root-css">
             <main>

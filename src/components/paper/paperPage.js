@@ -13,7 +13,7 @@ function PaperPage({ state, handles }) {
     var currentpaper = paper.find((e) => {
         return e.id ==  id ;
     });
-    console.log(currentpaper)
+
     return (
         <div id="root-css">
             <img className="bush2" src={bush} />

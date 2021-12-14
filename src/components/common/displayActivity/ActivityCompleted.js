@@ -18,16 +18,14 @@ function listRewards({ treasures, feathers }) {
 function ActivityCompleted({reward , active, isFinished, handles,from}) {
 
     const handleButtonClick = (value) => {
-        console.log("sss");
         handles.handleEndActivity(value,"",from);
     };
 
-    console.log(isFinished)
     return (
         <div className={`activity-finished ${isFinished == false ?"" : "activefs" }`}>
             <div className="af-header">
                 <div className="title-af">Activity finished !</div>
-                <img src={cross_icon} className="cross" />
+                <img onClick={() => handleButtonClick(false)} src={cross_icon} className="cross" />
             </div>
             <div className="af-summarize">
 
@@ -38,8 +36,11 @@ function ActivityCompleted({reward , active, isFinished, handles,from}) {
 
                 <div className="recap-af">
                     <div className="af-text">Lesson en cours :<div className="af-sub-text">Present perfect and be -ing </div></div>
-                    <div className="af-text">Reward :</div>
-                    <div>{listRewards(reward)}</div>
+                    <div className="reward-af">
+                        <div className="af-text">Reward : </div>
+                        <div className="af-mr">{listRewards(reward)}</div>
+                    </div>
+                    
                 </div>
             </div>
             <div className="af-footer">
