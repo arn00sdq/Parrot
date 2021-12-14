@@ -9,10 +9,10 @@ import KeywordFilter from "../common/filter/keywordFilter";
 
 
 function ExercicePicker({ state, handles }) {
+  console.log(state.exercisePicker.selectedThemes)
   var exercisesToShow =
     state.exercisePicker.selectedThemes.length +
-      state.exercisePicker.selectedLevels.length ==
-    0
+      state.exercisePicker.selectedLevels.length == 0
       ? exercisesData
       : exercisesData.filter((ex) => {
           let corresponds = false;

@@ -8,14 +8,14 @@ const reducer = (state, action) => {
   let existsIndex, newLevels, newThemes, newTenses;
   switch (type) {
     case types.FILTER.THEME_CLK:
-      switch (from) {
+      switch (payload.from) {
         case "exercisePicker":
           newThemes = state.exercisePicker.selectedThemes;
           existsIndex = newThemes.findIndex((theme) => {
-            return theme.name === filterName;
+            return theme.name === payload.filterName;
           });
           existsIndex == -1
-            ? newThemes.push({ name: filterName })
+            ? newThemes.push({ name: payload.filterName })
             : newThemes.splice(existsIndex, 1);
           return {
             ...state,
@@ -27,10 +27,10 @@ const reducer = (state, action) => {
         case "paperPicker":
           newThemes = state.paperPicker.selectedThemes;
           existsIndex = newThemes.findIndex((theme) => {
-            return theme.name === filterName;
+            return theme.name === payload.filterName;
           });
           existsIndex == -1
-            ? newThemes.push({ name: filterName })
+            ? newThemes.push({ name: payload.filterName })
             : newThemes.splice(existsIndex, 1);
           return {
             ...state,
@@ -43,14 +43,14 @@ const reducer = (state, action) => {
           break;
       }
     case types.FILTER.TENSE_CLK:
-      switch (from) {
+      switch (payload.from) {
         case "lessonPicker":
           newTenses = state.lessonPicker.selectedTenses;
           existsIndex = newTenses.findIndex((lesson) => {
-            return lesson.name === filterName;
+            return lesson.name === payload.filterName;
           });
           existsIndex == -1
-            ? newTenses.push({ name: filterName })
+            ? newTenses.push({ name: payload.filterName })
             : newTenses.splice(existsIndex, 1);
           return {
             ...state,
@@ -63,14 +63,14 @@ const reducer = (state, action) => {
           break;
       }
     case types.FILTER.LEVEL_CLK:
-      switch (from) {
+      switch (payload.from) {
         case "exercisePicker":
           newLevels = state.exercisePicker.selectedLevels;
           existsIndex = newLevels.findIndex((level) => {
-            return level.name === filterName;
+            return level.name === payload.filterName;
           });
           existsIndex == -1
-            ? newLevels.push({ name: filterName })
+            ? newLevels.push({ name: payload.filterName })
             : newLevels.splice(existsIndex, 1);
           return {
             ...state,
@@ -82,10 +82,10 @@ const reducer = (state, action) => {
         case "lessonPicker":
           newLevels = state.lessonPicker.selectedLevels;
           existsIndex = newLevels.findIndex((lesson) => {
-            return lesson.name === filterName;
+            return lesson.name === payload.filterName;
           });
           existsIndex == -1
-            ? newLevels.push({ name: filterName })
+            ? newLevels.push({ name: payload.filterName })
             : newLevels.splice(existsIndex, 1);
           return {
             ...state,
@@ -97,10 +97,10 @@ const reducer = (state, action) => {
         case "paperPicker":
           newLevels = state.paperPicker.selectedLevels;
           existsIndex = newLevels.findIndex((paper) => {
-            return paper.name === filterName;
+            return paper.name === payload.filterName;
           });
           existsIndex == -1
-            ? newLevels.push({ name: filterName })
+            ? newLevels.push({ name: payload.filterName })
             : newLevels.splice(existsIndex, 1);
           return {
             ...state,
