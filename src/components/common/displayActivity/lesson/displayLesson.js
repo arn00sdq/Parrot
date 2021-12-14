@@ -41,7 +41,7 @@ function DisplayLesson({ lesson, step, handles, from, isFinished }) {
         currentStep={step}
       />
       {typeLesson(lesson, step, handles, isFinished,from)}
-      <FooterContent id={lesson.id} handles={handles} totalStep={currentStepContent} currentStep={step} from={from}/>
+      <FooterContent id={lesson.id} handles={handles} totalStep={currentStepContent} currentStep={step} from={from} isFinished={isFinished}/>
     </div>
   );
 }
