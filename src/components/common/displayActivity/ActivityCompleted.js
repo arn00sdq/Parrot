@@ -20,8 +20,6 @@ function ActivityCompleted({reward , active, isFinished, handles,from}) {
     const handleButtonClick = (value) => {
         handles.handleEndActivity(value,"",from);
     };
-
-    console.log(isFinished)
     return (
         <div className={`activity-finished ${isFinished == false ?"" : "activefs" }`}>
             <div className="af-header">

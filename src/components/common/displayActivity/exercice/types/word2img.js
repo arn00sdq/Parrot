@@ -26,18 +26,16 @@ function Word2img({ reward, content, currentStep, handles, isFinished, from }) {
       setIndex(wordImg.findIndex(word => word == value))
       setTimeout(() => {
         handles.handleExerciseNextStep("exercicePage");
-      }, 1500);
+        setIndex(-1);
+      }, 500);
 
     }
   };
 
   if (finished == false) {
-
     content.words[currentStep].forEach((word, i) => {
-      console.log(word, i)
       wordImg.push(word)
       row.push(
-
         <div className="w2i-btn-container">
           <button
             onClick={(e) => handleButtonClick(e)}
