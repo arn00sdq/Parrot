@@ -1,7 +1,7 @@
 .pct-card{
 
     position: relative;
-    height: 20vh;
+    height: 25vh;
     width: 55vw;
 }
 
@@ -71,9 +71,9 @@
     height: 40%;
     width: 100%;
     text-overflow: ellipsis;
-    font-family: sans-serif;
-    color: #777;
-    font-size: 90%;
+    font-family: 'Lato';
+    color: #767c7e;
+    font-size: 17px;
 }
 
 
@@ -107,13 +107,19 @@
     margin-right: 1vw;
 }
 
+.pct-card:hover .btn-pctCard{
+    background-color:#ff568f
+}
+
+
 .btn-pctCard:hover{
     cursor: pointer;
 }
 
 .pct-card:hover .text-pct,
-.pct-card:hover .title-pct
+.pct-card:hover .title-pct,
 .pct-card:hover .time-shift
 {
     color:#fff
 }
+
