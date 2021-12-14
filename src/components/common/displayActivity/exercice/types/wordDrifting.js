@@ -21,9 +21,9 @@ function WordDrifting({ content, handles }) {
       const index = this.length
       this.push(...arguments)
     } */
-    activate(word) {
-      console.log(`word`, word)
-      word.active = true;
+    activate(word, boolActive) {
+      console.log(`word`, boolActive)
+      word.active = boolActive;
       return word;
     }
     /* Defintion vague */
@@ -35,8 +35,7 @@ function WordDrifting({ content, handles }) {
       setActiveWords(
         getActiveWords.splice(
           getActiveWords.indexOf(wordTreated),
-          1,
-          this.activate(wordTreated)
+          1,this.activate("test", true)
         )
       );
       setTimeout(() => {
@@ -45,7 +44,8 @@ function WordDrifting({ content, handles }) {
     }
 
     removeWord(word) {
-      setActiveWords(getActiveWords.filter((w) => w.text != word));
+      setActiveWords(getActiveWords.filter((w) => w.text != word), false);
+      this.activate("lol", false)
     }
 
     addWord() {
@@ -98,11 +98,11 @@ function WordDrifting({ content, handles }) {
     console.log(`renderWords`, getActiveWords)
     let row = [];
     getActiveWords.forEach((word) => {
-      console.log(word.active? undefined : 'lol non active')
+      console.log(word.active ? "active" : 'lol non active')
       row.push(
         <div className="word-container" id={word.text}>
           <button
-            onClick={word.active? undefined : ((e) => handleButtonClick(e))}
+            onClick={word.active ? ((e) => handleButtonClick(e)): undefined }
             value={word.text}
             className={
               !word.active ? "word-vrom active" : "active-container"
@@ -128,8 +128,8 @@ function WordDrifting({ content, handles }) {
     if (getActiveWords.length < 2) {
       Controller.addWord();
     }
-  }, 8000);
-  
+  }, 4000);
+
   return (
     <>
       <div className="title-drift">

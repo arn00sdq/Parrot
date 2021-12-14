@@ -1,6 +1,6 @@
 import React from 'react';
 import ActivityCompleted from "../../ActivityCompleted";
-function Classic({reward, content, currentStep,steps, handles }) {
+function Classic({ reward, content, currentStep, steps, handles, isFinished, from }) {
 
     const [isContainerActive, setIsContainerActive] = React.useState(false);
 
@@ -11,14 +11,17 @@ function Classic({reward, content, currentStep,steps, handles }) {
     const toggleOut = () => {
         setIsContainerActive(false);
     };
-    var active = currentStep == steps - 1  ? "active" : "";
+    var active = currentStep == steps - 1 ? "active" : "";
 
     console.log('content :>> ', content);
     return (
-        <div className="classic-body" key={currentStep}>
-            {content}
-            <ActivityCompleted reward={reward} active={active} />
-        </div>
+        <>
+            <div className={isFinished == false ? "classic-body" : "classic-body af-opacity"} key={currentStep}>
+                {content}
+
+            </div>
+            <ActivityCompleted reward={reward} active={active} isFinished={isFinished} handles={handles} from={from} />
+        </>
     );
 }
 

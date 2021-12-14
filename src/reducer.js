@@ -173,7 +173,7 @@ const reducer = (state, action) => {
         },
       };
     case types.LESSON_START:
-      console.log(payload.lessonId)
+      console.log(payload.paperId)
       return {
         ...state,
         path: {
@@ -187,7 +187,7 @@ const reducer = (state, action) => {
         },
       };
       case types.ARTICLE_START:
-        console.log(payload)
+        console.log(payload.articleId)
         return {
           ...state,
           path: {
@@ -196,20 +196,20 @@ const reducer = (state, action) => {
           },
           paperPage: {
             ...state.paperPage,
-            paperId: payload,
+            paperId: payload.articleId,
             step: parseInt(0),
           },
         };
     /**/
     case types.ACTIVTY_END:
+      console.log(payload.isFinished)
       switch (payload.from) {
         case "exercicePage":
           return {
             ...state,
             exercisePage: {
               ...state.exercisePage,
-              exerciseId : payload.id,
-              step: parseInt(state.exercisePage.step + 1),
+            /*  exerciseId : payload.id,*/
               end : payload.isFinished
             },
           };
@@ -218,8 +218,7 @@ const reducer = (state, action) => {
             ...state,
             lessonPage: {
               ...state.lessonPage,
-              lessonId : payload.id,
-              step: parseInt(state.lessonPage.step + 1),
+              /*lessonId : payload.id,*/
               end : payload.isFinished
             }
           };
@@ -228,8 +227,7 @@ const reducer = (state, action) => {
             ...state,
             paperPage: {
               ...state.paperPage,
-              paperId : payload.id,
-              step: parseInt(state.paperPage.step + 1),
+             /* paperId : payload.id,*/
               end : payload.isFinished
             }
           };

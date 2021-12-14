@@ -1,7 +1,8 @@
 import React from "react";
 
-import { certificate } from "../../../database/images";
+import { certificate,cross_icon } from "../../../database/images";
 import Reward from "../reward/Reward"
+import { Link } from "react-router-dom";
 
 function listRewards({ treasures, feathers }) {
     let row = [];
@@ -11,15 +12,22 @@ function listRewards({ treasures, feathers }) {
       row.push(<Reward className="reward" type="feather" />);
     return row;
 }
-  
 
-function ActivityCompleted({reward , active}) {
-    console.log("j'ai capté")
+
+
+function ActivityCompleted({reward , active, isFinished, handles,from}) {
+
+    const handleButtonClick = (value) => {
+        console.log("sss");
+        handles.handleEndActivity(value,"",from);
+    };
+
+    console.log(isFinished)
     return (
-        <div className={`activity-finished ${active == "active" ? "activefs": "" }`}>
+        <div className={`activity-finished ${isFinished == false ?"" : "activefs" }`}>
             <div className="af-header">
-                <img src={certificate} className="certificate" />
                 <div className="title-af">Activity finished !</div>
+                <img src={cross_icon} className="cross" />
             </div>
             <div className="af-summarize">
 
@@ -35,11 +43,8 @@ function ActivityCompleted({reward , active}) {
                 </div>
             </div>
             <div className="af-footer">
-                <div className="af-row1">
-                    <button className="button-af" >Quittez</button>
-                    <button className="button-af">S'entrainer</button>
-                </div>
-                <button className="button-af">Restez</button>
+               <Link to="/home"><button onClick={() => handleButtonClick(false)} className="button-af"  >Quittez</button></Link>   
+                <button className="button-af">S'entrainer</button>
             </div>
         </div>
     );

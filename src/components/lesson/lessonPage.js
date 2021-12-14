@@ -7,9 +7,9 @@ function LessonPage({ state, handles }) {
     var lessons = lessonsData;
     var id = state.lessonPage.lessonId;
     var currentStep = state.lessonPage.step;
-    console.log(lessonsData)
+    var isFinished = state.lessonPage.end;
+   
     var currentLesson = lessonsData.find((e) => {
-        console.log(e.id == id)
         return e.id ==  id ;
     });
     console.log(currentLesson)
@@ -25,6 +25,7 @@ function LessonPage({ state, handles }) {
                     step={currentStep}
                     handles={handles}
                     from="lessonPage"
+                    isFinished = {isFinished}
                 />
             </main>
         </div>

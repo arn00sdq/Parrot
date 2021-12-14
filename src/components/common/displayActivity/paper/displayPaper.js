@@ -3,7 +3,7 @@ import HeaderContent from '../common/headerContent'
 import FooterContent from '../common/footerContent'
 import Article from './type/article'
 
-function typeArticle(paper,currentStep,handles) {
+function typeArticle(paper,currentStep,handles, isFinished,from) {
     const row = [];
     const currentStepContent = paper.content.stepContent[currentStep]
     
@@ -11,8 +11,13 @@ function typeArticle(paper,currentStep,handles) {
         case "Article":
             return ( 
                 <Article 
+                    reward = {paper.summary.rewards}
                     content={currentStepContent} 
                     currentStep={currentStep}
+                    steps={paper.content.stepContent.length}
+                    handles={handles}
+                    isFinished = {isFinished}
+                    from = {from}
                 />
             )
             break;
@@ -26,8 +31,10 @@ function typeArticle(paper,currentStep,handles) {
     return row;
 }
 
-function displayPaper({paper, step, handles,from}) {
-
+function displayPaper({paper, step, handles,from, isFinished }) {
+    
+    const currentStepContent = paper.content.stepContent.length;
+    console.log(currentStepContent, " ", step)
     return (
         <div className="paper-Card">
                 <HeaderContent 
@@ -35,8 +42,8 @@ function displayPaper({paper, step, handles,from}) {
                     steps = {paper.content.steps} 
                     currentStep = {step}
                 />
-                {typeArticle(paper,step,handles)}
-                <FooterContent handles={handles} currentStep={step} from ={from}/>
+                {typeArticle(paper,step,handles, isFinished,from)}
+                <FooterContent id={paper.id} handles={handles} totalStep={currentStepContent} currentStep={step} from={from}/>
         </div>
     );
 }

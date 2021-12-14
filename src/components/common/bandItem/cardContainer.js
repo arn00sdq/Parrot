@@ -28,7 +28,7 @@ function CardContainer({ paper, handles }) {
         navigate('/paperPage')
         
     }
-
+    console.log(paper.id)
   return (
     <div className="paperCard">
       <div className="box">

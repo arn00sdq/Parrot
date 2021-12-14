@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import HeaderContent from '../common/headerContent'
 import FooterContent from '../common/footerContent'
 
-function typeLesson(lesson, currentStep, handles) {
+function typeLesson(lesson, currentStep, handles, isFinished,from) {
   const row = [];
   switch (lesson.type) {
     case "Classic":
@@ -15,6 +15,8 @@ function typeLesson(lesson, currentStep, handles) {
           currentStep={currentStep}
           steps={lesson.content.stepsContent.length}
           handles={handles}
+          isFinished = {isFinished}
+          from = {from}
         />
       );
       // <PictBtn />
@@ -29,7 +31,7 @@ function typeLesson(lesson, currentStep, handles) {
   return row;
 }
 
-function DisplayLesson({ lesson, step, handles, from }) {
+function DisplayLesson({ lesson, step, handles, from, isFinished }) {
   const currentStepContent = lesson.content.stepsContent.length;
   return (
     <div className="lesson-card">
@@ -38,7 +40,7 @@ function DisplayLesson({ lesson, step, handles, from }) {
         steps={lesson.content.stepsContent.length}
         currentStep={step}
       />
-      {typeLesson(lesson, step, handles)}
+      {typeLesson(lesson, step, handles, isFinished,from)}
       <FooterContent id={lesson.id} handles={handles} totalStep={currentStepContent} currentStep={step} from={from}/>
     </div>
   );

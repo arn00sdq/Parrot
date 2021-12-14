@@ -9,8 +9,9 @@ function PaperPage({ state, handles }) {
     var paper = paperData;
     var id = state.paperPage.paperId;
     var step = state.paperPage.step;
+    var isFinished = state.paperPage.end;
     var currentpaper = paper.find((e) => {
-        return e.id ==  Object.values(id );
+        return e.id ==  id ;
     });
     console.log(currentpaper)
     return (
@@ -27,6 +28,7 @@ function PaperPage({ state, handles }) {
                     step={step}
                     handles={handles}
                     from="paperPage"
+                    isFinished = {isFinished}
                 />
             </main>
         </div>
