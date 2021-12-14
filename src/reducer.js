@@ -200,9 +200,8 @@ const reducer = (state, action) => {
             step: parseInt(0),
           },
         };
-    /**/
-    case types.ACTIVTY_END:
-      console.log(payload.isFinished)
+    /*STEPS*/
+    case types.HOME.INCREMENT_STPS:{
       switch (payload.from) {
         case "exercisePage":
           return {
@@ -216,10 +215,6 @@ const reducer = (state, action) => {
                   count: parseInt(state.home.dailyObjectives.exercises.count + 1),
                 },
               },
-            },
-            exercisePage: {
-              ...state.exercisePage,
-              end : payload.isFinished
             },
           };
         case "lessonPage":
@@ -235,10 +230,6 @@ const reducer = (state, action) => {
                 },
               },
             },
-            lessonPage: {
-              ...state.lessonPage,
-              end : payload.isFinished
-            }
           };
         case "paperPage":
           return {
@@ -253,6 +244,32 @@ const reducer = (state, action) => {
                 },
               },
             },
+          };
+      }
+    /**/  
+    };
+    case types.ACTIVTY_END:
+      console.log(payload.isFinished)
+      switch (payload.from) {
+        case "exercisePage":
+          return {
+            ...state,
+            exercisePage: {
+              ...state.exercisePage,
+              end : payload.isFinished
+            },
+          };
+        case "lessonPage":
+          return {
+            ...state,
+            lessonPage: {
+              ...state.lessonPage,
+              end : payload.isFinished
+            }
+          };
+        case "paperPage":
+          return {
+            ...state,
             paperPage: {
               ...state.paperPage,
               end : payload.isFinished

@@ -26,6 +26,7 @@ const actionTypes = Object.freeze ({
         READING_TRAIN_BTN_CLK : 'READING_TRAIN_BTN_CLK',
         READING_MRE_CAT_BTN_CLK : 'READING_MRE_CAT_BTN_CLK',
         READING_CAT_ICON_CLK : 'READING_CAT_ICON_CLK',
+        INCREMENT_STPS : 'INCREMENT_STPS'
     },
     SKILLPAGE : {
     },

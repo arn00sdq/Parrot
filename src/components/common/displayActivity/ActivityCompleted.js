@@ -19,6 +19,7 @@ function ActivityCompleted({reward , active, isFinished, handles,from}) {
 
     const handleButtonClick = (value) => {
         handles.handleEndActivity(value,"",from);
+        handles.handlesIncrementProgression(from);
     };
     return (
         <div className={`activity-finished ${isFinished == false ?"" : "activefs" }`}>
