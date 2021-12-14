@@ -7,6 +7,7 @@ function DailyContainer({progressEx, imgReward, dailyText}){
     console.log(progressEx.count)
     var barProgress = (progressEx.count / progressEx.total) * 100 
     var missionCompleted = progressEx.count == progressEx.total;
+    
     return (
         <div className="objectif-container">
             <Reward className="reward" type="treasure"/>
@@ -17,7 +18,7 @@ function DailyContainer({progressEx, imgReward, dailyText}){
                 <div className="small-text-xp">{progressEx.count} / {progressEx.total}</div>
                 <ProgressBar width="5vw" progress={barProgress+"%"} />
             </div> 
-            : <div className="daily-text-finish"> Terminer </div>
+            : <button className="btn-finish-activity  active"> Claim </button>
             }           
         </div>
     );
