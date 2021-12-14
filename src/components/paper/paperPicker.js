@@ -70,7 +70,7 @@ function PaperPicker({ state, handles }) {
               <img className="tag-medium-cross" src={cross_icon} />
             </div>
 
-           {/*<div className="n-exercices">{`Showing ${lessonsToShow.length} of ${lessonsData.length} lessons`}</div>*/}
+           <div className="n-exercices">{`Showing ${papersToShow.length} of ${papersData.length} papers`}</div>
           </div>
           <PaperListContainer 
             papers={papersToShow} 

@@ -28,13 +28,13 @@ function FooterContent({id, handles,totalStep, currentStep,from }) {
                 <img
                     src={chevron_left}
                     onClick={currentStep < 1 ? undefined : () => handleButtonClick("-1")}
-                    className="chevron-arrow"
+                    className={currentStep < 1? "chevron-arrow button-disable" : "chevron-arrow"}
                 />
                 <div class="footer-current-number">{currentStep+1}</div>
                 <img
                     src={chevron_right}
                     onClick={currentStep == totalStep -1 ? undefined : () => handleButtonClick("1")}
-                    className="chevron-arrow"
+                    className={currentStep == totalStep -1 ? "chevron-arrow button-disable" : "chevron-arrow"}
                 />
                 <button onClick={() => handleButtonClick(true)} className={`btn-finish-activity  ${active == "active" ? "active": ""}`}>Finir</button>
             </div>
