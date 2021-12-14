@@ -138,6 +138,16 @@ const PaperImg = {
   paper_politic_1,
 }
 
+const PhotosImg = {
+  everest,
+  interview,
+  home_ex,
+  basket_jump,
+  pres_perfect,
+  sign_where,
+  health
+}
+
 export {
   next_arrow,
   previous_arrow,
@@ -149,6 +159,7 @@ export {
   GameImg,
   SummImg,
   PaperImg,
+  PhotosImg,
   certificate,
   chevron_left,
   chevron_right,

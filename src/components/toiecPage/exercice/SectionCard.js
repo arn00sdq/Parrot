@@ -17,7 +17,7 @@ function SectionCard({ titleCard, content, state, handles }) {
                             content={content}
                             id={toiecId}
                             handles={handles} />
-                        <button href="#" className="button-toiec">S'entrainer</button>
+                        <button href="#" className="btn-finish-activity active button-toiec">S'entrainer</button>
                     </div>
                 </div>
             </div>

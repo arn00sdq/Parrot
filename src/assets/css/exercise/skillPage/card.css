@@ -1,6 +1,6 @@
 #baby-parrot{
     position: absolute;
-    margin-top: 1vh;
+    margin-top: -2vh;
     height: 10vh;
     width: 6vw;
     margin-left: 15vw;
@@ -10,7 +10,7 @@
 
 #medium-parrot{
     position: absolute;
-    margin-top: 0.5vh;
+    margin-top: -2vh;
     height: 13vh;
     width: 4vw;
     margin-left: 50vw;
@@ -19,7 +19,7 @@
 
 #large-parrot{
     position: absolute;
-    top: 6vh;
+    top: 3vh;
     right: 15vw;
     height: 18vh;
     width: 8vw;
@@ -105,11 +105,20 @@
 
 .containerT .cardT .circle{
     position: absolute;
-    width: 100%;
+    transform: translate(-204px,-87px);
+    width: 20vw;
+    height: 34vh;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.containerT .cardT .circle .img-toiec{
+    position: absolute;
     height: 100%;
-    background: #000;
-    clip-path: circle(40% at left );
-    text-align: center;
+    border-radius: 50%;
+    width: 100%;
+    object-fit: scale-down;
+    transform: translate(68px, 4px);
 }
 
 .containerT .cardT .title-content{
@@ -144,28 +153,15 @@
 
 }
 
-.containerT .cardT:nth-child(1) .circle{
-    background: url("../../../img/photos/basket-jump.jpg");
-    background-size: contain;
-}
-
 .containerT .cardT:nth-child(1) .content a{
     background: #ffaf00;
 }
 
-.containerT .cardT:nth-child(2) .circle{
-    background: url("../../../img/photos/everest.jpg");
-    background-size: contain;
-}
 
 .containerT .cardT:nth-child(2) .content a{
     background: #ffaf00;
 }
 
-.containerT .cardT:nth-child(3) .circle{
-    background: url("../../../img/photos/interview.jpg");
-   background-repeat: no-repeat;
-}
 
 .containerT .cardT:nth-child(3) .content a{
     background: #ffaf00;

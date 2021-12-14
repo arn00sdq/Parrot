@@ -181,3 +181,11 @@
 .button-af-stay{
   
 }
+
+/* Toiec */
+
+.button-toiec{
+  margin-top: 1vh;
+  margin-bottom: 2vh;
+  background-color: orange;
+}
