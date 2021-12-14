@@ -8,8 +8,6 @@
 .wordImg-body{
     display: flex;
     flex-direction: column;
-    border: 1px solid rgba(0,0,0,0.125);
-    border-bottom: 1 px solid rgba(0,0,0,.125);
     background-color: white;
     padding: 20px 40px;
 }
@@ -46,8 +44,8 @@
     margin-top: 3vh;
     display: flex;
     flex-direction: column;
-    width: 45vh;
-    height: 25vh;
+    width: 60vh;
+    height: 35vh;
     background: #000;
     border-bottom: 30px solid #d8d8d8;
     z-index: 5;
@@ -74,7 +72,11 @@
 }
 
 .monitor .monitor-logo{
-    margin-top: -25vh;
+    margin-top: -34vh;
     margin-left: 3px;
     transform: scale(0.03);
+}
+
+.w2i-btn-container{
+    position: relative;
 }

@@ -5,6 +5,8 @@
 
 .page-exercice-container{
     width: 55vw;
+    height: 85vh;
+    background-color: white;
 }
 
 .word-picker{

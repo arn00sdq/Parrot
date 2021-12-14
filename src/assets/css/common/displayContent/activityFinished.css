@@ -19,6 +19,7 @@
     visibility: hidden;
     transition: 0.2s;
     opacity: 1;
+    z-index: 5;
 }
 
 .activefs{

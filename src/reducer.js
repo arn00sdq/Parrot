@@ -204,7 +204,7 @@ const reducer = (state, action) => {
     case types.ACTIVTY_END:
       console.log(payload.isFinished)
       switch (payload.from) {
-        case "exercicePage":
+        case "exercisePage":
           return {
             ...state,
             exercisePage: {

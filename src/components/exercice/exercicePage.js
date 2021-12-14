@@ -7,6 +7,7 @@ function ExercisePage({ state, handles }) {
   var exercises = exercisesData;
   var id = state.exercisePage.exerciseId;
   var step = state.exercisePage.step;
+  var isFinished = state.exercisePage.end;
   var currentExercise = exercises.find((e) => {
     console.log(e.id)
     return e.id == id;
@@ -23,6 +24,8 @@ function ExercisePage({ state, handles }) {
         exercise={currentExercise}
         step={step}
         handles={handles}
+        from="exercisePage"
+        isFinished = {isFinished}
       />
     </main>
   );

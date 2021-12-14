@@ -6,33 +6,37 @@ import WordDrifting from "./types/wordDrifting"
 import HeaderContent from "../common/headerContent";
 import FooterContent from "../common/footerContent";
 
-function DisplayExercise({ exercise, step, handles }) {
+function DisplayExercise({ exercise, step, handles, isFinished,from }) {
   const order = exercise.content.order;
   return (
-    <div className="card card-exercice">
+    <div className="card-exercice">
       <div className="page-exercice-container">
         <HeaderContent
           title={exercise.title}
           steps={exercise.content.steps}
           currentStep={step}
         />
-        {typeExercise(exercise, step, handles, order)}
+        {typeExercise(exercise, step, handles, order,isFinished,from)}
         {/* <FooterContent /> */}
       </div>
     </div>
   );
 }
 
-function typeExercise(exercise, currentStep, handles, order) {
+function typeExercise(exercise, currentStep, handles, order, isFinished,from) {
   switch (exercise.type) {
     case "Word2Img":
       return (
         <div className="wordImg-body">
           <div className="wordImg-order">{exercise.content.order}</div>
           <Word2img
-            content={exercise.content}
+            reward = {exercise.summary.rewards}
+            content={exercise.content} 
             currentStep={currentStep}
+            steps={exercise.content.steps}
             handles={handles}
+            isFinished = {isFinished}
+            from = {from}
             
           />
         </div>
