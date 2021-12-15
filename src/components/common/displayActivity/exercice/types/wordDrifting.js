@@ -4,19 +4,24 @@ import {
   GameImg,
   feather_icon,
 } from "../../../../../database/images";
-
+import ActivityCompleted from "../../ActivityCompleted";
 class WordDriftingGame extends React.Component {
   pointsOnError = -5;
   pointsOnSuccess = 50;
-
+  
   constructor(props) {
+    console.log("IS FINISHED : ", props.isFinished);
     super(props)
     this.content = props.content;
+    this.handles = props.handles;
+    this.reward = props.reward;
+    
     this.possibleWords = [...this.content.correctWords, ...this.content.wrongWords];
     this.state = {
       playerLife: 3,
       playerPoints: 0,
       idCounter: 0,
+      begin:false,
       gameIsActive: true,
       words: [],
     }
@@ -34,14 +39,22 @@ class WordDriftingGame extends React.Component {
   }
 
   handleSuccessClick(wordId) {
-    this.beginWordFade(wordId, 1.5);
+    this.beginWordFade(wordId, 0.5);
+    
     this.setState({
       playerPoints: (this.state.playerPoints + this.pointsOnSuccess),
+      gameIsActive: this.state.playerPoints >= 50 ? false : true,
     });
+    if (this.state.playerPoints >= 50) {
+      this.handles.handleEndActivity(true, "", "exercisePage");
+    }
   }
 
   handleErrorClick(wordId) {
+    let stateWords = this.state.words;
+    stateWords[wordId].false = true;
     this.maskWordAfterXSecs(wordId, 0.5);
+
     this.setState({
       playerPoints:
         this.state.playerPoints < -this.pointsOnError
@@ -49,6 +62,7 @@ class WordDriftingGame extends React.Component {
           : (this.state.playerPoints + this.pointsOnError),
       playerLife: this.state.playerLife == 0 ? 0 : this.state.playerLife - 1,
     });
+    
   }
 
   wordTimer(timeSec) {
@@ -60,6 +74,7 @@ class WordDriftingGame extends React.Component {
   maskWordAfterXSecs(wordId, seconds) {
     setTimeout(() => {
       let stateWords = this.state.words;
+
       stateWords[wordId].shown = false;
       this.setState({
         words: stateWords,
@@ -70,7 +85,7 @@ class WordDriftingGame extends React.Component {
   beginWordFade(wordId, fadingDurationSecs) {
     let stateWords = this.state.words;
     stateWords[wordId].fading = true;
-    this.setState({ 
+    this.setState({
       words: stateWords,
     });
     setTimeout(() => {
@@ -87,7 +102,7 @@ class WordDriftingGame extends React.Component {
   addWord() {
     let wordId = this.getId(),
       randomWord;
-    let randomY = -Math.round(Math.random() * 250);
+    let randomY = Math.floor(Math.random() * -80) - 90
     do randomWord = this.getRandomWord();
     while (this.state.words.includes(randomWord));
     let stateWords = this.state.words;
@@ -96,57 +111,72 @@ class WordDriftingGame extends React.Component {
       text: randomWord,
       y: randomY,
       fading: false,
+      false: false,
       shown: true,
     });
-    this.setState({ 
+    this.setState({
       words: stateWords,
     });
-    this.maskWordAfterXSecs(wordId, 6);
+    this.maskWordAfterXSecs(wordId, 8);
   }
   renderWords() {
-    let row = [];
-    this.state.words
-      .filter((word) => {
-        return word.shown === true;
-      })
-      .forEach((word) => {
-        row.push(
-          <div
-            className="word-container"
-            id={word.text}
-          >
-            <button
-              onClick={word.shown ? (e) => this.handleWordClick(e) : undefined}
-              value={word.id}
-              className={
-                word.fading === false ? "word-vrom active" : "active-container"
-              }
-              style={{ transform: `translateY(${word.y}px)` }}
+    if (this.state.begin == true && this.state.gameIsActive == true) {
+      let row = [];
+      this.state.words
+        .filter((word) => {
+          return word.shown === true;
+        })
+        .forEach((word) => {
+          let wordFading = word.fading === false ? " " : " correctWord"
+          let wordShown = word.false === true ? " wrongWord" : ""
+          row.push(
+            <div
+              className="word-container"
+              id={word.text}
             >
-              {word.text}
-            </button>
-            <span
-            style= {{top: `${word.y}px`}}
-              className={
-                word.fading === true
-                  ? "active-points points-word"
-                  : "points-word"
-              }
-            >
-              {`+${this.pointsOnSuccess}`}
-            </span>
-          </div>
-        );
-      });
-    return row;
+              <button
+                onClick={word.shown ? (e) => this.handleWordClick(e) : undefined}
+                value={word.id}
+                className={`word-vrom active ${wordFading} ${wordShown}`}
+                style={{ top: `${word.y}px` }}
+              >
+                {word.text}
+              </button>
+            </div>
+          );
+        });
+      return row;
+    }
+
   }
+
+  startScreen()
+  {
+    if(this.state.begin == false){
+      let row = []
+      row.push(
+        <button onClick={() => this.handleStartClick() } className="start-game-section">
+            <div className="start-game-text">CLIQUER POUR COMMENCER</div>
+        </button>
+      )
+      
+      return row;
+    }
+   
+  }
+
+  handleStartClick(){
+      this.state.begin = true;
+      this.renderWords()
+  }
+
   handleWordClick(e) {
     e.preventDefault();
 
     const {
       target: { value },
     } = e;
-
+    
     if (this.content.correctWords.includes(this.state.words[value].text)) {
       this.handleSuccessClick(value);
     } else {
@@ -154,31 +184,68 @@ class WordDriftingGame extends React.Component {
     }
   }
   render() {
+
+    let startAnim = this.state.begin == true && this.state.gameIsActive == true ? "animateRoad 90s linear infinite" : "none"
+    let screenFade = this.state.gameIsActive == false ? "0.5": "0.9"
+
+    /*ActiveContainer*/ 
+
+    let active = this.state.gameIsActive == false ? "active" : "";
+    let from = "exercisePage";
+    /*---------------*/ 
     return (
       <>
         <div className="title-drift">
           The theme is :{" "}
           <span className="word-drift">{this.content.theme}</span>
         </div>
-        <div className="drift-container">
-          <div className="life-container">
-            <span className="life-number">{this.state.playerLife}</span>
+        <div className="center">
+          <div className="monitor monitor-drift">
+          {this.startScreen()}
+            <div className="drift-container" style={{animation : startAnim, opacity: screenFade}}>
+              
+              <div className="life-container">
+                <span className="life-number">{this.state.playerLife}</span>
+                <span
+                  className={
+                    this.state.words.fading === true
+                      ? "points-word active"
+                      : "points-word"
+                  }
+                >
+                  {`+${this.pointsOnSuccess}`}
+                </span>
+              </div>
+              <div className="points-container">
+                <img className="life-icon" src={feather_icon} />
+                <span
+                  className={
+                    this.state.gameIsActive
+                      ? "active-point-number points-number"
+                      : "points-number"
+                  }
+                >
+                  <span
+                    className={
+                      this.state.words.fading === true
+                        ? "points-word active"
+                        : "points-word"
+                    }
+                  >
+                    {`+${this.pointsOnSuccess}`}
+                  </span>
+                  {this.state.playerPoints}
+                </span>
+              </div>
+              {this.renderWords()}
+            </div>
+            <img className="monitor-logo" src=""></img>
           </div>
+          <div className="m-1"></div>
+          <div className="m-2"></div>
 
-          <div className="points-container">
-            <img className="life-icon" src={feather_icon} />
-            <span
-              className={
-                this.state.gameIsActive
-                  ? "active-point-number points-number"
-                  : "points-number"
-              }
-            >
-              {this.state.playerPoints}
-            </span>
-          </div>
-          {this.renderWords()}
         </div>
+        <ActivityCompleted title={this.title} reward={this.reward} active={false} isFinished={this.props.isFinished} handles={this.handles} from={from} />
       </>
     );
   }

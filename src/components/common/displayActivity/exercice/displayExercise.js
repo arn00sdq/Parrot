@@ -8,6 +8,7 @@ import FooterContent from "../common/footerContent";
 
 function DisplayExercise({ exercise, step, handles, isFinished,from }) {
   const order = exercise.content.order;
+
   return (
     <div className="card-exercice">
       <div className="page-exercice-container">
@@ -30,6 +31,7 @@ function typeExercise(exercise, currentStep, handles, order, isFinished,from) {
         <div className="wordImg-body">
           <div className="wordImg-order">{exercise.content.order}</div>
           <Word2img
+            title={exercise.title}
             reward = {exercise.summary.rewards}
             content={exercise.content} 
             currentStep={currentStep}
@@ -44,11 +46,14 @@ function typeExercise(exercise, currentStep, handles, order, isFinished,from) {
       // <PictBtn />
       break;
     case "DriftWord":
+       
         return (
         <div className="drift-body">
           <div className="wordImg-order">{order}</div>
           <WordDriftingGame 
             content={exercise.content}
+            reward = {exercise.summary.rewards}
+            isFinished = {isFinished}
             /* currentStep={currentStep} */
             handles={handles}
           />

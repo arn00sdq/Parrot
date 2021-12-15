@@ -2,12 +2,14 @@ import React, { useState } from "react";
 import { achievement, Word2Img } from "../../../../../database/images";
 import ActivityCompleted from "../../ActivityCompleted";
 
-function Word2img({ reward, content, currentStep, handles, isFinished, from }) {
+function Word2img({title, reward, content, currentStep, handles, isFinished, from }) {
 
   const finished = currentStep < content.steps ? false : true;
   var active = currentStep == content.steps - 1 ? "active" : "";
-
+  var correctWord = "";
+  var wrongWord = "";
   var [getIndex, setIndex] = useState();
+  var [getWrong, setWrongIndex] = useState()
 
   const wordImg = [];
   let row = [];
@@ -28,19 +30,27 @@ function Word2img({ reward, content, currentStep, handles, isFinished, from }) {
         handles.handleNextStep("exercicePage", (currentStep+1)/content.steps * 100);
         setIndex(-1);
       }, 500);
-
+    }else if (value != content.images[currentStep].word){
+      setWrongIndex(wordImg.findIndex(word => word == value))
+      setTimeout(() => {
+        setWrongIndex(-1);
+      }, 500);
     }
   };
-
+  
   if (finished == false) {
     content.words[currentStep].forEach((word, i) => {
+
       wordImg.push(word)
+      const wrongWord = i == getWrong ? "button-exercise wrongWord" : "button-exercise";
+      const correctWord = i== getIndex? "button-exercise correctWord" : "button-exercise";
+
       row.push(
         <div className="w2i-btn-container">
           <button
             onClick={(e) => handleButtonClick(e)}
             value={word}
-            className="button-exercise">
+            className={`${wrongWord} ${correctWord}`} >
             {word}
           </button>
 
@@ -68,7 +78,7 @@ function Word2img({ reward, content, currentStep, handles, isFinished, from }) {
 
         <div className="btn-exercise-container">{row}</div>
       </div>
-      <ActivityCompleted reward={reward} active={active} isFinished={isFinished} handles={handles} from={from} />
+      <ActivityCompleted title={title} reward={reward} active={active} isFinished={isFinished} handles={handles} from={from} />
     </>
   );
 }

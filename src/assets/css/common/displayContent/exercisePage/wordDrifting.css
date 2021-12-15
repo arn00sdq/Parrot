@@ -1,20 +1,69 @@
 
 .drift-body
 {
-    border: 1px solid rgba(0,0,0,0.125);
-    border-bottom: 1 px solid rgba(0,0,0,.125);
-    height: 50vh;
+
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px 40px;
+    height: 70vh;
     overflow: hidden;
-    
+}
+
+.monitor-drift{
+    width: 46vw;
+    height: 44vh;
+    overflow: hidden;
+}
+
+.start-game-section{
+    position: absolute;
+    height: 41vh;
+    width: 46vw;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    opacity: 0.5;
+    z-index: 50;
+}
+
+.start-game-text{
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    animation: startTextScale 3.5s linear infinite;
+}
+
+@keyframes startTextScale{
+    0%
+    {
+        transform: scale(1.1);
+    }
+
+    50%
+    {
+        transform: scale(0.95);
+    }
+
+    100%
+    {
+        transform: scale(1.1);
+    }
 }
 
 .drift-container{
     background: url(../../../../img/game/jungle.jpg);
     background-size: contain;
-    height: 110%;
+    height: 45vh;
     animation:  animateRoad 60s linear infinite;
     background-repeat: repeat;
     animation-delay: 1s;
+    opacity: 0.9;
+    border: 2px solid black;
     
 }
 
@@ -22,6 +71,7 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     margin-top: 2vh;
+    align-self: center;
 }
 
 .word-drift{
@@ -31,9 +81,9 @@
 }
 
 .life-container{
-    position: relative;
-    top: 27px;
-    left: 16px;
+    position: absolute;
+    top: 5%;
+    left: 5%;
     display: flex;
     align-items: center;
 }
@@ -50,11 +100,12 @@
 }
 
 .points-container{
-    position: relative;
-    top: 0px;
-    right: -90%;
+    position: absolute;
+    top: 5%;
+    right: 5%;
     display: flex;
     align-items: center;
+
 }
 
 .points-number{
@@ -69,7 +120,7 @@
     font-size: 18px;
     padding: 30px;
     animation: wordFade 0.8s;
-  animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
 }
 
 .active-point-number{
@@ -95,8 +146,18 @@
 }
 
 .word-vrom{
-    font-size: 18px;
-    padding: 15px;
+    position: absolute;
+    margin: .5em;
+    padding: .7em 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: white;
+    background-color: #e1d2b8;
+    border: 2px solid rgba(112,111,211,0);
+    border-radius: 15px;
+    outline: none;
+    cursor: pointer;
 }
 
 .points-word{
@@ -116,6 +177,14 @@
     animation: animatePoints 1.5s linear ;
 }
 
+.correctWordInfinite{
+
+    animation: correctW2I 0.82s linear infinite;
+
+}
+.wrongWordInfinite{
+    animation: wrongW2I 0.82s cubic-bezier(.36,.07,.19,.97) both, colorWrongW2I 0.82s linear infinite
+}
 
 
 

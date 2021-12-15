@@ -18,7 +18,7 @@ import { Routes, Route } from 'react-router-dom';
 
 export default function App({ state, handles }) {
   console.log("App state : " + state)
-
+  console.log('CourseManagerDashboard', ExercisePage);
   return (
     <Routes>
       <Route exact path="/parrot" element={<Parrot />} />

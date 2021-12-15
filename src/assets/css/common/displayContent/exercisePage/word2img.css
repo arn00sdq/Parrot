@@ -80,3 +80,13 @@
 .w2i-btn-container{
     position: relative;
 }
+
+.wrongWord{
+    animation: wrongW2I 0.82s cubic-bezier(.36,.07,.19,.97) both, colorWrongW2I 0.82s linear;
+}
+
+.correctWord{
+    
+    animation: correctW2I 0.82s linear;
+}
+
