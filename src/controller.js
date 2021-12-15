@@ -7,20 +7,14 @@ import * as actions from "./actions";
 const Controller = () => {
   const [state, dispatch] = useReducer(reducer, model);
 
-  function handlesIncrementProgression(from){
-    dispatch(actions.incrementProgression(from));
-  }
-
-  function handleExerciseNextStep(from) {
-    dispatch(actions.incrementExercisePageStep(from));
-  }
-
-  function handleNextStep(from) {
+  function handleNextStep(from, percentProgress) {
     dispatch(actions.incrementPageStep(from));
+    dispatch(actions.saveActivityProgress(from, percentProgress))
   }
 
-  function handlePreviousStep(from){
+  function handlePreviousStep(from, percentProgress){
     dispatch(actions.decrementPageStep(from))
+    dispatch(actions.saveActivityProgress(from, percentProgress))
   }
 
   function handleExerciseStart(id) {
@@ -57,7 +51,6 @@ const Controller = () => {
     dispatch(actions.addPointsExercicePage())
   }
   const handles = {
-    handleExerciseNextStep,
     handleExerciseStart,
     handleThemeFilterChange,
     handleTenseFilterChange,
@@ -69,7 +62,7 @@ const Controller = () => {
     handlePaperStart,
     handleLessonStart,
     handleEndActivity,
-    handlesIncrementProgression,
+    /* handlesIncrementProgression, */
   };
   
 

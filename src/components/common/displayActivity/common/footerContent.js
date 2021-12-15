@@ -6,10 +6,11 @@ function FooterContent({id, handles,totalStep, currentStep,from,isFinished }) {
     const handleButtonClick = (value) => {
         switch (value) {
             case "-1":
-                handles.handlePreviousStep(from);
+                handles.handlePreviousStep(from, (currentStep-2)/totalStep * 100);
                 break;
             case "1" :
-                handles.handleNextStep(from);
+            console.log(`totalStep, currentStep`, totalStep, currentStep)
+                handles.handleNextStep(from, (currentStep+2)/totalStep * 100);
                 break;
             case true:
                 handles.handleEndActivity(true,id,from);

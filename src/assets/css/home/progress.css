@@ -34,7 +34,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1rem;
+    padding: .6rem;
     
 }
 .container-title-card{
@@ -48,6 +48,7 @@
     flex-direction: row;
     align-items: center;
     width: 20vw;
+    justify-content: space-around;
 }
 
 .progress-text-card{
@@ -56,14 +57,14 @@
     white-space: nowrap;
     font-family: Quicksand;
     font-size: 17px;
-    width: 10vw;
+    width: max-content;
     margin-left: 1vw;
 }
 
 .container-bar-xp{
     display: flex;
     flex-direction: column;
-    margin-left: 1.5vw;
+    /* margin-left: 1.5vw; */
     
 }
 
@@ -96,14 +97,12 @@
 }
 
 .challenge-btn{
+    right: 0px;
     margin-bottom: 1vh;
     cursor: pointer;
+    background-color: #FF914D !important;
 }
 
-.container-card-body .daily-award{
-
-    margin-top: 2vh;
-}
 
 .daily-text-finish{
     color :green;

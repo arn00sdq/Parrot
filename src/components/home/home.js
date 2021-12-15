@@ -1,6 +1,6 @@
 import React from "react";
-import ChallengeCard from "./progress/ChallengeCard";
-import DailyCard from "./progress/DailyCard";
+import DailyChallengeCard from "./progress/DailyChallengeCard";
+import DailyQuestCard from "./progress/DailyQuestsCard";
 import NextAwardCard from "./progress/NextAwardCard";
 import DashCard from "./dashboard/DashCard";
 import DataStat from "./dashboard/DataStat";
@@ -30,13 +30,9 @@ function Home({ state, handles }) {
       <img id="parrot-home" src={logo_parrot_adulte} />
       <div id="progress-card" className="card">
         <div id="title-progress">Progression</div>
-        <ChallengeCard
-          state={state}
-          handles={handles}
-          titleCard="Challenge of the day"
-        />
-        <DailyCard state={state} handles={handles} titleCard="Today's quests" />
-        <NextAwardCard state={state} handles={handles} titleCard="Next level" />
+        <DailyChallengeCard state={state} handles={handles} />
+        <DailyQuestCard state={state} handles={handles} />
+        <NextAwardCard state={state} handles={handles} />
       </div>
 
       <div id="dashboard-container">

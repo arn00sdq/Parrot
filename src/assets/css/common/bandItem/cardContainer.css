@@ -7,9 +7,9 @@
 .cardContent-container{
     display: flex;
     flex-direction: column;
-    margin-top: 1vh;
+    /* margin-top: 1vh; */
     border-radius: 8px;
-    width: 60vw;
+    /* width: 60vw; */
    
 
 }

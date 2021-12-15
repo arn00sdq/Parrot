@@ -4,7 +4,6 @@ import DisplaySummary from "../common/displayActivity/summary/displaySummary";
 import { data as lessonsData } from "../../database/lessons";
 
 function LessonPage({ state, handles }) {
-    var lessons = lessonsData;
     var id = state.lessonPage.lessonId;
     var currentStep = state.lessonPage.step;
     var isFinished = state.lessonPage.end;

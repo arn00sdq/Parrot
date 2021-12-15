@@ -10,68 +10,25 @@ const data = {
     name: "Default User",
     icon: profil_icon,
     selectedLanguage: "English (US)",
-    featherCount: "4",
-    flameCount: "2",
-    exercisesDone: [{ id: "EX1" }],
-    lessonsRead: [{ id: "LE1" }],
-    papersRead: [{ id: "PA1" }],
+    featherCount: 4,
+    flameCount: 2,
+    exercisesDone: [],
+    lessonsRead: [],
+    papersRead: [],
   },
   home: {
-    dailyChallenge: [
+    dailyChallenge: 
       {
-        id: "1",
-        completed: false,
-        rewards: {
-          feathers: "0",
-          treasures: "3",
-        },
-      },
-    ],
-    dailyObjectives: 
-      {
-        id: "1",
-        exercises: {
-          count: "0",
-          total: "1",
-        },
-        lessons: {
-          count: "0",
-          total: "3",
-        },
-        papers: {
-          count: "0",
-          total: "0",
-        }
-      },
-    nextAward: {
-      currentStep: "1",
-      totalStep: "2",
+        id: 'EX1',
+      }
+    ,
+    dailyObjectives: {
+      exObjective: 2,
+      leObjective: 1,
+      paObjective: 2,
     },
-    dashboard: {
-      section: "recentActivities",
-      recentActivities: {
-        activities: [
-          {
-            id: "1",
-            progress: "100",
-          },
-        ],
-      },
-      activitiesSummary: {
-        helpBtnToggle: false,
-        activities: [
-          {
-            id: "1",
-          },
-        ],
-      },
-      suggestedLessons: {
-        lessons: [
-          {
-            id: "1",
-          },
-        ],
-      },
+    nextAward: {
+      actObjective: 6,
     },
     trainReading: {
       articles: [
@@ -118,15 +75,11 @@ const data = {
     exerciseId: "EX1",
     step: "0",
     end: false,
-    wordDrift: {
-      life: 3,
-      points: 0,
-    }
   },
   exercisePicker: {
     keywords_input: "",
     selectedThemes: [],
-    selectedLevels: []
+    selectedLevels: [],
   },
   lessonPage: {
     lessonId: "LE1",
@@ -136,17 +89,17 @@ const data = {
   lessonPicker: {
     keywords_input: "",
     selectedTenses: [],
-    selectedLevels: []
+    selectedLevels: [],
   },
   paperPage: {
     paperId: "PA1",
     step: "0",
-    end: false
+    end: false,
   },
   paperPicker: {
     keywords_input: "",
     selectedThemes: [],
-    selectedLevels: []
+    selectedLevels: [],
   },
 };
 

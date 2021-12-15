@@ -46,10 +46,10 @@ const hoverUser = () => ({
 
 //PROGRESS
 
-const incrementProgression = (from) => ({
-  type: actionTypes.HOME.INCREMENT_STPS,
-  payload: { from },
-})
+const saveActivityProgress = (from, percentProgress) => ({
+  type: actionTypes.USER.SAVE_ACTIVITY_PROGRESS,
+  payload : {from, percentProgress},
+});
 
 //    DASHBOARD
 const changeSection = (selectedSection) => ({
@@ -113,15 +113,16 @@ const incrementPageStep = (from) => ({
   payload : {from},
 });
 
+
 const decrementPageStep = (from) => ({
   type: actionTypes.PREVIOUS_STEP,
   payload : {from},
 });
 
 
-export {levelFilterChange,articleStart,categoryIconClick,changeLanguage,changeSection,
+export {saveActivityProgress,levelFilterChange,articleStart,categoryIconClick,changeLanguage,changeSection,
     tenseFilterChange,exerciceStart,expandCatBtnClick,
     helpButtonClick,hoverFeather,hoverFlame,hoverLanguage,hoverUser,
     incrementExercisePageStep,lessonStart,themeFilterChange,trainBtnClick,
     substractLifeExercicePage,addPointsExercicePage, inputSearchFilterChange, 
-    incrementPageStep,decrementPageStep,activityEnd, incrementProgression}
+    incrementPageStep,decrementPageStep,activityEnd}

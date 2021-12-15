@@ -30,7 +30,7 @@
 
 .progress {
     height: 5px;
-
+    margin-bottom: .5rem;
     overflow: hidden;
     background-color: #494F56;
     border-radius: 4px;

@@ -25,7 +25,7 @@ function Word2img({ reward, content, currentStep, handles, isFinished, from }) {
     if (value == content.images[currentStep].word && finished == false) {
       setIndex(wordImg.findIndex(word => word == value))
       setTimeout(() => {
-        handles.handleExerciseNextStep("exercicePage");
+        handles.handleNextStep("exercicePage", (currentStep+1)/content.steps * 100);
         setIndex(-1);
       }, 500);
 

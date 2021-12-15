@@ -7,6 +7,9 @@ const actionTypes = Object.freeze ({
     ACTIVTY_END : 'ACTIVITY_END',
     NEXT_STEP : 'NEXT_STEP',
     PREVIOUS_STEP: 'PREVIOUS_STEP',
+    USER: {
+        SAVE_ACTIVITY_PROGRESS: 'SAVE_ACTIVITY_PROGRESS'
+    },
     FILTER: {
         KEYWORD_INPUT_CHANGE : 'KEYWORD_INPUT_CHANGE',
         THEME_CLK : 'THEME_CLK',
