@@ -14,7 +14,7 @@ import { data as tenses } from "./english_tenses";
 var data = [
   {
     id: "EX1",
-    title: "Matching : Some Object",
+    title: "Matching objects!",
     type: "Word2Img",
     icon: pres_perfect,
     summary: {
@@ -67,7 +67,7 @@ var data = [
   },
   {
     id: "EX2",
-    title: "Matching : Some Instrument",
+    title: "Matching instruments!",
     type: "Word2Img",
     icon: pres_perfect,
     summary: {
@@ -120,7 +120,7 @@ var data = [
   },
   {
     id: "EX3",
-    title: "Matching!",
+    title: "Matching instruments!",
     type: "Word2Img",
     icon: pres_perfect,
     summary: {
@@ -172,7 +172,7 @@ var data = [
   },
   {
     id: "EX4",
-    title: "Matching!",
+    title: "Matching instruments!",
     type: "Word2Img",
     icon: pres_perfect,
     summary: {

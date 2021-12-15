@@ -10,22 +10,22 @@ function DailyQuestContainer({ state, type, title }) {
       completed = state.user.exercisesDone.filter((ex) => {
         return ex.completionPercent === 100;
       }).length;
-      if (completed > objective) completed = objective;
       objective = state.home.dailyObjectives.exObjective;
+      if (completed > objective) completed = objective;
       break;
     case "le":
       completed = state.user.lessonsRead.filter((le) => {
         return le.completionPercent === 100;
       }).length;
-      if (completed > objective) completed = objective;
       objective = state.home.dailyObjectives.leObjective;
+      if (completed > objective) completed = objective;
       break;
     case "pa":
       completed = state.user.papersRead.filter((pa) => {
         return pa.completionPercent === 100;
       }).length;
-      if (completed > objective) completed = objective;
       objective = state.home.dailyObjectives.paObjective;
+      if (completed > objective) completed = objective;
       break;
 
     default:
