@@ -39,13 +39,13 @@ class WordDriftingGame extends React.Component {
   }
 
   handleSuccessClick(wordId) {
-    this.beginWordFade(wordId, 0.82);
+    this.beginWordFade(wordId, 0.5);
+    
     this.setState({
       playerPoints: (this.state.playerPoints + this.pointsOnSuccess),
-      gameIsActive: this.state.playerPoints > 50 ? false : true,
+      gameIsActive: this.state.playerPoints >= 50 ? false : true,
     });
     if (this.state.playerPoints >= 50) {
-      this.state.gameIsActive = false;
       this.handles.handleEndActivity(true, "", "exercisePage");
     }
   }

@@ -177,6 +177,14 @@
     animation: animatePoints 1.5s linear ;
 }
 
+.correctWordInfinite{
+
+    animation: correctW2I 0.82s linear infinite;
+
+}
+.wrongWordInfinite{
+    animation: wrongW2I 0.82s cubic-bezier(.36,.07,.19,.97) both, colorWrongW2I 0.82s linear infinite
+}
 
 
 
