@@ -35,7 +35,7 @@ function ExercicePicker({ state, handles }) {
       <main>
         <div className="filter-container">
           <div className="filter-container-header">
-            <div className="title-filter">Filtre des guides de conversations</div>
+            <div className="title-filter">Filter exercises</div>
             <KeywordFilter 
             handles={handles}
             from="exercisePicker"

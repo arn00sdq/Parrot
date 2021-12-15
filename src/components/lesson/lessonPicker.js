@@ -34,7 +34,7 @@ function LessonPicker({ state, handles }) {
       <main>
         <div className="filter-container">
           <div className="filter-container-header">
-            <div className="title-filter">Filtre des guides de conversations</div>
+            <div className="title-filter">Filter lessons</div>
             <div className="section-filter-search">
               <p className="title-search-section">
                 <img src={PickerImg.key} className="icon-filter" />
