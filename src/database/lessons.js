@@ -21,6 +21,11 @@ var data = [
         treasures: 0,
         feathers: 2,
       },
+      section:{
+        primary : ["Formation du Present Perfect et du Present Be-ing ","Les emplois du present perfect et du present Be + -ing"],
+        sub : ["Formation du Present Perfect","Formation du Present Perfect Be-ing"," Les emplois du present perfect Be - ing"," Les emplois du present perfect simple"]
+        
+      }
     },
     content: {
       stepsContent: [
@@ -258,6 +263,11 @@ var data = [
         treasures: 0,
         feathers: 2,
       },
+      section:{
+        primary : ["Formation du Past Simple"],
+        sub : ["Formation du Past Simple"," Les emplois du past perfect simple"]
+      }
+      
     },
     content: {
       stepsContent: [

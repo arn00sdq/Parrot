@@ -10,6 +10,7 @@ function typeLesson(lesson, currentStep, handles, isFinished,from) {
     const currentStepContent = lesson.content.stepsContent[currentStep];
       return (
         <Classic
+          title={lesson.title}
           reward = {lesson.summary.rewards}
           content={currentStepContent}
           currentStep={currentStep}

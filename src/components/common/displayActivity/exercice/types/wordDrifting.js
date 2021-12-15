@@ -15,7 +15,7 @@ class WordDriftingGame extends React.Component {
     this.content = props.content;
     this.handles = props.handles;
     this.reward = props.reward;
-    this.isFinished = props.isFinished;
+    
     this.possibleWords = [...this.content.correctWords, ...this.content.wrongWords];
     this.state = {
       playerLife: 3,
@@ -44,7 +44,8 @@ class WordDriftingGame extends React.Component {
       playerPoints: (this.state.playerPoints + this.pointsOnSuccess),
       gameIsActive: this.state.playerPoints > 50 ? false : true,
     });
-    if (this.state.playerPoints > 50) {
+    if (this.state.playerPoints >= 50) {
+      this.state.gameIsActive = false;
       this.handles.handleEndActivity(true, "", "exercisePage");
     }
   }
@@ -84,7 +85,6 @@ class WordDriftingGame extends React.Component {
   beginWordFade(wordId, fadingDurationSecs) {
     let stateWords = this.state.words;
     stateWords[wordId].fading = true;
-    console.log("false")
     this.setState({
       words: stateWords,
     });
@@ -103,7 +103,6 @@ class WordDriftingGame extends React.Component {
     let wordId = this.getId(),
       randomWord;
     let randomY = Math.floor(Math.random() * -80) - 90
-    console.log(randomY)
     do randomWord = this.getRandomWord();
     while (this.state.words.includes(randomWord));
     let stateWords = this.state.words;
@@ -160,6 +159,7 @@ class WordDriftingGame extends React.Component {
             <div className="start-game-text">CLIQUER POUR COMMENCER</div>
         </button>
       )
+      
       return row;
     }
    
@@ -167,6 +167,7 @@ class WordDriftingGame extends React.Component {
 
   handleStartClick(){
       this.state.begin = true;
+      this.renderWords()
   }
 
   handleWordClick(e) {
@@ -183,7 +184,7 @@ class WordDriftingGame extends React.Component {
     }
   }
   render() {
-    console.log(this.state.words)
+
     let startAnim = this.state.begin == true && this.state.gameIsActive == true ? "animateRoad 90s linear infinite" : "none"
     let screenFade = this.state.gameIsActive == false ? "0.5": "0.9"
 
@@ -244,7 +245,7 @@ class WordDriftingGame extends React.Component {
           <div className="m-2"></div>
 
         </div>
-        <ActivityCompleted reward={this.reward} active={false} isFinished={this.isFinished} handles={this.handles} from={from} />
+        <ActivityCompleted title={this.title} reward={this.reward} active={false} isFinished={this.props.isFinished} handles={this.handles} from={from} />
       </>
     );
   }

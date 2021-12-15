@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { achievement, Word2Img } from "../../../../../database/images";
 import ActivityCompleted from "../../ActivityCompleted";
 
-function Word2img({ reward, content, currentStep, handles, isFinished, from }) {
+function Word2img({title, reward, content, currentStep, handles, isFinished, from }) {
 
   const finished = currentStep < content.steps ? false : true;
   var active = currentStep == content.steps - 1 ? "active" : "";
@@ -78,7 +78,7 @@ function Word2img({ reward, content, currentStep, handles, isFinished, from }) {
 
         <div className="btn-exercise-container">{row}</div>
       </div>
-      <ActivityCompleted reward={reward} active={active} isFinished={isFinished} handles={handles} from={from} />
+      <ActivityCompleted title={title} reward={reward} active={active} isFinished={isFinished} handles={handles} from={from} />
     </>
   );
 }

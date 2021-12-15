@@ -11,3 +11,4 @@ function Reward({className, type}){
 }
 
 export default Reward;
+

@@ -14,7 +14,7 @@ import { data as tenses } from "./english_tenses";
 var data = [
   {
     id: "EX1",
-    title: "Matching!",
+    title: "Matching : Some Object",
     type: "Word2Img",
     icon: pres_perfect,
     summary: {
@@ -24,6 +24,10 @@ var data = [
         treasures: 0,
         feathers: 2,
       },
+      section:{
+        primary : [""],
+        sub : [""]
+      }
       
     },
     description:
@@ -63,7 +67,7 @@ var data = [
   },
   {
     id: "EX2",
-    title: "Matching!",
+    title: "Matching : Some Instrument",
     type: "Word2Img",
     icon: pres_perfect,
     summary: {
@@ -73,7 +77,12 @@ var data = [
         treasures: 2,
         feathers: 1,
       },
+      section:{
+        primary : [""],
+        sub : [""]
+      }
     },
+    
     description:
       "This exercise is meant to teach\
      you the basics of english vocabulary.\
@@ -121,6 +130,10 @@ var data = [
         treasures: 2,
         feathers: 1,
       },
+      section:{
+        primary : [""],
+        sub : [""]
+      }
     },
     description:
       "This exercise is meant to teach\
@@ -169,6 +182,10 @@ var data = [
         treasures: 2,
         feathers: 1,
       },
+      section:{
+        primary : [""],
+        sub : [""]
+      }
     },
     description:
       "This exercise is meant to teach\
@@ -217,6 +234,10 @@ var data = [
         treasures: 3,
         feathers: 3,
       },
+      section:{
+        primary : [""],
+        sub : [""]
+      }
     },
     description:
       "In this exercise, you will have to choose the words\

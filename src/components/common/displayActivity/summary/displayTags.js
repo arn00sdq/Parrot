@@ -22,13 +22,7 @@ function tagDisplay(tags,type) {
 
     );
   });
-  /*if(typeof props === 'object'){
-        for (const [key, value] of Object.entries(props.elt)){
-            row.push(<div key={value} className="tag-point-small">{value}</div>)
-        }
-    }else{
-        row.push(<div key={props} className="level-tag">{props}</div>)
-    }*/
+
   return row;
 }
 

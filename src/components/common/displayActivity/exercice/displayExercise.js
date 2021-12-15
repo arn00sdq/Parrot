@@ -31,6 +31,7 @@ function typeExercise(exercise, currentStep, handles, order, isFinished,from) {
         <div className="wordImg-body">
           <div className="wordImg-order">{exercise.content.order}</div>
           <Word2img
+            title={exercise.title}
             reward = {exercise.summary.rewards}
             content={exercise.content} 
             currentStep={currentStep}

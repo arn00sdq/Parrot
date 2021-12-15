@@ -15,7 +15,7 @@ function listRewards({ treasures, feathers }) {
 
 
 
-function ActivityCompleted({reward , active, isFinished, handles,from}) {
+function ActivityCompleted({title, reward , active, isFinished, handles,from}) {
 
     const handleButtonClick = (value) => {
         handles.handleEndActivity(value,"",from);
@@ -35,7 +35,7 @@ function ActivityCompleted({reward , active, isFinished, handles,from}) {
                 </div>
 
                 <div className="recap-af">
-                    <div className="af-text">Lesson en cours :<div className="af-sub-text">Present perfect and be -ing </div></div>
+                    <div className="af-text">Current activity :<div className="af-sub-text">{title}</div></div>
                     <div className="reward-af">
                         <div className="af-text">Reward : </div>
                         <div className="af-mr">{listRewards(reward)}</div>

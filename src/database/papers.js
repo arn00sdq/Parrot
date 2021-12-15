@@ -8,7 +8,7 @@ import { history, PaperImg } from "./images";
 var data = [
   {
     id: "PA1",
-    title: "Covid-19: les laboratoires s'inquitent",
+    title: "Covid-19: les laboratoires s'inquietent",
     date: "10/11/2020",
     type: "Article",
     icon: PaperImg.paper_politic_1,
@@ -22,6 +22,10 @@ var data = [
         treasures: 0,
         feathers: 2,
       },
+      section:{
+        primary : [""],
+        sub : [""]
+      }
     },
     content: {
       stepContent: [
@@ -143,6 +147,10 @@ var data = [
         treasures: 0,
         feathers: 2,
       },
+      section:{
+        primary : [""],
+        sub : [""]
+      }
     },
     content: {
       stepContent: [

@@ -1,4 +1,5 @@
 import DisplayTags from "./displayTags";
+import Recap from "./recap"
 import Reward from "../../reward/Reward";
 import React from "react";
 
@@ -52,7 +53,8 @@ function DisplaySummary({ summary, name }) {
             <img src={SummImg.paperclip_icon} className="icon-filter" />
             <div className="title-search">Summary</div>
           </div>
-          <div className="row-summary">
+          <Recap section={summary.section}/>
+         {/*<div className="row-summary">
             <div className="summary-number-primary">I</div>
             <div className="summary-primary-text">Formation du Present Perfect et be +ing </div>
           </div>
@@ -63,8 +65,8 @@ function DisplaySummary({ summary, name }) {
           <div className="row-summary">
             <div className="summary-number-secondary">B</div>
             <div className="summary-secondary-text">Formation du be + ing Perfect</div>
-          </div>
-        </div>
+          </div>*/}
+  </div>
 
       </div>
     </div>

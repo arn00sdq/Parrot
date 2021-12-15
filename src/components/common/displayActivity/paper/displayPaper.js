@@ -11,6 +11,7 @@ function typeArticle(paper,currentStep,handles, isFinished,from) {
         case "Article":
             return ( 
                 <Article 
+                    title={paper.title}
                     reward = {paper.summary.rewards}
                     content={currentStepContent} 
                     currentStep={currentStep}
@@ -39,7 +40,7 @@ function displayPaper({paper, step, handles,from, isFinished }) {
         <div className="paper-Card">
                 <HeaderContent 
                     title = {paper.title} 
-                    steps = {paper.content.steps} 
+                    steps = {currentStepContent} 
                     currentStep = {step}
                 />
                 {typeArticle(paper,step,handles, isFinished,from)}
