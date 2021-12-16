@@ -7,14 +7,14 @@ function Recap({section}){
         section.primary.forEach((element,index) => {
             row.push(
                 <div className="row-summary">
-                    <div className="summary-number-primary">{index}</div>
+                    <div className="summary-number-primary">{index+1}</div>
                     <div className="summary-primary-text">{element}</div>
                 </div>
             )
             for (let i = index*2; i<2+index*2 ; i++){
                 row.push(
                     <div className="row-summary">
-                        <div className="summary-number-secondary">{i}</div>
+                        <div className="summary-number-secondary">{i+1}</div>
                         <div className="summary-secondary-text">{section.sub[i]}</div>
                     </div>
                 )

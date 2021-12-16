@@ -35,6 +35,7 @@ function typeArticle(paper,currentStep,handles, isFinished,from) {
 function displayPaper({paper, step, handles,from, isFinished }) {
     
     const currentStepContent = paper.content.stepContent.length;
+    console.log(step , ' ', currentStepContent)
 
     return (
         <div className="paper-Card">

@@ -9,8 +9,8 @@ function ActivityContainer(props) {
                     <div className="circular-value-container">100%</div>
                 </div>
             </div>
-            <div className="main-text-card">Les temps du passé. Ex 4</div>
-            <div className="text-resume">Reprendre</div>
+            <div className="main-text-card">Past tense: EX4</div>
+            <div className="text-resume">Resume</div>
             <img className="orange-arrow" src={right_arrow} />
         </div>
     );

@@ -8,13 +8,13 @@ import { history, PaperImg } from "./images";
 var data = [
   {
     id: "PA1",
-    title: "Covid-19: les laboratoires s'inquietent",
+    title: "Covid-19: laboratories are concerned",
     date: "10/11/2020",
     type: "Article",
     icon: PaperImg.paper_politic_1,
     description:
-      "Depuis quelques jours, le gouvernement français et l'Union européenne \
-            appellent...",
+      "For several days, the French government and the European Union have been\
+      have been calling for...",
     summary: {
       level: levels.BEGINNER,
       themes: [themes.GEOGRAPHY, themes.SCIENCE],
@@ -31,74 +31,73 @@ var data = [
       stepContent: [
         <>
           <p className="article-title">
-            Covid-19 : les laboratoires sur le pied de guerre pour adapter leur
-            vaccin au variant Omicron
+            Covid-19: laboratories on the warpath to adapt their vaccine to the Omicron variant
           </p>
           <span className="article-reporter-infos">
-            Par <span className="reporter">Paul Marion</span> et AFP agence
+            By <span className="reporter">Paul Marion</span> and AFP agence
             <br />
           </span>
           <span className="article-date">
-            Publié le 27/11/2021 à 15:33, mis à jour le 01/12/2021 à 15:56
+            Published  27/11/2021 à 15:33, update on 01/12/2021 at 15:56
             <br />
           </span>
           <div className="row">
             <div className="media-picture">
               <img className="large-ptc-article" src={PaperImg.paper_politic_1}></img>
               <figcaption className="article-figcation">
-                Des chercheurs en tenue de protection travaillent dans un
-                laboratoire de l’Institut de virologie de Wuhan, le 6 février
-                2020, en Chine.
+                Researchers in protective gear work in a laboratory at the Wuhan
+                laboratory at the Wuhan Institute of Virology on Feb. 6, 2020, in
+                2020, China.
               <span className="fig-credit">China Daily CDIC/REUTERS</span>
               </figcaption>
             </div>
             <div className="column">
               <div className="article-subtitle paper-marg-adjustment">
-                DÉCRYPTAGE - Selon le NIH, leurs travaux sont allés au-delà de ce
-                qui avait été précédemment admis officiellement.
+                DECRYPTAGE - According to the NIH, their work went beyond what had been
+                that had previously been officially accepted.
               </div>
               <div className="article-text paper-marg-adjustment">
-                Pfizer a déjà commencé à travailler sur une nouvelle version de son
-                vaccin anti-Covid ciblant plus spécifiquement Omicron au cas où le
-                vaccin actuel ne serait pas suffisamment efficace contre le nouveau
-                variant, a assuré lundi le PDG de Pfizer, Albert Bourla. <i>«Il y a
-                encore beaucoup d'inconnues»</i> autour du nouveau variant détecté en
-                Afrique du Sud et jugé <i>«préoccupant»</i> par l'OMS, a-t-il souligné dans
-                une interview sur la chaîne américaine CNBC. <i>«Nous saurons
-                l'essentiel de ce qu'il y a à savoir d'ici quelques semaines»</i>.
+              Pfizer has already begun work on a new version of its
+                vaccine specifically targeting Omicron in case the current vaccine is not sufficiently effective against
+                vaccine is not sufficiently effective against the new variant, Pfizer
+                variant, Pfizer CEO Albert Bourla assured on Monday. <i>"There are
+                still many unknowns"</i> around the new variant detected in
+                South Africa and considered <i>"worrying"</i> by the WHO, he stressed in
+                an interview on the American channel CNBC. <i>"We will know
+                the essence of what there is to know in a few weeks"</i>.
               </div>
             </div>
           </div>
           <div className="article-subtitle paper-top-adjustment">
-            Gains de fonction sur des coronavirus
+            Gains of function on coronaviruses
           </div>
           <div className="article-text">
-            Cette nouvelle potentiellement explosive ne saurait étonner au regard des
-            nombreux travaux effectués depuis vingt ans sur les coronavirus.
-            Dans l'enquête remarquable de Brice Perrier, qui donne la parole à beaucoup
-            d'avis différents, le lecteur découvre en effet que des manipulations sur les coronavirus
-            sont entreprises depuis près de 20 ans ! En 1999, un article du virologue hollandais
-            Peter Rottier montrait que la création d'un coronavirus chimère pouvait permettre un
-            franchissement de barrière d'espèce avec des cellules de félin.
+          This potentially explosive news should not be surprising in view of the numerous
+            the numerous studies carried out over the last twenty years on coronaviruses.
+            In Brice Perrier's remarkable investigation, which gives voice to many different
+            different opinions, the reader discovers indeed that manipulations on the coronaviruses
+            have been undertaken for nearly 20 years! In 1999, an article of the Dutch virologist
+            Peter Rottier showed that the creation of a chimeric coronavirus could allow a
+            crossing of the species barrier with feline cells.
           </div>
         </>,
         <>
           <div className="article-subtitle paper-top-adjustment">
-            De l'argent public américain aux labos de Wuhan
+          From American public money to Wuhan labs
             </div>
           <div className="article-text">
-            Comme le démontre le journaliste, la manipulation génétique de coronavirus destinée à les
-            rendre plus dangereux est donc pratiquée dans quelques laboratoires, et le résultat de ces
-            travaux est parfois publié dans des revues spécialisées. Pour les partisans de cette méthode,
-              appelée <i>«gains</i> de fonction», les transformations génétiques sont le seul moyen de découvrir le
-              système de transmission d'un éventuel virus émergent, et ainsi de connaître avec un temps d'avance
-              les moyens de combattre de futures épidémies potentielles, notamment via la création rapide de nouveaux vaccins.
+            As the journalist demonstrates, the genetic manipulation of coronaviruses in order to make them more
+              more dangerous is practiced in some laboratories, and the result of these works is sometimes
+              work is sometimes published in specialized magazines. For the supporters of this method,
+              called <i>"gains</i> in function", genetic transformations are the only way to discover the
+              transmission system of a possible emerging virus, and thus to know with a head start
+              the means to combat potential future epidemics, including via the rapid creation of new vaccines.
             </div>
           <blockquote className="fig-quote">
             <img src={PaperImg.quote_left} />
             <div className="fig-text-section">
               <p className="fig-quote-text">
-                Si une épidémie de rage survenait à Paris dans le quartier de l'Institut Pasteur, qu'en penserait-on ?
+              If a rabies epidemic occurred in Paris in the Pasteur Institute area, what would people think?
                 </p>
               <cite className="fig-quote-credit">
                 Jean-Michel Claverie, virologue
@@ -106,27 +105,27 @@ var data = [
             </div>
           </blockquote>
           <div className="article-text">
-            À l’inverse, d'autres chercheurs s'opposent à ces coûteuses manipulations génétiques. Ils estiment qu'elles génèrent
-            un nouveau risque non naturel, et soulignent avec à-propos que la pratique des gains de fonction n'a nullement
-            permis d'éviter la présente crise. La Maison-Blanche avait d'ailleurs décrété un moratoire en 2014, mais cette
-              recherche virologique n'a jamais ralenti. <i> «Dans le monde, seulement quelques dizaines de chercheurs utilisent les gains
-            de fonction avec des virus à potentiel pandémique, presque exclusivement financés par les NIH qui n'ont cessé depuis
-              2012 de maintenir leur soutien à ces expériences risquées»</i>, note le journaliste.
+          On the other hand, other researchers are opposed to these costly genetic manipulations. They believe that they generate
+            a new, unnatural risk, and they aptly point out that the practice of function gains has in no way
+            the present crisis. In fact, the White House declared a moratorium in 2014, but this
+              virology research has never slowed down. <i>"Worldwide, only a few dozen researchers are using gains
+            of function with viruses with pandemic potential, almost exclusively funded by the NIH, which has continued since
+              2012 to maintain their support for these risky experiments,"</i> notes the reporter.
             </div>
-          <div className="article-subtitle ">La thèse de la zoonose</div>
+          <div className="article-subtitle ">The thesis of zoonosis</div>
           <div className="article-text">
-            Le Sars-Cov-2, virus de laboratoire, ou virus naturel ? Une zoonose (infection transmise de l'animal à l'homme) était <i>«évidemment
-              l'hypothèse la plus probable, vu que les virus émergent ainsi depuis la nuit des temps»</i>, souligne Brice Perrier.
+          Sars-Cov-2, laboratory virus, or natural virus? A zoonosis (infection transmitted from animals to humans) was <i>"obviously
+              the most likely hypothesis, given that viruses have been emerging in this way since the dawn of time"</i>, Brice Perrier points out.
             </div>
         </>,
         <>
           <div className="article-text">
-            Un coronavirus
-            de chauve-souris aurait ainsi pu infecter directement des humains s'aventurant autour de leurs zones d'habitat, ou plus sûrement
-            toucher un animal possédant un système respiratoire proche du nôtre, comme le vison,dans lequel il aurait pu se transformer avant
-            de se répandre chez les Hommes. Pour le prouver, l'ONG du sulfureux Peter Daszak consacre tous ses efforts de recherche depuis le
-            début de l'année dans des grottes situées aux confins de la frontière sino-laotienne. Et l'Institut Pasteur y annonce des découvertes
-            prometteuses, avec le prélèvement de virus aux génomes proches (mais pas analogues) à celui du Covid-19.
+          A coronavirus
+            could have directly infected humans venturing around their habitat areas, or more surely
+            touch an animal having a respiratory system close to ours, like the mink, in which it could have been transformed before
+            to spread among humans. To prove it, the NGO of the sulphurous Peter Daszak devotes all its efforts of research since the beginning of the year in caves
+            the beginning of the year in caves located on the border between China and Laos. And the Pasteur Institute announces promising discoveries
+            promising discoveries, with the collection of viruses with genomes close (but not analogous) to that of Covid-19.
           </div>
         </>
       ],
@@ -138,8 +137,8 @@ var data = [
     date: "3/11/2021",
     type: "Article",
     icon: PaperImg.paper_sport_1,
-    description: "En raison d'un «incident technique», le tirage des 8es de C1 \
-                  a été considéré comme nul et a dû entièrement refait.",
+    description: "Due to a technical incident, the draw for the 8th round of C1 \
+    was considered null and void and had to be completely redone.",
     summary: {
       level: levels.INTERMEDIATE,
       themes: [themes.CLOTHING, themes.FOOD],
@@ -156,42 +155,42 @@ var data = [
       stepContent: [
         <>
           <p className="article-title">
-            Ligue des champions : l'incroyable couac qui a contraint l'UEFA à refaire le tirage au sort
+          Champions League: the incredible mishap that forced UEFA to redo the draw
           </p>
           <span className="article-reporter-infos">
-            Par <span className="reporter">Le Figaro</span>=
+            By <span className="reporter">Le Figaro</span>
             <br />
           </span>
           <span className="article-date">
-            Publié le 10/12/2021 à 15:33, mis à jour il y a 17 minutes
+          Published on 10/12/2021 at 15:33, updated 17 minutes ago
             <br />
           </span>
           <div className="row">
             <div className="media-picture">
               <img className="large-ptc-article" src={PaperImg.paper_sport_1}></img>
               <figcaption className="article-figcation">
-                Arshavin va devoir se prêter au jeu du tirage une deuxième fois.
+              Arshavin va devoir se prêter au jeu du tirage une deuxième fois.
                 <span className="fig-credit">HANDOUT / REUTERSS</span>
               </figcaption>
             </div>
             <div className="column">
               <div className="article-subtitle paper-marg-adjustment">
-                En raison d'un «incident technique», le tirage des 8es de C1 a été considéré
-                comme nul et a dû entièrement refait.
+              Due to a "technical incident", the draw for the 8th round of C1 was considered
+                as null and void and had to be completely redone.
               </div>
               <div className="article-text paper-marg-adjustment">
-                Le PSG face à Manchester United, Lille contre Chelsea ? <u>C'est le verdict du tirage au sort des 8es
-                de finale de la Ligue des champions</u>, effectué ce lundi à midi. Sauf que le tirage en question... est à
-                refaire. Plusieurs irrégularités ayant été constatées, l'UEFA n'avait d'autre choix que d'annuler le
-                tirage et de tout recommencer, à 15 heures. Un incroyable fiasco pour l'instance européenne, qui pointe
-                du doigt l'un de ses prestataires pour expliquer cette boulette historique.
+              PSG against Manchester United, Lille against Chelsea? <u>This is the verdict of the draw for the 8th
+                Champions League finals</u>, made this Monday at noon. Except that the draw in question ... is to be
+                redone. Several irregularities having been found, UEFA had no choice but to cancel the draw and start
+                and start all over again, at 3 pm. An incredible fiasco for the European authority, which points the finger at one of its
+                the finger at one of its service providers to explain this historic blunder.
               </div>
             </div>
           </div>
           <div className="article-text">
-            <i>«Suite à un incident technique sur le logiciel de l'un des prestataires de service externes qui indique aux officiels
-            les équipes qui peuvent s'affronter, une erreur matérielle s'est produite au cours du tirage des 8es de finale», explique
-            l'UEFA. Et d'ajouter : «Le tirage est donc considéré comme nul et sera entièrement refait à 15 heures.»</i>
+          <i>"Due to a technical glitch in the software of one of the external service providers that tells officials
+            which teams can play each other, a hardware error occurred during the round of 16 draw," explained
+            UEFA. It added: "The draw is therefore considered void and will be redone in full at 3pm."</i>
           </div>
         </>,
       ],
